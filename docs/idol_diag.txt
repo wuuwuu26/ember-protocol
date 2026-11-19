@@ -1,0 +1,10 @@
+== SM_IdolMech ==
+  lod_group 读取失败 'Name' object has no attribute 'get_editor_property'
+
+!! 基材质加载不到（可能还没保存到磁盘）
+
+== 实例 IdolMechMat ==
+  parent = /InterchangeAssets/Materials/FBXLegacyPhongSurfaceMaterial.FBXLegacyPhongSurfaceMaterial
+  标量参数 1 个
+  标量参数读取失败 ScalarParameterValue: Failed to find property 'parameter_name' for attribute 'parameter_name' on 'ScalarParameterValue'
+  贴图参数 0 个

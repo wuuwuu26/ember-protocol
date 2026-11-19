@@ -1,0 +1,14 @@
+目录资产 5 个：
+  IdolMechMat.IdolMechMat                  MaterialInstanceConstant
+  IdolMechMat.IdolMechMat                  MaterialInstanceConstant
+  M_IdolMech_VC.M_IdolMech_VC              Material
+  SM_IdolMech.SM_IdolMech                  StaticMesh
+  SM_IdolMech.SM_IdolMech                  StaticMesh
+
+== IdolMechMat ==
+class=MaterialInstanceConstant
+props err MaterialInstanceConstant: Failed to find property 'blend_mode' for attribute 'blend_mode' on 'MaterialInstanceConstant'
+读取表达式失败: MaterialEditingLibrary: Failed to convert parameter 'material' when calling function 'MaterialEditingLibrary.GetMaterialExpressions' on 'Default__MaterialEditingLibrary'
+  TypeError: NativizeProperty: Cannot nativize 'MaterialInstanceConstant' as 'Material' (ObjectProperty)
+    TypeError: NativizeObject: Cannot nativize 'MaterialInstanceConstant' as 'Object' (allowed Class type: 'Material')
+参数相关属性: ['double_vector_parameter_values', 'font_parameter_values', 'get_parameter_info', 'get_scalar_parameter_value', 'get_texture_collection_parameter_value', 'get_texture_parameter_value', 'get_vector_parameter_value', 'parameter_collection_parameter_values', 'runtime_virtual_texture_parameter_values', 'scalar_parameter_values']

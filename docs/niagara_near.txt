@@ -1,0 +1,5 @@
+放 NS_T_RadialBurst (-50,0,100)
+放 NS_T_SimpleExplosion (100,-150,100)
+放 NS_T_DirBurst (100,150,100)
+放 NS_T_Minimal (250,0,100)
+已保存

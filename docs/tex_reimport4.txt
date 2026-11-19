@@ -1,0 +1,21 @@
+[ue_py] 第 1 次执行成功（标记 '贴图重导' 已出现）
+[贴图重导] 删除旧资产 T_MechDetail
+[贴图重导] 删除旧资产 T_MechDetail_N
+[贴图重导] 删除旧资产 T_EnvDetail
+[贴图重导] 删除旧资产 T_EnvDetail_N
+[贴图重导] 删除旧资产 T_PaintDetail
+[贴图重导] 删除旧资产 T_PaintDetail_N
+[贴图重导] 删除旧资产 T_ConcreteDetail
+[贴图重导] 删除旧资产 T_ConcreteDetail_N
+[贴图重导] 删除旧资产 T_RustDetail
+[贴图重导] 删除旧资产 T_RustDetail_N
+[贴图重导] T_MechDetail     1024x1024  never_stream=True
+[贴图重导] T_MechDetail_N   1024x1024  never_stream=True
+[贴图重导] T_EnvDetail      1024x1024  never_stream=True
+[贴图重导] T_EnvDetail_N    1024x1024  never_stream=True
+[贴图重导] T_PaintDetail    1024x1024  never_stream=True
+[贴图重导] T_PaintDetail_N  1024x1024  never_stream=True
+[贴图重导] T_ConcreteDetail 1024x1024  never_stream=True
+[贴图重导] T_ConcreteDetail_N 1024x1024  never_stream=True
+[贴图重导] T_RustDetail     4096x4096  never_stream=True
+[贴图重导] T_RustDetail_N   4096x4096  never_stream=True

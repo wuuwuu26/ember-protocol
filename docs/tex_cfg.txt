@@ -1,0 +1,4 @@
+T_Toxic_Bub        srgb=True compression=<TextureCompressionSettings.TC_GRAYSCALE: 3>
+T_Coolant_F        srgb=False compression=<TextureCompressionSettings.TC_GRAYSCALE: 3>
+T_WaterRipple_N    srgb=False compression=<TextureCompressionSettings.TC_NORMALMAP: 1>
+T_ConcreteDetail   srgb=True compression=<TextureCompressionSettings.TC_BC7: 11>

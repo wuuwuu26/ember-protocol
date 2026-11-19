@@ -1,0 +1,9 @@
+DIAG_COUNT 8
+RobotHazardSludge | HazardSludge_0 | (-200,350,0) | scale 0.72
+RobotHazardSludge | HazardSludge_1 | (800,-150,0) | scale 0.72
+RobotHazardSludge | HazardSludge_2 | (-650,-450,0) | scale 0.72
+RobotHazardSludge | HazardSludge_3 | (400,750,0) | scale 0.72
+RobotCoolantField | CoolantSpill_0 | (450,300,2) | scale 1.00
+StaticMeshActor | CoolantPipe_0 | (178,560,4) | scale 0.90
+PointLight | CoolantGlow_0 | (178,436,70) | scale 1.00
+PointLight | CoolantGlow_1 | (450,300,190) | scale 1.00

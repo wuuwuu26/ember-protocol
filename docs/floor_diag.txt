@@ -1,0 +1,32 @@
+=== 材质 M_concrete_floor_02 ===
+节点 8 个：
+  [0] MaterialExpressionTextureSample           tex=concrete_floor_02_BaseColor  size=0x0  srgb=?
+  [1] MaterialExpressionTextureSample           tex=concrete_floor_02_Normal  size=0x0  srgb=?
+  [2] MaterialExpressionTextureSample           tex=concrete_floor_02_ARM  size=0x0  srgb=?
+  [3] MaterialExpressionComponentMask           r=True g=False b=False a=False
+  [4] MaterialExpressionComponentMask           r=False g=True b=False a=False
+  [5] MaterialExpressionComponentMask           r=False g=False b=True a=False
+  [6] MaterialExpressionMultiply               
+  [7] MaterialExpressionConstant                r=0.550000011920929
+
+=== 材质属性连接 ===
+  BaseColor    <- MaterialExpressionTextureSample
+  Normal       <- MaterialExpressionTextureSample
+  Roughness    <- MaterialExpressionMultiply
+  Metallic     <- MaterialExpressionComponentMask
+  AO           <- MaterialExpressionComponentMask
+  Emissive     <- **未连接**
+
+=== 贴图资产 ===
+  concrete_floor_02_BaseColor      srgb=True compression_settings=<TextureCompression lod_group=<TextureGroup.TEXTUREGROUP_WOR never_stream=False
+  concrete_floor_02_Normal         srgb=False compression_settings=<TextureCompression lod_group=<TextureGroup.TEXTUREGROUP_WOR never_stream=False
+  concrete_floor_02_ARM            srgb=False compression_settings=<TextureCompression lod_group=<TextureGroup.TEXTUREGROUP_WOR never_stream=False
+
+=== 地面 actor 材质覆盖（EXT 区抽样）===
+  (2000,-400) ov=['M_concrete_floor_02', 'M_concrete_floor_02', 'M_concrete_floor_02', 'M_concrete_floor_02']
+  (2000,0) ov=['M_concrete_floor_02', 'M_concrete_floor_02', 'M_concrete_floor_02', 'M_concrete_floor_02']
+  (2000,400) ov=['M_concrete_floor_02', 'M_concrete_floor_02', 'M_concrete_floor_02', 'M_concrete_floor_02']
+  (2400,-800) ov=['M_concrete_floor_02', 'M_concrete_floor_02', 'M_concrete_floor_02', 'M_concrete_floor_02']
+  (2400,-400) ov=['M_concrete_floor_02', 'M_concrete_floor_02', 'M_concrete_floor_02', 'M_concrete_floor_02']
+  (2400,0) ov=['M_concrete_floor_02', 'M_concrete_floor_02', 'M_concrete_floor_02', 'M_concrete_floor_02']
+  EXT 地面共 48 块

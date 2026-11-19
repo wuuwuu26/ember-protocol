@@ -1,0 +1,28 @@
+system = None
+  有 get_exposed_parameters: False
+  有 get_editor_property: False
+
+=== 属性里含 param/expose 的 ===
+get_exposed_parameters err: 'NoneType' object has no attribute 'get_exposed_parameters'
+
+=== Niagara 相关函数库 ===
+  NiagaraBakerFunctionLibrary
+  NiagaraClipboardEditorScriptingUtilities
+  NiagaraClipboardFunctionInput
+  NiagaraClipboardFunction_OnPastedFunctionCallNode
+  NiagaraDIRigidMeshCollisionFunctionLibrary
+  NiagaraDataChannelLibrary
+  NiagaraDataInterfaceArrayFunctionLibrary
+  NiagaraEditorDataBase
+  NiagaraEditorParametersAdapterBase
+  NiagaraEditorPreviewActor
+  NiagaraEditorPreviewActorPlaybackType
+  NiagaraEditorPreviewActorRotationMode
+  NiagaraEditorPreviewActorShapeType
+  NiagaraFunctionLibrary
+  NiagaraFunctionScriptFactory
+  NiagaraNodeFunctionCall
+  NiagaraScriptLibraryVisibility
+  NiagaraSimCacheFunctionLibrary
+  NiagaraSimStageExecutionLoopEditorData
+  NiagaraWaterFunctionLibrary

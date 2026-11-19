@@ -1,0 +1,19 @@
+=== M_concrete_floor_02 ===
+  mask r=True g=False b=False a=False
+  mask r=False g=True b=False a=False
+  mask r=False g=False b=True a=False
+  BaseColor    -> MaterialExpressionTextureSample
+  Normal       -> MaterialExpressionTextureSample
+  Roughness    -> MaterialExpressionComponentMask
+  Metallic     -> MaterialExpressionComponentMask
+  AO           -> MaterialExpressionComponentMask
+
+=== M_rusty_metal ===
+  mask r=True g=False b=False a=False
+  mask r=False g=True b=False a=False
+  mask r=False g=False b=True a=False
+  BaseColor    -> MaterialExpressionTextureSample
+  Normal       -> MaterialExpressionTextureSample
+  Roughness    -> MaterialExpressionComponentMask
+  Metallic     -> MaterialExpressionComponentMask
+  AO           -> MaterialExpressionComponentMask

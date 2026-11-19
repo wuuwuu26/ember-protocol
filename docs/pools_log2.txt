@@ -1,0 +1,14 @@
+[ue_py] 第 1 次没有产出标记 'POOLS_DONE'，重试……
+[ue_py] 第 2 次没有产出标记 'POOLS_DONE'，重试……
+[ue_py] 第 3 次没有产出标记 'POOLS_DONE'，重试……
+[ue_py] ❌ 3 次都没跑起来。最后一次日志：/c/Users/25227/Documents/robot_game/ue/ue_py_3.log
+[2026.10.25-03.36.52:342][  2]LogPython: Warning: C:/Users/25227/Documents/robot_game/ue/Scripts/arena_pools.py:39: DeprecationWarning: EditorLevelLibrary: Function 'load_level' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Level Editor Subsystem
+[2026.10.25-03.36.52:586][  2]LogPython: Warning: C:/Users/25227/Documents/robot_game/ue/Scripts/arena_pools.py:42: DeprecationWarning: EditorLevelLibrary: Function 'get_all_level_actors' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Editor Actor Utilities Subsystem
+[2026.10.25-03.36.52:587][  2]LogPython: [光池] 更新 PoolLight_0
+[2026.10.25-03.36.52:587][  2]LogPython: [光池] 更新 PoolLight_1
+[2026.10.25-03.36.52:587][  2]LogPython: [光池] 更新 PoolLight_2
+[2026.10.25-03.36.52:587][  2]LogPython: [光池] 更新 PoolLight_3
+[2026.10.25-03.36.52:587][  2]LogPython: [光池] 更新 PoolLight_4
+[2026.10.25-03.36.52:587][  2]LogPython: Warning: C:/Users/25227/Documents/robot_game/ue/Scripts/arena_pools.py:78: DeprecationWarning: EditorLevelLibrary: Function 'save_current_level' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Level Editor Subsystem
+[2026.10.25-03.36.52:845][  2]LogPython: [光池] 已保存关卡：5 盏光池
+[2026.10.25-03.36.52:847][  2]LogPython: Warning: C:/Users/25227/Documents/robot_game/ue/Scripts/arena_pools.py:85: DeprecationWarning: EditorLevelLibrary: Function 'get_all_level_actors' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Editor Actor Utilities Subsystem

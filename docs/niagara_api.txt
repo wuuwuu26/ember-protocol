@@ -1,0 +1,88 @@
+=== unreal 里 Niagara 类共 363 个 ===
+  AnimNotifyState_TimedNiagaraEffect
+  AnimNotifyState_TimedNiagaraEffectAdvanced
+  AnimNotify_PlayNiagaraEffect
+  AsyncNiagaraCaptureSimCache
+  AsyncNiagaraCaptureSimCache_OnCaptureComplete
+  FNiagaraCompileEventSeverity
+  GroomNiagaraSolvers
+  MovieSceneNiagaraBoolParameterTrack
+  MovieSceneNiagaraCacheParams
+  MovieSceneNiagaraCacheSection
+  MovieSceneNiagaraCacheTrack
+  MovieSceneNiagaraColorParameterTrack
+  MovieSceneNiagaraEmitterSection
+  MovieSceneNiagaraEmitterSectionBase
+  MovieSceneNiagaraEmitterTrack
+  MovieSceneNiagaraFloatParameterTrack
+  MovieSceneNiagaraIntegerParameterTrack
+  MovieSceneNiagaraParameterTrack
+  MovieSceneNiagaraSystemSpawnSection
+  MovieSceneNiagaraSystemTrack
+  MovieSceneNiagaraTrack
+  MovieSceneNiagaraTrackRecorder
+  MovieSceneNiagaraVectorParameterTrack
+  NiagaraActor
+  NiagaraAgeUpdateMode
+  NiagaraAnimNotifyProgressType
+  NiagaraAssetTagDefinitionReference
+  NiagaraBakerFunctionLibrary
+  NiagaraBakerStaticMeshFactoryNew
+  NiagaraBaselineController
+  NiagaraBaselineController_Basic
+  NiagaraBoolDisplayMode
+  NiagaraBoolParameterMetaData
+  NiagaraCVarConditionResponse
+  NiagaraClipboardEditorScriptingUtilities
+  NiagaraClipboardFunctionInput
+  NiagaraClipboardFunction_OnPastedFunctionCallNode
+  NiagaraCompilationMode
+  NiagaraCompileErrorSeverity
+  NiagaraComponent
+  NiagaraCullProxyComponent
+  NiagaraCullProxyMode
+  NiagaraCullReaction
+  NiagaraCulledComponentInfo
+  NiagaraDIRigidMeshCollisionFunctionLibrary
+  NiagaraDataChannel
+  NiagaraDataChannelAsset
+  NiagaraDataChannelAssetFactoryNew
+  NiagaraDataChannelHandler
+  NiagaraDataChannelHandler_GameplayBurst
+  NiagaraDataChannelHandler_Global
+  NiagaraDataChannelHandler_Islands
+  NiagaraDataChannelHandler_MapBase
+  NiagaraDataChannelLibrary
+  NiagaraDataChannelReader
+  NiagaraDataChannelReference
+  NiagaraDataChannelSearchParameters
+  NiagaraDataChannelUpdateContext
+  NiagaraDataChannelVariable
+  NiagaraDataChannelWriter
+
+=== 关键工厂/资产类 ===
+  NiagaraSystem                            = True
+  NiagaraEmitter                           = True
+  NiagaraSystemFactoryNew                  = True
+  NiagaraEmitterFactoryNew                 = True
+  NiagaraScript                            = True
+  NiagaraComponent                         = True
+  NiagaraDataInterface                     = True
+  NiagaraParameterCollection               = True
+  NiagaraSpriteRendererProperties          = True
+  NiagaraMeshRendererProperties            = False
+
+=== AssetToolsHelper 可用工厂 ===
+
+=== 引擎自带 Niagara 资产（可作为复制源）===
+  /Niagara 下资产 1157 个
+    /Niagara/Blueprints/NiagaraPreview.NiagaraPreview
+    /Niagara/Blueprints/NiagaraPreviewAxisLODDistance.NiagaraPreviewAxisLODDistance
+    /Niagara/Blueprints/PreviewMat.PreviewMat
+    /Niagara/DefaultAssets/Curves/DefaultAlphaScaleByDistance.DefaultAlphaScaleByDistance
+    /Niagara/DefaultAssets/Curves/DefaultSizeScaleByDistance.DefaultSizeScaleByDistance
+    /Niagara/DefaultAssets/Curves/DefaultSpawnCountScaleByDistance.DefaultSpawnCountScaleByDistance
+    /Niagara/DefaultAssets/Curves/Templates/DropOff.DropOff
+    /Niagara/DefaultAssets/Curves/Templates/EaseIn.EaseIn
+    /Niagara/DefaultAssets/Curves/Templates/LinearRampDown.LinearRampDown
+    /Niagara/DefaultAssets/Curves/Templates/LinearRampDownUp.LinearRampDownUp

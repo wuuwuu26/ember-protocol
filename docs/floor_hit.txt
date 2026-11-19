@@ -1,0 +1,9 @@
+=== 1. 射线检测 ===
+坐标 (0,0) 探测异常: 'HitResult' object is not subscriptable
+坐标 (500,500) 探测异常: 'HitResult' object is not subscriptable
+坐标 (-500,-500) 探测异常: 'HitResult' object is not subscriptable
+坐标 (0,1000) 探测异常: 'HitResult' object is not subscriptable
+
+=== 2. 关卡内 Z <= 50 且 X/Y 覆盖原点的大型静态网格 ===
+label=SkyDome mesh=/Engine/BasicShapes/Sphere.Sphere loc=(0,0,0) extent=(5000,5000,5000) mats=['/Game/RobotGame/Art/Materials/M_SkyDome.M_SkyDome']
+FLOORHIT_DONE

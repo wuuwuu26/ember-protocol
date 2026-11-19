@@ -1,0 +1,61 @@
+﻿	Mesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	// 用引擎自带球体做占位（项目里没有弹丸专用资产）。
+	// ⚠️ 它的默认材质是 WorldGridMaterial —— 就是那个灰色棋盘格。
+	// 必须在 BeginPlay 里换掉，否则打出去的是一个个灰球。
+	//
+	// 拉伸成"能量弹"：Movement 开了 bRotationFollowsVelocity，组件的 X 轴
+	// 永远朝速度方向，所以把 X 拉长 = 沿弹道拉出一条发光长条。
+	// 等比的小球看起来像"扔豆子"，拉长的弹体才有"高速穿过去"的速度感。
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> SphereMesh(
+		TEXT("/Engine/BasicShapes/Sphere.Sphere"));
+	if (SphereMesh.Succeeded())
+	{
+		Mesh->SetStaticMesh(SphereMesh.Object);
+		Mesh->SetRelativeScale3D(FVector(0.62f, 0.11f, 0.11f));
+	}
+
+	// 枪口闪光。挂在碰撞体上（= 出弹点），出生瞬间拉满强度再快速衰减。
+	// 用点光源而不是发光材质球：材质要资产配合，点光源不依赖任何资产、
+	// 一定有效，而且不会被蓝图 CDO 的序列化吃掉。
+	MuzzleLight = CreateDefaultSubobject<UPointLightComponent>(TEXT("MuzzleLight"));
+	MuzzleLight->SetupAttachment(Collision);
+	MuzzleLight->SetMobility(EComponentMobility::Movable);
+	MuzzleLight->SetCastShadows(false);
+	MuzzleLight->SetAttenuationRadius(520.f);
+	MuzzleLight->SetIntensity(0.f);
+
+	Movement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("Movement"));
+	Movement->InitialSpeed = 2400.f;
+	Movement->MaxSpeed = 2400.f;
+	Movement->bRotationFollowsVelocity = true;
+	Movement->ProjectileGravityScale = 0.f;
+
+	InitialLifeSpan = LifeSeconds;
+}
+
+void ARobotProjectile::BeginPlay()
+{
+	Super::BeginPlay();
+	Collision->OnComponentHit.AddDynamic(this, &ARobotProjectile::OnHit);
+	Collision->OnComponentBeginOverlap.AddDynamic(this, &ARobotProjectile::OnOverlap);
+
+	// 蓝图 CDO 会覆盖构造函数里设过的碰撞响应（本项目踩过多次），
+	// 所以在 BeginPlay 再设一遍 —— 这里才是真正决定运行时行为的时刻。
+	Collision->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
+	Collision->SetCollisionResponseToChannel(ECC_Visibility, ECR_Ignore);
+	Collision->SetGenerateOverlapEvents(true);
+
+	// 弹体材质：换掉引擎默认的棋盘格，用本体的"核心"材质（自发光感）。
+	//
+	// 这里用 SetMaterial 是安全的：UE5 的 UMeshComponent::SetMaterial 在
+	// 索引越界时会**自动扩容** OverrideMaterials 数组（见 MeshComponent.cpp
+	// 里 "Grow the array if the new index is too large" 那段），
+	// 所以不需要事先存在材质槽。
+	// （程序化动画那边当初失败，是因为上界写成了 Min(源槽数, 本组件槽数)，
+	//   而本组件槽数是 0，循环一次都没进 —— 不是 SetMaterial 的问题。）
+	if (Mesh)
+	{
+		if (UMaterialInterface* CoreMat = LoadObject<UMaterialInterface>(nullptr,
+				TEXT("/Game/RobotGame/Art/Characters/M_Core_medium.M_Core_medium")))
+		{
+			Mesh->SetMaterial(0, CoreMat);

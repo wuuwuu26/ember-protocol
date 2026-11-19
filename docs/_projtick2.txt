@@ -1,0 +1,30 @@
+﻿void ARobotProjectile::Tick(float DeltaSeconds)
+{
+	Super::Tick(DeltaSeconds);
+
+	if (FlashRemaining > 0.f && MuzzleLight)
+	{
+		FlashRemaining -= DeltaSeconds;
+		const float T = FMath::Clamp(
+			FlashRemaining / FMath::Max(FlashDuration, 0.001f), 0.f, 1.f);
+		// 平方衰减：前段亮、后段收得干脆，更像"一闪"
+		MuzzleLight->SetIntensity(FlashIntensity * T * T);
+	}
+}
+
+void ARobotProjectile::InitProjectile(float InDamage, float InSpeed,
+                                      AActor* InInstigatorActor)
+{
+	Damage = InDamage;
+	if (Movement)
+	{
+		Movement->InitialSpeed = InSpeed;
+		Movement->MaxSpeed = InSpeed;
+		Movement->Velocity = GetActorForwardVector() * InSpeed;
+	}
+	if (InInstigatorActor)
+	{
+		SetInstigator(Cast<APawn>(InInstigatorActor));
+		SetOwner(InInstigatorActor);
+		// 不与自己碰撞，否则会在枪口处立刻自爆
+		Collision->IgnoreActorWhenMoving(InInstigatorActor, true);

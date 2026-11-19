@@ -1,0 +1,69 @@
+═══ CoolantSpill_0 (450,300,2.0) ═══
+  inflow_local             = <Struct 'Vector2D' (0x0000024C69EA70A8) {x: -330.000000, y: 0.000000}>
+  inflow_strength          = 1.2999999523162842
+  inflow_interval          = 0.10000000149011612
+  inflow_radius            = 62.0
+  pool_radius              = 400.0
+  grid_cells               = 72
+  wave_speed_sq            = 0.18000000715255737
+  damping                  = 0.9879999756813049
+  max_height               = 5.0
+  surface_material         = None
+  heat_cool_per_second     = 9.0
+  包围盒尺寸 = 600 x 600 x 600 cm
+
+═══ ToxicFluid_0 (-200,350,0.5) ═══
+  inflow_local             = <Struct 'Vector2D' (0x0000024C69EA94A8) {x: 120.560000, y: 0.000000}>
+  inflow_strength          = 1.100000023841858
+  inflow_interval          = 0.10000000149011612
+  inflow_radius            = 30.139999389648438
+  pool_radius              = 137.0
+  grid_cells               = 48
+  wave_speed_sq            = 0.10000000149011612
+  damping                  = 0.9700000286102295
+  max_height               = 0.11999999731779099
+  surface_material         = <Object '/Game/RobotGame/Art/Materials/M_Toxic_Fluid.M_Toxic_Fluid' (0x0000024C6FF43800) Class 'Material'>
+  heat_cool_per_second     = 0.0
+  包围盒尺寸 = 600 x 600 x 600 cm
+
+═══ ToxicFluid_1 (800,-150,0.5) ═══
+  inflow_local             = <Struct 'Vector2D' (0x0000024C69EA82A8) {x: 120.560000, y: 0.000000}>
+  inflow_strength          = 1.100000023841858
+  inflow_interval          = 0.10000000149011612
+  inflow_radius            = 30.139999389648438
+  pool_radius              = 137.0
+  grid_cells               = 48
+  wave_speed_sq            = 0.10000000149011612
+  damping                  = 0.9700000286102295
+  max_height               = 0.11999999731779099
+  surface_material         = <Object '/Game/RobotGame/Art/Materials/M_Toxic_Fluid.M_Toxic_Fluid' (0x0000024C6FF43800) Class 'Material'>
+  heat_cool_per_second     = 0.0
+  包围盒尺寸 = 600 x 600 x 600 cm
+
+═══ ToxicFluid_2 (-650,-450,0.5) ═══
+  inflow_local             = <Struct 'Vector2D' (0x0000024C69EA7CA8) {x: 120.560000, y: 0.000000}>
+  inflow_strength          = 1.100000023841858
+  inflow_interval          = 0.10000000149011612
+  inflow_radius            = 30.139999389648438
+  pool_radius              = 137.0
+  grid_cells               = 48
+  wave_speed_sq            = 0.10000000149011612
+  damping                  = 0.9700000286102295
+  max_height               = 0.11999999731779099
+  surface_material         = <Object '/Game/RobotGame/Art/Materials/M_Toxic_Fluid.M_Toxic_Fluid' (0x0000024C6FF43800) Class 'Material'>
+  heat_cool_per_second     = 0.0
+  包围盒尺寸 = 600 x 600 x 600 cm
+
+═══ ToxicFluid_3 (400,750,0.5) ═══
+  inflow_local             = <Struct 'Vector2D' (0x0000024C69EA64A8) {x: 120.560000, y: 0.000000}>
+  inflow_strength          = 1.100000023841858
+  inflow_interval          = 0.10000000149011612
+  inflow_radius            = 30.139999389648438
+  pool_radius              = 137.0
+  grid_cells               = 48
+  wave_speed_sq            = 0.10000000149011612
+  damping                  = 0.9700000286102295
+  max_height               = 0.11999999731779099
+  surface_material         = <Object '/Game/RobotGame/Art/Materials/M_Toxic_Fluid.M_Toxic_Fluid' (0x0000024C6FF43800) Class 'Material'>
+  heat_cool_per_second     = 0.0
+  包围盒尺寸 = 600 x 600 x 600 cm

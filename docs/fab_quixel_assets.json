@@ -1,0 +1,3479 @@
+[
+  {
+    "title": "Industrial Junkyard Storage Pallet Wood Tarp",
+    "uid": "90893ea5-4909-4694-9e1b-416162109836",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "ab839c2a18304101a4720564cff36e7b",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Storage",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Staircase Concrete",
+    "uid": "fb788a88-be6d-4fbb-adb9-cf8e05418f04",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "dd6de04a8a374ef196261f111379e098",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Wall Set Concrete Modular 01",
+    "uid": "5c4c9e0e-c0c2-4fc3-887d-b5a71813c838",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "23dfc09da9404f5391efbb0fabf12c86",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Warehouse",
+    "uid": "a3149fab-3906-4043-b6ee-3937b752a06c",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "c53ad93d578547d29ef8898ab56a30c1",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null
+    ],
+    "category": "Industrial",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Box Electrical S 02",
+    "uid": "05ed4185-c08e-43fc-a37b-6fe440e958df",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "48e4faba008b46c6bad6a6c3322eaebb",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Scatter Tile S 03",
+    "uid": "26ce417c-c221-4041-8e51-50c66dcd057f",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "cf106c2217fa45cd9f43267e66baefc5",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Scatter Tile S 01",
+    "uid": "09ff40b3-e754-47be-8ef9-3607c7c26fc6",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "b5d58d2fe3404dc8952730a58cbd00bc",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Wall Brick",
+    "uid": "16cb07bd-ef5a-43b9-8bee-b6b866192162",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "e71fb4d8844d4b06be0012f4337f314c",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Brick",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Wall Set Concrete Modular 02",
+    "uid": "2653d259-280e-4ac7-b26a-6b9f9b8c043a",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "c39d271d6ad243fe9dd4094b35b123a2",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Concrete Floor",
+    "uid": "2dece1ec-0941-406c-a7de-ae9fe08085a1",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "c774db507ce742da8da513ffcb7b4fee",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Concrete",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Scatter Tile S 02",
+    "uid": "ab632cd1-ead9-45cc-b44e-8936913d4aed",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "29d3020c66eb4cb89fda4e052a071603",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Rubble Pile Plaster M 01",
+    "uid": "233b866f-3d20-4bcb-9763-446cc49756a5",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "575c31714c954932a2f835a60e8dddc9",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Metal Table",
+    "uid": "d769a814-7765-4a5c-a7fa-ed6c80ba249e",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "15d2e5db6e374bbd9b8750bcbf869ce0",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Home",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Cable Wall Modular 02",
+    "uid": "ad99e75d-f7f3-449c-bd92-fdd96da2fd11",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "436454058a9f46c38cba6d6d3ed942cd",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Rubble Pile Plaster L 01",
+    "uid": "10f4dd6c-8a8f-4732-ae9a-0853d8301bf8",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "8ae6d965a4254a3ea5e86c607cff61ae",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Junkyard",
+    "uid": "a984aac1-d20f-4232-8ce8-212e1695aaf6",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "019b5566e40c4821af732d42621c2518",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null
+    ],
+    "category": "Industrial",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Trim Concrete Modular 03",
+    "uid": "158b0d66-2ecd-46e1-8cd5-5f988c676981",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "95d4fff6ced6447fb09708164b11e14d",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Ground Patch Gravel M",
+    "uid": "2ec8e596-550e-41de-b502-ab786d3fd3f8",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "283359e9926c4f6ca6a4c0e16230010c",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Door Double Metal L 02",
+    "uid": "4cbb5be5-e401-4d3a-8d36-fa0ac38e2950",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "98a4bdcfbff44301893da9e5f0362870",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Vent Air Metal Rusted 02",
+    "uid": "106e6bd4-7cbe-4895-bf4f-ca6144732b52",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "9483738c2f0a49a68ce49ad22311fde5",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Unfinished Building",
+    "uid": "25f2e7e5-5cca-48a5-99a3-35c38b8240ac",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "7f9e7dd6a5b44e0cad4611b440c601fa",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null
+    ],
+    "category": "Streets & Construction",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "African Slate Quarry",
+    "uid": "578d0ceb-5ccb-425f-abd5-e791a21551b6",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "991a6e4c93a840299aabb1e0ca2a012c",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null
+    ],
+    "category": "Mountain",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Historic Medieval Church Ruin Gate Metal Fence 01",
+    "uid": "7fbe46b7-0501-4932-9621-155d1bcb629c",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "2f444ea5831f41b79e37e358d6dbaba4",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Historical / Points of Interest",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Derelict Corridor Megascans Sample",
+    "uid": "d825ff9c-77da-45a4-9619-c989e6dfdda6",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "8b7263c704bb47e9a9f70fb6c9212d15",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null
+    ],
+    "category": "Abandoned",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Damaged Concrete",
+    "uid": "254b2587-28d0-47ab-84d2-fe94213ebf0f",
+    "type": "decal",
+    "productType": "decal",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "ab4e5d97873a414fafd676e03b1f45cf",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Debris",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Concrete Rubble Pile",
+    "uid": "f07637e3-5af8-436d-bb47-4552285e539e",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "ab422bb53f4746dfb7193bf86258be55",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Urban Trash",
+    "uid": "4eb4b87c-92bf-495a-b68a-5877fc07094f",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "c0d7dcd478b34abd8a63b51ecc285009",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null
+    ],
+    "category": "Cities",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Brick Ruin Window Brick Straight 04",
+    "uid": "c6f78a60-ccc1-4f86-9efa-68ec70326717",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "e197f22e17f54a57b32852213761ecb7",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Components",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Urban Ruin Building Structure Concrete M 02",
+    "uid": "664c25bd-bf5a-4a35-ba4a-ff5d70438a68",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "655c8dd7be3b4dbc852eb82878b20ceb",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Components",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Old Rotten Wood",
+    "uid": "37389440-c925-4060-9154-be8d2e548c80",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "c82f0c7f8afc46fc9df9d5c4686029af",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Wood",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Urban Ruin Pillar Brick Damaged",
+    "uid": "56e2bc63-86a6-45d0-b780-02f8b0c968a6",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "b162f96e697f44c4b240dff3b12adeaa",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Components",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Brick Wall",
+    "uid": "c2061c4a-c730-45b3-b0bb-6f05e05103f7",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "c9afe209c01a4975b9620fd905fd25e0",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Brick",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Weathered Concrete Wall",
+    "uid": "9485cd8b-02f5-42c0-9cfd-097b5b7b7f55",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "513657e7326040c8b2efa784e57d9c06",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Concrete",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Brick Ruin Wall Brick Rough 03",
+    "uid": "07ce0a27-3b31-43e0-a31e-dc5e141b4594",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "2f9fc1b9010b40689be463552c11e9e8",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Brick",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Stained Concrete Ceiling",
+    "uid": "31059d5e-7209-45a6-b10a-7da35418cf9a",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "5f6f80409fe643e6a863afbedc70a0c8",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Concrete",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Urban Australian Desolation Vehicle Metal Rusty",
+    "uid": "614d49ee-df24-4492-b422-266d242ab70a",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "e58dd620b5f34ea7ba4b2d854a720044",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Components",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Urban Ruin Rubble Pile Concrete M",
+    "uid": "005b9161-894c-4046-b171-026592a70a5c",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "5a41116e695143eda8dfa73adec49506",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Debris",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Urban Ruin Rubble Pile Brick M 01",
+    "uid": "45ee5992-8162-4e0f-adbd-03be795c3746",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "278e8268b96842c28d49aaf6e86bb014",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Debris",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Cement Rubble",
+    "uid": "ea48c027-9dc7-4ce5-80d0-8f148f7678fa",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "e61dc5040b8c421fa8cac8e2713844b1",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Concrete Rubble Pile",
+    "uid": "aa404374-059d-4bab-9e0e-cc0ee6ff8c0f",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "366c4c92115b4e2892740795d0999423",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Cement Rubble",
+    "uid": "00305c89-b94f-496b-85fd-978b43939c11",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "3dd43954fdf6468ca08456da7cf195b4",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Concrete Rubble Pile",
+    "uid": "07ff8eff-30f7-4d10-b78a-21907711e4c0",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "9d782a96ec7943639f886654f4baa6d9",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Urban Ruin Rubble Pile Concrete L",
+    "uid": "30aed7ad-6f26-4616-8789-96f7060560ec",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "b30e55bfdfc74a119f3d9844602058b3",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Debris",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Bricks Rubble",
+    "uid": "125a248d-7f03-46b2-8af2-2d937c305eaf",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "eb2370789c284d8fb014664805e721c3",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Construction Rubble",
+    "uid": "0ce81789-1f93-4c36-8de5-8b7f7980b46c",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "55e454c6236a42d9b6ffc9715737b778",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Construction Rubble",
+    "uid": "05c21e91-bdef-43da-98b4-25d9378741f2",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "9bf3c4c4f2d345c8b6a90b49f6339ea5",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Concrete Rubble",
+    "uid": "b056e89c-d9dc-4ff6-bf04-45049a8bef52",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "d018880413b64e1db263f91350ebe399",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Bricks Rubble",
+    "uid": "ca994674-c975-4d18-beee-214543276be6",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "436d19eb261445b6b268fad04bef353f",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Concrete Rubble Pack",
+    "uid": "023f52ab-e085-45a2-bad5-56e60c216d5b",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "b0ebdc3b94d44a32915c70828bdf2d96",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Broken Wall",
+    "uid": "bc721d21-609c-4b43-b17e-0837ac4eeb83",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "6317078a6d30492b9b5f347b00819163",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Concrete Brick",
+    "uid": "194ad25c-6afe-47e7-871d-4d1dd6019db9",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "d803b1b827814ac8aef2649662fa0660",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Construction Rubble",
+    "uid": "ce35173e-902e-4a8e-a462-2f25803c5b9b",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "6a512abcb981468b8666191f80ae5315",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Military Trenches Wall Metal Corrugated 02",
+    "uid": "46a3ccc4-05a8-44c4-a023-b3a5ec5e4bbc",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "2cf4c204b2234b9eb99d8b367a24621e",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Historical / Points of Interest",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Military Trenches Equipment Stake Metal Rusted 02",
+    "uid": "a2a46e83-6fcc-43ed-af30-3eab0f1602ff",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "194f41f11f2f4c2b8fba23229c0dfc9c",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Historical / Points of Interest",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Rusty Metal Sheet",
+    "uid": "54c7decd-5aac-491c-ad3f-cdfde8d4b1c8",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "557fa9414e03445196d41224d7596c58",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Metal",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Military Trenches Wall Metal Corrugated 03",
+    "uid": "ca980761-d936-4cd3-871e-5120020a8969",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "dc29e9397f36405eb85c4705417c69ca",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Historical / Points of Interest",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Military Trenches Wall Metal Corner 01",
+    "uid": "4966ac1e-c999-4360-b2c8-152be57e8a43",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "881a60ca3c1e41178539dae86612d2bd",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Historical / Points of Interest",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Rusty Metal Barrel",
+    "uid": "5f4c0800-6c8d-4945-8fdf-6855ab6a566d",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "32837226246c47dfb195a1b0c4f2e8d6",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Storage",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Rusty Metal",
+    "uid": "0f3590ca-1022-4590-8e2f-2d016df91b8a",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "cfb20337b3c9460a9ee1b047cff48489",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Metal",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Rusty Metal Sheet",
+    "uid": "04d29657-eeee-46dd-9773-05264d8da137",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "e23e56e4d63143919762d0ff781628a6",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Metal",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Rusty Green Metal Sheet",
+    "uid": "7bfb9214-fb68-4408-ab49-e32922c358b8",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "f1b36f6b52c04ba1b1996aaa50a54a48",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Metal",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Rusty Metal Sheet",
+    "uid": "156eb670-c1d0-4d72-bd47-b624aa2b9b02",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "34c2cba238a24977a0e12a140aec022e",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Metal",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Rusty Metal Ring",
+    "uid": "b651e775-d42f-4160-9436-d672d43f4d27",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "3a8add3db21e4887a6f9bdbd99767aa4",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Hardware",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Corrugated Metal Sheet",
+    "uid": "60054f60-89df-40f3-8b1e-0d00b4e2d48f",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "6c3826558efd498ebf411da1c06bd556",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Hardware",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Rusty Metal Shelf",
+    "uid": "b8241ec4-ba32-42a9-b990-1667720ecfb9",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "19aedc6f4e0b4fec8581c751611db498",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Hardware",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Rusty Bolt",
+    "uid": "9e20d2ea-8797-469b-967f-7e70309cbd6e",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "f8b23d258fcd4b76854373c42a0bb2c0",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Consumer",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Rusty Painted Metal Sheet",
+    "uid": "18a3cf6e-6e1b-4128-9aed-6393d3dfe797",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "9312a4b8c6714340bd3237cde4fa43ee",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Metal",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Rusty Hex Nut",
+    "uid": "13ddddd5-0947-4575-8065-bb67610fb138",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "1c27b3aa3f7a46fb92e8a0dd27c29f99",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Consumer",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Rusty Metal Workbench",
+    "uid": "332869a5-a1a1-4f15-a96a-8fc383061b62",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "b78e1e9403314ac8bdf261e7be83743c",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Home",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Mine Cart Wheels",
+    "uid": "93d7caf4-9d51-41e6-917e-e7464fa79d7f",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "07b2bc99c32445aabbd5f90a74d64920",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Hardware",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Rusty Metal Sheet",
+    "uid": "06edcb9b-16a5-41f3-9d46-df4e21cd9b20",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "a036da1a52894801908cbebd134ebbfb",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Metal",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Rusty Metal Sheet",
+    "uid": "b99c8a2c-b1a4-42f1-97d4-229bee7d11bc",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "a2ee6367758e4729895d08ec1b44fd5c",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Metal",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Rubble Pile Plaster Corner 03",
+    "uid": "13ef5fb3-9ce6-49ff-b69b-de4a19328a1f",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "ea8c649a75a94f0a9717af2caefbd87e",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Tarped Crate",
+    "uid": "8aa1f000-e6b2-48dc-b33d-e233fdf59956",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "762d559b1e844c60aead90844a4687dd",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Storage",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Ceiling Concrete Rebar",
+    "uid": "0154f777-e28f-4a25-88bb-054f3beaca15",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "4715167567bb4a199d147a9f12f2f29b",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Ground Patch Gravel S",
+    "uid": "e2c21206-5a50-4c52-a141-fa76b47a8783",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "9dbc401c22e24df6a247fdc56c00c539",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Scatter Debris Plaster M 02",
+    "uid": "b5a89afb-2994-4655-b8d8-64750525e183",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "3f5a20929b8f46879c09d506bf81d854",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Rubble Pile Plaster M 02",
+    "uid": "61998027-814f-41c9-bc61-65c47471c59a",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "1545b7ce5d0f465686506dbc5ef0f8ed",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Panel Console Modular 03",
+    "uid": "bb23c02b-dcbc-4cfa-9edc-88a8f1991414",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "078f90d0431041ababc98e5f9f8816ff",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Military Trenches Debris Patch Rock Corner",
+    "uid": "9c255b4f-d759-4504-bb68-3371d657d23f",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "5e915384060f430eb228600843b48635",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Historical / Points of Interest",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Military Trenches Ground Beam Metal Rocky",
+    "uid": "e0701dd3-1f18-41f1-9d87-7c40c7ecba9b",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "55f487b2ed58406b9bd3919d4750bfff",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Historical / Points of Interest",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Military Trenches Debris Patch Rock S 01",
+    "uid": "3b401ef0-0308-4a78-b61d-5f27328826cf",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "dfd67994dde24ba69ac49365809fd240",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Historical / Points of Interest",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Brick Debris",
+    "uid": "9b7b9b48-dc82-4d75-90a0-3d252e037192",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "f1f31e90fb514ab599a9b13f3f379963",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Dead Leaves",
+    "uid": "1b8a6ba2-0883-468c-8bdf-b46b93babe59",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "b363f1a2ef864301a67c3f5b7afd959d",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Plants",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Urban Ruin Rubble Pile Brick M 02",
+    "uid": "2a41de03-ec73-4664-9017-588a59af9998",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "8c8cca725bcc4961bde2f18340aa8bf3",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Debris",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Military Trenches Debris Patch Rock S 02",
+    "uid": "77780d5e-0926-499e-bd0b-1c03db357777",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "adf047b46aeb49faa4c590a0c849879a",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Historical / Points of Interest",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Urban Ruin Rubble Pile Brick M 03",
+    "uid": "30f21886-cf6f-43e2-aced-4038b95cdc70",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "ead5dc2051264278a5a7fc7f23b85d0c",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Debris",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Brick Debris",
+    "uid": "ee6fdc47-4888-40f7-ad71-6f7747ca8fca",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "e7e3e6dddba7479e8c156bfd862a7dfe",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Asphalt Debris Pack",
+    "uid": "00f021df-e2f7-45ba-b3df-5dd40f671fe6",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "5bcdf1bbfdd249678cbcc65579adc02a",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Cement Rubble",
+    "uid": "cd830e29-0cb4-4d9c-984a-900952276fed",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "252e94faf1d642b0ba83f7312e77bdda",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Historic Medieval Church Ruin Pile Debris Corner 01",
+    "uid": "9c027c98-bed3-4f3a-b8ea-f7264b7f1330",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "8058e1ac38b349da9f97aeb6bd1bd8ee",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Historical / Points of Interest",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Sand Debris",
+    "uid": "85a40a20-104c-4523-af91-6d86eceff943",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "b9b908efdb88433e8d5f694877bbcd60",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Gravel",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Concrete Pipe",
+    "uid": "e0991087-ff11-466d-a01c-0fde7998a36c",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "31abc22bd80943748439f6c9449275f6",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Hardware",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Concrete Pipe",
+    "uid": "0d0c8678-25a8-4ff5-8fba-73bfcb5e3c90",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "8a9254738a814947a50b1ffcbed9654f",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Hardware",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Concrete Pipe",
+    "uid": "2800f1c0-d046-4b49-9099-289ea3d18eb9",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "008abd2e15ff481e963d9b86e71d5bcb",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Hardware",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Painted Pipe Connector",
+    "uid": "16b2311c-389c-4792-a852-58e6b298950c",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "53c2334d534a4941bdcea14faaa6bfaa",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Hardware",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Painted Pipe Straight",
+    "uid": "40499ef5-f887-403c-8f45-b944199ab141",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "bb6969bb1040417cae099152e670d102",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Hardware",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Urban Ruin Pipe Metal Set",
+    "uid": "35d3984b-866b-4d86-86c0-96f528656f5e",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "9300b2577c9e4c5e8616dfc1d9504432",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Debris",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Concrete Pipe",
+    "uid": "62f4283a-1005-4310-8598-01db2a76a611",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "99edb14e48764a4c956d58785b139e60",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Hardware",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Debris Pipe Metal M 01",
+    "uid": "1f78db91-3057-4e9f-9fe7-28bf8240e063",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "ec729d3e03a1498e88aa31a5dec12c35",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Painted Pipe Base",
+    "uid": "b622bd0d-d11d-4caa-b57f-abcba8a483be",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "d7ccfd6d85c04b4eae65b134d033bf75",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Hardware",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Concrete Pipe",
+    "uid": "07cdd8fa-788a-4cdf-9c42-89b4b7d779a5",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "b6106eb1eed940258d7025687ea1fea4",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Hardware",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Painted Pipe Y Connector",
+    "uid": "4e8f2f18-a0ad-4490-9c9a-d8d3b3e2df50",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "6b15aaa60be44946ad0c8cdc4a767340",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Hardware",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Concrete Pipe",
+    "uid": "15c2ca8e-6cfc-4087-8062-bf4fe7118da5",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "04f380ac1c8745e0b32a26db5d90a2cc",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Hardware",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Concrete Pipe",
+    "uid": "a856344b-ee67-4517-8f0e-546636708e92",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "b72951a498644250b5127aafbd8d5c85",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Hardware",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Concrete Pipe",
+    "uid": "c47deeb8-5b84-4e5a-81b3-2e6db13d3da3",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "b604c38a84d448b29e69c9ad8c130778",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Hardware",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Debris Pipe Metal S 04",
+    "uid": "e9172af0-26c3-4152-aac1-ce1f0b6f995f",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "718fa64a1a574eaf931502e8cc2f3463",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Painted Pipe T Connector",
+    "uid": "fe9809f2-1039-44fd-be2b-1fb8b1ffde9e",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "1dd7db91617f4985a94d50ffa1317bbe",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Hardware",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Painted Pipe Cross Connector",
+    "uid": "b594b857-e25a-4872-98f1-8908e4cfdb78",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "4d60fa6a0dc343f6a4cc865729d7dcd1",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_199_1701881380056",
+      "price": 1.99
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Hardware",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Urban Gas Station Pipe Plastic Small",
+    "uid": "48724ec5-544f-4e2d-acc8-5afdb507621b",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "7509405cbd9f449288e3a9b838a6faa9",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Commercial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Urban Gas Station Pipe Metal Rusty 01",
+    "uid": "fd338f2d-4e96-44b3-bc44-7eddfbf28753",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "873885f13ed6413d9b9c7dd2eef3d691",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Commercial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Industrial Abandoned Factory Debris Pipe Metal S 01",
+    "uid": "fccd238f-a591-49a3-bc1e-ad9052c45a8e",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "e53d2bd9cff74d6e94f45caca6f84493",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Concrete Brick",
+    "uid": "049af874-fd50-4fd2-a896-b79adcea3be1",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "d2117d1c71d6469782ee2002305cb2eb",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Precast Concrete Wall",
+    "uid": "55ea2ef8-604e-44e2-a0c8-a2a7533c2c18",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "5bfdec43766546ea93ecbe2ccfca0bad",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Concrete",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Concrete Wall",
+    "uid": "fc2a8068-e229-4b03-badd-098cc3a99aaf",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "5009a5f26ddc4e88973dac53feb46822",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Concrete",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Plastered Concrete Wall",
+    "uid": "1f631631-963c-4b37-ab7c-154b1c20a5a8",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "7c1e79d1dab84c98a8372fddccd01fed",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Water",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Urban Ruin Wall Concrete M 02",
+    "uid": "9685154a-5b4a-4f05-b6ce-9ea6c83d00c1",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "dd2ad0f309874290ac6c94b45b1b8f04",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Components",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Concrete   Wall",
+    "uid": "537a0cd0-ea56-4de7-94ac-9c869b52f82c",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "3b81d69f063f432e91362aebf8d4ba1e",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Concrete",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Concrete Block Wall",
+    "uid": "16e14f07-cc0f-431d-bd6a-d5ad11257f11",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "b79d8fd24e2f42dd886c2ce2092c36aa",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Concrete",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Castle Wall",
+    "uid": "f5c38004-d01d-4d42-9600-09267dcec581",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "c628380357454cdd8abdd78ad807a146",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Components",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Urban Ruin Wall Concrete M 01",
+    "uid": "d65fb467-8d48-42ec-a6be-1c8fc84132cd",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "0efcbda917f04ff3b1b350bca25f5360",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Components",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Concrete Wall",
+    "uid": "5fc74d73-8736-4cb6-9715-9337a171afac",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "62388d0052ac4a2ba4c233d7b9718672",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Concrete",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Damaged Concrete Wall",
+    "uid": "1c0dbf8b-18be-4bfb-845b-81bb5c2d0c16",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "d706ca1fd7bb4fc4a5bfbd3040b40afb",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Concrete",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Japanese Stone Wall",
+    "uid": "6c0804e9-1cf4-4b09-b441-329e6c63f9f3",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "880bb82d64ea49e99953e64a7792d3cc",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Tombs & Gravestones",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Stained Concrete Wall",
+    "uid": "a7ca6d77-ca83-4cce-be86-6d3555e9f1a9",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "7d059dd292fd4743a1d28d0f9157549a",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Concrete",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Urban Ruin Ledge Concrete Damaged 01",
+    "uid": "9a47f4c7-81b2-475a-95f3-e88840991002",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "3121fa480a094de8b4eaa6b718714b98",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Components",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Urban Ruin Wall Concrete M 03",
+    "uid": "2481c0fd-2a01-4697-b41a-e0efa3545dfe",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "021d99202ac8468b9e9306629ee41978",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Components",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Concrete Brick",
+    "uid": "144328fb-6d31-425e-91f9-4b251efdfe74",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "f2ca8f92abab434daeb234d7ec829747",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Industrial Buildings",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Urban Ruin Wall Concrete S 02",
+    "uid": "60468651-2b8a-4c85-a899-56efca10c9a0",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "06fabb5d370d4a98ba788bfa5cf86f65",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Components",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Military Trenches Ground Patch Rock S 03",
+    "uid": "4906428e-e233-4289-9b55-2c7e250b1ea9",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "0848cd7e5f7448a2aecd4cc80d2afbef",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Historical / Points of Interest",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Military Trenches Ground Patch Rock S 02",
+    "uid": "759db696-b13f-4482-80f7-19a4780c9643",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "34eddd35c3684cbc9dd5d8f5f140cde6",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Historical / Points of Interest",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Sandstone Rocky Ground",
+    "uid": "0315400f-1177-4b25-a538-852dabdd416a",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "9d2f9e243e9749e0aa0b323ca1fe9cee",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Rocks & Stones",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Ground Gravel",
+    "uid": "5b295907-cbfa-4c47-8a2b-83f2fd828f17",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "1fae14c196574aa59587ffc3cc217cf8",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Gravel",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Icelandic Ground Gravel",
+    "uid": "2c14ef7e-8b40-4a5f-87f3-ba368f483f27",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "674f6c9c1ca846ac8cedc904d03e62c4",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Gravel",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Volcanic Ground",
+    "uid": "450e3beb-8185-4525-9fbe-9776ddefde45",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "8552697b8268416394a81fcbb9f08765",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Rocks & Stones",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Gravel Ground",
+    "uid": "06eeb830-873e-42f4-85b2-0c98299df57a",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "e6c8ac209e264230980b429311b90376",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Gravel",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Gravel Ground",
+    "uid": "c19d425f-4957-4238-b1d7-34c984e9867f",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "8a5bf6e5ca304307a6beceacbbb920e9",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Gravel",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Granite Rocky Ground",
+    "uid": "d72fa95a-9a0e-44f3-a2bb-452cd58e2880",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "793bd6c149f04047b7c6ae77307eedcb",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Rocks & Stones",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Gravel Ground",
+    "uid": "25a62af7-60d7-4508-b84e-388475a8e78d",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "c19cb48bdb5e4599933d796a5ce04409",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Gravel",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Stony Soil",
+    "uid": "b9d8ad1b-503d-4e49-872f-cd8e6aa85515",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "1db0d6b10eb84baeb84d8ff43eaff289",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Mud",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Volcanic Rocky Ground",
+    "uid": "5fa6b740-2a19-4001-839d-991bea956cea",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "5f7d5c10cb454af28cd0e110d90e6caa",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Rocks & Stones",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Icelandic Gravel",
+    "uid": "5094388d-f8ef-4781-b379-14e6d92d5330",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "79238c8cf28d42b79b34e887763d2729",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Gravel",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Gravel on Soil",
+    "uid": "d1f24f95-7093-4bb0-8aea-afeb7eec805d",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "b32b0efcacc245219f3bcea14dcdd0a7",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Gravel",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Gravel",
+    "uid": "2e847f8a-5acd-4abe-af90-fb58e8145e76",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "6c3a25f42e2a4301a26c492b59f6aad0",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Gravel",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Gravel Ground",
+    "uid": "529c363d-ca69-419e-bed4-6511c4d87df6",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "e9bbb4e595cb456d95fa0c8c86a2e185",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Debris",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Soil And Gravel",
+    "uid": "08dac605-6791-47e8-ae3a-2907d13c3e25",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "da43f3f3207445a6aaa6fa7a71e3c169",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Gravel",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Medieval Village Megascans Sample",
+    "uid": "2e11a225-a6ea-4781-a3e1-fe975b461894",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "2a75cc1407d14c37b5b5d5567e0c3eed",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null
+    ],
+    "category": "Medieval",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Dark Ruins Megascans Sample",
+    "uid": "836ed2f8-e2d6-49be-98d3-59d104bd351e",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "ebdf86f5905a4136b97525aec793b176",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null
+    ],
+    "category": "Dungeon",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Military Trench Megascans Sample",
+    "uid": "f18c343f-b771-47b0-a02a-129771fd9804",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "569922e82fea45be905fdd608a736bd0",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null
+    ],
+    "category": "Military / Warzone",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Goddess Temple Megascans Sample",
+    "uid": "471eaad7-3c05-45bd-ac37-02dddb17780f",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "0cbefc01c32d4e8bba9797358d7e9471",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null
+    ],
+    "category": "Temple",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Icelandic Rock",
+    "uid": "718ed88a-226f-4034-97ce-4f6b61793a62",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "da844e47357348f7b342ebe4ff2dd38e",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Rocks & Stones",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Desert Western Ledge Rock Small 07",
+    "uid": "9643956b-9e34-46d9-9ae3-00c22405ee16",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "e29b8c12d85b44a3830c75bd672aafba",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Rocks & Stones",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Nordic Forest Cluster Rock Small",
+    "uid": "f186c225-178a-482b-a122-5508a318a4f0",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "06345c07d8ef4f3eb666b18285cb39e6",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Rocks & Stones",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Icelandic Boulder",
+    "uid": "2ba69b99-cc36-49f2-a689-ecad95e8a31a",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "2b0b460ab0af41538adb7e503bb17df1",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Rocks & Stones",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Lichen Rock Cluster",
+    "uid": "9e727dda-02f2-465c-88c6-dce82ccefff3",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "4dd5376b3af8488a9bbb5b10217f6b64",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Rocks & Stones",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Quarry Cliff",
+    "uid": "b12a0295-8ce4-49fd-8d91-09cfc155a4f7",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "e2e62b7592b945c1a83f6574c56c3950",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Rocks & Stones",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Forest Terrain",
+    "uid": "8a8981c4-bb94-4184-84b7-6c70d7c75ef1",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "935e89e067ff4593acd18de98b8dea08",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Forest",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Snow Embankment",
+    "uid": "3d107ff1-74c8-47ae-82b5-c5e9e2146beb",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "6a403dee43a8430dbe8926767843ce70",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Snow",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Mossy Stump",
+    "uid": "d6c068bb-fceb-46b2-9841-008b9b999c58",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "5ac1e09cf12c4d73b2a84b0de8c33142",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Trees",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Saloon Interior",
+    "uid": "57991a62-f98f-4c6a-9b94-a74ec12f242e",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "b362d65abfda4cee9a740771704b6cac",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Historical",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Asphalt Road",
+    "uid": "fc52e5d3-8c95-4e0e-af45-0763cbd3ffd9",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "122333f8749542d7ae3639f75569316c",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Asphalt",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Wild Grass",
+    "uid": "00f1b788-8d3d-441b-acd9-ba0f6a796a35",
+    "type": "material",
+    "productType": "material",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "8ce84fd8ba654d489e3ccdaee9191be4",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null
+    ],
+    "category": "Vegetation",
+    "catalogItemId": "",
+    "offerId": ""
+  },
+  {
+    "title": "Military Trenches Barrier Sandbag Canvas S",
+    "uid": "4b11beef-9bfd-4537-a377-302eb78758c5",
+    "type": "3d-model",
+    "productType": "3d-model",
+    "isFree": false,
+    "startingPrice": {
+      "offerId": "5f6503cfcc3147c08083c5be36887391",
+      "priceTierId": "45da1a2f292a46c78dab0c98c5181e9a_USD_0_1701881379100",
+      "price": 0.0
+    },
+    "formats": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "category": "Historical / Points of Interest",
+    "catalogItemId": "",
+    "offerId": ""
+  }
+]

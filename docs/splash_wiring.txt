@@ -1,0 +1,14 @@
+[00] MaterialExpressionTextureCoordinate  name=MaterialExpressionTextureCoordinate_0
+[01] MaterialExpressionTextureSample  name=MaterialExpressionTextureSample_0
+[02] MaterialExpressionComponentMask  name=MaterialExpressionComponentMask_0
+[03] MaterialExpressionMultiply  name=MaterialExpressionMultiply_0
+[04] MaterialExpressionConstant3Vector  name=MaterialExpressionConstant3Vector_0
+[05] MaterialExpressionConstant3Vector  name=MaterialExpressionConstant3Vector_1
+[06] MaterialExpressionConstant  name=MaterialExpressionConstant_0
+
+材质属性：
+  BaseColor  <- MaterialExpressionTextureSample
+  Emissive   <- MaterialExpressionMultiply
+  Opacity    <- 未连接
+  Roughness  <- MaterialExpressionConstant
+  Normal     <- 未连接

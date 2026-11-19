@@ -1,0 +1,16 @@
+[ue_py] 第 1 次没有产出标记 'BOLTPROBE2_DONE'，重试……
+[ue_py] 第 2 次没有产出标记 'BOLTPROBE2_DONE'，重试……
+[ue_py] 第 3 次没有产�[ue_py] 第 2 次没有产出标记 'BOLTPROBE2_DONE'，重试……
+[ue_py] 第 3 次没有产出标记 'BOLTPROBE2_DONE'，重试……
+[ue_py] ❌ 3 次都没跑起来。最后一次日志：/c/Users/25227/Documents/robot_game/ue/ue_py_3.log
+[2026.10.25-04.31.48:509][  2]LogPython: Error:   File "C:/Users/25227/Documents/robot_game/ue/Scripts/probe_bolt_conn.py", line 41, in <module>
+[2026.10.25-04.31.48:509][  2]LogPython: Error:     lines.append("== REF %s shading=%s ==" % (ref, m.get_editor_property("shading_model")))
+[2026.10.25-04.31.48:509][  2]LogPython: Error:                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026.10.25-04.31.48:509][  2]LogPython: Error: Exception: MaterialInstanceConstant: Failed to find property 'shading_model' for attribute 'shading_model' on 'MaterialInstanceConstant'
+[2026.10.25-04.31.48:509][  2]LogEditorPythonExecuter: Error: Python script executed with errors
+[2026.10.25-04.31.48:688][  3]LogPython: Display: Generating Python API stub file...
+[2026.10.25-04.31.48:759][  3]LogPython: Display:   ...generating Python API: glue code (types)
+[2026.10.25-04.31.49:778][  3]LogPython: Display:   ...generating Python API: glue code (methods)
+[2026.10.25-04.31.49:778][  3]LogPython: Display:   ...generating Python API: additional code
+[2026.10.25-04.31.50:059][  3]LogPython: Display:   ...generated: C:/Users/25227/Documents/robot_game/ue/Intermediate/PythonStub/unreal.py
+.10.25-04.31.06:517][  0]LogPython: Display: 正在运行启动脚本C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Animation/ControlRig/Content/Python/init_unreal.py…… took 12.238 ms (total: 19.945 ms)

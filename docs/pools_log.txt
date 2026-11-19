@@ -1,0 +1,8 @@
+rm: cannot remove '/c/Users/25227/Documents/robot_game/ue/ue_py_1.log': Device or resource busy
+[ue_py] 第 1 次执行成功（标记 'pools' 已出现）
+LogCsvProfiler: Display: Metadata set : commandline="" C:/Users/25227/Documents/robot_game/ue/RobotGame.uproject -unattended -nopause -nosplash -DDC-ForceMemoryCache -abslog=C:/Users/25227/Documents/robot_game/ue/ue_py_1.log -ExecutePythonScript=C:/Users/25227/Documents/robot_game/ue/Scripts/arena_pools.py""
+LogInit: Command Line: -unattended -nopause -nosplash -DDC-ForceMemoryCache -abslog=C:/Users/25227/Documents/robot_game/ue/ue_py_1.log -ExecutePythonScript=C:/Users/25227/Documents/robot_game/ue/Scripts/arena_pools.py
+[2026.10.25-03.34.13:286][  0]LogCsvProfiler: Display: Metadata set : streamingpoolsizemb="1000"
+Warning: C:/Users/25227/Documents/robot_game/ue/Scripts/arena_pools.py:39: DeprecationWarning: EditorLevelLibrary: Function 'load_level' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Level Editor Subsystem
+Warning: C:/Users/25227/Documents/robot_game/ue/Scripts/arena_pools.py:42: DeprecationWarning: EditorLevelLibrary: Function 'get_all_level_actors' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Editor Actor Utilities Subsystem
+Warning: C:/Users/25227/Documents/robot_game/ue/Scripts/arena_pools.py:78: DeprecationWarning: EditorLevelLibrary: Function 'save_current_level' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Level Editor Subsystem

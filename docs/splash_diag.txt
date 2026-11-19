@@ -1,0 +1,127 @@
+=== DirectionalLight  DirectionalLight  (0,0,1200.0) ===
+  组件 ArrowComponent0 (ArrowComponent) 材质0
+  组件 BillboardComponent_0 (BillboardComponent) 材质0
+
+=== SkyLight  SkyLight  (0,0,1600.0) ===
+  组件 Sprite (BillboardComponent) 材质0
+  组件 BillboardComponent_0 (BillboardComponent) 材质0
+
+=== ExponentialHeightFog  ExponentialHeightFog  (0,0,0.0) ===
+  组件 Sprite (BillboardComponent) 材质0
+
+=== StaticMeshActor  StaticMeshActor25  (0,0,-12.0) ===
+  组件 StaticMeshComponent0 (StaticMeshComponent) 材质4
+    slot0=M_Steel (MaterialInstanceConstant)
+    slot1=M_SteelLight (MaterialInstanceConstant)
+    slot2=M_Joint (MaterialInstanceConstant)
+    slot3=M_Copper (MaterialInstanceConstant)
+
+=== StaticMeshActor  StaticMeshActor26  (0,400,-12.0) ===
+  组件 StaticMeshComponent0 (StaticMeshComponent) 材质4
+    slot0=M_Steel (MaterialInstanceConstant)
+    slot1=M_SteelLight (MaterialInstanceConstant)
+    slot2=M_Joint (MaterialInstanceConstant)
+    slot3=M_Copper (MaterialInstanceConstant)
+
+=== StaticMeshActor  StaticMeshActor32  (400,0,-12.0) ===
+  组件 StaticMeshComponent0 (StaticMeshComponent) 材质4
+    slot0=M_Steel (MaterialInstanceConstant)
+    slot1=M_SteelLight (MaterialInstanceConstant)
+    slot2=M_Joint (MaterialInstanceConstant)
+    slot3=M_Copper (MaterialInstanceConstant)
+
+=== StaticMeshActor  StaticMeshActor33  (400,400,-12.0) ===
+  组件 StaticMeshComponent0 (StaticMeshComponent) 材质4
+    slot0=M_Steel (MaterialInstanceConstant)
+    slot1=M_SteelLight (MaterialInstanceConstant)
+    slot2=M_Joint (MaterialInstanceConstant)
+    slot3=M_Copper (MaterialInstanceConstant)
+
+=== PostProcessVolume  PostProcessVolume  (0,0,0.0) ===
+  组件 BrushComponent0 (BrushComponent) 材质0
+
+=== StaticMeshActor  SkyDome  (0,0,0.0) ===
+  组件 StaticMeshComponent0 (StaticMeshComponent) 材质1
+    slot0=M_SkyDome (Material) 贴图节点=True 总节点=47
+
+=== SpotLight  PoolLight_0  (0,0,620.0) ===
+  组件 ArrowComponent0 (ArrowComponent) 材质0
+  组件 BillboardComponent_0 (BillboardComponent) 材质0
+
+=== PointLight  HeroFill  (0,0,350.0) ===
+  组件 BillboardComponent_0 (BillboardComponent) 材质0
+
+=== StaticMeshActor  BG_Ground  (250,0,-45.0) ===
+  组件 StaticMeshComponent0 (StaticMeshComponent) 材质1
+    slot0=M_Joint (MaterialInstanceConstant)
+
+=== RobotCoolantField  CoolantSpill_0  (450,300,2.0) ===
+  组件 Surface (ProceduralMeshComponent) 材质0
+  组件 Zone (SphereComponent) 材质0
+  组件 BillboardComponent_0 (BillboardComponent) 材质0
+
+=== StaticMeshActor  CoolantPipe_0  (178,560,4.0) ===
+  组件 StaticMeshComponent0 (StaticMeshComponent) 材质5
+    slot0=M_Steel (MaterialInstanceConstant)
+    slot1=M_Copper (MaterialInstanceConstant)
+    slot2=M_Joint (MaterialInstanceConstant)
+    slot3=M_Accent_prop (MaterialInstanceConstant)
+    slot4=M_SteelLight (MaterialInstanceConstant)
+
+=== PointLight  CoolantGlow_0  (178,436,70.0) ===
+  组件 BillboardComponent_0 (BillboardComponent) 材质0
+
+=== PointLight  CoolantGlow_1  (450,300,190.0) ===
+  组件 BillboardComponent_0 (BillboardComponent) 材质0
+
+=== GeometryCacheActor  GeoCacheWater_Coolant  (450,300,2.4) ===
+  组件 GeometryCacheComponent (GeometryCacheComponent) 材质1
+    slot0=M_GeoCache_Water (Material) 贴图节点=True 总节点=25
+
+=== StaticMeshActor  Splash_FoamRing  (120,300,8.0) ===
+  组件 StaticMeshComponent0 (StaticMeshComponent) 材质1
+    slot0=M_Splash_Foam (Material) 贴图节点=True 总节点=7
+
+=== StaticMeshActor  Splash_FoamDisc  (120,300,7.7) ===
+  组件 StaticMeshComponent0 (StaticMeshComponent) 材质1
+    slot0=M_Splash_Foam (Material) 贴图节点=True 总节点=7
+
+=== StaticMeshActor  Splash_SprayCone  (120,300,9.0) ===
+  组件 StaticMeshComponent0 (StaticMeshComponent) 材质1
+    slot0=M_Splash_Spray (Material) 贴图节点=False 总节点=4
+
+=== RobotBasin  Basin_CoolantSpill_0  (450,300,0.0) ===
+  组件 BasinMesh (ProceduralMeshComponent) 材质1
+    slot0=MI_Basin_Coolant (MaterialInstanceConstant)
+
+=== StaticMeshActor  Pipe_Riser_CoolantSpill_0  (120,146,78.5) ===
+  组件 StaticMeshComponent0 (StaticMeshComponent) 材质1
+    slot0=M_Bolt_Trim (Material) 贴图节点=True 总节点=5
+
+=== StaticMeshActor  Pipe_Arm_CoolantSpill_0  (120,223,157.0) ===
+  组件 StaticMeshComponent0 (StaticMeshComponent) 材质1
+    slot0=M_Bolt_Trim (Material) 贴图节点=True 总节点=5
+
+=== StaticMeshActor  Pipe_Spout_CoolantSpill_0  (120,300,99.5) ===
+  组件 StaticMeshComponent0 (StaticMeshComponent) 材质1
+    slot0=M_Bolt_Trim (Material) 贴图节点=True 总节点=5
+
+=== StaticMeshActor  Jet_CoolantSpill_0  (120,300,25.0) ===
+  组件 StaticMeshComponent0 (StaticMeshComponent) 材质1
+    slot0=M_WaterJet_Coolant (Material) 贴图节点=True 总节点=14
+
+=== StaticMeshActor  Pipe_Riser_ToxicFluid_0  (-30,350,77.8) ===
+  组件 StaticMeshComponent0 (StaticMeshComponent) 材质1
+    slot0=M_Bolt_Trim (Material) 贴图节点=True 总节点=5
+
+=== StaticMeshActor  Pipe_Arm_ToxicFluid_0  (-55,350,155.5) ===
+  组件 StaticMeshComponent0 (StaticMeshComponent) 材质1
+    slot0=M_Bolt_Trim (Material) 贴图节点=True 总节点=5
+
+=== StaticMeshActor  Pipe_Spout_ToxicFluid_0  (-79,350,98.0) ===
+  组件 StaticMeshComponent0 (StaticMeshComponent) 材质1
+    slot0=M_Bolt_Trim (Material) 贴图节点=True 总节点=5
+
+=== StaticMeshActor  Jet_ToxicFluid_0  (-79,350,23.5) ===
+  组件 StaticMeshComponent0 (StaticMeshComponent) 材质1
+    slot0=M_WaterJet_Toxic (Material) 贴图节点=True 总节点=14

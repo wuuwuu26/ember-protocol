@@ -1,0 +1,28 @@
+=== HazardSludge_0  class=RobotHazardSludge ===
+=== CoolantSpill_0  class=RobotCoolantField ===
+  surface_material = None
+  SurfaceMaterial = None
+  glow_color = <Struct 'LinearColor' (0x000001F3D78AA688) {r: 0.120000, g: 0.920000, b: 1.000000, a: 1.000000}>
+  GlowColor = <Struct 'LinearColor' (0x000001F3D78AA688) {r: 0.120000, g: 0.920000, b: 1.000000, a: 1.000000}>
+  pool_radius = 400.0
+  surface mat = None
+  Surface mat = None
+=== ToxicFluid_0  class=RobotCoolantField ===
+  surface_material = M_Toxic_Fluid
+  SurfaceMaterial = M_Toxic_Fluid
+  glow_color = <Struct 'LinearColor' (0x000001F3D78AB888) {r: 0.050000, g: 0.950000, b: 0.120000, a: 1.000000}>
+  GlowColor = <Struct 'LinearColor' (0x000001F3D78AB888) {r: 0.050000, g: 0.950000, b: 0.120000, a: 1.000000}>
+  pool_radius = 137.0
+  surface mat = None
+  Surface mat = None
+=== 液面材质资产 ===
+  M_Coolant_Fluid      exists=True
+      class=Material
+  M_Toxic_Fluid        exists=True
+      class=Material
+  M_Toxic_Bed          exists=True
+      class=Material
+  MI_Basin_Coolant     exists=True
+      class=MaterialInstanceConstant
+  M_GeoCache_Water     exists=True
+      class=Material

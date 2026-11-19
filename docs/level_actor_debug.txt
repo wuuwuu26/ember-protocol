@@ -1,0 +1,3 @@
+Total: 242
+Classes: {'DirectionalLight': 1, 'SkyLight': 1, 'ExponentialHeightFog': 1, 'StaticMeshActor': 203, 'PlayerStart': 1, 'PostProcessVolume': 1, 'PointLight': 16, 'SpotLight': 13, 'BP_Enemy_C': 5}
+ACTOR_DEBUG_DONE

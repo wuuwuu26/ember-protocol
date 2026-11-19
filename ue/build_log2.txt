@@ -1,0 +1,51 @@
+Using bundled DotNet SDK version: 10.0 win-x64
+Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" RobotGameEditor Win64 Development -Project=C:/Users/25227/Documents/robot_game/ue/RobotGame.uproject -WaitMutex
+Log file: C:\Users\25227\AppData\Local\UnrealBuildTool\Log.txt
+Determining max actions to execute in parallel (14 physical cores, 20 logical cores)
+  Executing up to 14 processes, one per physical core
+  Requested 1.5 GB memory per action, 6.28 GB available: limiting max parallel actions to 4
+UbaStorageServer - Previous run was not gracefully shutdown. Reparsing cas directory C:\ProgramData\Epic\UnrealBuildAccelerator\cas\ to check for added/missing/corrupt files (Saved 2026-10-11 19:39:59)
+UbaStorageServer - Validated storage (size 0b) in <1ms
+Building RobotGameEditor...
+===== Toolchain Information =====
+Using ISPC compiler (C:\Program Files\Epic Games\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2) 
+Using Visual Studio 14.44.35229 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207) and Windows 10.0.26100.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+=================================
+Using Unreal Build Accelerator local executor to run 9 action(s)
+UbaStorageServer - SetFileInformationByHandle (FileDispositionInfo) failed on 2864 C:\ProgramData\Epic\UnrealBuildAccelerator\cas\casdb.tmp (Access is denied.)
+UbaServer - Listening on 0.0.0.0:1345
+  CPU 14 physical cores, 20 logical cores
+  Memory 15.7 GB physical, 15.51 GB/36.7 GB committed
+  UBA Storage capacity 40 GB
+ Compile [x64] GA_Dash.cpp: Exited with error code 1 . The build will fail.
+ Compile [x64] GA_Dash.cpp: WorkingDirectory C:\Program Files\Epic Games\UE_5.8\Engine\Source
+ Compile [x64] GA_Dash.cpp: C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @"C:/Users/25227/Documents/robot_game/ue/Intermediate/Build/Win64/x64/UnrealEditor/Development/RobotGame/GA_Dash.cpp.obj.rsp" 
+[1/9] Compile [x64] GA_Dash.cpp
+ Compile [x64] GA_Fire.cpp: Exited with error code 1 . The build will fail.
+ Compile [x64] GA_Fire.cpp: WorkingDirectory C:\Program Files\Epic Games\UE_5.8\Engine\Source
+ Compile [x64] GA_Fire.cpp: C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @"C:/Users/25227/Documents/robot_game/ue/Intermediate/Build/Win64/x64/UnrealEditor/Development/RobotGame/GA_Fire.cpp.obj.rsp" 
+[2/9] Compile [x64] GA_Fire.cpp
+ Compile [x64] Module.RobotGame.gen.cpp: Exited with error code 1 . The build will fail.
+ Compile [x64] Module.RobotGame.gen.cpp: WorkingDirectory C:\Program Files\Epic Games\UE_5.8\Engine\Source
+ Compile [x64] Module.RobotGame.gen.cpp: C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @"C:/Users/25227/Documents/robot_game/ue/Intermediate/Build/Win64/x64/UnrealEditor/Development/RobotGame/Module.RobotGame.gen.cpp.obj.rsp" 
+[3/9] Compile [x64] Module.RobotGame.gen.cpp
+ Compile [x64] RobotGameMode.cpp: Exited with error code 1 . The build will fail.
+ Compile [x64] RobotGameMode.cpp: WorkingDirectory C:\Program Files\Epic Games\UE_5.8\Engine\Source
+ Compile [x64] RobotGameMode.cpp: C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @"C:/Users/25227/Documents/robot_game/ue/Intermediate/Build/Win64/x64/UnrealEditor/Development/RobotGame/RobotGameMode.cpp.obj.rsp" 
+[4/9] Compile [x64] RobotGameMode.cpp
+ Compile [x64] RobotGameplayAbility.cpp: Exited with error code 1 . The build will fail.
+ Compile [x64] RobotGameplayAbility.cpp: WorkingDirectory C:\Program Files\Epic Games\UE_5.8\Engine\Source
+ Compile [x64] RobotGameplayAbility.cpp: C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @"C:/Users/25227/Documents/robot_game/ue/Intermediate/Build/Win64/x64/UnrealEditor/Development/RobotGame/RobotGameplayAbility.cpp.obj.rsp" 
+[5/9] Compile [x64] RobotGameplayAbility.cpp
+ Compile [x64] SalvagePickup.cpp: Exited with error code 1 . The build will fail.
+ Compile [x64] SalvagePickup.cpp: WorkingDirectory C:\Program Files\Epic Games\UE_5.8\Engine\Source
+ Compile [x64] SalvagePickup.cpp: C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\bin\Hostx64\x64\cl.exe @"C:/Users/25227/Documents/robot_game/ue/Intermediate/Build/Win64/x64/UnrealEditor/Development/RobotGame/SalvagePickup.cpp.obj.rsp" 
+[6/9] Compile [x64] SalvagePickup.cpp
+UbaSessionServer - SetFileInformationByHandle (FileDispositionInfo) failed on 3700 C:\ProgramData\Epic\UnrealBuildAccelerator\memgroups (Access is denied.)
+Total time in Unreal Build Accelerator local executor: 1.59 seconds
+UbaStorageServer - SetFileInformationByHandle (FileDispositionInfo) failed on 2704 C:\ProgramData\Epic\UnrealBuildAccelerator\cas\casdb.tmp (Access is denied.)
+
+Result: Failed (OtherCompilationError)
+Total execution time: 4.16 seconds
+SetFileInformationByHandle (FileDispositionInfo) failed on 2156 C:\Users\25227\AppData\Local\UnrealBuildTool\Trace.uba (Access is denied.)

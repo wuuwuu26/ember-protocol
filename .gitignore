@@ -1,0 +1,52 @@
+# ============================================================
+# 《余火协议》GitHub 展示仓库 —— 忽略规则
+# 目标：只提交"可展示的核心内容"，排除编译缓存 / 第三方工具链 /
+#       调试日志 / 大体积可再生模拟缓存。
+# ============================================================
+
+# ---- UE 构建产物与缓存（约 3.1GB，必须排除）----
+ue/Intermediate/
+ue/Binaries/
+ue/Saved/
+ue/DerivedDataCache/
+ue/.vs/
+ue/.idea/
+ue/Plugins/*/Intermediate/
+ue/Plugins/*/Binaries/
+
+# ---- UE / 工具产生的日志（几百个 shot_*.log / ue_py_*.log）----
+*.log
+
+# ---- 第三方工具链 / 外部依赖源码（不应进本仓库）----
+tools/w64devkit/
+tools/flipfluids_src/
+tools/cosmos_src/
+
+# ---- Python 缓存 ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# ---- Blender 备份文件 ----
+*.blend1
+*.blend2
+
+# ---- 大体积、可再生的流体模拟缓存 / 原始点云（>100MB）----
+*.abc
+*.ply
+
+# ---- 临时 / 中间产物 / 过程截图 ----
+docs/tmp/
+docs/shots/
+docs/ue_tex_dump/
+docs/_*.png
+docs/crop_*.png
+docs/*.log
+
+# ---- 系统垃圾 ----
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.bak
+*.backup
+*.swp

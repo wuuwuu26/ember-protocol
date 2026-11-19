@@ -1,0 +1,8 @@
+mech_torso_wreck <- mech_torso_wreck_texgen_fixed.glb
+mech_torso_wreck     OK  bbox=(179,86,196)cm  mat=['mech_torso_wreck_texgen_fixed_material_0']
+severed_mech_arm <- severed_mech_arm_texgen_fixed.glb
+severed_mech_arm     OK  bbox=(94,74,186)cm  mat=['severed_mech_arm_texgen_fixed_material_0']
+mech_head_wreck <- mech_head_wreck_texgen_fixed.glb
+mech_head_wreck      OK  bbox=(194,184,187)cm  mat=['mech_head_wreck_texgen_fixed_material_0']
+armor_debris <- armor_debris_texgen_fixed.glb
+armor_debris         OK  bbox=(199,185,88)cm  mat=['armor_debris_texgen_fixed_material_0']

@@ -1,0 +1,41 @@
+﻿	}
+
+	// 枪口闪光：颜色按阵营区分，一眼能看出这发是谁打的
+	if (MuzzleLight)
+	{
+		const APawn* InstigatorPawn = Cast<APawn>(InInstigatorActor);
+		const bool bFromPlayer = InstigatorPawn && InstigatorPawn->IsPlayerControlled();
+		MuzzleLight->SetLightColor(bFromPlayer
+			? FLinearColor(0.35f, 0.85f, 1.00f)     // 玩家：青蓝
+			: FLinearColor(1.00f, 0.45f, 0.15f));   // 敌人：橙红
+		MuzzleLight->SetIntensity(FlashIntensity);
+
+		// ── 弹体材质也按阵营分 ──
+		// 以前所有弹丸都用 M_Core_medium（机体核心紫），敌我弹道长得一模一样，
+		// 混战里根本判断不了"这一发从哪来"。换成**已经存在**的核心材质：
+		// 玩家 M_Core_light（自发光青白）/ 敌人 M_Core_enemy_guard（橙金），
+		// 与枪口闪光同色系；高自发光在夜景里会被泛光拖成一条曳光线。
+		if (Mesh)
+		{
+			ApplyFactionBoltMaterial(Mesh, bFromPlayer);
+
+			// ★ 蓝图 BP_Projectile_C 的 CDO 把构造函里设的缩放原样存下来了，
+			//   改构造函数对**已存在的蓝图**不生效。实测改完还是 62cm 的
+			//   紫色药丸（贴着镜头飞过时占掉近 1/4 屏幕），所以运行时再设一次。
+			Mesh->SetRelativeScale3D(FVector(0.50f, 0.045f, 0.045f));
+
+			// 只记录前 6 发，确认阵营材质/尺寸真的落到了运行时对象上。
+			static int32 BoltLogCount = 0;
+			if (BoltLogCount < 6)
+			{
+				++BoltLogCount;
+				UE_LOG(LogTemp, Warning, TEXT("[弹丸] 玩家=%d 材质=%s 缩放=%s"),
+					bFromPlayer ? 1 : 0,
+					Mesh->GetMaterial(0) ? *Mesh->GetMaterial(0)->GetName() : TEXT("无"),
+					*Mesh->GetRelativeScale3D().ToString());
+			}
+		}
+	}
+	FlashRemaining = FlashDuration;
+}
+

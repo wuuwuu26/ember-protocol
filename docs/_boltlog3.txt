@@ -1,0 +1,6 @@
+Warning: [弹丸] 玩家=0 材质=M_Bolt_Enemy 缩放=X=0.500 Y=0.055 Z=0.055
+Warning: [弹丸] 玩家=1 材质=M_Bolt_Player 缩放=X=0.500 Y=0.055 Z=0.055
+Warning: [弹丸] 玩家=1 材质=M_Bolt_Player 缩放=X=0.500 Y=0.055 Z=0.055
+Warning: [弹丸] 玩家=1 材质=M_Bolt_Player 缩放=X=0.500 Y=0.055 Z=0.055
+Warning: [弹丸] 玩家=1 材质=M_Bolt_Player 缩放=X=0.500 Y=0.055 Z=0.055
+Warning: [弹丸] 玩家=1 材质=M_Bolt_Player 缩放=X=0.500 Y=0.055 Z=0.055

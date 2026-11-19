@@ -1,0 +1,6 @@
+M_concrete_floor_02 (工业混凝土地面) 6 节点
+M_concrete_wall_001 (风化混凝土墙) 6 节点
+M_factory_wall (工厂金属墙) 6 节点
+M_rusty_metal (锈铁) 6 节点
+M_corrugated_iron (波纹铁皮) 6 节点
+M_metal_grate_rusty (锈金属格栅) 6 节点

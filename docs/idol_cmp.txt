@@ -1,0 +1,20 @@
+== /Game/RobotGame/Art/Props/IdolMech/StaticMeshes/SM_IdolMech ==
+  包围盒 size=(31.94, 62.66, 103.96)
+  材质槽 1 个
+    slot0 -> /Game/RobotGame/Art/Props/IdolMech/Materials/M_IdolMech_VC.M_IdolMech_VC
+
+== /Game/RobotGame/Art/Props/IdolMech/SM_IdolMech ==
+  包围盒 size=(29.45, 61.78, 100.19)
+  材质槽 1 个
+    slot0 -> /Game/RobotGame/Art/Props/IdolMech/IdolMechMat.IdolMechMat
+
+== /Game/RobotGame/Art/Props/IdolMech/Materials/M_IdolMech_VC ==
+  class=Material
+  表达式 3 个
+    MaterialExpressionVertexColor 
+    MaterialExpressionConstant    
+    MaterialExpressionConstant    
+
+== /Game/RobotGame/Art/Props/IdolMech/Materials/IdolMechMat ==
+  class=MaterialInstanceConstant
+  parent=/InterchangeAssets/gltf/MaterialInstances/MI_Default_Opaque_DS.MI_Default_Opaque_DS

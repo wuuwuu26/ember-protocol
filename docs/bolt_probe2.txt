@@ -1,0 +1,15 @@
+== M_Bolt_Player ==
+  <MaterialProperty.MP_EMISSIVE_COLOR: 0> -> MaterialExpressionVectorParameter_0 (MaterialExpressionVectorParameter)
+  <MaterialProperty.MP_BASE_COLOR: 5> -> None
+  reconnect('') ok
+  after reconnect -> MaterialExpressionVectorParameter_0 (MaterialExpressionVectorParameter)
+  recompile=[]
+  saved
+== M_Bolt_Enemy ==
+  <MaterialProperty.MP_EMISSIVE_COLOR: 0> -> MaterialExpressionVectorParameter_0 (MaterialExpressionVectorParameter)
+  <MaterialProperty.MP_BASE_COLOR: 5> -> None
+  reconnect('') ok
+  after reconnect -> MaterialExpressionVectorParameter_0 (MaterialExpressionVectorParameter)
+  recompile=[]
+  saved
+BOLTPROBE2_DONE

@@ -1,0 +1,14 @@
+[ue_py] 第 1 次没有产出标记 'FLOOR'，重试……
+[ue_py] 第 2 次没有产出标记 'FLOOR'，重试……
+[ue_py] 第 3 次没有产出标记 'FLOOR'，重试……
+[ue_py] ❌ 3 次都没跑起来。最后一次日志：/c/Users/25227/Documents/robot_game/ue/ue_py_3.log
+[2026.10.25-04.06.04:094][  2]LogPython: Warning: C:/Users/25227/Documents/robot_game/ue/Scripts/probe_floor_mat.py:13: DeprecationWarning: EditorLevelLibrary: Function 'load_level' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Level Editor Subsystem
+[2026.10.25-04.06.04:284][  2]LogPython: Warning: C:/Users/25227/Documents/robot_game/ue/Scripts/probe_floor_mat.py:20: DeprecationWarning: EditorLevelLibrary: Function 'get_all_level_actors' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Editor Actor Utilities Subsystem
+[2026.10.25-04.06.04:284][  2]LogPython: [地板探针] StaticMeshActor 数量 = 204
+[2026.10.25-04.06.04:285][  2]LogPython: [地板探针] SkyDome mesh=Sphere mob=<ComponentMobility.STATIC: 0> mat=M_SkyDome shading=<MaterialShadingModel.MSM_UNLIT: 0> twoSided=True bound=(5000,5000,5000) loc=(0,0,0) castShadow=False
+[2026.10.25-04.06.04:285][  2]LogPython: [地板探针] StaticMeshActor111 mesh=SM_Env_Platform mob=<ComponentMobility.MOVABLE: 2> mat=M_SteelLight shading=err:MaterialInstanceConstant: Failed to find twoSided=? bound=(314,314,119) loc=(1250,-1000,130) castShadow=True
+[2026.10.25-04.06.04:285][  2]LogPython: [地板探针] StaticMeshActor112 mesh=SM_Env_Platform mob=<ComponentMobility.MOVABLE: 2> mat=M_SteelLight shading=err:MaterialInstanceConstant: Failed to find twoSided=? bound=(314,314,119) loc=(1250,1000,130) castShadow=True
+[2026.10.25-04.06.04:285][  2]LogPython: [地板探针] StaticMeshActor113 mesh=SM_Env_Gantry mob=<ComponentMobility.MOVABLE: 2> mat=M_Steel shading=err:MaterialInstanceConstant: Failed to find twoSided=? bound=(35,264,247) loc=(-500,-1380,247) castShadow=True
+[2026.10.25-04.06.04:285][  2]LogPython: [地板探针] StaticMeshActor114 mesh=SM_Env_Gantry mob=<ComponentMobility.MOVABLE: 2> mat=M_Steel shading=err:MaterialInstanceConstant: Failed to find twoSided=? bound=(35,264,247) loc=(-500,1380,247) castShadow=True
+[2026.10.25-04.06.04:285][  2]LogPython: [地板探针] StaticMeshActor115 mesh=SM_Env_Gantry mob=<ComponentMobility.MOVABLE: 2> mat=M_Steel shading=err:MaterialInstanceConstant: Failed to find twoSided=? bound=(35,264,247) loc=(700,-1380,247) castShadow=True
+[2026.10.25-04.06.04:285][  2]LogPython: [地板探针] Light actor 数量 = 30

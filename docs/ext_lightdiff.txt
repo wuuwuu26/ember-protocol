@@ -1,0 +1,25 @@
+扩建 27 盏 / 原有 18 盏
+
+== 原有灯（参照）==
+AccentLight_0            (-900,-1000,340)
+    intensity=2600.0  radius=2600.0  src_radius=0.0
+    mobility=<ComponentMobility.MOVABLE: 2>  visible=True  cast_shadow=True  affect=True
+    light_color=<Struct 'Color' (0x000001CCA8668EB8) {b: 255, g: 208, r: 165, a: 255}>  use_inv_sq=True  shadow_res=-
+AccentLight_1            (-450,-1000,340)
+    intensity=2600.0  radius=2600.0  src_radius=0.0
+    mobility=<ComponentMobility.MOVABLE: 2>  visible=True  cast_shadow=True  affect=True
+    light_color=<Struct 'Color' (0x000001CCA86675B8) {b: 255, g: 208, r: 165, a: 255}>  use_inv_sq=True  shadow_res=-
+
+== 扩建灯 ==
+ExtLight_tunnel          (1950,-330,320)
+    intensity=4000.0  radius=2200.0  src_radius=0.0
+    mobility=<ComponentMobility.MOVABLE: 2>  visible=True  cast_shadow=True  affect=True
+    light_color=<Struct 'Color' (0x000001CCFF98CFB8) {b: 255, g: 200, r: 170, a: 255}>  use_inv_sq=True  shadow_res=-
+ExtLight_tunnel          (1950,330,320)
+    intensity=4000.0  radius=2200.0  src_radius=0.0
+    mobility=<ComponentMobility.MOVABLE: 2>  visible=True  cast_shadow=True  affect=True
+    light_color=<Struct 'Color' (0x000001CCFB76EDB8) {b: 255, g: 200, r: 170, a: 255}>  use_inv_sq=True  shadow_res=-
+ExtLight_tunnel          (2150,-330,320)
+    intensity=4000.0  radius=2200.0  src_radius=0.0
+    mobility=<ComponentMobility.MOVABLE: 2>  visible=True  cast_shadow=True  affect=True
+    light_color=<Struct 'Color' (0x000001CCFF37C0B8) {b: 255, g: 200, r: 170, a: 255}>  use_inv_sq=True  shadow_res=-

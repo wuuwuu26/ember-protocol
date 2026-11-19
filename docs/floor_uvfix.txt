@@ -1,0 +1,2 @@
+贴图采样节点 3 个
+已存在 TextureCoordinate 节点，跳过（避免重复叠加）

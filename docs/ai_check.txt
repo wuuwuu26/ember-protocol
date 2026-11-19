@@ -1,0 +1,54 @@
+=== probe 36 ===
+[倍率] 表=PartMapData_0 BP_Enemy_C_5 部位=Part.Core 正面=1.00 侧面=1.30 背面=1.60
+[倍率] 表=PartMapData_0 BP_Enemy_C_5 部位=Part.Torso 正面=1.00 侧面=1.30 背面=1.60
+[倍率] 表=PartMapData_0 BP_Enemy_C_5 部位=Part.Arm.L 正面=1.00 侧面=1.60 背面=2.00
+[倍率] 表=PartMapData_0 BP_Enemy_C_5 部位=Part.Arm.R 正面=1.00 侧面=1.60 背面=2.00
+[倍率] 表=PartMapData_0 BP_Enemy_C_5 部位=Part.Leg.L 正面=1.00 侧面=1.60 背面=2.00
+[倍率] 表=PartMapData_0 BP_Enemy_C_5 部位=Part.Leg.R 正面=1.00 侧面=1.60 背面=2.00
+[倍率] 表=PartMapData_0 BP_Enemy_C_6 部位=Part.Core 正面=1.00 侧面=1.30 背面=1.60
+[倍率] 表=PartMapData_0 BP_Enemy_C_6 部位=Part.Torso 正面=1.00 侧面=1.30 背面=1.60
+=== hits 310 ===
+Verbose: [命中] 目标=BP_Enemy_C_5 组件=CollisionCylinder 骨骼=arm_L(胶囊兜底) → 部位=Part.Arm.L 倍率=1.00 扣血=8
+Verbose: [命中] 目标=BP_Enemy_C_5 组件=CollisionCylinder 骨骼=arm_L(胶囊兜底) → 部位=Part.Arm.L 倍率=1.00 扣血=8
+Verbose: [命中] 目标=BP_Enemy_C_5 组件=CollisionCylinder 骨骼=arm_L(胶囊兜底) → 部位=Part.Arm.L 倍率=1.00 扣血=4（拆解！）
+Verbose: [命中] 目标=BP_Enemy_C_5 组件=CollisionCylinder 骨骼=arm_L(胶囊兜底) → 部位=Part.Arm.L 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_5 组件=CollisionCylinder 骨骼=arm_L(胶囊兜底) → 部位=Part.Arm.L 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_5 组件=CollisionCylinder 骨骼=arm_L(胶囊兜底) → 部位=Part.Arm.L 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_5 组件=CollisionCylinder 骨骼=arm_L(胶囊兜底) → 部位=Part.Arm.L 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_5 组件=CollisionCylinder 骨骼=arm_L(胶囊兜底) → 部位=Part.Arm.L 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_5 组件=CollisionCylinder 骨骼=arm_L(胶囊兜底) → 部位=Part.Arm.L 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_5 组件=CollisionCylinder 骨骼=arm_L(胶囊兜底) → 部位=Part.Arm.L 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_5 组件=CollisionCylinder 骨骼=arm_L(胶囊兜底) → 部位=Part.Arm.L 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_5 组件=CollisionCylinder 骨骼=arm_L(胶囊兜底) → 部位=Part.Arm.L 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_5 组件=CollisionCylinder 骨骼=arm_L(胶囊兜底) → 部位=Part.Arm.L 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_5 组件=CollisionCylinder 骨骼=arm_L(胶囊兜底) → 部位=Part.Arm.L 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_5 组件=CollisionCylinder 骨骼=arm_L(胶囊兜底) → 部位=Part.Arm.L 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_5 组件=CollisionCylinder 骨骼=arm_L(胶囊兜底) → 部位=Part.Arm.L 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_5 组件=CollisionCylinder 骨骼=arm_L(胶囊兜底) → 部位=Part.Arm.L 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_5 组件=CollisionCylinder 骨骼=arm_L(胶囊兜底) → 部位=Part.Arm.L 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_5 组件=CollisionCylinder 骨骼=arm_L(胶囊兜底) → 部位=Part.Arm.L 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_5 组件=CollisionCylinder 骨骼=arm_L(胶囊兜底) → 部位=Part.Arm.L 倍率=1.00 扣血=0
+=== tactics 243 ===
+[战术] BP_Enemy_C_5 环绕方向=顺时针（玩家背后在我右侧）
+[战术] BP_Enemy_C_6 环绕方向=逆时针（玩家背后在我左侧）
+[战术] BP_Enemy_C_7 环绕方向=顺时针（玩家背后在我右侧）
+[战术] BP_Enemy_C_8 环绕方向=逆时针（玩家背后在我左侧）
+[战术] BP_Enemy_C_9 环绕方向=顺时针（玩家背后在我右侧）
+[战术] BP_Enemy_C_8 视线=被遮挡 距离=1800
+[战术] BP_Enemy_C_8 视线=有 距离=1767
+[战术] BP_Enemy_C_8 视线=被遮挡 距离=1832
+[战术] BP_Enemy_C_8 视线=有 距离=1799
+[战术] BP_Enemy_C_8 视线=被遮挡 距离=1828
+[战术] BP_Enemy_C_8 视线=有 距离=1795
+[战术] BP_Enemy_C_8 视线=被遮挡 距离=1822
+[战术] BP_Enemy_C_6 视线=被遮挡 距离=1345
+[战术] BP_Enemy_C_8 视线=有 距离=1790
+[战术] BP_Enemy_C_8 视线=被遮挡 距离=1816
+[战术] BP_Enemy_C_8 视线=有 距离=1785
+[战术] BP_Enemy_C_9 视线=被遮挡 距离=2163
+[战术] BP_Enemy_C_8 视线=被遮挡 距离=1812
+[战术] BP_Enemy_C_6 视线=有 距离=1097
+[战术] BP_Enemy_C_8 视线=有 距离=1781
+=== mult hist ===
+[('1.00', 310)]
+stuck=0

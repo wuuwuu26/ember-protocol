@@ -1,0 +1,18 @@
+=== concrete_floor_02_BaseColor ===
+  class=Texture2D
+  blueprint_get_size_x = 2048
+  blueprint_get_size_y = 2048
+  platform_data err 'Texture2D' object has no attribute 'get_platform_data'
+  disk=C:\Users\25227\Documents\robot_game\ue\Content/RobotGame/Art/Materials/PolyHaven/concrete_floor_02/concrete_floor_02_BaseColor.uasset exists=True size=3326676
+=== concrete_floor_02_Normal ===
+  class=Texture2D
+  blueprint_get_size_x = 2048
+  blueprint_get_size_y = 2048
+  platform_data err 'Texture2D' object has no attribute 'get_platform_data'
+  disk=C:\Users\25227\Documents\robot_game\ue\Content/RobotGame/Art/Materials/PolyHaven/concrete_floor_02/concrete_floor_02_Normal.uasset exists=True size=949026
+=== concrete_floor_02_ARM ===
+  class=Texture2D
+  blueprint_get_size_x = 2048
+  blueprint_get_size_y = 2048
+  platform_data err 'Texture2D' object has no attribute 'get_platform_data'
+  disk=C:\Users\25227\Documents\robot_game\ue\Content/RobotGame/Art/Materials/PolyHaven/concrete_floor_02/concrete_floor_02_ARM.uasset exists=True size=716118

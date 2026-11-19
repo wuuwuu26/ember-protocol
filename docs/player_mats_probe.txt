@@ -1,0 +1,58 @@
+=== SK_Chassis_Medium path=/Game/RobotGame/Art/Characters/SK_Chassis_Medium (slots=9) ===
+  [0] slot=M_Frame mat=/Game/RobotGame/Art/Characters/M_Frame.M_Frame
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FBA162F320) {r: 0.038000, g: 0.040000, b: 0.046000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FBA162F660) {r: 0.075000, g: 0.079000, b: 0.088000, a: 1.000000}>
+  [1] slot=M_Joint mat=/Game/RobotGame/Art/Characters/M_Joint.M_Joint
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FBA162F9E0) {r: 0.030000, g: 0.033000, b: 0.040000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FBA162FC20) {r: 0.052000, g: 0.054000, b: 0.060000, a: 1.000000}>
+  [2] slot=M_Copper mat=/Game/RobotGame/Art/Characters/M_Copper.M_Copper
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FBA162FDA0) {r: 0.340000, g: 0.200000, b: 0.100000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FBA162FF20) {r: 0.360000, g: 0.205000, b: 0.095000, a: 1.000000}>
+  [3] slot=M_SteelLight mat=/Game/RobotGame/Art/Characters/M_SteelLight.M_SteelLight
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FBA162F9E0) {r: 0.145000, g: 0.158000, b: 0.176000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FBA162F860) {r: 0.400000, g: 0.412000, b: 0.428000, a: 1.000000}>
+  [4] slot=M_Steel mat=/Game/RobotGame/Art/Characters/M_Steel.M_Steel
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FBA162F560) {r: 0.082000, g: 0.092000, b: 0.108000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FBA162F1E0) {r: 0.300000, g: 0.312000, b: 0.336000, a: 1.000000}>
+  [5] slot=M_Core_medium mat=/Game/RobotGame/Art/Characters/M_Core_medium.M_Core_medium
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FBA162F7A0) {r: 0.050000, g: 0.050000, b: 0.080000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FBA162FD20) {r: 0.187500, g: 0.187500, b: 0.300000, a: 1.000000}>
+  [6] slot=M_Visor_medium mat=/Game/RobotGame/Art/Characters/M_Visor_medium.M_Visor_medium
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FBA162F6A0) {r: 0.040000, g: 0.050000, b: 0.070000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FBA162FE60) {r: 0.160000, g: 0.200000, b: 0.280000, a: 1.000000}>
+  [7] slot=M_Accent_medium mat=/Game/RobotGame/Art/Characters/M_Accent_medium.M_Accent_medium
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FBA162FB20) {r: 0.260000, g: 0.540000, b: 0.820000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FBA162FB60) {r: 0.260000, g: 0.540000, b: 0.820000, a: 1.000000}>
+  [8] slot=M_AccentDark_medium mat=/Game/RobotGame/Art/Characters/M_AccentDark_medium.M_AccentDark_medium
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FBA162FFE0) {r: 0.109200, g: 0.226800, b: 0.344400, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FBA162F4E0) {r: 0.109200, g: 0.226800, b: 0.344400, a: 1.000000}>
+=== SK_Chassis_Light path=/Game/RobotGame/Art/Characters/SK_Chassis_Light (slots=9) ===
+  [0] slot=M_Frame mat=/Game/RobotGame/Art/Characters/M_Frame.M_Frame
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FBA0A1EAA0) {r: 0.038000, g: 0.040000, b: 0.046000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FBA0A1ED60) {r: 0.075000, g: 0.079000, b: 0.088000, a: 1.000000}>
+  [1] slot=M_Joint mat=/Game/RobotGame/Art/Characters/M_Joint.M_Joint
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FBA0A1EF60) {r: 0.030000, g: 0.033000, b: 0.040000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FBA0A1ED60) {r: 0.052000, g: 0.054000, b: 0.060000, a: 1.000000}>
+  [2] slot=M_Copper mat=/Game/RobotGame/Art/Characters/M_Copper.M_Copper
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FBA0A1F220) {r: 0.340000, g: 0.200000, b: 0.100000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FBA0A1ED60) {r: 0.360000, g: 0.205000, b: 0.095000, a: 1.000000}>
+  [3] slot=M_SteelLight mat=/Game/RobotGame/Art/Characters/M_SteelLight.M_SteelLight
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FBA0A1EB60) {r: 0.145000, g: 0.158000, b: 0.176000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FBA0A1ED60) {r: 0.400000, g: 0.412000, b: 0.428000, a: 1.000000}>
+  [4] slot=M_Steel mat=/Game/RobotGame/Art/Characters/M_Steel.M_Steel
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FBA0A1EAA0) {r: 0.082000, g: 0.092000, b: 0.108000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FBA0A1ED60) {r: 0.300000, g: 0.312000, b: 0.336000, a: 1.000000}>
+  [5] slot=M_Core_light mat=/Game/RobotGame/Art/Characters/M_Core_light.M_Core_light
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FBA0A1F220) {r: 0.050000, g: 0.050000, b: 0.080000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FBA0A1ED60) {r: 0.187500, g: 0.187500, b: 0.300000, a: 1.000000}>
+  [6] slot=M_Visor_light mat=/Game/RobotGame/Art/Characters/M_Visor_light.M_Visor_light
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FBA0A1EB60) {r: 0.040000, g: 0.050000, b: 0.070000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FBA0A1F220) {r: 0.160000, g: 0.200000, b: 0.280000, a: 1.000000}>
+  [7] slot=M_Accent_light mat=/Game/RobotGame/Art/Characters/M_Accent_light.M_Accent_light
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FBA0A1EF60) {r: 0.220000, g: 0.720000, b: 0.620000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FBA0A1EF60) {r: 0.220000, g: 0.720000, b: 0.620000, a: 1.000000}>
+  [8] slot=M_AccentDark_light mat=/Game/RobotGame/Art/Characters/M_AccentDark_light.M_AccentDark_light
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FBA0A1EB60) {r: 0.092400, g: 0.302400, b: 0.260400, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FBA0A1F220) {r: 0.092400, g: 0.302400, b: 0.260400, a: 1.000000}>
+=== SK_Chassis_Heavy path=/Game/RobotGame/Art/Characters/SK_Chassis_Heavy (slots=9) ===
+  [0] slot=M_Frame mat=/Game/RobotGame/Art/Characters/M_Frame.M_Frame
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FB4453B160) {r: 0.038000, g: 0.040000, b: 0.046000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FB4453B160) {r: 0.075000, g: 0.079000, b: 0.088000, a: 1.000000}>
+  [1] slot=M_Joint mat=/Game/RobotGame/Art/Characters/M_Joint.M_Joint
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FB4453B160) {r: 0.030000, g: 0.033000, b: 0.040000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FB4453B160) {r: 0.052000, g: 0.054000, b: 0.060000, a: 1.000000}>
+  [2] slot=M_Copper mat=/Game/RobotGame/Art/Characters/M_Copper.M_Copper
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FB4453B160) {r: 0.340000, g: 0.200000, b: 0.100000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FB4453B160) {r: 0.360000, g: 0.205000, b: 0.095000, a: 1.000000}>
+  [3] slot=M_SteelLight mat=/Game/RobotGame/Art/Characters/M_SteelLight.M_SteelLight
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FB4453B160) {r: 0.145000, g: 0.158000, b: 0.176000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FB4453B160) {r: 0.400000, g: 0.412000, b: 0.428000, a: 1.000000}>
+  [4] slot=M_Steel mat=/Game/RobotGame/Art/Characters/M_Steel.M_Steel
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FB4453B160) {r: 0.082000, g: 0.092000, b: 0.108000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FB4453B460) {r: 0.300000, g: 0.312000, b: 0.336000, a: 1.000000}>
+  [5] slot=M_Core_heavy mat=/Game/RobotGame/Art/Characters/M_Core_heavy.M_Core_heavy
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FB4453B520) {r: 0.050000, g: 0.050000, b: 0.080000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FB4453B460) {r: 0.187500, g: 0.187500, b: 0.300000, a: 1.000000}>
+  [6] slot=M_Visor_heavy mat=/Game/RobotGame/Art/Characters/M_Visor_heavy.M_Visor_heavy
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FB4453C4E0) {r: 0.040000, g: 0.050000, b: 0.070000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FB4453C4E0) {r: 0.160000, g: 0.200000, b: 0.280000, a: 1.000000}>
+  [7] slot=M_Accent_heavy mat=/Game/RobotGame/Art/Characters/M_Accent_heavy.M_Accent_heavy
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FB4453B060) {r: 0.880000, g: 0.580000, b: 0.180000, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FB4453B060) {r: 0.880000, g: 0.580000, b: 0.180000, a: 1.000000}>
+  [8] slot=M_AccentDark_heavy mat=/Game/RobotGame/Art/Characters/M_AccentDark_heavy.M_AccentDark_heavy
+       None DiffuseColor=<Struct 'LinearColor' (0x000001FB4453B520) {r: 0.369600, g: 0.243600, b: 0.075600, a: 1.000000}> BaseTint=<Struct 'LinearColor' (0x000001FB4453B520) {r: 0.369600, g: 0.243600, b: 0.075600, a: 1.000000}>
+PLAYER_MATS_DONE

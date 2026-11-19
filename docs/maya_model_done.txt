@@ -1,0 +1,2 @@
+FBX: C:/Users/25227/Documents/robot_game/assets/out/maya_pilot_hero.fbx
+MAYA_DONE

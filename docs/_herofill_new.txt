@@ -1,0 +1,48 @@
+﻿
+	// ── 玩家英雄补光 ──
+	// 第三人称视角下机体几乎总是背对太阳，镜头看到的这一面全在阴影里。
+	// 这里只负责**找到关卡里的 HeroFill 灯**（ue/Scripts/arena_herofill.py 建），
+	// 参数与位置交给 UpdateHeroFill() 每帧维护。
+	//
+	// ★ 2026-10-25：这段原来写的是运行时 SpawnActor<APointLight> ——
+	//   本工程运行时生成的灯**完全不参与渲染**（详见 TuneArenaLights 的
+	//   一大段说明），所以这盏"英雄补光"从来没有亮过，机体一直是一团
+	//   黑剪影。现在改成"关卡里建、C++ 移位"，和光池同一条路径。
+	// -NoHeroFill：关掉用于 A/B（补光对画面的贡献可以单独量出来）。
+	{
+		UWorld* KeyWorld = GetWorld();
+		const bool bNoHeroFill =
+			FParse::Param(FCommandLine::Get(), TEXT("NoHeroFill"));
+		if (KeyWorld)
+		{
+			for (TActorIterator<APointLight> It(KeyWorld); It; ++It)
+			{
+				if (!It->ActorHasTag(TEXT("HeroFill")))
+				{
+					continue;
+				}
+				HeroFillLight = *It;
+				if (UPointLightComponent* KC =
+					Cast<UPointLightComponent>(It->GetLightComponent()))
+				{
+					KC->SetMobility(EComponentMobility::Movable);
+					KC->SetIntensityUnits(ELightUnits::Candelas);
+					// 3m 处约 1000 lux —— 只有月光（1800 lux）的一半多。
+					// 再亮一点机体就变成"一块发光的肥皂"，装甲倒角全糊掉。
+					KC->SetIntensity(9000.f);
+					KC->SetAttenuationRadius(1900.f);
+					KC->SetLightColor(FLinearColor(0.82f, 0.90f, 1.0f));
+					KC->SetCastShadows(false);
+					KC->SetVolumetricScatteringIntensity(0.f);
+					KC->SetVisibility(!bNoHeroFill);
+					KC->MarkRenderStateDirty();
+				}
+				It->SetActorLocation(
+					GetActorLocation() + FVector(0.f, 0.f, 240.f));
+				UE_LOG(LogTemp, Warning,
+					TEXT("[LIGHT] 英雄补光已接管关卡灯：9000cd / 1900cm / 无阴影 / %s"),
+					bNoHeroFill ? TEXT("已关闭") : TEXT("开启"));
+				break;
+			}
+			if (!HeroFillLight.IsValid())
+			{

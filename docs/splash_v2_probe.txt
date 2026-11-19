@@ -1,0 +1,17 @@
+节点 9 个：
+  [00] MaterialExpressionTextureCoordinate          u=3.0 v=3.0
+  [01] MaterialExpressionTextureSample              tex=T_Toxic_Bub
+  [02] MaterialExpressionConstant3Vector            (0.30,0.48,0.55)
+  [03] MaterialExpressionConstant                   r=0.5
+  [04] MaterialExpressionMultiply                  
+  [05] MaterialExpressionAdd                       
+  [06] MaterialExpressionConstant                   r=0.05000000074505806
+  [07] MaterialExpressionMultiply                  
+  [08] MaterialExpressionConstant                   r=0.550000011920929
+
+属性连接：
+  BaseColor  <- MaterialExpressionAdd
+  Emissive   <- MaterialExpressionMultiply
+  Roughness  <- MaterialExpressionConstant
+  Opacity    <- 未连接
+  blend=<BlendMode.BLEND_OPAQUE: 0>

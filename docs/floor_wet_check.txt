@@ -1,0 +1,12 @@
+节点清单：
+  MaterialExpressionTextureSample           
+  MaterialExpressionTextureSample           
+  MaterialExpressionTextureSample           
+  MaterialExpressionComponentMask           
+  MaterialExpressionComponentMask           
+  MaterialExpressionComponentMask           
+  MaterialExpressionMultiply                
+  MaterialExpressionConstant                  r=0.550000011920929
+
+Multiply 节点数 = 1   Constant 节点数 = 1
+（正常应为 1 和 1；若 Multiply>1 说明重复执行叠加了）

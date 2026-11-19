@@ -1,0 +1,28 @@
+═══ M_Splash_Foam ═══
+  节点 7 个：
+    [00] MaterialExpressionTextureCoordinate          u=1.00 v=1.00
+    [01] MaterialExpressionTextureSample              tex=T_Toxic_Bub 256x256 srgb=False
+    [02] MaterialExpressionComponentMask             
+    [03] MaterialExpressionMultiply                  
+    [04] MaterialExpressionConstant3Vector            c=<Struct 'LinearColor' (0x00000151E94CEBC8) {r: 0.550000, g: 0.750000, b: 0.800000, a: 1.000000}>
+    [05] MaterialExpressionConstant3Vector            c=<Struct 'LinearColor' (0x00000151E94CECC8) {r: 0.550000, g: 0.720000, b: 0.780000, a: 1.000000}>
+    [06] MaterialExpressionConstant                   r=0.6000000238418579
+  材质属性输入：
+    BaseColor  <- MaterialExpressionConstant3Vector
+    Opacity    <- 未连接
+    Emissive   <- MaterialExpressionMultiply
+    Roughness  <- MaterialExpressionConstant
+    blend_mode = <BlendMode.BLEND_OPAQUE: 0>
+
+═══ M_Splash_Spray ═══
+  节点 4 个：
+    [00] MaterialExpressionConstant3Vector            c=<Struct 'LinearColor' (0x00000150E4A1B348) {r: 0.700000, g: 0.850000, b: 0.900000, a: 1.000000}>
+    [01] MaterialExpressionConstant                   r=0.550000011920929
+    [02] MaterialExpressionConstant                   r=0.30000001192092896
+    [03] MaterialExpressionConstant3Vector            c=<Struct 'LinearColor' (0x00000150E4A1AD28) {r: 0.250000, g: 0.400000, b: 0.450000, a: 1.000000}>
+  材质属性输入：
+    BaseColor  <- MaterialExpressionConstant3Vector
+    Opacity    <- MaterialExpressionConstant
+    Emissive   <- MaterialExpressionConstant3Vector
+    Roughness  <- MaterialExpressionConstant
+    blend_mode = <BlendMode.BLEND_TRANSLUCENT: 2>

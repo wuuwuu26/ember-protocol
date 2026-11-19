@@ -1,0 +1,4 @@
+项目 /Game/RobotGame 资产总数 456
+StaticMesh 共 147 个，其中开 Nanite 的 0 个：
+
+== 渲染设置（只读）==

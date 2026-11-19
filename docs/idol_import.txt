@@ -1,0 +1,7 @@
+删除旧资产 /Game/RobotGame/Art/Props/IdolMech/SM_IdolMech
+imported: ['/Game/RobotGame/Art/Props/IdolMech/SM_IdolMech.SM_IdolMech']
+资产名 SM_IdolMech  类 StaticMesh
+包围盒 size=(29.45, 61.78, 100.19)  min=(-14.76,-30.88,-50.31)  max=(14.69,30.90,49.88)
+材质槽数 1
+  slot0 -> /Game/RobotGame/Art/Props/IdolMech/IdolMechMat.IdolMechMat
+已保存 /Game/RobotGame/Art/Props/IdolMech/SM_IdolMech

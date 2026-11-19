@@ -1,0 +1,7 @@
+BP=/Game/RobotGame/Blueprints/BP_Projectile class=Blueprint
+CDO=Default__BP_Projectile_C
+  Collision (SphereComponent) relative_scale3d=<Struct 'Vector' (0x00000148C65CB7B0) {x: 1.000000, y: 1.000000, z: 1.000000}> relative_location=<Struct 'Vector' (0x00000148C65CB780) {x: 0.000000, y: 0.000000, z: 0.000000}>
+  Mesh (StaticMeshComponent) relative_scale3d=<Struct 'Vector' (0x00000148CD67C9B0) {x: 0.500000, y: 0.045000, z: 0.045000}> static_mesh=<Object '/Engine/BasicShapes/Sphere.Sphere' (0x000001487296F800) Class 'StaticMesh'> override_materials=[] relative_location=<Struct 'Vector' (0x00000148CD67C980) {x: 0.000000, y: 0.000000, z: 0.000000}>
+  MuzzleLight (PointLightComponent) relative_scale3d=<Struct 'Vector' (0x00000148C56BF6B0) {x: 1.000000, y: 1.000000, z: 1.000000}> relative_location=<Struct 'Vector' (0x00000148C56BF680) {x: 0.000000, y: 0.000000, z: 0.000000}>
+  Movement (ProjectileMovementComponent)
+BPPROJ_DONE

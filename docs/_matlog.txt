@@ -1,0 +1,66 @@
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogPluginManager: Mounting Engine plugin BaseMaterial
+LogPluginManager: Mounting Engine plugin BlueprintMaterialTextureNodes
+LogPluginManager: Mounting Engine plugin MaterialAnalyzer
+LogPluginManager: Mounting Engine plugin MaterialAssetWizard
+LogModuleManager: InternalLoadLibrary: 'NiagaraShader' ('C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/FX/Niagara/Binaries/Win64/UnrealEditor-NiagaraShader.dll')
+LogWindows: Failed to load 'WinPixGpuCapturer.dll' (GetLastError=126)
+LogModuleManager: InternalLoadLibrary: 'TmvMediaShaders' ('C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Media/TmvMedia/Binaries/Win64/UnrealEditor-TmvMediaShaders.dll')
+LogModuleManager: InternalLoadLibrary: 'NNEDenoiserShaders' ('C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/NNE/NNEDenoiser/Binaries/Win64/UnrealEditor-NNEDenoiserShaders.dll')
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+[2026.10.25-04.26.44:315][  0]LogConfig: Set CVar [[r.PSOPrecache.GlobalShaders:1]]
+[2026.10.25-04.26.44:315][  0]LogConfig: CVar [[VisualizeCalibrationColorMaterialPath:/Engine/EngineMaterials/PPM_DefaultCalibrationColor.PPM_DefaultCalibrationColor]] deferred - dummy variable created
+[2026.10.25-04.26.44:315][  0]LogConfig: CVar [[VisualizeCalibrationGrayscaleMaterialPath:/Engine/EngineMaterials/PPM_DefaultCalibrationGrayscale.PPM_DefaultCalibrationGrayscale]] deferred - dummy variable created
+[2026.10.25-04.26.44:315][  0]LogConfig: Set CVar [[r.Shaders.RemoveUnusedInterpolators:1]]
+[2026.10.25-04.26.44:315][  0]LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
+[2026.10.25-04.26.44:315][  0]LogConfig: CVar [[FixedBootOrder:/Script/Engine/Default__MaterialInterface]] deferred - dummy variable created
+[2026.10.25-04.26.44:316][  0]LogConfig: CVar [[ClassesExcludedOnDedicatedServer:MaterialExpression]] deferred - dummy variable created
+[2026.10.25-04.26.44:316][  0]LogConfig: CVar [[VersionedIntRValues:r.MaterialEditor.LWCTruncateMode]] deferred - dummy variable created
+[2026.10.25-04.26.44:316][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.Symbols]] deferred - dummy variable created
+[2026.10.25-04.26.44:316][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.GenerateSymbols]] deferred - dummy variable created
+[2026.10.25-04.26.44:316][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.WriteSymbols]] deferred - dummy variable created
+[2026.10.25-04.26.44:316][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.AllowUniqueSymbols]] deferred - dummy variable created
+[2026.10.25-04.26.44:316][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.ExtraData]] deferred - dummy variable created
+[2026.10.25-04.26.44:316][  0]LogConfig: CVar [[VersionedIntRValues:r.Shaders.Optimize]] deferred - dummy variable created
+[2026.10.25-04.26.44:316][  0]LogConfig: CVar [[VersionedIntRValues:r.CompileShadersForDevelopment]] deferred - dummy variable created
+[2026.10.25-04.26.44:359][  0]LogConfig: Set CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.10.25-04.26.44:359][  0]LogConfig: Set CVar [[r.AnisotropicMaterials:1]]
+[2026.10.25-04.26.44:361][  0]LogConfig: Set CVar [[r.PSOPrecache.KeepInMemoryForActiveMaterials:1]]
+[2026.10.25-04.26.45:015][  0]LogD3D12RHI:   Max supported Feature Level 12_2, shader model 6.7, binding tier 3, wave ops supported, atomic64 supported
+[2026.10.25-04.26.45:015][  0]LogD3D12RHI:   Max supported Feature Level 12_1, shader model 6.7, binding tier 3, wave ops supported, atomic64 supported
+[2026.10.25-04.26.45:200][  0]LogD3D12RHI: Stencil ref from pixel shader is not supported
+[2026.10.25-04.26.45:200][  0]LogD3D12RHI: Mesh shader tier 1.0 is supported
+[2026.10.25-04.26.45:200][  0]LogD3D12RHI: Shader Model 6.6 atomic64 is supported
+[2026.10.25-04.26.45:259][  0]LogCsvProfiler: Display: Metadata set : shaderplatform="PCD3D_SM5"
+[2026.10.25-04.26.45:770][  0]LogModuleManager: InternalLoadLibrary: 'ShaderFormatD3D' ('C:/Program Files/Epic Games/UE_5.8/Engine/Binaries/Win64/UnrealEditor-ShaderFormatD3D.dll')
+[2026.10.25-04.26.45:788][  0]LogModuleManager: InternalLoadLibrary: 'ShaderFormatOpenGL' ('C:/Program Files/Epic Games/UE_5.8/Engine/Binaries/Win64/UnrealEditor-ShaderFormatOpenGL.dll')
+[2026.10.25-04.26.45:794][  0]LogModuleManager: InternalLoadLibrary: 'VulkanShaderFormat' ('C:/Program Files/Epic Games/UE_5.8/Engine/Binaries/Win64/UnrealEditor-VulkanShaderFormat.dll')
+[2026.10.25-04.26.45:794][  0]LogModuleManager: InternalLoadLibrary: 'ShaderFormatVectorVM' ('C:/Program Files/Epic Games/UE_5.8/Engine/Binaries/Win64/UnrealEditor-ShaderFormatVectorVM.dll')
+[2026.10.25-04.26.49:004][  0]LogModuleManager: InternalLoadLibrary: 'ShaderPreprocessor' ('C:/Program Files/Epic Games/UE_5.8/Engine/Binaries/Win64/UnrealEditor-ShaderPreprocessor.dll')
+[2026.10.25-04.26.49:004][  0]LogShaderCompilers: Guid format shader working directory is -8 characters bigger than the processId version (../../../../../../Users/25227/Documents/robot_game/ue/Intermediate/Shaders/WorkingDirectory/20532/).
+[2026.10.25-04.26.49:005][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/25227/AppData/Local/Temp/UnrealShaderWorkingDir/14857AFD44F5BD0636AEFA85BBC58831/'.
+[2026.10.25-04.26.49:005][  0]LogShaderCompilers: Display: No distributed shader compiler controller found
+[2026.10.25-04.26.49:005][  0]LogShaderCompilers: Display: Using 10 local workers for shader compilation
+[2026.10.25-04.26.49:006][  0]LogModuleManager: InternalLoadLibrary: 'MetalShaderFormat' ('C:/Program Files/Epic Games/UE_5.8/Engine/Binaries/Win64/UnrealEditor-MetalShaderFormat.dll')
+[2026.10.25-04.26.49:013][  0]LogShaderCompilers: Display: Compiling shader autogen file: ../../../../../../Users/25227/Documents/robot_game/ue/Intermediate/ShaderAutogen/PCD3D_SM5/AutogenShaderHeaders.ush
+[2026.10.25-04.26.49:013][  0]LogShaderCompilers: Display: Autogen file is unchanged, skipping write.
+[2026.10.25-04.26.49:595][  0]LogInit: Running DelayedAutoRegister Phase ShaderTypesReady
+[2026.10.25-04.26.50:836][  0]LogModuleManager: InternalLoadLibrary: 'MaterialBaking' ('C:/Program Files/Epic Games/UE_5.8/Engine/Binaries/Win64/UnrealEditor-MaterialBaking.dll')
+[2026.10.25-04.26.51:238][  0]LogModuleManager: InternalLoadLibrary: 'MaterialEditor' ('C:/Program Files/Epic Games/UE_5.8/Engine/Binaries/Win64/UnrealEditor-MaterialEditor.dll')
+[2026.10.25-04.26.51:263][  0]LogModuleManager: InternalLoadLibrary: 'BlueprintMaterialTextureNodes' ('C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Editor/BlueprintMaterialTextureNodes/Binaries/Win64/UnrealEditor-BlueprintMaterialTextureNodes.dll')
+[2026.10.25-04.26.52:274][  0]LogTemp: Error test: UE::UnifiedErrorTest::Empty: [Empty error]
+[2026.10.25-04.26.52:275][  0]LogTemp: Error with param: UE::UnifiedErrorTest::WithInt: [Error with int -7]
+[2026.10.25-04.26.52:275][  0]LogTemp: Error with context: UE::UnifiedErrorTest::Empty: [Empty error]
+[2026.10.25-04.26.52:275][  0]LogTemp: FError that has been invalidated: ::: []
+[2026.10.25-04.26.52:275][  0]LogTemp: FError that has been moved from: ::: []
+[2026.10.25-04.26.52:773][  0]LogAudioMixerWasapi: Error: OpenAudioStream failed IAudioClient::Initialize AUDCLNT_E_DEVICE_IN_USE
+[2026.10.25-04.26.53:137][  0]FUdpSocketBuilder: Failed to bind PythonRemoteExecutionBroadcastSocket to 239.0.0.1:6766. Error code 21.
+[2026.10.25-04.26.53:137][  0]LogPythonRemoteExecution: Error: Failed to open remote execution broadcast channel! Check your settings and the output log for more information.
+[2026.10.25-04.26.55:288][  1]LogTemp: Warning: [弹丸] 玩家=0 材质=M_Bolt_Enemy 缩放=X=0.500 Y=0.055 Z=0.055
+[2026.10.25-04.26.55:335][  2]LogTemp: Warning: [弹丸] 玩家=1 材质=M_Bolt_Player 缩放=X=0.500 Y=0.055 Z=0.055
+[2026.10.25-04.26.55:752][  3]LogTemp: Warning: [弹丸] 玩家=1 材质=M_Bolt_Player 缩放=X=0.500 Y=0.055 Z=0.055
+[2026.10.25-04.26.56:531][  4]LogTemp: Warning: [弹丸] 玩家=1 材质=M_Bolt_Player 缩放=X=0.500 Y=0.055 Z=0.055
+[2026.10.25-04.26.56:532][  4]LogTemp: Warning: [弹丸] 玩家=0 材质=M_Bolt_Enemy 缩放=X=0.500 Y=0.055 Z=0.055
+[2026.10.25-04.26.57:089][  5]LogTemp: Warning: [弹丸] 玩家=1 材质=M_Bolt_Player 缩放=X=0.500 Y=0.055 Z=0.055

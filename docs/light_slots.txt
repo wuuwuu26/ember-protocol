@@ -1,0 +1,11 @@
+Total slots: 9
+Slot 0: M_Frame -> /Game/RobotGame/Art/Characters/M_Frame.M_Frame
+Slot 1: M_Joint -> /Game/RobotGame/Art/Characters/M_Joint.M_Joint
+Slot 2: M_Copper -> /Game/RobotGame/Art/Characters/M_Copper.M_Copper
+Slot 3: M_SteelLight -> /Game/RobotGame/Art/Characters/M_SteelLight.M_SteelLight
+Slot 4: M_Steel -> /Game/RobotGame/Art/Characters/M_Steel.M_Steel
+Slot 5: M_Core_light -> /Game/RobotGame/Art/Characters/M_Core_light.M_Core_light
+Slot 6: M_Visor_light -> /Game/RobotGame/Art/Characters/M_Visor_light.M_Visor_light
+Slot 7: M_Accent_light -> /Game/RobotGame/Art/Characters/M_Accent_light.M_Accent_light
+Slot 8: M_AccentDark_light -> /Game/RobotGame/Art/Characters/M_AccentDark_light.M_AccentDark_light
+SLOTS_DONE

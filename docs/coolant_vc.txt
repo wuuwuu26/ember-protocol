@@ -1,0 +1,14 @@
+VertexColor 节点 2 个
+ComponentMask 节点 5 个：
+  r=True g=False b=False a=False
+  r=False g=False b=True a=False
+  r=False g=False b=True a=False
+  r=True g=False b=False a=False
+  r=False g=True b=False a=False
+
+材质属性：
+  BaseColor  <- MaterialExpressionLinearInterpolate
+  Emissive   <- MaterialExpressionAdd
+  Opacity    <- MaterialExpressionSaturate
+  Roughness  <- MaterialExpressionLinearInterpolate
+  Normal     <- MaterialExpressionSubtract

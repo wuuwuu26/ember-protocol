@@ -1,0 +1,2 @@
+Spawned 9 explosive barrels
+BARRELS_SPAWNED_DONE

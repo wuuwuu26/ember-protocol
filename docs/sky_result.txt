@@ -1,0 +1,3 @@
+zenith=(0.028, 0.04, 0.085) horizon=(0.34, 0.22, 0.13) horizon_cool=(0.13, 0.18, 0.32)
+moon_dir=(0.96, 0.207, 0.186) intensity=75.0 star_bright=0.32
+SKYDOME_V2_DONE

@@ -1,0 +1,14 @@
+[ue_py] 第 1 次没有产出标记 'SLUDGE_IMPORT_DONE'，重试……
+[ue_py] 第 2 次没有产出标记 'SLUDGE_IMPORT_DONE'，重试……
+[ue_py] 第 3 次没有产出标记 'SLUDGE_IMPORT_DONE'，重试……
+[ue_py] ❌ 3 次都没跑起来。最后一次日志：/c/Users/25227/Documents/robot_game/ue/ue_py_3.log
+[2026.10.26-04.30.36:181][  2]LogPython: [流体资产导入] 贴图 T_Sludge_N 导入成功
+[2026.10.26-04.30.36:313][  2]LogPython: [流体资产导入] 贴图 T_Sludge_E 导入成功
+[2026.10.26-04.30.36:438][  2]LogPython: [流体资产导入] 贴图 T_Sludge_M 导入成功
+[2026.10.26-04.30.36:589][  2]LogPython: [流体资产导入] SM_Env_SludgePool 静态网格导入成功
+[2026.10.26-04.30.36:954][  2]LogPython: [流体资产导入] M_Sludge_Fluid 动态流动材质编译保存成功！
+[2026.10.26-04.30.37:084][  3]LogPython: Display: Generating Python API stub file...
+[2026.10.26-04.30.37:112][  3]LogPython: Display:   ...generating Python API: glue code (types)
+[2026.10.26-04.30.37:665][  3]LogPython: Display:   ...generating Python API: glue code (methods)
+[2026.10.26-04.30.37:666][  3]LogPython: Display:   ...generating Python API: additional code
+[2026.10.26-04.30.37:788][  3]LogPython: Display:   ...generated: C:/Users/25227/Documents/robot_game/ue/Intermediate/PythonStub/unreal.py

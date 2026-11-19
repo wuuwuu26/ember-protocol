@@ -1,0 +1,17 @@
+mesh objects: 1
+
+object: IdolMech
+  verts=203416  polys=398129  materials=1
+  tris=398129
+  scale=(1.0000,1.0000,1.0000)  rot=(0.00,0.00,0.00)
+  mat[0] = IdolMechMat
+
+== bounding box (Blender Z-up, 单位=米) ==
+  min = (-0.1476, -0.3090, -0.5031)
+  max = (0.1469, 0.3088, 0.4988)
+  size = (0.2945, 0.6178, 1.0019)
+  最大边长 = 1.0019
+  total tris = 398129
+  最长的轴 = Z（若为 Z 说明 Blender 里已经竖着）
+
+FBX exported: C:\Users\25227\Documents\robot_game\art_src\idol\IdolMech.fbx (11710060 bytes)

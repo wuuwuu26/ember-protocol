@@ -1,0 +1,6 @@
+M_concrete_floor_02        已有 TC，跳过
+M_concrete_wall_001        已有 TC，跳过
+M_factory_wall             已有 TC，跳过
+M_corrugated_iron          已有 TC，跳过
+M_rusty_metal              已有 TC，跳过
+M_metal_grate_rusty        已有 TC，跳过

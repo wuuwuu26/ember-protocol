@@ -1,0 +1,25 @@
+﻿	//   标定基准（照度 = cd / 距离²）：
+	//     月光（太阳） 1800 lux 冷白 —— 只负责长阴影和形体
+	//     光池         1600 lux 暖白 —— 地板上的亮斑节奏
+	//     投光          170 lux 暖白 —— 墙面/远景轮廓
+	//     补光          390 lux 冷白 —— 抬暗部
+	//   亮部 : 暗部 从 1.03 拉到约 4，明暗节奏才真正出现。
+	//
+	//   -FloodCd= / -FillCd= / -AccentCd= / -PoolCd=：允许命令行扫参数，
+	//   免得每换一个值就重编译（前几轮的时间全花在这上面）。
+	float PoolCd = 60000.f;
+	float FloodCd = 24000.f;
+	float FillCd = 4000.f;
+	float AccentCd = 6000.f;
+	{
+		FString V;
+		if (FParse::Value(FCommandLine::Get(), TEXT("PoolCd="), V))
+		{
+			PoolCd = FCString::Atof(*V);
+		}
+		if (FParse::Value(FCommandLine::Get(), TEXT("FloodCd="), V))
+		{
+			FloodCd = FCString::Atof(*V);
+		}
+		if (FParse::Value(FCommandLine::Get(), TEXT("FillCd="), V))
+		{

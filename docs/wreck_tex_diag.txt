@@ -1,0 +1,2 @@
+mech_torso_wreck_texgen_fixed_texture_0.mech_torso_wreck_texgen_fixed_texture_0 -> C:\Users\25227\Documents\robot_game\docs\ue_tex_dump\mech_torso_wreck_texgen_fixed_texture_0.png ok=True
+severed_mech_arm_texgen_fixed_texture_0.severed_mech_arm_texgen_fixed_texture_0 -> C:\Users\25227\Documents\robot_game\docs\ue_tex_dump\severed_mech_arm_texgen_fixed_texture_0.png ok=True

@@ -1,0 +1,22 @@
+总灯数 27
+ExtLight_tunnel (1950,-330,300)
+   intensity=900.0 radius=700.0 visible=True enabled=err:PointLightComponent: Failed to find property 'enabled' for attribute 'enabled' on 'PointLightComponent' mobility=<ComponentMobility.MOVABLE: 2>
+   color=<Struct 'Color' (0x00000166D42EE8B8) {b: 170, g: 200, r: 255, a: 255}> cast_shadows=True
+ExtLight_tunnel (1950,330,300)
+   intensity=900.0 radius=700.0 visible=True enabled=err:PointLightComponent: Failed to find property 'enabled' for attribute 'enabled' on 'PointLightComponent' mobility=<ComponentMobility.MOVABLE: 2>
+   color=<Struct 'Color' (0x00000167F16E9DB8) {b: 170, g: 200, r: 255, a: 255}> cast_shadows=True
+ExtLight_tunnel (2150,-330,300)
+   intensity=900.0 radius=700.0 visible=True enabled=err:PointLightComponent: Failed to find property 'enabled' for attribute 'enabled' on 'PointLightComponent' mobility=<ComponentMobility.MOVABLE: 2>
+   color=<Struct 'Color' (0x00000167FFFF3EB8) {b: 170, g: 200, r: 255, a: 255}> cast_shadows=True
+ExtLight_tunnel (2150,330,300)
+   intensity=900.0 radius=700.0 visible=True enabled=err:PointLightComponent: Failed to find property 'enabled' for attribute 'enabled' on 'PointLightComponent' mobility=<ComponentMobility.MOVABLE: 2>
+   color=<Struct 'Color' (0x00000166D42EB6B8) {b: 170, g: 200, r: 255, a: 255}> cast_shadows=True
+ExtLight_tunnel (2350,-330,300)
+   intensity=900.0 radius=700.0 visible=True enabled=err:PointLightComponent: Failed to find property 'enabled' for attribute 'enabled' on 'PointLightComponent' mobility=<ComponentMobility.MOVABLE: 2>
+   color=<Struct 'Color' (0x00000166D42EE3B8) {b: 170, g: 200, r: 255, a: 255}> cast_shadows=True
+ExtLight_tunnel (2350,330,300)
+   intensity=900.0 radius=700.0 visible=True enabled=err:PointLightComponent: Failed to find property 'enabled' for attribute 'enabled' on 'PointLightComponent' mobility=<ComponentMobility.MOVABLE: 2>
+   color=<Struct 'Color' (0x00000167E27F1BB8) {b: 170, g: 200, r: 255, a: 255}> cast_shadows=True
+
+== 原有 PointLight 参考 ==
+(-900,-1000,340) intensity=2600.0 radius=2600.0

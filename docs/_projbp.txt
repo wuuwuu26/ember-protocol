@@ -1,0 +1,32 @@
+﻿void ARobotProjectile::BeginPlay()
+{
+	Super::BeginPlay();
+	Collision->OnComponentHit.AddDynamic(this, &ARobotProjectile::OnHit);
+	Collision->OnComponentBeginOverlap.AddDynamic(this, &ARobotProjectile::OnOverlap);
+
+	// 蓝图 CDO 会覆盖构造函数里设过的碰撞响应（本项目踩过多次），
+	// 所以在 BeginPlay 再设一遍 —— 这里才是真正决定运行时行为的时刻。
+	Collision->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
+	Collision->SetCollisionResponseToChannel(ECC_Visibility, ECR_Ignore);
+	Collision->SetGenerateOverlapEvents(true);
+
+	// 弹体材质：换掉引擎默认的棋盘格，用本体的"核心"材质（自发光感）。
+	//
+	// 这里用 SetMaterial 是安全的：UE5 的 UMeshComponent::SetMaterial 在
+	// 索引越界时会**自动扩容** OverrideMaterials 数组（见 MeshComponent.cpp
+	// 里 "Grow the array if the new index is too large" 那段），
+	// 所以不需要事先存在材质槽。
+	// （程序化动画那边当初失败，是因为上界写成了 Min(源槽数, 本组件槽数)，
+	//   而本组件槽数是 0，循环一次都没进 —— 不是 SetMaterial 的问题。）
+	if (Mesh)
+	{
+		if (UMaterialInterface* CoreMat = LoadObject<UMaterialInterface>(nullptr,
+				TEXT("/Game/RobotGame/Art/Characters/M_Core_medium.M_Core_medium")))
+		{
+			Mesh->SetMaterial(0, CoreMat);
+		}
+	}
+}
+
+void ARobotProjectile::Tick(float DeltaSeconds)
+{

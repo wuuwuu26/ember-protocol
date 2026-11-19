@@ -1,0 +1,69 @@
+=== M_Basin_Concrete ===
+  class=Material
+  节点 28，TC节点=True
+    MaterialExpressionWorldPosition           
+    MaterialExpressionComponentMask           
+    MaterialExpressionScalarParameter         
+    MaterialExpressionSubtract                
+    MaterialExpressionConstant                
+    MaterialExpressionDivide                  
+    MaterialExpressionSaturate                
+    MaterialExpressionOneMinus                
+    MaterialExpressionVertexColor             
+    MaterialExpressionComponentMask           
+    MaterialExpressionMultiply                
+    MaterialExpressionTextureCoordinate        u=1.5 v=1.5
+    MaterialExpressionTextureSampleParameter2D tex=T_ConcreteDetail
+    MaterialExpressionDesaturation            
+    MaterialExpressionConstant                
+    MaterialExpressionMultiply                
+    MaterialExpressionConstant                
+    MaterialExpressionAdd                     
+    MaterialExpressionConstant3Vector         
+    MaterialExpressionConstant3Vector         
+    MaterialExpressionLinearInterpolate       
+    MaterialExpressionMultiply                
+    MaterialExpressionConstant                
+    MaterialExpressionConstant                
+    MaterialExpressionLinearInterpolate       
+    MaterialExpressionConstant                
+    MaterialExpressionTextureSampleParameter2D tex=T_ConcreteDetail_N
+    MaterialExpressionTextureCoordinate        u=1.5 v=1.5
+
+=== MI_Basin_Coolant ===
+  class=MaterialInstanceConstant
+  parent=M_Basin_Concrete
+
+=== M_GeoCache_Water ===
+  class=Material
+  节点 25，TC节点=False
+    MaterialExpressionWorldPosition           
+    MaterialExpressionComponentMask           
+    MaterialExpressionConstant2Vector         
+    MaterialExpressionMultiply                
+    MaterialExpressionPanner                  
+    MaterialExpressionTextureSample            tex=T_WaterRipple_N
+    MaterialExpressionWorldPosition           
+    MaterialExpressionComponentMask           
+    MaterialExpressionConstant2Vector         
+    MaterialExpressionMultiply                
+    MaterialExpressionPanner                  
+    MaterialExpressionTextureSample            tex=T_WaterRipple_N
+    MaterialExpressionComponentMask           
+    MaterialExpressionComponentMask           
+    MaterialExpressionAdd                     
+    MaterialExpressionMultiply                
+    MaterialExpressionConstant                
+    MaterialExpressionLinearInterpolate       
+    MaterialExpressionConstant                
+    MaterialExpressionConstant                
+    MaterialExpressionLinearInterpolate       
+    MaterialExpressionConstant                
+    MaterialExpressionConstant3Vector         
+    MaterialExpressionConstant                
+    MaterialExpressionConstant3Vector         
+
+=== T_ConcreteDetail ===
+  size=1024x1024  srgb=False  group=<TextureGroup.TEXTUREGROUP_WORLD: 0>
+=== T_ConcreteDetail_N ===
+  size=1024x1024  srgb=False  group=<TextureGroup.TEXTUREGROUP_WORLD: 0>

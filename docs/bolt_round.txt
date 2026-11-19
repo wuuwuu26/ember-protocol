@@ -1,0 +1,2 @@
+SM_Bolt_Round extent=(15.0, 3.9, 3.9) slots=3
+BOLTROUND_OK

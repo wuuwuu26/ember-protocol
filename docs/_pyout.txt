@@ -1,0 +1,5 @@
+[2026.10.25-04.31.48:509][  2]LogPython: Error:   File "C:/Users/25227/Documents/robot_game/ue/Scripts/probe_bolt_conn.py", line 41, in <module>
+[2026.10.25-04.31.48:509][  2]LogPython: Error:     lines.append("== REF %s shading=%s ==" % (ref, m.get_editor_property("shading_model")))
+[2026.10.25-04.31.48:509][  2]LogPython: Error:                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2026.10.25-04.31.48:509][  2]LogPython: Error: Exception: MaterialInstanceConstant: Failed to find property 'shading_model' for attribute 'shading_model' on 'MaterialInstanceConstant'
+[2026.10.25-04.31.48:509][  2]LogEditorPythonExecuter: Error: Python script executed with errors

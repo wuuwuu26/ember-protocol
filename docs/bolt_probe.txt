@@ -1,0 +1,19 @@
+== M_Bolt_Player ==
+  shading_model = <MaterialShadingModel.MSM_UNLIT: 0>
+  blend_mode = <BlendMode.BLEND_OPAQUE: 0>
+  two_sided = False
+  used_with_static_lighting = False
+  emissive_color read fail: Material: Failed to find property 'emissive_color' for attribute 'emissive_color
+  expressions = 1
+    MaterialExpressionVectorParameter_0 (MaterialExpressionVectorParameter) name=Color val=<Struct 'LinearColor' (0x000001D93245BC78) {r: 0.300000, g: 3.100000, b: 3.700000, a: 1.000000}>
+  outputs->[]
+== M_Bolt_Enemy ==
+  shading_model = <MaterialShadingModel.MSM_UNLIT: 0>
+  blend_mode = <BlendMode.BLEND_OPAQUE: 0>
+  two_sided = False
+  used_with_static_lighting = False
+  emissive_color read fail: Material: Failed to find property 'emissive_color' for attribute 'emissive_color
+  expressions = 1
+    MaterialExpressionVectorParameter_0 (MaterialExpressionVectorParameter) name=Color val=<Struct 'LinearColor' (0x000001D93245B378) {r: 3.200000, g: 1.150000, b: 0.180000, a: 1.000000}>
+  outputs->[]
+BOLTPROBE_DONE

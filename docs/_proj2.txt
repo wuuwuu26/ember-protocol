@@ -1,0 +1,101 @@
+﻿#include "RobotProjectile.h"
+
+#include "PartDamageComponent.h"
+#include "PartMapData.h"
+#include "RobotPlayerController.h"
+#include "RobotSfx.h"
+
+#include "Components/PointLightComponent.h"
+#include "Components/PoseableMeshComponent.h"
+#include "Components/SphereComponent.h"
+#include "Components/StaticMeshComponent.h"
+#include "GameFramework/Pawn.h"
+#include "GameFramework/ProjectileMovementComponent.h"
+#include "Kismet/GameplayStatics.h"
+#include "Materials/MaterialInterface.h"
+#include "UObject/ConstructorHelpers.h"
+
+namespace
+{
+	/**
+	 * 命中点落在胶囊体上时（没有骨骼名），在动画网格上找**最近的"可路由"骨骼**。
+	 *
+	 * 为什么需要：角色最外层的碰撞是胶囊体，弹丸事实上永远先撞胶囊 ——
+	 * 而胶囊不是骨骼网格，命中结果里骨骼名是空。拿空名去查部位表，
+	 * 永远匹配不到任何部位 → "打哪都不掉血"（实测打空 100+ 发、零伤害，
+	 * 敌人永远打不死，核心玩法其实从没在实机里跑通过）。
+	 *
+	 * 只让"部位表里出现过的骨骼前缀"参与距离竞争 ——
+	 * root / pelvis 这类纯骨架节点不应该把命中判定抢走。
+	 * 距离用骨骼原点（关节位置）算：这是"命中点离哪个关节最近"的近似，
+	 * 对刚性机械体（每个部件绕关节刚性旋转）足够准。
+	 */
+	FName FindNearestPartBone(AActor* Target, const FVector& ImpactPoint,
+		const UPartDamageComponent* Parts)
+	{
+		if (!Target || !Parts || !Parts->PartMap)
+		{
+			return NAME_None;
+		}
+
+		UPoseableMeshComponent* Mesh =
+			Target->FindComponentByClass<UPoseableMeshComponent>();
+		if (!Mesh)
+		{
+			return NAME_None;
+		}
+
+		TArray<FString> Prefixes;
+		for (const FPartBoneRule& Rule : Parts->PartMap->Rules)
+		{
+			for (const FName& P : Rule.BonePrefixes)
+			{
+				Prefixes.Add(P.ToString());
+			}
+		}
+		if (Prefixes.Num() == 0)
+		{
+			return NAME_None;
+		}
+
+		const int32 NumBones = Mesh->GetNumBones();
+		FName Best = NAME_None;
+		float BestDistSq = TNumericLimits<float>::Max();
+		for (int32 i = 0; i < NumBones; ++i)
+		{
+			const FName BoneName = Mesh->GetBoneName(i);
+			const FString BoneStr = BoneName.ToString();
+			bool bRoutable = false;
+			for (const FString& P : Prefixes)
+			{
+				if (BoneStr.StartsWith(P, ESearchCase::IgnoreCase))
+				{
+					bRoutable = true;
+					break;
+				}
+			}
+			if (!bRoutable)
+			{
+				continue;
+			}
+			// 注意：读的是动画网格**自己维护的** BoneSpaceTransforms
+			// （MechProceduralAnim 每帧写入的那份），不是引擎的缓存姿势，
+			// 所以和画面里看到的位置一致。
+			const FVector Loc = Mesh->GetBoneLocationByName(
+				BoneName, EBoneSpaces::WorldSpace);
+			const float DistSq = FVector::DistSquared(Loc, ImpactPoint);
+			if (DistSq < BestDistSq)
+			{
+				BestDistSq = DistSq;
+				Best = BoneName;
+			}
+		}
+		return Best;
+	}
+}
+
+ARobotProjectile::ARobotProjectile()
+{
+	// 需要 Tick：枪口闪光要在 FlashDuration 内衰减掉
+	PrimaryActorTick.bCanEverTick = true;
+

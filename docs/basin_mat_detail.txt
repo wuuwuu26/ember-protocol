@@ -1,0 +1,35 @@
+节点清单（含输入连线）：
+  [00] MaterialExpressionWorldPosition           
+  [01] MaterialExpressionComponentMask           
+  [02] MaterialExpressionScalarParameter         
+  [03] MaterialExpressionSubtract                
+  [04] MaterialExpressionConstant                
+  [05] MaterialExpressionDivide                  
+  [06] MaterialExpressionSaturate                
+  [07] MaterialExpressionOneMinus                
+  [08] MaterialExpressionVertexColor             
+  [09] MaterialExpressionComponentMask           
+  [10] MaterialExpressionMultiply                
+  [11] MaterialExpressionTextureCoordinate       
+  [12] MaterialExpressionTextureSampleParameter2D tex=T_ConcreteDetail
+  [13] MaterialExpressionDesaturation            
+  [14] MaterialExpressionConstant                
+  [15] MaterialExpressionMultiply                
+  [16] MaterialExpressionConstant                
+  [17] MaterialExpressionAdd                     
+  [18] MaterialExpressionConstant3Vector         
+  [19] MaterialExpressionConstant3Vector         
+  [20] MaterialExpressionLinearInterpolate       
+  [21] MaterialExpressionMultiply                
+  [22] MaterialExpressionConstant                
+  [23] MaterialExpressionConstant                
+  [24] MaterialExpressionLinearInterpolate       
+  [25] MaterialExpressionConstant                
+  [26] MaterialExpressionTextureSampleParameter2D tex=T_ConcreteDetail_N
+  [27] MaterialExpressionTextureCoordinate       
+
+材质属性输入：
+  BaseColor  <- MaterialExpressionMultiply
+  Normal     <- MaterialExpressionTextureSampleParameter2D
+  Roughness  <- MaterialExpressionLinearInterpolate
+  Metallic   <- 未连接

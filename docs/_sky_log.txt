@@ -1,0 +1,8 @@
+[2026.10.25-03.51.11:452][  2]LogPython: [天空穹顶] 材质标志 used_with_sky 设置失败: Material: Failed to find property 'used_with_sky' 
+[2026.10.25-03.51.11:465][  2]LogPython: [天空穹顶] 材质标志 is_sky = True
+[2026.10.25-03.51.11:784][  2]LogPython: [天空穹顶] ✅ 星空层已接入（T_Sky_Stars，强度 0.32）
+[2026.10.25-03.51.15:056][  2]LogPython: [天空穹顶] ✅ 材质 /Game/RobotGame/Art/Materials/M_SkyDome 已建立
+[2026.10.25-03.51.15:056][  2]LogPython: Warning: C:/Users/25227/Documents/robot_game/ue/Scripts/make_sky_dome.py:288: DeprecationWarning: EditorLevelLibrary: Function 'load_level' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Level Editor Subsystem
+[2026.10.25-03.51.15:255][  2]LogPython: Warning: C:/Users/25227/Documents/robot_game/ue/Scripts/make_sky_dome.py:296: DeprecationWarning: EditorLevelLibrary: Function 'get_all_level_actors' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Editor Actor Utilities Subsystem
+[2026.10.25-03.51.15:258][  2]LogPython: [天空穹顶] 穹顶：半径 50m，材质 M_SkyDome
+[2026.10.25-03.51.15:258][  2]LogPython: Warning: C:/Users/25227/Documents/robot_game/ue/Scripts/make_sky_dome.py:317: DeprecationWarning: EditorLevelLibrary: Function 'save_current_level' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Level Editor Subsystem

@@ -1,0 +1,24 @@
+===== M_Toxic_Fluid =====
+  roughness/specular/metallic 连接：
+    BaseColor  <- MaterialExpressionLinearInterpolate
+    Emissive   <- MaterialExpressionAdd
+    Opacity    <- MaterialExpressionSaturate
+    Roughness  <- MaterialExpressionLinearInterpolate
+    Specular   <- MaterialExpressionConstant
+    Normal     <- MaterialExpressionSubtract
+    Metallic   <- MaterialExpressionConstant
+  material.roughness default -> (见节点)
+  material.metallic default -> (见节点)
+  material.specular default -> (见节点)
+===== M_Coolant_Fluid =====
+  roughness/specular/metallic 连接：
+    BaseColor  <- MaterialExpressionLinearInterpolate
+    Emissive   <- MaterialExpressionAdd
+    Opacity    <- MaterialExpressionSaturate
+    Roughness  <- MaterialExpressionLinearInterpolate
+    Specular   <- MaterialExpressionConstant
+    Normal     <- MaterialExpressionSubtract
+    Metallic   <- MaterialExpressionConstant
+  material.roughness default -> (见节点)
+  material.metallic default -> (见节点)
+  material.specular default -> (见节点)

@@ -1,0 +1,11 @@
+贴图采样节点 2 个
+
+=== MaterialExpressionTextureSampleParameter2D_0 (tex=T_ConcreteDetail) ===
+  查询失败: MaterialEditingLibrary: Failed to convert parameter 'input_n
+
+=== MaterialExpressionTextureSampleParameter2D_1 (tex=T_ConcreteDetail_N) ===
+  查询失败: MaterialEditingLibrary: Failed to convert parameter 'input_n
+
+=== TextureCoordinate 节点 ===
+  MaterialExpressionTextureCoordinate_0  u=1.5 v=1.5
+  MaterialExpressionTextureCoordinate_1  u=1.5 v=1.5

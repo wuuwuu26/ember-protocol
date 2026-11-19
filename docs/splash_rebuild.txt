@@ -1,0 +1,5 @@
+已清空旧节点
+重建后节点 14 个
+  BaseColor  <- MaterialExpressionAdd
+  Emissive   <- MaterialExpressionMultiply
+  Roughness  <- MaterialExpressionConstant

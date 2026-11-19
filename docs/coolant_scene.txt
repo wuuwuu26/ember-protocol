@@ -1,0 +1,2 @@
+pool=spawned props_lifted=0
+COOLANT_SCENE_OK

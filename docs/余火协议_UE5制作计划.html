@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>《余火协议》UE5 制作计划</title>
+<style>
+:root{
+  --bg:#0f1115; --surface:#171a21; --surface-2:#1d2129; --border:#272c37;
+  --text:#e6e9ef; --text-2:#9aa3b2; --text-3:#6b7383;
+  --ember:#e8a33d; --ember-dim:#8a6224; --ember-bg:#2a1f0e;
+  --teal:#4ec9b0; --teal-dim:#2a6b60; --teal-bg:#0f2a26;
+  --red:#e06c6c; --red-bg:#2a1414;
+  --amber-bg:#2a2410;
+  --radius:10px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg); color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:15px; line-height:1.75; -webkit-font-smoothing:antialiased;
+}
+.wrap{display:flex; max-width:1400px; margin:0 auto; gap:0}
+
+/* sidebar */
+nav{
+  width:230px; flex:0 0 230px; position:sticky; top:0; align-self:flex-start;
+  height:100vh; overflow-y:auto; padding:32px 20px 32px 28px;
+  border-right:1px solid var(--border);
+}
+nav .brand{font-size:13px; color:var(--text-3); letter-spacing:.08em; text-transform:uppercase; margin-bottom:6px}
+nav .title{font-size:16px; font-weight:600; color:var(--text); margin-bottom:24px; line-height:1.4}
+nav a{
+  display:block; color:var(--text-2); text-decoration:none; font-size:13.5px;
+  padding:6px 10px; border-radius:6px; margin-bottom:2px; transition:.15s;
+  border-left:2px solid transparent;
+}
+nav a:hover{background:var(--surface-2); color:var(--text)}
+nav a.sub{padding-left:22px; font-size:13px; color:var(--text-3)}
+nav a.sub:hover{color:var(--text-2)}
+nav .group{margin-top:18px; margin-bottom:6px; font-size:11.5px; color:var(--text-3); letter-spacing:.06em; padding-left:10px}
+
+main{flex:1; min-width:0; padding:48px 56px 120px 56px; max-width:1000px}
+
+/* header */
+header{border-bottom:1px solid var(--border); padding-bottom:28px; margin-bottom:40px}
+header .kicker{color:var(--ember); font-size:13px; letter-spacing:.1em; font-weight:600; margin-bottom:10px}
+header h1{font-size:32px; font-weight:700; letter-spacing:-.01em; line-height:1.25; margin-bottom:14px}
+header .sub{color:var(--text-2); font-size:14.5px}
+header .meta{display:flex; flex-wrap:wrap; gap:10px; margin-top:22px}
+.chip{
+  font-size:12.5px; padding:4px 12px; border-radius:100px;
+  background:var(--surface-2); border:1px solid var(--border); color:var(--text-2);
+}
+.chip.hot{background:var(--ember-bg); border-color:var(--ember-dim); color:var(--ember)}
+
+/* sections */
+section{margin-bottom:56px; scroll-margin-top:24px}
+h2{
+  font-size:21px; font-weight:650; margin-bottom:20px; padding-bottom:10px;
+  border-bottom:1px solid var(--border); letter-spacing:-.005em;
+}
+h2 .num{color:var(--ember); font-weight:600; margin-right:10px; font-variant-numeric:tabular-nums}
+h3{font-size:16.5px; font-weight:600; margin:28px 0 12px; color:var(--text)}
+h4{font-size:14.5px; font-weight:600; margin:20px 0 10px; color:var(--text-2)}
+p{margin-bottom:14px; color:var(--text-2)}
+p strong,li strong{color:var(--text); font-weight:600}
+ul,ol{margin:0 0 16px 20px; color:var(--text-2)}
+li{margin-bottom:7px}
+
+/* callout */
+.callout{
+  background:var(--surface); border:1px solid var(--border); border-left:3px solid var(--ember);
+  border-radius:var(--radius); padding:18px 22px; margin:22px 0;
+}
+.callout.teal{border-left-color:var(--teal)}
+.callout.red{border-left-color:var(--red)}
+.callout .label{font-size:11.5px; letter-spacing:.08em; color:var(--ember); font-weight:600; margin-bottom:8px}
+.callout.teal .label{color:var(--teal)}
+.callout.red .label{color:var(--red)}
+.callout p:last-child{margin-bottom:0}
+.callout .quote{font-size:16px; color:var(--text); line-height:1.7}
+
+/* table */
+.tw{overflow-x:auto; margin:18px 0; border:1px solid var(--border); border-radius:var(--radius)}
+table{width:100%; border-collapse:collapse; font-size:13.5px}
+th{
+  background:var(--surface-2); text-align:left; padding:11px 14px; font-weight:600;
+  color:var(--text); white-space:nowrap; border-bottom:1px solid var(--border);
+}
+td{padding:10px 14px; border-bottom:1px solid var(--border); color:var(--text-2); vertical-align:top}
+tr:last-child td{border-bottom:none}
+tbody tr:hover{background:rgba(255,255,255,.015)}
+td strong{color:var(--text)}
+.tag{font-size:11.5px; padding:2px 8px; border-radius:5px; white-space:nowrap; font-weight:500}
+.tag.ok{background:var(--teal-bg); color:var(--teal)}
+.tag.warn{background:var(--amber-bg); color:var(--ember)}
+.tag.bad{background:var(--red-bg); color:var(--red)}
+.tag.na{background:var(--surface-2); color:var(--text-3)}
+
+/* timeline */
+.tl{margin:24px 0}
+.tl-row{
+  display:grid; grid-template-columns:132px 1fr; gap:20px;
+  padding:18px 0; border-bottom:1px solid var(--border);
+}
+.tl-row:last-child{border-bottom:none}
+.tl-phase{font-size:14px; font-weight:600; color:var(--text)}
+.tl-phase .per{display:block; font-size:12px; color:var(--text-3); font-weight:400; margin-top:3px}
+.tl-bar{
+  height:5px; border-radius:3px; background:var(--surface-2); margin-bottom:10px; position:relative; overflow:hidden;
+}
+.tl-bar i{position:absolute; top:0; bottom:0; left:0; border-radius:3px; display:block}
+.tl-body{font-size:13.5px; color:var(--text-2)}
+.tl-body .goal{color:var(--text); margin-bottom:6px}
+.tl-body .team{font-size:12.5px; color:var(--text-3); margin-top:6px}
+
+/* risk cards */
+.risks{display:grid; gap:12px; margin:20px 0}
+.risk{
+  background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+  padding:15px 18px; display:grid; grid-template-columns:1fr auto; gap:14px; align-items:start;
+}
+.risk .rid{font-size:11.5px; color:var(--text-3); font-family:ui-monospace,monospace; margin-bottom:4px}
+.risk .rname{font-size:14.5px; color:var(--text); font-weight:550; margin-bottom:6px}
+.risk .rmit{font-size:13px; color:var(--text-2)}
+.risk .badges{display:flex; flex-direction:column; gap:6px; align-items:flex-end; flex-shrink:0}
+
+/* steps */
+.steps{counter-reset:s; margin:20px 0}
+.step{
+  display:grid; grid-template-columns:52px 1fr; gap:16px; padding:14px 0;
+  border-bottom:1px solid var(--border);
+}
+.step:last-child{border-bottom:none}
+.step .d{
+  font-size:12.5px; font-weight:600; color:var(--ember); font-family:ui-monospace,monospace;
+  padding-top:2px;
+}
+.step .t{font-size:14px; color:var(--text); margin-bottom:4px}
+.step .o{font-size:13px; color:var(--text-3)}
+
+.grid2{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:18px 0}
+.card{
+  background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:16px 18px;
+}
+.card h4{margin:0 0 8px; font-size:14px; color:var(--text)}
+.card p{font-size:13.5px; margin:0; color:var(--text-2)}
+
+code{
+  font-family:ui-monospace,"SF Mono",Consolas,monospace; font-size:12.5px;
+  background:var(--surface-2); padding:2px 6px; border-radius:4px; color:var(--ember);
+}
+pre{
+  background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+  padding:18px; overflow-x:auto; font-size:12.5px; line-height:1.7; margin:16px 0;
+  font-family:ui-monospace,"SF Mono",Consolas,monospace; color:var(--text-2);
+}
+pre b{color:var(--ember); font-weight:500}
+pre i{color:var(--text-3); font-style:normal}
+
+footer{
+  border-top:1px solid var(--border); padding-top:24px; margin-top:60px;
+  font-size:13px; color:var(--text-3);
+}
+@media(max-width:1000px){
+  nav{display:none}
+  main{padding:32px 24px 80px}
+  .grid2{grid-template-columns:1fr}
+  .tl-row{grid-template-columns:1fr; gap:8px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav>
+  <div class="brand">Production Plan</div>
+  <div class="title">余火协议<br><span style="color:var(--text-3);font-size:13px;font-weight:400">UE5 制作计划</span></div>
+  <a href="#s0">0 · 一页速览</a>
+  <a href="#s1">1 · 引擎与插件选型</a>
+  <a href="#s2">2 · 工程架构</a>
+  <a href="#s3">3 · 核心系统实现</a>
+  <a href="#s3-1" class="sub">3.1 机体装配</a>
+  <a href="#s3-2" class="sub">3.2 部位拆解</a>
+  <a href="#s3-3" class="sub">3.3 电力与热量</a>
+  <a href="#s3-6" class="sub">3.6 回收与经济</a>
+  <a href="#s3-7" class="sub">3.7 基地与流送</a>
+  <a href="#s3-8" class="sub">3.8 存档</a>
+  <a href="#s4">4 · 系统交互矩阵</a>
+  <a href="#s5">5 · 美术与动画管线</a>
+  <a href="#s6">6 · 性能预算与门禁</a>
+  <a href="#s7">7 · 里程碑计划</a>
+  <a href="#s8">8 · 团队与预算</a>
+  <a href="#s9">9 · 风险登记表</a>
+  <a href="#s10">10 · 前 14 天清单</a>
+</nav>
+
+<main>
+
+<header>
+  <div class="kicker">UNREAL ENGINE 5.8 · PC 单机</div>
+  <h1>《余火协议》UE5 制作计划</h1>
+  <div class="sub">第三人称动作冒险 ＋ 机体模块化改装 ｜ 目标玩家：动作探索玩家 ｜ 单局 20—40 分钟</div>
+  <div class="meta">
+    <span class="chip hot">基线 UE 5.8</span>
+    <span class="chip">42 个月</span>
+    <span class="chip">峰值约 100 人</span>
+    <span class="chip">研发预算约 ¥2.3 亿</span>
+    <span class="chip">买断制 · 离线单人</span>
+  </div>
+</header>
+
+<section id="s0">
+  <h2><span class="num">0</span>一页速览</h2>
+
+  <div class="callout">
+    <div class="label">FUN HYPOTHESIS · 设计的地基</div>
+    <div class="quote">每一次拆卸敌人的身体，都在改写你自己的身体，以及你接下来能走的路。</div>
+    <p style="margin-top:12px">这句话把"战斗""改装""探索"焊成一条因果链，而不是三个并列系统。写不清楚这一句，就不往下走。</p>
+  </div>
+
+  <h3>三条设计支柱（技术决策的过审标准）</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:38px">#</th><th>支柱</th><th>判定问题 —— 不通过就砍</th></tr></thead>
+    <tbody>
+      <tr><td><strong>P1</strong></td><td><strong>改装改变玩法，不只是数值</strong></td><td>这个新机体／模块带来了新的移动方式或战斗解法吗？只加 5% 攻击力的模块一律砍掉。</td></tr>
+      <tr><td><strong>P2</strong></td><td><strong>拆解是有代价的选择</strong></td><td>这个可回收部件伴随机会成本吗？（救同伴／留资源／换路线）没有取舍的回收只是捡垃圾。</td></tr>
+      <tr><td><strong>P3</strong></td><td><strong>20—40 分钟一个完整弧线</strong></td><td>这个任务包含准备、张力、回收、改装反馈四个节拍吗？缺节拍就重排。</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>项目基线</h3>
+  <div class="tw">
+  <table>
+    <tbody>
+      <tr><td style="width:130px"><strong>品类</strong></td><td>第三人称动作冒险 ＋ 机体模块化改装</td></tr>
+      <tr><td><strong>平台</strong></td><td>PC（Windows）单机，键鼠优先，同步支持手柄</td></tr>
+      <tr><td><strong>目标玩家</strong></td><td>动作探索玩家：喜欢改装、探索、剧情，接受中等难度，不追求极限操作</td></tr>
+      <tr><td><strong>单局时长</strong></td><td>20—40 分钟完成"准备 → 战斗 → 回收 → 改装"完整弧线</td></tr>
+      <tr><td><strong>引擎</strong></td><td>Unreal Engine 5.8</td></tr>
+      <tr><td><strong>商业模式</strong></td><td>买断制，离线单人，无内购</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="s1">
+  <h2><span class="num">1</span>引擎与插件选型</h2>
+
+  <h3>1.1 为什么是 UE 5.8</h3>
+  <p>UE 5.8 于 2026 年 6 月发布，是 <strong>UE5 计划内的最后一个版本</strong>，此后 Epic 转向 UE6。对一个 42 个月的项目来说，这是当前最稳的选择：</p>
+  <ul>
+    <li><strong>5.8 是长期维护终点</strong> —— 不会出现"项目做到一半引擎停止支持"的断层。</li>
+    <li><strong>关键能力已生产就绪</strong> —— MegaLights（多动态光源）、Mutable（运行时角色组装）、Iris、Chaos 布料、Audio Insights。</li>
+    <li><strong>UE6 迁移窗口可预留</strong> —— 在 P4 安排 2 个月评估期。不要现在赌 UE6。</li>
+  </ul>
+  <div class="callout red">
+    <div class="label">明确不做的决定</div>
+    <p>不在开发中途升级引擎大版本。引擎升级只在 <strong>P0</strong> 和 <strong>P4</strong> 两个窗口进行。</p>
+  </div>
+
+  <h3>1.2 核心插件选型</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>需求</th><th>选型</th><th>状态</th><th>风险／代价</th></tr></thead>
+    <tbody>
+      <tr><td>移动基础</td><td><strong>Character Movement Component</strong></td><td><span class="tag ok">稳定</span></td><td>攀爬需自定义 MovementMode，工作量前置</td></tr>
+      <tr><td>移动（未来）</td><td>Mover 插件</td><td><span class="tag warn">未就绪</span></td><td><strong>当前不用</strong>，P4 再评估；移动逻辑走接口抽象预留迁移</td></tr>
+      <tr><td>机体模块装配</td><td><strong>Mutable</strong></td><td><span class="tag ok">生产就绪</span></td><td>学习曲线；需自写 GameplayTag → 参数的桥接层</td></tr>
+      <tr><td>技能与属性</td><td><strong>Gameplay Ability System</strong></td><td><span class="tag ok">稳定</span></td><td>上手陡峭；网络部分用不上（单机）可裁剪</td></tr>
+      <tr><td>敌人 AI</td><td><strong>StateTree ＋ Perception ＋ EQS</strong></td><td><span class="tag ok">稳定</span></td><td>社区资料少于行为树，需内部沉淀文档</td></tr>
+      <tr><td>场景破坏</td><td>Chaos Destruction</td><td><span class="tag ok">稳定</span></td><td>性能昂贵，<strong>不做全场景破坏</strong>，仅用于巨像表演段落</td></tr>
+      <tr><td>环境光照</td><td><strong>Lumen ＋ Lumen Lite</strong></td><td><span class="tag warn">Lite 测试版</span></td><td>需两套画质预设分别验证</td></tr>
+      <tr><td>多动态光源</td><td><strong>MegaLights</strong></td><td><span class="tag ok">生产就绪</span></td><td>需按场景设光源上限</td></tr>
+      <tr><td>静态几何</td><td><strong>Nanite</strong></td><td><span class="tag ok">稳定</span></td><td><strong>骨骼网格体不依赖 Nanite</strong>，走标准 LOD 管线</td></tr>
+      <tr><td>开放区域</td><td><strong>World Partition ＋ HLOD</strong></td><td><span class="tag ok">稳定</span></td><td>线性关卡不用它（见 3.7）</td></tr>
+      <tr><td>环境铺量</td><td>PCG</td><td><span class="tag warn">部分实验性</span></td><td>实验性节点不进生产管线</td></tr>
+      <tr><td>UI</td><td><strong>Common UI ＋ MVVM</strong></td><td><span class="tag ok">稳定</span></td><td>需早期定 ViewModel 规范</td></tr>
+      <tr><td>音频</td><td><strong>MetaSounds ＋ Quartz</strong></td><td><span class="tag ok">稳定</span></td><td>—</td></tr>
+      <tr><td>动画次级运动</td><td>Control Rig Physics</td><td><span class="tag warn">测试版</span></td><td><strong>需回退方案</strong>（退回手 K 动画）</td></tr>
+      <tr><td>过场</td><td><strong>Sequencer ＋ MRQ</strong></td><td><span class="tag ok">稳定</span></td><td>过场数量要严格控制（见 3.11）</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>1.3 三个明确的技术取舍</h3>
+  <div class="grid2">
+    <div class="card">
+      <h4>取舍一：Mover 不用，但留接口</h4>
+      <p>Mover 在 5.8 仍被官方描述为"从实验性向稳定架构演进"，未标注生产就绪。做法：定义 <code>IRobotLocomotion</code> 接口，CMC 作为实现；攀爬、磁吸、冲刺都通过接口调用。将来迁移只换实现层。</p>
+    </div>
+    <div class="card">
+      <h4>取舍二：部位拆解用"假拆解"</h4>
+      <p>Chaos 逐部件碎裂在几十个敌人同屏时性能不可控，且碎块无法稳定作为拾取物。做法：骨骼隐藏 ＋ 预制备件模型替换。Chaos 只留给巨像关卡的脚本化表演。</p>
+    </div>
+    <div class="card">
+      <h4>取舍三：机体独立，模块挂点</h4>
+      <p>不追求"任意零件自由拼接"——那是内容成本的深渊。3 类机体各做一个完整角色；40 个模块通过骨骼 Socket 挂载。只有需要改变骨架比例时才引入 Mutable。</p>
+    </div>
+    <div class="card" style="border-color:var(--ember-dim); background:var(--ember-bg)">
+      <h4 style="color:var(--ember)">为什么这三条重要</h4>
+      <p style="color:var(--text-2)">它们都指向同一件事：<strong style="color:var(--text)">把成本花在玩家能感知的地方</strong>。引擎新功能不等于该用，稳定和可控比先进更重要。</p>
+    </div>
+  </div>
+</section>
+
+<section id="s2">
+  <h2><span class="num">2</span>工程架构</h2>
+
+  <h3>2.1 目录结构</h3>
+<pre>robot_game/
+├─ <b>Config/</b>                 <i>引擎与项目配置、画质预设</i>
+├─ <b>Content/RobotGame/</b>
+│  ├─ Art/  Characters · Environment · Props · VFX · Materials
+│  ├─ Audio/  Blueprints/  Data/  Maps/  UI/  Cinematics/
+├─ <b>Source/</b>
+│  ├─ RobotGame/        <i>主模块（Target、GameMode）</i>
+│  ├─ RobotCore/        <i>基础类型、GameplayTag、数据资产定义</i>
+│  ├─ RobotAssembly/    <i>机体与模块装配</i>
+│  ├─ RobotCombat/      <i>GAS 技能、伤害路由、部位系统</i>
+│  ├─ RobotAI/          <i>StateTree 任务、感知、EQS</i>
+│  ├─ RobotWorld/       <i>区域、流送、移动基地</i>
+│  ├─ RobotUI/          <i>ViewModel 与 C++ 基类</i>
+│  ├─ RobotSave/        <i>存档与版本迁移</i>
+│  └─ RobotEditor/      <i>仅编辑器：数据校验、内容工具</i>
+├─ <b>Plugins/RobotGameplay/</b>
+├─ <b>Tools/</b>                 <i>构建脚本、数据校验、自动化测试</i>
+└─ <b>Docs/</b></pre>
+
+  <h3>2.2 模块依赖规则</h3>
+  <p><strong>硬规则：依赖只能单向。</strong> <code>RobotUI</code> 不允许 <code>#include</code> <code>RobotCombat</code> 的头文件 —— UI 通过接口或事件拿数据。这条规则能防止后期 UI 与玩法互相纠缠到无法重构。</p>
+<pre>RobotCore  <i>（不依赖任何游戏模块）</i>
+   ↑
+RobotAssembly → RobotCombat → RobotAI
+   ↑              ↑
+RobotWorld    RobotUI  <i>（通过接口读数据，不直接依赖 Combat）</i>
+   ↑
+RobotSave</pre>
+
+  <h3>2.3 蓝图 / C++ 边界</h3>
+  <p>这是最容易失控的地方，必须在第 1 周就写死规则：</p>
+  <div class="tw">
+  <table>
+    <thead><tr><th>内容</th><th>C++</th><th>蓝图</th></tr></thead>
+    <tbody>
+      <tr><td>核心系统逻辑（装配、伤害、存档、AI 决策）</td><td><span class="tag ok">必须</span></td><td><span class="tag bad">禁止</span></td></tr>
+      <tr><td>数据资产定义与校验</td><td><span class="tag ok">必须</span></td><td><span class="tag bad">禁止</span></td></tr>
+      <tr><td>数值调参、曲线、掉落表</td><td><span class="tag bad">禁止</span></td><td><span class="tag ok">必须</span></td></tr>
+      <tr><td>关卡脚本、触发器、一次性演出</td><td><span class="tag bad">禁止</span></td><td><span class="tag ok">必须</span></td></tr>
+      <tr><td>UI 布局与样式</td><td><span class="tag bad">禁止</span></td><td><span class="tag ok">必须</span></td></tr>
+      <tr><td>原型验证（P0—P1）</td><td><span class="tag bad">禁止</span></td><td><span class="tag warn">允许试错</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="callout red">
+    <div class="label">禁令</div>
+    <p>不允许在蓝图里实现核心玩法逻辑后再"有空再搬到 C++"。原型期的蓝图必须在 <strong>P2 之前重写</strong>，否则性能与可维护性会在 P3 爆掉。</p>
+  </div>
+
+  <h3>2.4 版本控制与 CI</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>项目</th><th>方案</th><th>理由</th></tr></thead>
+    <tbody>
+      <tr><td>版本控制</td><td><strong>Perforce Helix Core</strong> 或 Epic 内置 <strong>Unreal Revision Control</strong></td><td>UE 资产是二进制，Git 处理大文件会痛苦。团队 &gt; 15 人用 P4，小团队可用 URC</td></tr>
+      <tr><td>资产锁</td><td>强制 Checkout / Lock</td><td>防止两人同时改同一个 uasset</td></tr>
+      <tr><td>编译加速</td><td><strong>Unreal Build Accelerator</strong> ＋ 分布式编译</td><td>大型 C++ 工程编译时间直接决定迭代速度</td></tr>
+      <tr><td>CI</td><td><strong>Unreal Horde ＋ BuildGraph</strong></td><td>每日自动出包</td></tr>
+      <tr><td>自动化测试</td><td><strong>Gauntlet ＋ Automation Spec</strong></td><td>冒烟测试：启动、加载、存档读写、关键关卡可通</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p><strong>每日构建的验收线</strong>：能启动 → 能进主基地 → 能进一个区域 → 能战斗 → 能改装 → 能存档读档。任一环断了当天修。</p>
+</section>
+
+<section id="s3">
+  <h2><span class="num">3</span>核心系统实现方案</h2>
+
+  <h3 id="s3-1">3.1 机体与模块装配</h3>
+  <p><strong>目标体验</strong>：玩家在改装界面拖动一个部件，立刻在预览里看到机体形态变化，并能读到重量／供电／散热三条约束的实时反馈。</p>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th>层级</th><th>内容</th><th>实现</th></tr></thead>
+    <tbody>
+      <tr><td><strong>机体</strong></td><td>轻型双足 / 中型通用 / 重型四足，共 3 类</td><td>独立 <code>ARobotCharacter</code> 子类 ＋ 独立 SkeletalMesh ＋ 独立 AnimBP</td></tr>
+      <tr><td><strong>模块</strong></td><td>头部、核心、双臂、底盘、辅助，约 40 个</td><td>骨骼 Socket 挂载，<code>UStaticMeshComponent</code> / <code>USkeletalMeshComponent</code> 子组件</td></tr>
+      <tr><td><strong>工具</strong></td><td>战场快拆工具，少量</td><td>手部 Socket，运行时切换</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h4>三条约束 —— 支柱 P1 的落点</h4>
+  <div class="tw">
+  <table>
+    <thead><tr><th>约束</th><th>作用</th><th>设计意图</th></tr></thead>
+    <tbody>
+      <tr><td><strong>重量 Mass</strong></td><td>影响移动速度、跳跃高度、受击位移</td><td>让"重装"真的变笨重，而不是纯收益</td></tr>
+      <tr><td><strong>供电 Power</strong></td><td>所有主动模块共享上限</td><td>强制取舍：不能同时装满高耗能模块</td></tr>
+      <tr><td><strong>散热 Heat</strong></td><td>决定连续输出时长</td><td>制造"爆发—停顿"的战斗节奏</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="callout">
+    <div class="label">关键判断</div>
+    <p>三条约束互相牵制，是防止"一套最优解通吃"的核心机制。<strong>没有这三条，40 个模块就只是 40 张数值贴纸。</strong></p>
+  </div>
+
+  <h3 id="s3-2">3.2 部位拆解与伤害路由</h3>
+  <p><strong>目标体验</strong>：玩家瞄准敌人腿部而非躯干，打掉后敌人真的会瘸，而不是扣更多血。</p>
+<pre>命中检测
+  └─ 命中骨骼名 (FName BoneName)
+       └─ UPartMapData <i>（DataAsset）</i>: BoneName → FGameplayTag
+            └─ UPartDamageComponent: TMap&lt;FGameplayTag, FPartHealth&gt;
+                 └─ 部位 HP 归零
+                      └─ 表现层: HideBoneByName() + Spawn 掉落物 Actor</pre>
+
+  <p><strong>为什么部位 HP 不放进 GAS AttributeSet</strong>：部位数量是动态的（不同敌人部位数不同），AttributeSet 适合固定属性。用独立组件管理，GAS 只负责通过 GameplayEffect 投递伤害。</p>
+
+  <h4>"假拆解"的具体做法</h4>
+  <ol>
+    <li>Physics Asset 中每个部位一个 body，命名规范 <code>part_upperarm_R</code>。</li>
+    <li>部位破坏时 <code>HideBoneByName</code> 隐藏该部位骨骼。</li>
+    <li>同时 Spawn 一个<strong>预制的备件模型</strong>（物理模拟），落地后转为可拾取状态。</li>
+    <li><strong>不使用 Chaos 逐块碎裂</strong> —— 碎块不可控，且无法稳定作为拾取物。</li>
+  </ol>
+
+  <div class="callout teal">
+    <div class="label">支柱 P2 的落点</div>
+    <p>具名敌人额外挂 <code>UCompanionCandidateComponent</code>。部位 HP 归零但核心未毁时进入"可修复"状态，玩家选择<strong>修复（消耗资源、获得同伴）</strong>或<strong>拆解（获得稀有核心）</strong>。</p>
+  </div>
+
+  <h4>必须处理的边界情况</h4>
+  <ul>
+    <li>部位全毁但核心存活 → 敌人进入"瘫痪"而非死亡，可交互。</li>
+    <li>玩家自身部位被毁 → 临时失去对应能力（手臂毁则无法使用该臂武器），任务结束自动修复。</li>
+    <li>同一部位多次命中 → 伤害不溢出到其他部位，防止"打腿等于打全身"。</li>
+  </ul>
+
+  <h3 id="s3-3">3.3 电力与热量（GAS 实现）</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>属性</th><th>作用</th><th>初始值</th></tr></thead>
+    <tbody>
+      <tr><td><code>Power</code></td><td>当前电力，技能消耗</td><td><span class="tag na">PLACEHOLDER</span></td></tr>
+      <tr><td><code>PowerRegen</code></td><td>电力回复速率，由核心模块决定</td><td><span class="tag na">PLACEHOLDER</span></td></tr>
+      <tr><td><code>Heat</code></td><td>当前热量，<strong>只涨不自动降</strong></td><td>0</td></tr>
+      <tr><td><code>HeatDissipation</code></td><td>散热速率，由底盘／辅助模块决定</td><td><span class="tag na">PLACEHOLDER</span></td></tr>
+      <tr><td><code>OverheatThreshold</code></td><td>过热阈值，触发武器锁定</td><td><span class="tag na">PLACEHOLDER</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p><strong>热量是"反向资源"</strong>，这是战斗节奏的核心杠杆：攻击、冲刺、过载都加 Heat；Heat 只能通过散热动作下降；达到阈值触发 <code>GameplayTag.State.Overheated</code>，锁定武器 2 秒 <span class="tag na">PLACEHOLDER</span>。</p>
+  <div class="callout">
+    <div class="label">验证路径</div>
+    <p>纸面模拟（Excel 算 3 种模块组合的"可持续输出时间"）→ 首个可玩原型记录 10 局实战 → 观察玩家是否主动管理热量。<strong>如果玩家从不看热量条，说明杠杆失效，需重画。</strong></p>
+  </div>
+
+  <h3 id="s3-6">3.6 回收与经济系统</h3>
+  <div class="grid2">
+    <div class="card">
+      <h4 style="color:var(--teal)">Sources · 材料从哪来</h4>
+      <p>拆解敌人（主要）／ 区域残骸与宝箱 ／ 任务奖励 ／ 基地回收站（被动产出）</p>
+    </div>
+    <div class="card">
+      <h4 style="color:var(--ember)">Sinks · 材料到哪去</h4>
+      <p>制造模块 ／ 制造机体框架 ／ 修复机体与部位 ／ 升级模块等级 ／ 基地建设（同伴设施）</p>
+    </div>
+  </div>
+
+  <div class="callout red">
+    <div class="label">通胀风险</div>
+    <p>拆解是无限来源，玩家刷同一区域就能无限产出材料，模块价格迅速失去意义。</p>
+  </div>
+  <h4>对策（三条同时上）</h4>
+  <ol>
+    <li><strong>模块用"蓝图 ＋ 稀有核心"解锁，材料只做消耗。</strong> 稀有核心只来自具名敌人和关键任务，数量有限，不可刷。</li>
+    <li><strong>区域材料衰减</strong>：同一区域重复清剿，材料产出递减 <span class="tag na">PLACEHOLDER</span>。</li>
+    <li><strong>基地建设消耗大量材料</strong>，作为长期 sink，吸收通胀。</li>
+  </ol>
+  <p><strong>验证路径</strong>：用 Monte Carlo 模拟 3 类玩家（速通型／收集型／刷子型）在 30 小时内的材料存量曲线。若刷子型存量在 10 小时后趋于无限，说明 sink 不足。</p>
+
+  <h3 id="s3-7">3.7 移动基地与关卡流送</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>关卡类型</th><th>方案</th><th>理由</th></tr></thead>
+    <tbody>
+      <tr><td>5 个大型区域</td><td><strong>World Partition ＋ HLOD</strong></td><td>需要大范围流送与 HLOD 简化</td></tr>
+      <tr><td>主基地（移动城市内部）</td><td><strong>传统子关卡流送</strong></td><td>空间紧凑、逻辑复杂，World Partition 反而难控</td></tr>
+      <tr><td>巨像关卡</td><td><strong>单关卡 ＋ 分段加载</strong></td><td>巨像是受控运动的整体，不适合按空间切分</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <ul>
+    <li>基地是 Persistent Level 里的一个 <code>ALevelInstance</code> Actor。</li>
+    <li>基地移动是<strong>受控的、脚本化的</strong>，不做真实物理模拟整座城市。</li>
+    <li>玩家在基地内看到同伴设施随进度变化 —— 这是"选择有后果"的可视化。</li>
+    <li><strong>5.8 新工具用起来</strong>：World Partition Insights 可按单元分析流送性能并回放会话。</li>
+  </ul>
+
+  <h3 id="s3-8">3.8 存档系统</h3>
+  <div class="callout red">
+    <div class="label">一个真实的设计张力</div>
+    <p>PC 单机玩家默认期待"随时存档"。但这个游戏里，随时存档意味着要序列化：机体装配状态、40 个模块的归属、掉落物位置、敌人部位 HP、同伴关系、基地建设进度 —— 状态空间巨大，且容易出 bug。</p>
+  </div>
+  <p><strong>决策</strong>：<strong>检查点式自动存档 ＋ 手动存档槽</strong>，不做随时快速存档。任务内设 2—3 个检查点，符合 20—40 分钟的单局节奏；玩家可在主基地手动存档到多个槽位；存档点位置与任务节拍对齐（准备后、张力中、回收前）。</p>
+  <p><strong>版本迁移</strong>：<code>USaveGame</code> 子类带 <code>SaveVersion</code> 字段；每次改动存档结构写一个迁移函数。<strong>从 P2 起，每次迭代都必须用旧版本存档测试读取。</strong> 这一条不做，上线后玩家存档损坏会是最致命的差评来源。</p>
+</section>
+
+<section id="s4">
+  <h2><span class="num">4</span>系统交互矩阵</h2>
+  <p>提前暴露系统打架的风险。每个里程碑评审时重新过一遍，新系统加入必须补一行。</p>
+  <div class="tw">
+  <table>
+    <thead><tr><th>系统 A</th><th>系统 B</th><th>关系</th><th>说明</th></tr></thead>
+    <tbody>
+      <tr><td>部位拆解</td><td>移动系统</td><td><span class="tag ok">Intended</span></td><td>腿部部位被毁 → 移动受限，核心体验</td></tr>
+      <tr><td>部位拆解</td><td>动画系统</td><td><span class="tag ok">Intended</span></td><td>部位隐藏后动画必须适配（缺手臂的射击动作）</td></tr>
+      <tr><td>部位拆解</td><td>掉落物物理</td><td><span class="tag bad">Bug 风险</span></td><td>大量掉落物同时物理模拟 → 性能尖峰。需数量上限 ＋ 落地后立即转静态</td></tr>
+      <tr><td>改装</td><td>存档</td><td><span class="tag bad">Bug 风险</span></td><td>改装后存档再读档，模块归属必须一致，需专项测试</td></tr>
+      <tr><td>改装</td><td>经济</td><td><span class="tag ok">Intended</span></td><td>稀有核心限制改装节奏</td></tr>
+      <tr><td>热量系统</td><td>敌人 AI</td><td><span class="tag ok">Intended</span></td><td>敌人应利用玩家过热窗口进攻</td></tr>
+      <tr><td>攀爬</td><td>流送</td><td><span class="tag bad">Bug 风险</span></td><td>攀爬时跨流送单元 → 加载卡顿导致坠落，需路径预加载</td></tr>
+      <tr><td>同伴系统</td><td>任务流程</td><td><span class="tag bad">Bug 风险</span></td><td>招募顺序不同 → 对话分支组合爆炸，需限制入队时机</td></tr>
+      <tr><td>MegaLights</td><td>性能</td><td><span class="tag warn">Acceptable</span></td><td>需按场景设光源上限，工业场景易超标</td></tr>
+      <tr><td>Control Rig Physics</td><td>稳定性</td><td><span class="tag bad">Bug 风险</span></td><td>测试版功能，需回退方案（退回手 K 动画）</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="s5">
+  <h2><span class="num">5</span>美术与动画管线</h2>
+
+  <h3>5.1 机器人建模规范（外包交付必须遵守）</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>项目</th><th>规范</th></tr></thead>
+    <tbody>
+      <tr><td>单位与比例</td><td>厘米制，1 单位 = 1 cm</td></tr>
+      <tr><td>朝向</td><td>统一 +X 朝前，+Z 朝上</td></tr>
+      <tr><td>Pivot</td><td>模块 Pivot 统一在挂点中心，<strong>不允许在包围盒中心</strong></td></tr>
+      <tr><td>挂点命名</td><td><code>socket_head</code> / <code>socket_arm_L</code> / <code>socket_arm_R</code> / <code>socket_back</code> / <code>socket_aux_01…</code></td></tr>
+      <tr><td>骨架</td><td>3 类机体各有独立骨架，但共享 IK Rig 定义以复用动画</td></tr>
+      <tr><td>三角面预算</td><td>主角机体 15—25 万；具名敌人 6—10 万；普通敌人 3—6 万；模块 2—8 千</td></tr>
+      <tr><td>贴图</td><td>部件 1024，机体主体 2048，统一 sRGB 与法线格式</td></tr>
+      <tr><td>材质槽</td><td>每个模块最多 2 个材质槽（限制 draw call）</td></tr>
+      <tr><td>LOD</td><td>4 级自动生成 ＋ 手动修正，LOD1 起减面 ≥ 50%</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>5.2 动画管线</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>环节</th><th>方案</th></tr></thead>
+    <tbody>
+      <tr><td>3 类机体共享动画</td><td>IK Retargeter ＋ 共享 IK Rig 定义</td></tr>
+      <tr><td>攻击对齐</td><td>Motion Warping（攻击时自动对齐目标）</td></tr>
+      <tr><td>次级运动</td><td>Control Rig Physics（天线、线缆、液压管）—— <span class="tag warn">测试版，必须有回退方案</span></td></tr>
+      <tr><td>程序化脚步</td><td>足部 IK ＋ 地形适配（重型四足在不平地面必须踩实）</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="callout">
+    <div class="label">外包纪律</div>
+    <p>交付包必须包含：UE 工程模板、命名规范文档、Pivot/朝向验收清单、LOD 与材质槽检查工具。<strong>没有验收工具的资产不要收</strong> —— 否则返工成本会吃掉外包省下的钱。</p>
+  </div>
+</section>
+
+<section id="s6">
+  <h2><span class="num">6</span>性能预算与门禁</h2>
+
+  <h3>6.1 目标配置</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>档位</th><th>硬件参考</th><th>分辨率／帧率</th><th>画质预设</th></tr></thead>
+    <tbody>
+      <tr><td>最低</td><td>GTX 1660 / Ryzen 5 3600</td><td>1080p / 30fps</td><td>低（烘焙光照）</td></tr>
+      <tr><td><strong>基准</strong></td><td>RTX 3060 / Ryzen 5 5600</td><td><strong>1080p / 60fps</strong></td><td>中（Lumen Lite ＋ MegaLights 限流）</td></tr>
+      <tr><td>推荐</td><td>RTX 4070 / Ryzen 7 5800X</td><td>1440p / 60fps</td><td>高（完整 Lumen）</td></tr>
+      <tr><td>高端</td><td>RTX 4080+</td><td>4K / 60fps</td><td>极高</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>6.2 帧预算（基准档，总 16.6 ms）</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>项</th><th>预算</th><th>说明</th></tr></thead>
+    <tbody>
+      <tr><td>游戏线程</td><td>6.0 ms</td><td>含 AI、动画、物理</td></tr>
+      <tr><td>渲染线程</td><td>8.0 ms</td><td>含 Lumen、MegaLights</td></tr>
+      <tr><td>GPU</td><td>14.0 ms</td><td>—</td></tr>
+      <tr><td>预留</td><td>2.6 ms</td><td>波动余量</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p><strong>硬性上限</strong>：Draw call &lt; 5000 ｜ 同屏普通敌人 ≤ 12 或具名敌人 ≤ 4 ｜ 同屏掉落物 ≤ 20 ｜ 同屏 MegaLights ≤ 32 ｜ VRAM &lt; 8 GB @1080p 中画质 <span class="tag na">均为 PLACEHOLDER</span></p>
+
+  <div class="callout red">
+    <div class="label">性能门禁</div>
+    <p><strong>每个里程碑设性能门禁，不达标不进入下一阶段。</strong> 这是唯一能防止"上线前发现跑不动"的机制。P2 结束时必须达到基准档 60fps，否则先优化再扩内容。</p>
+  </div>
+</section>
+
+<section id="s7">
+  <h2><span class="num">7</span>里程碑计划 · 42 个月</h2>
+
+  <div class="tl">
+    <div class="tl-row">
+      <div class="tl-phase">P0 管线与预研<span class="per">第 1—2 月 · 6—8 人</span></div>
+      <div>
+        <div class="tl-bar"><i style="width:5%;background:var(--ember-dim)"></i></div>
+        <div class="tl-body">
+          <div class="goal">引擎管线跑通，四大技术风险验证完毕</div>
+          验证项：Mutable 运行时组装性能 ／ 部位拆解＋回收闭环 ／ World Partition 大区域流送 ／ GAS 承载电力与热量
+          <div class="team" style="color:var(--red)">失败信号：验证项用"应该可以吧"结案 —— 没有实测数据的验证等于没验证</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-row">
+      <div class="tl-phase">P1 核心原型<span class="per">第 3—6 月 · 12—15 人</span></div>
+      <div>
+        <div class="tl-bar"><i style="width:9%;background:var(--ember-dim)"></i></div>
+        <div class="tl-body">
+          <div class="goal">在灰盒里证明"换装真的改变打法"</div>
+          交付：1 个机体框架 ＋ 3 个可换模块 ＋ 1 场战斗 ＋ 拆解回收换装闭环 ＋ 最简改装界面<br>
+          <strong>验收</strong>：10 名外部玩家盲测，≥ 7 人能自主发现并尝试换装，≥ 6 人能描述出换装前后的打法差异
+          <div class="team" style="color:var(--red)">失败信号：玩家全程不打开改装界面 ／ 换装后说不出差异 ／ 只关心"哪个数值高"</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-row">
+      <div class="tl-phase">P2 垂直切片<span class="per">第 7—14 月 · 20—30 人</span></div>
+      <div>
+        <div class="tl-bar"><i style="width:19%;background:var(--ember)"></i></div>
+        <div class="tl-body">
+          <div class="goal">做出 20—40 分钟的完整品质样板</div>
+          交付：一个完整任务（含巨像关卡片段）／ 美术风格确立 ／ 性能基线达标 ／ 存档系统 ／ 改装界面正式版<br>
+          <strong>验收</strong>：盲测完成率 ≥ 80% 无卡关 ／ 基准档 1080p/60fps 达标 ／ 20 分钟连续游玩无崩溃 ／ 旧存档正确读取
+          <div class="team" style="color:var(--ember)">关键决策点：巨像关卡是项目最大成本风险。本阶段必须先做出一场可玩的巨像样板，做不到就降级为静态巨型场景，并同步调整全部宣发口径</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-row">
+      <div class="tl-phase">P3 批量生产<span class="per">第 15—30 月 · 60—100 人</span></div>
+      <div>
+        <div class="tl-bar"><i style="width:38%;background:var(--teal)"></i></div>
+        <div class="tl-body">
+          <div class="goal">按区域批量交付内容</div>
+          交付：5 个区域 ／ 3 类机体 ／ 约 40 个模块 ／ 20 种敌人 ／ 6 场首领战 ／ 同伴系统 ／ 基地建设<br>
+          <strong>节奏</strong>：双周迭代，每迭代一个可玩构建；每月一次内部 playtest；每季度一次外部 playtest
+          <div class="team" style="color:var(--ember)">关键纪律：系统在 P2 末冻结。P3 期间不接受新系统。任何"加个新系统吧"的提议，必须先写与现有系统的冲突风险文档</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-row">
+      <div class="tl-phase">P4 内容锁定<span class="per">第 31—36 月 · 80—100 人</span></div>
+      <div>
+        <div class="tl-bar"><i style="width:14%;background:var(--teal)"></i></div>
+        <div class="tl-body">
+          <div class="goal">全流程可玩，系统冻结</div>
+          交付：完整主线可通关 ／ 全部结局可达 ／ UE6 迁移评估报告<br>
+          <strong>验收</strong>：完整通关 3 次无阻断性 bug ／ 全部存档迁移路径验证通过 ／ 性能达标
+          <div class="team">关键决策：若迁移 UE6，预留 2 个月并只做迁移不做内容；若不迁移，锁定 5.8 至发行</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-row">
+      <div class="tl-phase">P5 打磨与发行<span class="per">第 37—42 月 · 60—80 人</span></div>
+      <div>
+        <div class="tl-bar"><i style="width:14%;background:var(--teal)"></i></div>
+        <div class="tl-body">
+          <div class="goal">性能、兼容、认证、上线</div>
+          交付：发布候选版本 ／ 本地化 ／ 无障碍功能 ／ 商店页与宣传素材<br>
+          <strong>验收</strong>：全部目标配置达标 ／ 无障碍功能通过审查 ／ 平台认证通过 ／ 连续 4 小时压力测试无崩溃
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="s8">
+  <h2><span class="num">8</span>团队与预算</h2>
+
+  <h3>8.1 分阶段人力配置</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>职能</th><th>P0—P1</th><th>P2</th><th>P3</th><th>P4—P5</th></tr></thead>
+    <tbody>
+      <tr><td>制作人／总监</td><td>1</td><td>2</td><td>3</td><td>3</td></tr>
+      <tr><td>玩法／系统策划</td><td>2</td><td>3</td><td>5</td><td>4</td></tr>
+      <tr><td>关卡／叙事策划</td><td>1</td><td>3</td><td>6</td><td>5</td></tr>
+      <tr><td>玩法程序</td><td>2</td><td>4</td><td>8</td><td>7</td></tr>
+      <tr><td>引擎／工具程序</td><td>1</td><td>2</td><td>5</td><td>5</td></tr>
+      <tr><td>AI 程序</td><td>1</td><td>2</td><td>3</td><td>3</td></tr>
+      <tr><td>技术美术</td><td>1</td><td>3</td><td>6</td><td>6</td></tr>
+      <tr><td>角色美术</td><td>1</td><td>4</td><td>10</td><td>8</td></tr>
+      <tr><td>环境美术</td><td>—</td><td>4</td><td>16</td><td>12</td></tr>
+      <tr><td>动画师</td><td>1</td><td>3</td><td>8</td><td>6</td></tr>
+      <tr><td>VFX／特效</td><td>—</td><td>1</td><td>4</td><td>4</td></tr>
+      <tr><td>音频</td><td>—</td><td>2</td><td>3</td><td>3</td></tr>
+      <tr><td>UI／UX</td><td>1</td><td>2</td><td>4</td><td>4</td></tr>
+      <tr><td>QA</td><td>1</td><td>4</td><td>12</td><td>15</td></tr>
+      <tr><td><strong>合计（约）</strong></td><td><strong>13</strong></td><td><strong>39</strong></td><td><strong>93</strong></td><td><strong>85</strong></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>8.2 预算模型（示例，非市场报价）</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>项</th><th>计算</th><th>金额</th></tr></thead>
+    <tbody>
+      <tr><td>内部人力</td><td>平均 70 人 × 42 月 × 人均综合月成本 ¥4.5 万</td><td>¥1.32 亿</td></tr>
+      <tr><td>外包（美术／动画／音频）</td><td>—</td><td>¥5000 万</td></tr>
+      <tr><td>引擎与工具授权</td><td>—</td><td>¥300 万</td></tr>
+      <tr><td>软硬件与办公</td><td>—</td><td>¥500 万</td></tr>
+      <tr><td>测试与认证</td><td>—</td><td>¥300 万</td></tr>
+      <tr><td>预备金 20%</td><td>—</td><td>¥3860 万</td></tr>
+      <tr><td><strong>研发预算合计</strong></td><td>—</td><td><strong>约 ¥2.32 亿</strong></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="callout">
+    <div class="label">这个模型的用法</div>
+    <p>人均成本与平均人数是最大的敏感变量 —— 平均人数从 70 降到 50，预算降到约 <strong>¥1.7 亿</strong>；升到 100，涨到约 <strong>¥3.2 亿</strong>。它的价值在于让你知道每加 10 个人意味着什么，而不是给出一个精确数字。</p>
+  </div>
+</section>
+
+<section id="s9">
+  <h2><span class="num">9</span>风险登记表</h2>
+  <div class="risks">
+    <div class="risk">
+      <div><div class="rid">R11 · 致命风险</div><div class="rname">核心体验不成立（换装无感知）</div><div class="rmit">P1 盲测；不通过则重画改装系统，不进入 P2。这是唯一会让整个项目前提失效的风险。</div></div>
+      <div class="badges"><span class="tag warn">概率 中</span><span class="tag bad">影响 致命</span></div>
+    </div>
+    <div class="risk">
+      <div><div class="rid">R1</div><div class="rname">模块组合爆炸导致平衡失控</div><div class="rmit">固定插槽 ＋ 重量/供电/散热三约束硬上限；模块数量上限 40。触发条件：出现"通吃配置"。</div></div>
+      <div class="badges"><span class="tag bad">概率 高</span><span class="tag bad">影响 高</span></div>
+    </div>
+    <div class="risk">
+      <div><div class="rid">R2</div><div class="rname">巨像关卡成本失控</div><div class="rmit">P2 先做样板；受控运动 ＋ 局部物理；做不到就降级为静态巨型场景。触发条件：P2 样板超期 2 个月。</div></div>
+      <div class="badges"><span class="tag bad">概率 高</span><span class="tag bad">影响 高</span></div>
+    </div>
+    <div class="risk">
+      <div><div class="rid">R3</div><div class="rname">Mover 未生产就绪导致返工</div><div class="rmit">移动走接口抽象，CMC 为主，P4 再评估。触发条件：官方宣布 Mover 生产就绪。</div></div>
+      <div class="badges"><span class="tag warn">概率 中</span><span class="tag warn">影响 中</span></div>
+    </div>
+    <div class="risk">
+      <div><div class="rid">R4</div><div class="rname">UE6 迁移风险</div><div class="rmit">5.8 锁定至 P4；预留 2 个月评估窗口。触发条件：Epic 公布 UE6 稳定版。</div></div>
+      <div class="badges"><span class="tag warn">概率 中</span><span class="tag warn">影响 中</span></div>
+    </div>
+    <div class="risk">
+      <div><div class="rid">R5</div><div class="rname">蓝图与 C++ 边界混乱</div><div class="rmit">第 1 周写死规则；原型蓝图 P2 前重写。触发条件：P3 出现性能问题追溯至蓝图。</div></div>
+      <div class="badges"><span class="tag bad">概率 高</span><span class="tag warn">影响 中</span></div>
+    </div>
+    <div class="risk">
+      <div><div class="rid">R6</div><div class="rname">性能不达标</div><div class="rmit">每里程碑设性能门禁，不达标不进下一阶段。触发条件：P2 结束未达 60fps。</div></div>
+      <div class="badges"><span class="tag warn">概率 中</span><span class="tag bad">影响 高</span></div>
+    </div>
+    <div class="risk">
+      <div><div class="rid">R7</div><div class="rname">存档兼容破坏</div><div class="rmit">存档版本号 ＋ 迁移函数；P2 起每次迭代测旧存档。触发条件：出现无法读取的存档。</div></div>
+      <div class="badges"><span class="tag warn">概率 中</span><span class="tag warn">影响 中</span></div>
+    </div>
+    <div class="risk">
+      <div><div class="rid">R8</div><div class="rname">外包资产质量不达标</div><div class="rmit">交付包含模板 ＋ 验收工具；不达标不收货。触发条件：返工率 &gt; 20%。</div></div>
+      <div class="badges"><span class="tag bad">概率 高</span><span class="tag warn">影响 中</span></div>
+    </div>
+    <div class="risk">
+      <div><div class="rid">R9</div><div class="rname">区域玩法重复</div><div class="rmit">每个区域必须有独立探索机制；季度外部 playtest。触发条件：玩家描述不出区域差异。</div></div>
+      <div class="badges"><span class="tag warn">概率 中</span><span class="tag bad">影响 高</span></div>
+    </div>
+    <div class="risk">
+      <div><div class="rid">R10</div><div class="rname">Control Rig Physics（测试版）不稳定</div><div class="rmit">回退方案：手 K 次级运动动画。触发条件：出现无法复现的抖动或穿透。</div></div>
+      <div class="badges"><span class="tag warn">概率 中</span><span class="tag ok">影响 低</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="s10">
+  <h2><span class="num">10</span>前 14 天执行清单</h2>
+  <p>目标不是做出游戏，而是<strong>在两周内拿到"这个核心循环是否成立"的第一个信号</strong>。</p>
+  <div class="steps">
+    <div class="step"><div class="d">D1—D2</div><div><div class="t">安装 UE 5.8；搭建 Perforce 或 Unreal Revision Control 仓库；建立工程目录与命名规范文档</div><div class="o">产出：可提交的空工程</div></div></div>
+    <div class="step"><div class="d">D3—D4</div><div><div class="t">建立 C++ 模块骨架（RobotCore / RobotCombat / RobotAssembly）；接入 Enhanced Input；做出能跑能跳的胶囊体</div><div class="o">产出：可操控的灰盒角色</div></div></div>
+    <div class="step"><div class="d">D5—D6</div><div><div class="t">接入 GAS；实现 Power / Heat 两条属性；做一个消耗电力、产生热量的冲刺技能；过热锁定</div><div class="o">产出：能感受到"爆发—停顿"节奏的移动</div></div></div>
+    <div class="step"><div class="d">D7—D8</div><div><div class="t">实现 UPartDamageComponent；做骨骼名 → 部位 Tag 的映射 DataAsset；做一个木桩敌人，打腿会瘸</div><div class="o">产出：部位伤害可验证</div></div></div>
+    <div class="step"><div class="d">D9—D10</div><div><div class="t">部位破坏 → 隐藏骨骼 ＋ Spawn 备件掉落物 → 拾取 → 材料计数</div><div class="o">产出：回收闭环跑通</div></div></div>
+    <div class="step"><div class="d">D11—D12</div><div><div class="t">做最丑但能用的改装界面：3 个插槽，换装真实改变移动速度与攻击方式</div><div class="o">产出：换装影响玩法</div></div></div>
+    <div class="step"><div class="d">D13—D14</div><div><div class="t">自测 10 局，记录三个数据：玩家是否主动换装？换装后是否感知差异？玩家看热量条吗？</div><div class="o">产出：一份自测报告 ＋ 下一步决策</div></div></div>
+  </div>
+
+  <div class="callout">
+    <div class="label">D14 的决策规则</div>
+    <ul style="margin-bottom:0">
+      <li>三个数据都正向 → 进入 P1，扩充模块数量与关卡。</li>
+      <li>换装无感知 → <strong>停下来重画改装系统</strong>，不要继续加内容。</li>
+      <li>玩家不看热量条 → 热量杠杆失效，简化或替换机制。</li>
+    </ul>
+  </div>
+
+  <div class="callout teal">
+    <div class="label">这份清单真正的价值</div>
+    <p>不是产出，而是把"这个游戏好不好玩"这个模糊问题，变成<strong>两周内可以拿到答案的具体实验</strong>。</p>
+  </div>
+</section>
+
+<footer>
+  《余火协议》UE5 制作计划 · v1.0 ｜ 引擎基线 Unreal Engine 5.8 ｜ 所有周期、人数、预算均为规划模型，需在里程碑验收后重估<br>
+  标记为 <span class="tag na">PLACEHOLDER</span> 的数值均未经 playtest 验证，附带假设与验证路径
+</footer>
+
+</main>
+</div>
+</body>
+</html>

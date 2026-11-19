@@ -1,0 +1,33 @@
+=== A) NiagaraSystemFactoryNew 空系统 ===
+  create_asset -> None
+  [A] disk=True(48870 B)  reload=True  class=NiagaraSystem
+
+=== B) duplicate FountainLightweight + save_loaded_asset ===
+  duplicate -> None
+  [B] disk=True(137822 B)  reload=True  class=NiagaraSystem
+
+=== C) duplicate + save_directory ===
+  save_directory done
+  [C] disk=True(137822 B)  reload=True  class=NiagaraSystem
+
+=== D) NiagaraClipboardEditorScriptingUtilities ===
+  方法: ['acquire_editor_element_handle', 'call_method', 'cast', 'create_bool_local_value_input', 'create_color_local_value_input', 'create_data_value_input', 'create_dynamic_value_input', 'create_enum_linked_value_input', 'create_enum_local_value_input', 'create_expression_value_input', 'create_float_local_value_input', 'create_int_local_value_input', 'create_linked_value_input', 'create_matrix_local_value_input', 'create_quat_local_value_input', 'create_struct_local_value_input', 'create_vec2_local_value_input', 'create_vec3_local_value_input', 'create_vec4_local_value_input', 'get_class']
+
+=== E) NiagaraSystemFactoryNew 属性 ===
+  asset_import_task                    = None
+  automated_import_data                = None
+  context_class                        = None
+  create_new                           = True
+  edit_after_new                       = True
+  editor_import                        = False
+  formats                              = []
+  supported_class                      = <Object '/Script/Niagara.NiagaraSystem' (0x000001B4E4FF8480) Class 'Class'>
+  supported_workflows                  = 3
+  text                                 = False
+
+=== F) NiagaraSystem 实例属性（找 emitter/参数）===
+
+=== 磁盘 FX 目录 ===
+  NS_TestA.uasset  48870 B
+  NS_TestB.uasset  137822 B
+  NS_TestC.uasset  137822 B

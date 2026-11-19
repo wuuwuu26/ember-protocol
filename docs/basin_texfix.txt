@@ -1,0 +1,4 @@
+T_ConcreteDetail 已经是 sRGB=True，无需修改
+T_ConcreteDetail_N: sRGB=False（法线贴图应为 False，保持）
+重编译 M_Basin_Concrete
+复核 T_ConcreteDetail sRGB = True

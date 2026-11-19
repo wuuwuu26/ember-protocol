@@ -1,0 +1,5 @@
+mesh objects: 1
+obj SM_CS1_Pipe_01a_c1_LOD0  verts=3796  tris=1410  mats=1
+   bbox size=(0.139, 0.041, 0.051) m
+   mat MI_CS1_Pipe_01a_4096  images=['MI_CS1_Pipe_01a_4096_BaseColor(未加载)', 'T_CS1_Pipe_01a_4096_ORM(未加载)', 'MI_CS1_Pipe_01a_4096_Normal(未加载)', 'T_CS1_Pipe_01a_4096_ORM(未加载)']
+total tris: 1410

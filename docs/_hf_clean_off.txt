@@ -1,0 +1,3 @@
+LogCsvProfiler: Display: Metadata set : commandline="" C:\Users\25227\Documents\robot_game\ue\RobotGame.uproject -game -windowed -resx=1600 -resy=900 -SkipMenu -ShotMode -AutoFire -GodMode -ShotEvery=8 -AutoQuit=30 -abslog=C:\Users\25227\Documents\robot_game\ue\shot_clean_off.log -ShotEvery=100 -NoHeroFill""
+LogInit: Command Line: -windowed -resx=1600 -resy=900 -SkipMenu -ShotMode -AutoFire -GodMode -ShotEvery=8 -AutoQuit=30 -abslog=C:\Users\25227\Documents\robot_game\ue\shot_clean_off.log -ShotEvery=100 -NoHeroFill -game
+[2026.10.25-04.03.30:433][  0]LogTemp: Warning: [LIGHT] 英雄补光已接管关卡灯：9000cd / 1900cm / 无阴影 / 已关闭

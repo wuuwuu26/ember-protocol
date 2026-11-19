@@ -1,0 +1,131 @@
+引擎 Niagara 资产 1157 个
+
+=== splash: 0 ===
+
+=== water: 1 ===
+  /Niagara/Enums/ENiagara_WaterInteractionStruct.ENiagara_WaterInteractionStruct
+
+=== droplet: 0 ===
+
+=== foam: 0 ===
+
+=== spray: 0 ===
+
+=== fountain: 2 ===
+  /Niagara/DefaultAssets/Templates/Emitters/Fountain.Fountain
+  /Niagara/DefaultAssets/Templates/Systems/FountainLightweight.FountainLightweight
+
+=== rain: 11 ===
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/PendulumConstraint.PendulumConstraint
+  /Niagara/Enums/ENiagaraInactiveMode.ENiagaraInactiveMode
+  /Niagara/Functions/ConeConstraint.ConeConstraint
+  /Niagara/Functions/Math/ConstrainToPlane.ConstrainToPlane
+  /Niagara/Modules/Constraints/CalculateLinkConstraint.CalculateLinkConstraint
+  /Niagara/Modules/Constraints/MaintainA_SetDistanceBetweenPoints.MaintainA_SetDistanceBetweenPoints
+  /Niagara/Modules/Constraints/PendulumConstraint.PendulumConstraint
+  /Niagara/Modules/Constraints/PendulumSetup.PendulumSetup
+  /Niagara/Modules/Math/ConstrainVectorToCone.ConstrainVectorToCone
+  /Niagara/Modules/Math/SolveFloatSpringConstraint.SolveFloatSpringConstraint
+  /Niagara/Modules/Update/Position/ConstrainPositionToPlane.ConstrainPositionToPlane
+
+=== DefaultAssets 里的关键默认资源 ===
+  /Niagara/DefaultAssets/Curves/DefaultAlphaScaleByDistance.DefaultAlphaScaleByDistance
+  /Niagara/DefaultAssets/Curves/DefaultSizeScaleByDistance.DefaultSizeScaleByDistance
+  /Niagara/DefaultAssets/Curves/DefaultSpawnCountScaleByDistance.DefaultSpawnCountScaleByDistance
+  /Niagara/DefaultAssets/Curves/Templates/DropOff.DropOff
+  /Niagara/DefaultAssets/Curves/Templates/EaseIn.EaseIn
+  /Niagara/DefaultAssets/Curves/Templates/LinearRampDown.LinearRampDown
+  /Niagara/DefaultAssets/Curves/Templates/LinearRampDownUp.LinearRampDownUp
+  /Niagara/DefaultAssets/Curves/Templates/LinearRampUp.LinearRampUp
+  /Niagara/DefaultAssets/Curves/Templates/LinearRampUpDown.LinearRampUpDown
+  /Niagara/DefaultAssets/Curves/Templates/PulseOut.PulseOut
+  /Niagara/DefaultAssets/Curves/Templates/RampUpDown.RampUpDown
+  /Niagara/DefaultAssets/Curves/Templates/SmoothRampDown.SmoothRampDown
+  /Niagara/DefaultAssets/Curves/Templates/SmoothRampUp.SmoothRampUp
+  /Niagara/DefaultAssets/DefaultDecalMaterial.DefaultDecalMaterial
+  /Niagara/DefaultAssets/DefaultDynamicInputs.DefaultDynamicInputs
+  /Niagara/DefaultAssets/DefaultFunction.DefaultFunction
+  /Niagara/DefaultAssets/DefaultModule.DefaultModule
+  /Niagara/DefaultAssets/DefaultRIbbonMaterial.DefaultRibbonMaterial
+  /Niagara/DefaultAssets/DefaultSpriteMaterial.DefaultSpriteMaterial
+  /Niagara/DefaultAssets/DefaultSystem.DefaultSystem
+  /Niagara/DefaultAssets/DefaultTextureSpriteMaterial.DefaultTextureSpriteMaterial
+  /Niagara/DefaultAssets/GeometryCache/DefaultGeometryCacheAsset.DefaultGeometryCacheAsset
+  /Niagara/DefaultAssets/GeometryCache/M_DefaultGeometryCacheMaterial.M_DefaultGeometryCacheMaterial
+  /Niagara/DefaultAssets/GeometryCache/M_DefaultGeometryCacheMaterial_Blue.M_DefaultGeometryCacheMaterial_Blue
+  /Niagara/DefaultAssets/GeometryCache/M_DefaultGeometryCacheMaterial_Green.M_DefaultGeometryCacheMaterial_Green
+  /Niagara/DefaultAssets/GeometryCache/M_DefaultGeometryCacheMaterial_Red.M_DefaultGeometryCacheMaterial_Red
+  /Niagara/DefaultAssets/Icons/Niagara_Icon.Niagara_Icon
+  /Niagara/DefaultAssets/M_DepthFade_SpriteSimple.M_DepthFade_SpriteSimple
+  /Niagara/DefaultAssets/M_Gnomon.M_Gnomon
+  /Niagara/DefaultAssets/M_Gnomon_Alpha.M_Gnomon_Alpha
+  /Niagara/DefaultAssets/M_NiagaraUVDebug.M_NiagaraUVDebug
+  /Niagara/DefaultAssets/S_Arrow.S_Arrow
+  /Niagara/DefaultAssets/S_Gnomon.S_Gnomon
+  /Niagara/DefaultAssets/ScenePreviewCube.ScenePreviewCube
+  /Niagara/DefaultAssets/Structs/CollisionEvent.CollisionEvent
+  /Niagara/DefaultAssets/Structs/LocationEvent.LocationEvent
+  /Niagara/DefaultAssets/Structs/LocationEvent_V2.LocationEvent_V2
+  /Niagara/DefaultAssets/T_NiagaraUVDebug.T_NiagaraUVDebug
+  /Niagara/DefaultAssets/TABC_EmitterWizard.TABC_EmitterWizard
+  /Niagara/DefaultAssets/TABC_SystemWizard.TABC_SystemWizard
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/GridLocation.GridLocation
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/InfiniteParticleLifetime.InfiniteParticleLifetime
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/InterpolateValueOverTime.InterpolateValueOverTime
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/KillParticles.KillParticles
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/MeshArrays.MeshArrays
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/MeshOrientation.MeshOrientation
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/MeshRotationForce.MeshRotationForce
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/NormalizedExecutionIndex.NormalizedExecutionIndex
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/ParticlesUniqueID.ParticlesUniqueID
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/PendulumConstraint.PendulumConstraint
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/PlayAudio.PlayAudio
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/RendererBindingOverrides.RendererBindingOverrides
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/RenderersWithNoParticles.RenderersWithNoParticles
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/RendererVisibility.RendererVisibility
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/RenderTargetTexturePainter.RenderTargetTexturePainter
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/RibbonID.RibbonID
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/RibbonLinkOrder.RibbonLinkOrder
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/RibbonShapes.RibbonShapes
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/SpawnGroups.SpawnGroups
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/SpawnGroupsFromMultipleBones.SpawnGroupsFromMultipleBones
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/SpawnInterpolation.SpawnInterpolation
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/SpriteFacingAndAlignment.SpriteFacingAndAlignment
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/SubUVAnimation.SubUVAnimation
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/WaveForms.WaveForms
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/WorkingWithAttributes.WorkingWithAttributes
+  /Niagara/DefaultAssets/Templates/CascadeConversion/CompletelyEmpty.CompletelyEmpty
+  /Niagara/DefaultAssets/Templates/Emitters/BlowingParticles.BlowingParticles
+  /Niagara/DefaultAssets/Templates/Emitters/ConfettiBurst.ConfettiBurst
+  /Niagara/DefaultAssets/Templates/Emitters/DirectionalBurst.DirectionalBurst
+  /Niagara/DefaultAssets/Templates/Emitters/DynamicBeam.DynamicBeam
+  /Niagara/DefaultAssets/Templates/Emitters/Fountain.Fountain
+  /Niagara/DefaultAssets/Templates/Emitters/HangingParticulates.HangingParticulates
+  /Niagara/DefaultAssets/Templates/Emitters/LocationBasedRibbon.LocationBasedRibbon
+  /Niagara/DefaultAssets/Templates/Emitters/Minimal.Minimal
+  /Niagara/DefaultAssets/Templates/Emitters/OmnidirectionalBurst.OmnidirectionalBurst
+  /Niagara/DefaultAssets/Templates/Emitters/RecycleParticlesInView.RecycleParticlesInView
+  /Niagara/DefaultAssets/Templates/Emitters/SimpleSpriteBurst.SimpleSpriteBurst
+  /Niagara/DefaultAssets/Templates/Emitters/SingleLoopingParticle.SingleLoopingParticle
+  /Niagara/DefaultAssets/Templates/Emitters/StaticBeam.StaticBeam
+  /Niagara/DefaultAssets/Templates/Emitters/UpwardMeshBurst.UpwardMeshBurst
+  /Niagara/DefaultAssets/Templates/Systems/AttributeReaderTrails.AttributeReaderTrails
+  /Niagara/DefaultAssets/Templates/Systems/DirectionalBurst.DirectionalBurst
+  /Niagara/DefaultAssets/Templates/Systems/DirectionalBurstLightweight.DirectionalBurstLightweight
+  /Niagara/DefaultAssets/Templates/Systems/FountainLightweight.FountainLightweight
+  /Niagara/DefaultAssets/Templates/Systems/MinimalLightweight.MinimalLightweight
+  /Niagara/DefaultAssets/Templates/Systems/RadialBurst.RadialBurst
+  /Niagara/DefaultAssets/Templates/Systems/SimpleExplosion.SimpleExplosion
+
+=== 引擎里 NiagaraSystem 类型资产（前 30）===
+  /Niagara/DefaultAssets/DefaultSystem.DefaultSystem
+  /Niagara/DefaultAssets/Templates/BehaviorExamples/RenderTargetTexturePainter.RenderTargetTexturePainter
+  /Niagara/DefaultAssets/Templates/Systems/AttributeReaderTrails.AttributeReaderTrails
+  /Niagara/DefaultAssets/Templates/Systems/DirectionalBurst.DirectionalBurst
+  /Niagara/DefaultAssets/Templates/Systems/DirectionalBurstLightweight.DirectionalBurstLightweight
+  /Niagara/DefaultAssets/Templates/Systems/FountainLightweight.FountainLightweight
+  /Niagara/DefaultAssets/Templates/Systems/MinimalLightweight.MinimalLightweight
+  /Niagara/DefaultAssets/Templates/Systems/RadialBurst.RadialBurst
+  /Niagara/DefaultAssets/Templates/Systems/SimpleExplosion.SimpleExplosion
+  /Niagara/VectorFields/VectorFieldVisualizationSystem.VectorFieldVisualizationSystem
+  (共列 10)

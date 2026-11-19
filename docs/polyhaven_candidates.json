@@ -1,0 +1,9864 @@
+{
+  "地面(混凝土/水泥)": [
+    [
+      "aerial_asphalt_01",
+      "Aerial Asphalt 01",
+      [
+        "asphalt",
+        "outdoor",
+        "floor",
+        "road",
+        "man made",
+        "aerial"
+      ]
+    ],
+    [
+      "anti_skid_tiles",
+      "Anti Skid Tiles",
+      [
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "anti_slip_concrete",
+      "Anti Slip Concrete",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "asphalt_01",
+      "Asphalt 01",
+      [
+        "asphalt",
+        "floor",
+        "outdoor",
+        "road"
+      ]
+    ],
+    [
+      "asphalt_02",
+      "Asphalt 02",
+      [
+        "terrain",
+        "road",
+        "man made",
+        "outdoor",
+        "floor"
+      ]
+    ],
+    [
+      "asphalt_03",
+      "Asphalt 03",
+      [
+        "outdoor",
+        "man made",
+        "dirty",
+        "road",
+        "asphalt"
+      ]
+    ],
+    [
+      "asphalt_04",
+      "Asphalt 04",
+      [
+        "man made",
+        "outdoor",
+        "road"
+      ]
+    ],
+    [
+      "asphalt_05",
+      "Asphalt 05",
+      [
+        "floor",
+        "asphalt"
+      ]
+    ],
+    [
+      "asphalt_06",
+      "Asphalt 06",
+      [
+        "asphalt",
+        "outdoor",
+        "floor",
+        "road"
+      ]
+    ],
+    [
+      "asphalt_07",
+      "Asphalt 07",
+      [
+        "floor",
+        "asphalt",
+        "man made",
+        "road"
+      ]
+    ],
+    [
+      "asphalt_floor",
+      "Asphalt Floor",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "clean",
+        "concrete",
+        "road",
+        "asphalt",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "asphalt_pit_lane",
+      "Asphalt Pit Lane",
+      [
+        "floor",
+        "asphalt",
+        "road"
+      ]
+    ],
+    [
+      "asphalt_snow",
+      "Asphalt Snow",
+      [
+        "outdoor",
+        "man made",
+        "asphalt",
+        "snow"
+      ]
+    ],
+    [
+      "asphalt_track",
+      "Asphalt Track",
+      [
+        "asphalt"
+      ]
+    ],
+    [
+      "beige_wall_001",
+      "Beige Wall 001",
+      [
+        "man made",
+        "wall",
+        "plaster",
+        "outdoor",
+        "indoor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "beige_wall_002",
+      "Beige Wall 002",
+      [
+        "man made",
+        "wall",
+        "plaster",
+        "outdoor",
+        "indoor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "bicolour_gravel",
+      "Bicolour Gravel",
+      [
+        "floor",
+        "gravel"
+      ]
+    ],
+    [
+      "bitumen",
+      "Bitumen",
+      [
+        "roofing"
+      ]
+    ],
+    [
+      "blue_floor_tiles_01",
+      "Blue Floor Tiles 01",
+      [
+        "floor",
+        "man made",
+        "outdoor",
+        "dirty",
+        "brick"
+      ]
+    ],
+    [
+      "blue_plaster_wall",
+      "Blue Plaster Wall",
+      [
+        "outdoor",
+        "wall",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "brick_crosswalk",
+      "Brick Crosswalk",
+      [
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "brick_floor",
+      "Brick Floor",
+      [
+        "floor",
+        "man made",
+        "dirty",
+        "outdoor",
+        "brick"
+      ]
+    ],
+    [
+      "brick_floor_003",
+      "Brick Floor 003",
+      [
+        "floor",
+        "brick",
+        "man made",
+        "outdoor",
+        "indoor",
+        "clean",
+        "wall"
+      ]
+    ],
+    [
+      "brick_floor_02",
+      "Brick Floor 02",
+      [
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "brick_floor_04",
+      "Brick Floor 04",
+      [
+        "outdoor",
+        "wall",
+        "brick",
+        "dirty",
+        "man made"
+      ]
+    ],
+    [
+      "brick_moss_001",
+      "Brick Moss 001",
+      [
+        "outdoor",
+        "floor",
+        "man made",
+        "brick",
+        "road"
+      ]
+    ],
+    [
+      "brick_pavement",
+      "Brick Pavement",
+      [
+        "brick",
+        "cobblestone",
+        "dirty",
+        "man made",
+        "road"
+      ]
+    ],
+    [
+      "brick_pavement_02",
+      "Brick Pavement 02",
+      [
+        "floor",
+        "man made",
+        "brick"
+      ]
+    ],
+    [
+      "brick_pavement_03",
+      "Brick Pavement 03",
+      [
+        "floor",
+        "brick",
+        "man made"
+      ]
+    ],
+    [
+      "brick_pavement_04",
+      "Brick Pavement 04",
+      [
+        "outdoor",
+        "man made",
+        "floor"
+      ]
+    ],
+    [
+      "brick_villa_floor",
+      "Brick Villa Floor",
+      [
+        "floor",
+        "man made",
+        "outdoor"
+      ]
+    ],
+    [
+      "brick_wall_003",
+      "Brick Wall 003",
+      [
+        "brick",
+        "wall",
+        "man made",
+        "outdoor",
+        "indoor",
+        "clean"
+      ]
+    ],
+    [
+      "brick_wall_005",
+      "Brick Wall 005",
+      [
+        "man made",
+        "wall",
+        "brick"
+      ]
+    ],
+    [
+      "brick_wall_006",
+      "Brick Wall 006",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "brick"
+      ]
+    ],
+    [
+      "brick_wall_02",
+      "Brick Wall 02",
+      [
+        "wall",
+        "brick",
+        "outdoor",
+        "man made"
+      ]
+    ],
+    [
+      "brick_wall_04",
+      "Brick Wall 04",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "brick",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "brown_floor_tiles",
+      "Brown Floor Tilles",
+      [
+        "tiles",
+        "floor"
+      ]
+    ],
+    [
+      "brushed_concrete",
+      "Brushed Concrete ",
+      [
+        "man made",
+        "dirty",
+        "floor",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "brushed_concrete_03",
+      "Brushed Concrete 03",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "brushed_concrete_04",
+      "Brushed Concrete 04",
+      [
+        "outdoor",
+        "man made",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "brushed_concrete_2",
+      "Brushed Concrete 2",
+      [
+        "man made",
+        "dirty",
+        "concrete",
+        "floor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "checkered_pavement_tiles",
+      "Checkered Pavement Tiles",
+      [
+        "floor",
+        "man made",
+        "tiles"
+      ]
+    ],
+    [
+      "chipped_concrete",
+      "Chipped Concrete",
+      [
+        "floor",
+        "man made",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "clay_floor_001",
+      "Clay Floor 001",
+      [
+        "floor",
+        "man made",
+        "plaster-concrete",
+        "dirty"
+      ]
+    ],
+    [
+      "clay_plaster",
+      "Clay Plaster",
+      [
+        "wall",
+        "man made",
+        "plaster-concrete",
+        "outdoor"
+      ]
+    ],
+    [
+      "clean_asphalt",
+      "Clean Asphalt",
+      [
+        "floor",
+        "asphalt"
+      ]
+    ],
+    [
+      "climbing_wall_02",
+      "Climbing Wall 02",
+      [
+        "wall",
+        "man made",
+        "concrete",
+        "indoor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "climbing_wall_base",
+      "Climbing Wall Base",
+      [
+        "wall",
+        "man made",
+        "indoor"
+      ]
+    ],
+    [
+      "cobblestone_01",
+      "Cobblestone 01",
+      [
+        "floor",
+        "man made",
+        "outdoor",
+        "dirty",
+        "cobblestone"
+      ]
+    ],
+    [
+      "cobblestone_02",
+      "Cobblestone 02",
+      [
+        "man made",
+        "floor",
+        "outdoor",
+        "cobblestone"
+      ]
+    ],
+    [
+      "cobblestone_03",
+      "Cobblestone 03",
+      [
+        "floor",
+        "man made",
+        "dirty",
+        "cobblestone"
+      ]
+    ],
+    [
+      "cobblestone_04",
+      "Cobblestone 04",
+      [
+        "floor",
+        "man made",
+        "cobblestone",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "cobblestone_05",
+      "Cobblestone 05",
+      [
+        "floor",
+        "man made",
+        "outdoor",
+        "dirty",
+        "road",
+        "cobblestone"
+      ]
+    ],
+    [
+      "cobblestone_color",
+      "Cobblestone Color",
+      [
+        "floor",
+        "man made",
+        "outdoor",
+        "dirty",
+        "cobblestone"
+      ]
+    ],
+    [
+      "cobblestone_embedded_asphalt",
+      "Cobblestone Embedded Asphalt",
+      [
+        "floor",
+        "man made",
+        "asphalt"
+      ]
+    ],
+    [
+      "cobblestone_floor_001",
+      "Cobblestone Floor 001",
+      [
+        "road",
+        "man made",
+        "outdoor",
+        "dirty",
+        "floor",
+        "cobblestone"
+      ]
+    ],
+    [
+      "cobblestone_floor_01",
+      "Cobblestone Floor 01",
+      [
+        "outdoor",
+        "floor",
+        "man made",
+        "dirty",
+        "cobblestone"
+      ]
+    ],
+    [
+      "cobblestone_floor_02",
+      "Cobblestone Floor 02",
+      [
+        "floor",
+        "outdoor",
+        "man made",
+        "cobblestone"
+      ]
+    ],
+    [
+      "cobblestone_floor_03",
+      "Cobblestone Floor 03",
+      [
+        "floor",
+        "outdoor",
+        "dirty",
+        "man made",
+        "cobblestone"
+      ]
+    ],
+    [
+      "cobblestone_floor_04",
+      "Cobblestone Floor 04",
+      [
+        "floor",
+        "outdoor",
+        "dirty",
+        "man made",
+        "cobblestone"
+      ]
+    ],
+    [
+      "cobblestone_floor_05",
+      "Cobblestone Floor 05",
+      [
+        "floor",
+        "outdoor",
+        "dirty",
+        "man made",
+        "road",
+        "cobblestone"
+      ]
+    ],
+    [
+      "cobblestone_floor_06",
+      "Cobblestone Floor 06",
+      [
+        "floor",
+        "cobblestone",
+        "man made",
+        "dirty"
+      ]
+    ],
+    [
+      "cobblestone_floor_07",
+      "Cobblestone Floor 07",
+      [
+        "floor",
+        "outdoor",
+        "man made",
+        "dirty",
+        "cobblestone"
+      ]
+    ],
+    [
+      "cobblestone_floor_08",
+      "Cobblestone Floor 08",
+      [
+        "road",
+        "floor",
+        "man made",
+        "dirty",
+        "cobblestone"
+      ]
+    ],
+    [
+      "cobblestone_floor_09",
+      "Cobblestone Floor 09",
+      [
+        "floor",
+        "cobblestone"
+      ]
+    ],
+    [
+      "cobblestone_floor_13",
+      "Cobblestone Floor 13",
+      [
+        "floor",
+        "outdoor",
+        "man made",
+        "dirty",
+        "cobblestone"
+      ]
+    ],
+    [
+      "cobblestone_large_01",
+      "Cobblestone Large 01",
+      [
+        "floor",
+        "outdoor",
+        "man made",
+        "road",
+        "cobblestone"
+      ]
+    ],
+    [
+      "cobblestone_pavement",
+      "Cobblestone Pavement",
+      [
+        "floor",
+        "cobblestone"
+      ]
+    ],
+    [
+      "cobblestone_square",
+      "Cobblestone Square",
+      [
+        "floor",
+        "outdoor",
+        "man made",
+        "dirty",
+        "cobblestone"
+      ]
+    ],
+    [
+      "concrete",
+      "Concrete",
+      [
+        "plaster-concrete",
+        "man made",
+        "dirty",
+        "outdoor",
+        "wall",
+        "concrete"
+      ]
+    ],
+    [
+      "concrete_block_wall",
+      "Concrete Block Wall",
+      [
+        "wall",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_block_wall_02",
+      "Concrete Block Wall 02",
+      [
+        "wall",
+        "man made",
+        "concrete",
+        "plaster-concrete",
+        "dirty"
+      ]
+    ],
+    [
+      "concrete_block_wall_03",
+      "Concrete Block Wall 03",
+      [
+        "outdoor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_brick_wall_001",
+      "Concrete Brick Wall 001",
+      [
+        "sandstone",
+        "wall",
+        "man made",
+        "outdoor",
+        "indoor",
+        "brick"
+      ]
+    ],
+    [
+      "concrete_debris",
+      "Concrete Debris",
+      [
+        "man made",
+        "plaster-concrete",
+        "concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "concrete_floor",
+      "Concrete Floor",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "concrete_floor_01",
+      "Concrete Floor 01",
+      [
+        "concrete",
+        "clean",
+        "plaster-concrete",
+        "man made",
+        "outdoor"
+      ]
+    ],
+    [
+      "concrete_floor_02",
+      "Concrete Floor 02",
+      [
+        "concrete",
+        "plaster-concrete",
+        "dirty",
+        "man made",
+        "outdoor",
+        "indoor",
+        "wall",
+        "floor"
+      ]
+    ],
+    [
+      "concrete_floor_03",
+      "Concrete Floor 03",
+      [
+        "man made",
+        "floor",
+        "outdoor"
+      ]
+    ],
+    [
+      "concrete_floor_damaged_01",
+      "Concrete Floor Damaged 01",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_floor_painted",
+      "Concrete Floor Painted",
+      [
+        "concrete",
+        "outdoor",
+        "wall",
+        "floor",
+        "plaster-concrete",
+        "dirty",
+        "plaster",
+        "man made"
+      ]
+    ],
+    [
+      "concrete_floor_worn_001",
+      "Concrete Floor Worn 001",
+      [
+        "floor",
+        "man made",
+        "indoor",
+        "dirty",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_floor_worn_02",
+      "Concrete Floor Worn 02",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_layers",
+      "Concrete Layers",
+      [
+        "wall",
+        "plaster-concrete",
+        "outdoor"
+      ]
+    ],
+    [
+      "concrete_layers_02",
+      "Concrete Layers 02",
+      [
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_moss",
+      "Concrete Moss",
+      [
+        "floor",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_panels",
+      "Concrete Panels",
+      [
+        "man made",
+        "outdoor",
+        "wall",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_pavement",
+      "Concrete Pavement",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_pavement_02",
+      "Concrete Pavement 02",
+      [
+        "outdoor",
+        "road",
+        "cobblestone"
+      ]
+    ],
+    [
+      "concrete_pavement_03",
+      "Concrete Pavement 03",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "outdoor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_pavers",
+      "Concrete Pavers",
+      [
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "concrete_pavers_02",
+      "Concrete Pavers 02",
+      [
+        "concrete",
+        "outdoor",
+        "floor"
+      ]
+    ],
+    [
+      "concrete_pavers_03",
+      "Concrete Pavers 03",
+      [
+        "concrete",
+        "outdoor",
+        "floor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_rock_path",
+      "Concrete Rock Path",
+      [
+        "outdoor",
+        "man made",
+        "dirty",
+        "floor",
+        "concrete",
+        "rock",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_slab_wall",
+      "Concrete Slab Wall",
+      [
+        "wall",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_slab_wall_02",
+      "Concrete Slab Wall 02",
+      [
+        "outdoor",
+        "man made",
+        "plaster-concrete",
+        "concrete",
+        "wall"
+      ]
+    ],
+    [
+      "concrete_tile_facade",
+      "Concrete Tile Facade",
+      [
+        "wall",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_tiles",
+      "Concrete Tiles",
+      [
+        "floor",
+        "man made",
+        "outdoor",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_tiles_02",
+      "Concrete Tiles 02",
+      [
+        "floor",
+        "tiles",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_wall_001",
+      "Concrete Wall 001",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "plaster",
+        "concrete",
+        "plaster-concrete",
+        "collection: the_shed"
+      ]
+    ],
+    [
+      "concrete_wall_003",
+      "Concrete Wall 003",
+      [
+        "man made",
+        "wall",
+        "concrete",
+        "plaster",
+        "outdoor",
+        "dirty",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_wall_004",
+      "Concrete Wall 004",
+      [
+        "man made",
+        "wall",
+        "plaster-concrete",
+        "concrete",
+        "collection: the_shed"
+      ]
+    ],
+    [
+      "concrete_wall_005",
+      "Concrete Wall 005",
+      [
+        "outdoor",
+        "wall",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_wall_006",
+      "Concrete Wall 006",
+      [
+        "man made",
+        "wall",
+        "dirty",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "concrete_wall_007",
+      "Concrete Wall 007",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "plaster-concrete",
+        "concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "concrete_wall_008",
+      "Concrete Wall 008",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "plaster-concrete",
+        "concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "concrete_wall_009",
+      "Concrete Wall 009",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "coral_fort_wall_01",
+      "Coral Fort Wall 01",
+      [
+        "wall",
+        "outdoor",
+        "man made",
+        "rock",
+        "plaster",
+        "plaster-concrete",
+        "dirty"
+      ]
+    ],
+    [
+      "coral_fort_wall_02",
+      "Coral Fort Wall 02",
+      [
+        "wall",
+        "man made",
+        "outdoor",
+        "dirty",
+        "plaster-concrete",
+        "concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "cracked_concrete",
+      "Cracked Concrete",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "cracked_concrete_02",
+      "Cracked Concrete 02",
+      [
+        "man made",
+        "floor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "cracked_concrete_wall",
+      "Cracked Concrete Wall",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "dirty",
+        "brick",
+        "plaster-concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "cracked_red_ground",
+      "Cracked Red Ground",
+      [
+        "outdoor",
+        "natural",
+        "dirty",
+        "floor",
+        "sand"
+      ]
+    ],
+    [
+      "damaged_concrete_floor",
+      "Damaged Concrete Floor",
+      [
+        "floor",
+        "concrete",
+        "dirty",
+        "man made",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "damaged_concrete_floor_02",
+      "Damaged Concrete Floor 02",
+      [
+        "concrete",
+        "floor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "damaged_concrete_floor_03",
+      "Damaged Concrete Floor 03",
+      [
+        "floor",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "damaged_plaster",
+      "Damaged Plaster",
+      [
+        "wall",
+        "brick",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "dark_wooden_planks",
+      "Dark Wooden Planks",
+      [
+        "floor",
+        "man made",
+        "indoor",
+        "wood",
+        "raw wood"
+      ]
+    ],
+    [
+      "diagonal_parquet",
+      "Diagonal Parquet",
+      [
+        "floor",
+        "man made",
+        "wood",
+        "indoor"
+      ]
+    ],
+    [
+      "dirt",
+      "Dirt",
+      [
+        "floor",
+        "dirty",
+        "sand"
+      ]
+    ],
+    [
+      "dirt_floor",
+      "Dirt Floor",
+      [
+        "outdoor",
+        "natural",
+        "terrain",
+        "collection: verdant_trail"
+      ]
+    ],
+    [
+      "dirty_carpet",
+      "Dirty Carpet",
+      [
+        "floor",
+        "fabric",
+        "carpet"
+      ]
+    ],
+    [
+      "dirty_concrete",
+      "Dirty Concrete",
+      [
+        "concrete",
+        "outdoor",
+        "floor",
+        "man made",
+        "sand",
+        "dirty",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "dirty_tiles",
+      "Dirty Tiles",
+      [
+        "floor",
+        "tiles"
+      ]
+    ],
+    [
+      "double_brick_floor",
+      "Double Brick Floor",
+      [
+        "man made",
+        "plaster-concrete",
+        "brick"
+      ]
+    ],
+    [
+      "dry_riverbed_rock",
+      "Dry Riverbed Rock",
+      [
+        "floor",
+        "natural",
+        "terrain",
+        "rock",
+        "outdoor"
+      ]
+    ],
+    [
+      "embedded_plank_flooring",
+      "Embedded Plank Flooring",
+      [
+        "floor",
+        "man made",
+        "plaster-concrete",
+        "wood"
+      ]
+    ],
+    [
+      "embedded_rock_floor",
+      "Embedded Rock Floor",
+      [
+        "floor",
+        "man made",
+        "plaster-concrete",
+        "rock"
+      ]
+    ],
+    [
+      "exterior_wall_cladding_03",
+      "Exterior Wall Cladding 03",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "farm_furrows",
+      "Farm Furrows",
+      [
+        "outdoor",
+        "floor"
+      ]
+    ],
+    [
+      "farm_soil",
+      "Farm Soil",
+      [
+        "floor",
+        "natural",
+        "dirty"
+      ]
+    ],
+    [
+      "floor_bricks_02",
+      "Floor Bricks 02",
+      [
+        "floor",
+        "outdoor",
+        "man made",
+        "dirty",
+        "brick"
+      ]
+    ],
+    [
+      "floor_klinkers_01",
+      "Floor Klinkers 01",
+      [
+        "floor",
+        "brick",
+        "outdoor",
+        "dirty",
+        "man made"
+      ]
+    ],
+    [
+      "floor_klinkers_04",
+      "Floor Klinkers 04",
+      [
+        "floor",
+        "brick",
+        "outdoor",
+        "dirty",
+        "man made",
+        "wall"
+      ]
+    ],
+    [
+      "floor_pattern_01",
+      "Floor Pattern 01",
+      [
+        "floor",
+        "road",
+        "outdoor",
+        "man made",
+        "dirty",
+        "cobblestone"
+      ]
+    ],
+    [
+      "floor_pattern_02",
+      "Floor Pattern 02",
+      [
+        "floor",
+        "road",
+        "outdoor",
+        "man made",
+        "cobblestone"
+      ]
+    ],
+    [
+      "floor_pavement",
+      "Floor Pavement",
+      [
+        "man made",
+        "dirty",
+        "brick",
+        "floor",
+        "outdoor"
+      ]
+    ],
+    [
+      "floor_pebbles_01",
+      "Floor Pebbles 01",
+      [
+        "terrain",
+        "outdoor",
+        "natural"
+      ]
+    ],
+    [
+      "floor_tiles_02",
+      "Floor Tiles 02",
+      [
+        "floor",
+        "wall",
+        "outdoor",
+        "indoor",
+        "clean",
+        "man made"
+      ]
+    ],
+    [
+      "floor_tiles_04",
+      "Floor Tiles 04",
+      [
+        "floor",
+        "wall",
+        "outdoor",
+        "indoor",
+        "clean",
+        "man made"
+      ]
+    ],
+    [
+      "floor_tiles_06",
+      "Floor Tiles 06",
+      [
+        "floor",
+        "indoor",
+        "clean",
+        "man made"
+      ]
+    ],
+    [
+      "floor_tiles_08",
+      "Floor Tiles 08",
+      [
+        "floor",
+        "clean",
+        "indoor",
+        "outdoor",
+        "man made"
+      ]
+    ],
+    [
+      "floor_tiles_09",
+      "Floor Tiles 09",
+      [
+        "floor",
+        "outdoor",
+        "man made",
+        "clean"
+      ]
+    ],
+    [
+      "flower_scattered_asphalt",
+      "Flower Scattered Asphalt",
+      [
+        "floor",
+        "asphalt"
+      ]
+    ],
+    [
+      "flower_scattered_dirt",
+      "Flower Scattered Dirt",
+      [
+        "floor",
+        "outdoor",
+        "natural",
+        "sand"
+      ]
+    ],
+    [
+      "flower_scattered_gravel",
+      "Flower Scattered Gravel",
+      [
+        "floor",
+        "gravel"
+      ]
+    ],
+    [
+      "forest_floor",
+      "Forest Floor",
+      [
+        "outdoor",
+        "natural",
+        "terrain"
+      ]
+    ],
+    [
+      "forest_ground_05",
+      "Forest Ground 05",
+      [
+        "outdoor",
+        "terrain",
+        "natural",
+        "sand"
+      ]
+    ],
+    [
+      "forest_ground_06",
+      "Forest Ground 06",
+      [
+        "outdoor",
+        "natural",
+        "terrain",
+        "floor"
+      ]
+    ],
+    [
+      "forest_leaves_02",
+      "Forest Leaves 02",
+      [
+        "outdoor",
+        "terrain",
+        "natural"
+      ]
+    ],
+    [
+      "garage_floor",
+      "Garage Floor",
+      [
+        "man made",
+        "plaster-concrete",
+        "indoor",
+        "floor",
+        "concrete"
+      ]
+    ],
+    [
+      "granite_tile",
+      "Granite Tile",
+      [
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "granite_tile_02",
+      "Granite Tile 02",
+      [
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "granite_tile_04",
+      "Granite Tile 04",
+      [
+        "floor",
+        "outdoor"
+      ]
+    ],
+    [
+      "granular_concrete",
+      "Granular Concrete",
+      [
+        "concrete",
+        "man made",
+        "floor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "grass_concrete_pavement",
+      "Grass Concrete Pavement",
+      [
+        "man made",
+        "outdoor",
+        "cobblestone"
+      ]
+    ],
+    [
+      "grassy_cobblestone",
+      "Grassy Cobblestone",
+      [
+        "natural",
+        "sand",
+        "outdoor",
+        "floor",
+        "cobblestone"
+      ]
+    ],
+    [
+      "gravel",
+      "Gravel",
+      [
+        "floor",
+        "outdoor"
+      ]
+    ],
+    [
+      "gravel_concrete",
+      "Gravel Concrete",
+      [
+        "floor",
+        "outdoor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "gravel_concrete_02",
+      "Gravel Concrete 02",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "gravel_concrete_03",
+      "Gravel Concrete 03",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "gravel_concrete_04",
+      "Gravel Concrete 04",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "gravel_embedded_concrete",
+      "Gravel Embedded Concrete",
+      [
+        "outdoor",
+        "man made",
+        "plaster-concrete",
+        "concrete",
+        "floor"
+      ]
+    ],
+    [
+      "gravel_embedded_concrete_02",
+      "Gravel Embedded Concrete 02",
+      [
+        "floor",
+        "plaster-concrete",
+        "man made"
+      ]
+    ],
+    [
+      "gravel_floor",
+      "Gravel Floor",
+      [
+        "outdoor",
+        "gravel"
+      ]
+    ],
+    [
+      "gravel_floor_02",
+      "Gravel Floor 02",
+      [
+        "floor",
+        "gravel"
+      ]
+    ],
+    [
+      "gravel_floor_03",
+      "Gravel Floor 03",
+      [
+        "floor",
+        "outdoor"
+      ]
+    ],
+    [
+      "gravel_floor_04",
+      "Gravel Floor 04",
+      [
+        "floor",
+        "gravel"
+      ]
+    ],
+    [
+      "gravel_road",
+      "Gravel Road",
+      [
+        "outdoor",
+        "natural",
+        "terrain",
+        "rock",
+        "road",
+        "asphalt",
+        "dirty",
+        "man made"
+      ]
+    ],
+    [
+      "grey_cartago_01",
+      "Grey Cartago 01",
+      [
+        "floor",
+        "tiles"
+      ]
+    ],
+    [
+      "grey_cartago_02",
+      "Grey Cartago 02",
+      [
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "grey_cartago_03",
+      "Grey Cartago 03",
+      [
+        "floor",
+        "tiles"
+      ]
+    ],
+    [
+      "grey_plaster",
+      "Grey Plaster",
+      [
+        "plaster",
+        "outdoor",
+        "indoor",
+        "man made",
+        "wall",
+        "floor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "grey_plaster_02",
+      "Grey Plaster 02",
+      [
+        "plaster",
+        "outdoor",
+        "indoor",
+        "man made",
+        "dirty",
+        "wall",
+        "floor",
+        "plaster-concrete",
+        "collection: the_shed"
+      ]
+    ],
+    [
+      "grey_plaster_03",
+      "Grey Plaster 03",
+      [
+        "plaster",
+        "outdoor",
+        "indoor",
+        "man made",
+        "dirty",
+        "wall",
+        "floor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "grey_stone_path",
+      "Grey Stone Path",
+      [
+        "man made",
+        "outdoor"
+      ]
+    ],
+    [
+      "grey_tiles",
+      "Grey Tiles",
+      [
+        "outdoor",
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "grooved_concrete_driveway",
+      "Grooved Concrete Driveway",
+      [
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "ground_grey",
+      "Ground Grey",
+      [
+        "terrain",
+        "outdoor",
+        "natural",
+        "road"
+      ]
+    ],
+    [
+      "hacked_concrete",
+      "Hacked Concrete",
+      [
+        "wall",
+        "plaster-concrete",
+        "man made"
+      ]
+    ],
+    [
+      "hangar_concrete_floor",
+      "Hangar Concrete Floor",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "indoor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "herringbone_brick",
+      "Herringbone Brick",
+      [
+        "man made",
+        "outdoor",
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "herringbone_brick_02",
+      "Herringbone Brick 02",
+      [
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "herringbone_brick_03",
+      "Herringbone Brick 03",
+      [
+        "floor",
+        "man made",
+        "brick"
+      ]
+    ],
+    [
+      "herringbone_concrete_tile",
+      "Herringbone Concrete Tile",
+      [
+        "concrete",
+        "outdoor",
+        "man made",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "herringbone_concrete_tile_02",
+      "Herringbone Concrete Tile 02",
+      [
+        "wall",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "herringbone_concrete_tile_03",
+      "Herringbone Concrete Tile 03",
+      [
+        "man made",
+        "outdoor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "herringbone_parquet",
+      "Herringbone Parquet",
+      [
+        "man made",
+        "floor",
+        "wood"
+      ]
+    ],
+    [
+      "herringbone_pavement",
+      "Herringbone Pavement",
+      [
+        "floor",
+        "man made",
+        "brick",
+        "outdoor"
+      ]
+    ],
+    [
+      "herringbone_pavement_02",
+      "Herringbone Pavement 02",
+      [
+        "outdoor",
+        "road",
+        "man made",
+        "dirty"
+      ]
+    ],
+    [
+      "herringbone_pavement_03",
+      "Herringbone Pavement 03",
+      [
+        "dirty",
+        "brick",
+        "outdoor"
+      ]
+    ],
+    [
+      "herringbone_pavement_04",
+      "Herringbone Pavement 04",
+      [
+        "man made",
+        "road",
+        "outdoor"
+      ]
+    ],
+    [
+      "hexagonal_concrete_paving",
+      "Hexagonal Concrete Paving",
+      [
+        "outdoor",
+        "floor",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "interior_tiles",
+      "Interior Tiles",
+      [
+        "floor",
+        "man made",
+        "tiles"
+      ]
+    ],
+    [
+      "interlocking_concrete_pavers",
+      "Interlocking Concrete Pavers",
+      [
+        "floor",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "laminate_floor",
+      "Laminate Floor",
+      [
+        "floor",
+        "man made",
+        "wood"
+      ]
+    ],
+    [
+      "laminate_floor_02",
+      "Laminate Floor 02",
+      [
+        "floor",
+        "man made",
+        "indoor",
+        "clean",
+        "wood"
+      ]
+    ],
+    [
+      "laminate_floor_03",
+      "Laminate Floor 03",
+      [
+        "man made",
+        "floor",
+        "wood"
+      ]
+    ],
+    [
+      "large_floor_tiles_02",
+      "Large Floor Tiles 02",
+      [
+        "floor",
+        "man made",
+        "outdoor",
+        "dirty"
+      ]
+    ],
+    [
+      "large_grey_tiles",
+      "Large Grey Tiles",
+      [
+        "floor",
+        "man made",
+        "outdoor",
+        "dirty"
+      ]
+    ],
+    [
+      "large_pebbles",
+      "Large Pebbles",
+      [
+        "outdoor",
+        "natural",
+        "man made",
+        "road"
+      ]
+    ],
+    [
+      "large_sandstone_blocks_01",
+      "Large Sandstone Blocks 01",
+      [
+        "wall",
+        "floor",
+        "man made",
+        "dirty",
+        "brick"
+      ]
+    ],
+    [
+      "large_square_pattern_01",
+      "Large Square Pattern 01",
+      [
+        "floor",
+        "man made",
+        "outdoor",
+        "clean"
+      ]
+    ],
+    [
+      "leafy_grass",
+      "Leafy Grass",
+      [
+        "outdoor",
+        "floor"
+      ]
+    ],
+    [
+      "linoleum_brown",
+      "Linoleum Brown",
+      [
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "long_white_tiles",
+      "Long White Tiles",
+      [
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "low_tide_rocks",
+      "Low Tide Rocks",
+      [
+        "floor",
+        "outdoor",
+        "natural",
+        "sand"
+      ]
+    ],
+    [
+      "marble_01",
+      "Marble 01",
+      [
+        "floor",
+        "man made",
+        "indoor",
+        "clean",
+        "wall"
+      ]
+    ],
+    [
+      "marble_mosaic_tiles",
+      "Marble Mosaic Tiles",
+      [
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "marble_tiles",
+      "Marble Tiles",
+      [
+        "floor",
+        "man made",
+        "outdoor",
+        "dirty"
+      ]
+    ],
+    [
+      "medieval_blocks_05",
+      "Medieval Blocks 05",
+      [
+        "wall",
+        "rock",
+        "man made",
+        "outdoor",
+        "dirty",
+        "floor"
+      ]
+    ],
+    [
+      "medieval_red_brick",
+      "Medieval Red Brick",
+      [
+        "wall",
+        "brick",
+        "man made"
+      ]
+    ],
+    [
+      "medieval_wall_01",
+      "Medieval Wall 01",
+      [
+        "plaster-concrete",
+        "wall",
+        "man made",
+        "outdoor",
+        "indoor",
+        "dirty"
+      ]
+    ],
+    [
+      "medieval_wall_02",
+      "Medieval Wall 02",
+      [
+        "wall",
+        "man made",
+        "rock",
+        "outdoor"
+      ]
+    ],
+    [
+      "metal_grate_rusty",
+      "Metal Grate Rusty",
+      [
+        "man made",
+        "metal",
+        "outdoor"
+      ]
+    ],
+    [
+      "metal_plate",
+      "Metal Plate",
+      [
+        "metal",
+        "floor",
+        "man made",
+        "indoor",
+        "outdoor",
+        "dirty"
+      ]
+    ],
+    [
+      "mixed_rock_tiles",
+      "Mixed Rock Tiles",
+      [
+        "floor",
+        "rock"
+      ]
+    ],
+    [
+      "mixed_stone_tiles",
+      "Mixed Stone Tiles",
+      [
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "monastery_stone_floor",
+      "Monastery Stone Floor",
+      [
+        "rock",
+        "outdoor",
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "moss_wood",
+      "Moss Wood",
+      [
+        "wood",
+        "wall",
+        "floor",
+        "man made",
+        "outdoor"
+      ]
+    ],
+    [
+      "mossy_brick_floor",
+      "Mossy Brick Floor",
+      [
+        "floor",
+        "brick",
+        "man made"
+      ]
+    ],
+    [
+      "mossy_cobblestone",
+      "Mossy Cobblestone",
+      [
+        "floor",
+        "outdoor",
+        "man made",
+        "cobblestone"
+      ]
+    ],
+    [
+      "mossy_stone_wall",
+      "Mossy Stone Wall",
+      [
+        "wall",
+        "man made",
+        "rock"
+      ]
+    ],
+    [
+      "mud_forest",
+      "Mud Forest",
+      [
+        "outdoor",
+        "floor",
+        "natural",
+        "dirty"
+      ]
+    ],
+    [
+      "muddy_tracks",
+      "Muddy Tracks",
+      [
+        "floor",
+        "natural",
+        "outdoor",
+        "sand",
+        "dirty"
+      ]
+    ],
+    [
+      "multicolored_pebble_floor",
+      "Multicolored Pebble Floor",
+      [
+        "outdoor",
+        "floor",
+        "man made",
+        "cobblestone"
+      ]
+    ],
+    [
+      "oak_wood_planks",
+      "Oak Wood Planks",
+      [
+        "wood"
+      ]
+    ],
+    [
+      "old_linoleum_flooring_01",
+      "Old Linoleum Flooring 01",
+      [
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "old_mosaic_floor",
+      "Old Mosaic Floor",
+      [
+        "floor",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "old_planks_02",
+      "Old Planks 02",
+      [
+        "wood",
+        "wall",
+        "floor",
+        "man made",
+        "outdoor",
+        "indoor"
+      ]
+    ],
+    [
+      "old_wood_floor",
+      "Old Wood Floor",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "wood",
+        "dirty"
+      ]
+    ],
+    [
+      "old_wooden_floor_01",
+      "Old Wooden Floor 01",
+      [
+        "wood"
+      ]
+    ],
+    [
+      "old_wooden_floor_02",
+      "Old Wooden Floor 02",
+      [
+        "wood"
+      ]
+    ],
+    [
+      "old_wooden_floor_03",
+      "Old Wooden Floor 03",
+      [
+        "floor",
+        "wood"
+      ]
+    ],
+    [
+      "overgrown_concrete_pavers",
+      "Overgrown Concrete Pavers",
+      [
+        "outdoor",
+        "floor"
+      ]
+    ],
+    [
+      "painted_concrete",
+      "Painted Concrete",
+      [
+        "floor",
+        "indoor",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "painted_concrete_02",
+      "Painted Concrete 02",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "painted_plaster_wall",
+      "Painted Plaster Wall",
+      [
+        "wall",
+        "plaster-concrete",
+        "outdoor"
+      ]
+    ],
+    [
+      "patio_tiles",
+      "Patio Tiles",
+      [
+        "man made",
+        "floor",
+        "clean",
+        "indoor",
+        "outdoor"
+      ]
+    ],
+    [
+      "patterned_brick_floor",
+      "Patterned Brick Floor",
+      [
+        "man made",
+        "outdoor",
+        "floor"
+      ]
+    ],
+    [
+      "patterned_brick_floor_02",
+      "Patterned Brick Floor 02",
+      [
+        "floor",
+        "outdoor",
+        "brick"
+      ]
+    ],
+    [
+      "patterned_brick_floor_03",
+      "Patterned Brick Floor 03",
+      [
+        "floor",
+        "outdoor"
+      ]
+    ],
+    [
+      "patterned_brick_wall_02",
+      "Patterned Brick Wall 02",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "brick",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "patterned_clay_plaster",
+      "Patterned Clay Plaster",
+      [
+        "wall",
+        "outdoor",
+        "plaster-concrete",
+        "man made"
+      ]
+    ],
+    [
+      "patterned_cobblestone",
+      "Patterned Cobblestone",
+      [
+        "man made",
+        "outdoor",
+        "cobblestone",
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "patterned_cobblestone_02",
+      "Patterned Cobblestone 02",
+      [
+        "floor",
+        "cobblestone"
+      ]
+    ],
+    [
+      "patterned_concrete_pavers",
+      "Patterned Concrete Pavers",
+      [
+        "man made",
+        "outdoor",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "patterned_concrete_pavers_02",
+      "Patterned Concrete Pavers 02",
+      [
+        "man made",
+        "outdoor",
+        "floor"
+      ]
+    ],
+    [
+      "patterned_concrete_pavers_03",
+      "Patterned Concrete Pavers 03",
+      [
+        "man made",
+        "outdoor",
+        "floor"
+      ]
+    ],
+    [
+      "patterned_concrete_wall",
+      "Patterned Concrete Wall",
+      [
+        "wall",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "patterned_paving",
+      "Patterned Paving",
+      [
+        "floor",
+        "man made",
+        "outdoor"
+      ]
+    ],
+    [
+      "patterned_paving_02",
+      "Patterned Paving 02",
+      [
+        "floor",
+        "outdoor"
+      ]
+    ],
+    [
+      "patterned_plaster_wall",
+      "Patterned Plaster Wall",
+      [
+        "wall",
+        "plaster"
+      ]
+    ],
+    [
+      "patterned_slate_tiles",
+      "Patterned Slate Tiles",
+      [
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "patterned_terracotta_tiling",
+      "Patterned Terracotta Tiling",
+      [
+        "floor",
+        "man made",
+        "clean"
+      ]
+    ],
+    [
+      "pavement_01",
+      "Pavement 01",
+      [
+        "floor",
+        "outdoor",
+        "man made"
+      ]
+    ],
+    [
+      "pavement_02",
+      "Pavement 02",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "plaster-concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "pavement_03",
+      "Pavement 03",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "pavement_04",
+      "Pavement 04",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "pavement_05",
+      "Pavement 05",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "brick",
+        "cobblestone"
+      ]
+    ],
+    [
+      "pavement_06",
+      "Pavement 06",
+      [
+        "dirty",
+        "brick",
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "pebble_bricks",
+      "Pebble Bricks",
+      [
+        "floor",
+        "man made",
+        "brick"
+      ]
+    ],
+    [
+      "pebble_cemented_floor",
+      "Pebble Cemented Floor",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "road"
+      ]
+    ],
+    [
+      "pebble_embedded_concrete",
+      "Pebble Embedded Concrete",
+      [
+        "floor",
+        "outdoor",
+        "man made"
+      ]
+    ],
+    [
+      "pebble_embedded_concrete_02",
+      "Pebble Embedded Concrete 02",
+      [
+        "floor",
+        "outdoor",
+        "man made"
+      ]
+    ],
+    [
+      "pebble_embedded_pavement",
+      "Pebble Embedded Pavement",
+      [
+        "floor",
+        "man made",
+        "outdoor",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "peeling_painted_wall",
+      "Peeling Painted Wall",
+      [
+        "wall",
+        "man made"
+      ]
+    ],
+    [
+      "plank_flooring",
+      "Plank Flooring",
+      [
+        "floor",
+        "wood",
+        "indoor"
+      ]
+    ],
+    [
+      "plank_flooring_02",
+      "Plank Flooring 02",
+      [
+        "floor",
+        "wood",
+        "indoor"
+      ]
+    ],
+    [
+      "plank_flooring_03",
+      "Plank Flooring 03",
+      [
+        "floor",
+        "wood",
+        "raw wood"
+      ]
+    ],
+    [
+      "plank_flooring_04",
+      "Plank Flooring 04",
+      [
+        "floor",
+        "wood"
+      ]
+    ],
+    [
+      "plaster_brick_01",
+      "Plaster Brick 01",
+      [
+        "brick",
+        "plaster-concrete",
+        "wall",
+        "man made",
+        "dirty",
+        "outdoor"
+      ]
+    ],
+    [
+      "plaster_brick_pattern",
+      "Plaster Brick Pattern",
+      [
+        "wall",
+        "man made",
+        "plaster",
+        "brick",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "plaster_grey_04",
+      "Plaster Grey 04",
+      [
+        "plaster-concrete",
+        "wall",
+        "man made",
+        "clean",
+        "outdoor",
+        "indoor"
+      ]
+    ],
+    [
+      "plaster_stone_wall_01",
+      "Plaster Stone Wall 01",
+      [
+        "wall",
+        "plaster",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "plaster_stone_wall_02",
+      "Plaster Stone Wall 02",
+      [
+        "plaster-concrete",
+        "plaster",
+        "concrete"
+      ]
+    ],
+    [
+      "plastered_stone_wall",
+      "Plastered Stone Wall",
+      [
+        "wall",
+        "man made",
+        "plaster-concrete",
+        "rock"
+      ]
+    ],
+    [
+      "plastered_wall",
+      "Plastered Wall",
+      [
+        "wall",
+        "plaster"
+      ]
+    ],
+    [
+      "plastered_wall_02",
+      "Plastered Wall 02",
+      [
+        "wall",
+        "man made",
+        "outdoor",
+        "plaster",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "plastered_wall_03",
+      "Plastered Wall 03",
+      [
+        "wall",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "plastered_wall_04",
+      "Plastered Wall 04",
+      [
+        "wall",
+        "plaster-concrete",
+        "indoor"
+      ]
+    ],
+    [
+      "plastered_wall_05",
+      "Plastered Wall 05",
+      [
+        "wall",
+        "man made",
+        "outdoor",
+        "plaster",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "playground_sand",
+      "Playground Sand",
+      [
+        "outdoor",
+        "floor",
+        "sand"
+      ]
+    ],
+    [
+      "precast_concrete_wall",
+      "Precast Concrete Wall",
+      [
+        "wall",
+        "man made",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "precast_stone_paving",
+      "Precast Stone Paving",
+      [
+        "floor",
+        "man made",
+        "outdoor"
+      ]
+    ],
+    [
+      "preconcrete_wall_001",
+      "Preconcrete Wall 001",
+      [
+        "concrete",
+        "wall",
+        "outdoor",
+        "man made",
+        "dirty",
+        "plaster",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "preconcrete_wall_001_long",
+      "Preconcrete Wall 001 Long",
+      [
+        "wall",
+        "plaster-concrete",
+        "concrete",
+        "outdoor",
+        "man made",
+        "dirty"
+      ]
+    ],
+    [
+      "raked_dirt",
+      "Raked Dirt",
+      [
+        "outdoor",
+        "natural",
+        "dirty",
+        "floor"
+      ]
+    ],
+    [
+      "raw_wooden_floor_01",
+      "Raw Wooden Floor 01",
+      [
+        "wood",
+        "floor",
+        "man made",
+        "raw wood",
+        "dirty"
+      ]
+    ],
+    [
+      "rebar_reinforced_concrete",
+      "Rebar Reinforced Concrete",
+      [
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "rectangular_facade_tiles",
+      "Rectangular Facade Tiles",
+      [
+        "wall",
+        "tiles"
+      ]
+    ],
+    [
+      "rectangular_facade_tiles_02",
+      "Rectangular Facade Tiles 02",
+      [
+        "wall",
+        "tiles"
+      ]
+    ],
+    [
+      "rectangular_parquet",
+      "Rectangular Parquet",
+      [
+        "floor",
+        "wood",
+        "indoor",
+        "man made"
+      ]
+    ],
+    [
+      "rectangular_paving",
+      "Rectangular Paving",
+      [
+        "floor",
+        "outdoor",
+        "man made"
+      ]
+    ],
+    [
+      "recycled_brick_floor",
+      "Recycled Brick Floor",
+      [
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "red_brick_pavers",
+      "Red Brick Pavers",
+      [
+        "floor",
+        "man made",
+        "outdoor"
+      ]
+    ],
+    [
+      "red_plaster_weathered",
+      "Red Plaster Weathered",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "dirty",
+        "plaster-concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "red_sand",
+      "Red Sand",
+      [
+        "floor",
+        "sand",
+        "outdoor"
+      ]
+    ],
+    [
+      "red_sandstone_pavement",
+      "Red Sandstone Pavement",
+      [
+        "outdoor",
+        "floor",
+        "sandstone",
+        "man made",
+        "rock"
+      ]
+    ],
+    [
+      "red_sandstone_tiles",
+      "Red Sandstone Tiles",
+      [
+        "floor",
+        "outdoor",
+        "man made"
+      ]
+    ],
+    [
+      "red_sandstone_wall",
+      "Red Sandstone Wall",
+      [
+        "man made",
+        "wall",
+        "outdoor",
+        "dirty",
+        "sandstone"
+      ]
+    ],
+    [
+      "ribbed_concrete_wall",
+      "Ribbed Concrete Wall",
+      [
+        "wall",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "road_damaged",
+      "Road Damaged",
+      [
+        "man made",
+        "road",
+        "asphalt"
+      ]
+    ],
+    [
+      "road_damaged_2",
+      "Road Damaged 2",
+      [
+        "road",
+        "asphalt",
+        "man made"
+      ]
+    ],
+    [
+      "road_damaged_clean",
+      "Road Damaged Clean",
+      [
+        "asphalt",
+        "outdoor",
+        "man made"
+      ]
+    ],
+    [
+      "rock_embedded_concrete",
+      "Rock Embedded Concrete",
+      [
+        "floor",
+        "man made",
+        "cobblestone"
+      ]
+    ],
+    [
+      "rock_embedded_concrete_wall",
+      "Rock Embedded Concrete Wall",
+      [
+        "man made",
+        "outdoor",
+        "rock",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "rock_embedded_floor",
+      "Rock Embedded Floor",
+      [
+        "floor",
+        "rock",
+        "cobblestone"
+      ]
+    ],
+    [
+      "rock_path",
+      "Rock Path",
+      [
+        "natural",
+        "outdoor",
+        "floor"
+      ]
+    ],
+    [
+      "rock_tile_floor",
+      "Rock Tile Floor",
+      [
+        "outdoor",
+        "floor",
+        "rock",
+        "man made"
+      ]
+    ],
+    [
+      "rock_tile_floor_02",
+      "Rock Tile Floor 02",
+      [
+        "floor",
+        "man made",
+        "rock"
+      ]
+    ],
+    [
+      "rock_wall_07",
+      "Rock Wall 07",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "rock"
+      ]
+    ],
+    [
+      "rock_wall_12",
+      "Rock Wall 12",
+      [
+        "floor",
+        "man made",
+        "rock"
+      ]
+    ],
+    [
+      "rock_wall_13",
+      "Rock Wall 13",
+      [
+        "wall",
+        "man made",
+        "rock"
+      ]
+    ],
+    [
+      "rock_wall_14",
+      "Rock Wall 14",
+      [
+        "wall",
+        "rock",
+        "man made"
+      ]
+    ],
+    [
+      "rock_wall_15",
+      "Rock Wall 15",
+      [
+        "wall",
+        "rock",
+        "man made"
+      ]
+    ],
+    [
+      "rock_wall_17",
+      "Rock Wall 17",
+      [
+        "wall",
+        "rock",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "rocky_gravel",
+      "Rocky Gravel",
+      [
+        "outdoor",
+        "floor",
+        "gravel",
+        "dirty"
+      ]
+    ],
+    [
+      "rocky_trail_02",
+      "Rocky Trail 02",
+      [
+        "outdoor",
+        "natural",
+        "dirty",
+        "sand",
+        "floor"
+      ]
+    ],
+    [
+      "roof_planks",
+      "Roof Planks",
+      [
+        "wood"
+      ]
+    ],
+    [
+      "roots",
+      "Roots",
+      [
+        "outdoor",
+        "natural",
+        "floor"
+      ]
+    ],
+    [
+      "rough_concrete",
+      "Rough Concrete",
+      [
+        "man made",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "rough_plaster_03",
+      "Rough Plaster 03",
+      [
+        "plaster-concrete",
+        "man made",
+        "outdoor",
+        "brick",
+        "wall"
+      ]
+    ],
+    [
+      "rough_plaster_brick",
+      "Rough Plaster Brick",
+      [
+        "plaster-concrete",
+        "man made",
+        "outdoor",
+        "brick",
+        "wall"
+      ]
+    ],
+    [
+      "rough_plaster_brick_02",
+      "Rough Plaster Brick 02",
+      [
+        "plaster-concrete",
+        "man made",
+        "brick",
+        "wall",
+        "outdoor",
+        "dirty"
+      ]
+    ],
+    [
+      "rough_plaster_brick_04",
+      "Rough Plaster Brick 04",
+      [
+        "plaster-concrete",
+        "man made",
+        "wall",
+        "outdoor",
+        "dirty"
+      ]
+    ],
+    [
+      "rough_plaster_broken",
+      "Rough Plaster Broken",
+      [
+        "plaster-concrete",
+        "man made",
+        "wall",
+        "outdoor",
+        "dirty"
+      ]
+    ],
+    [
+      "rough_plasterbrick_05",
+      "Rough Plasterbrick 05",
+      [
+        "plaster-concrete",
+        "man made",
+        "wall",
+        "outdoor",
+        "floor"
+      ]
+    ],
+    [
+      "rubber_tiles",
+      "Rubber Tiles",
+      [
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "rubberized_track",
+      "Rubberized Track",
+      [
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "rubble",
+      "Rubble",
+      [
+        "floor",
+        "dirty",
+        "indoor"
+      ]
+    ],
+    [
+      "running_track",
+      "Running Track",
+      [
+        "man made",
+        "floor",
+        "outdoor",
+        "indoor"
+      ]
+    ],
+    [
+      "sand_02",
+      "Sand 02",
+      [
+        "floor",
+        "sand"
+      ]
+    ],
+    [
+      "sand_03",
+      "Sand 03",
+      [
+        "floor",
+        "sand"
+      ]
+    ],
+    [
+      "sandstone_blocks_08",
+      "Sandstone Blocks 08",
+      [
+        "wall",
+        "floor",
+        "man made",
+        "outdoor",
+        "clean",
+        "indoor"
+      ]
+    ],
+    [
+      "sandstone_cracks",
+      "Sandstone Cracks",
+      [
+        "wall",
+        "floor",
+        "natural",
+        "man made",
+        "outdoor",
+        "road",
+        "terrain"
+      ]
+    ],
+    [
+      "scuffed_cement",
+      "Scuffed Cement",
+      [
+        "man made",
+        "floor",
+        "indoor",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "seaworn_sandstone_brick",
+      "Seaworn Sandstone Brick",
+      [
+        "brick",
+        "sandstone",
+        "outdoor",
+        "wall",
+        "man made"
+      ]
+    ],
+    [
+      "shell_floor_01",
+      "Shell Floor 01",
+      [
+        "terrain",
+        "natural",
+        "outdoor"
+      ]
+    ],
+    [
+      "short_bricks_floor",
+      "Short Bricks Floor",
+      [
+        "man made",
+        "outdoor",
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "slab_tiles",
+      "Slab Tiles",
+      [
+        "floor",
+        "man made",
+        "rock",
+        "indoor"
+      ]
+    ],
+    [
+      "slate_driveway",
+      "Slate Driveway",
+      [
+        "man made",
+        "outdoor",
+        "floor"
+      ]
+    ],
+    [
+      "slate_floor",
+      "Slate Floor",
+      [
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "slate_floor_02",
+      "Slate Floor 02",
+      [
+        "floor",
+        "cobblestone",
+        "rock"
+      ]
+    ],
+    [
+      "slate_floor_03",
+      "Slate Floor 03",
+      [
+        "floor",
+        "man made",
+        "indoor"
+      ]
+    ],
+    [
+      "slumped_mortar_brick",
+      "Slumped Mortar Brick",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "brick",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "smooth_concrete_floor",
+      "Smooth Concrete Floor",
+      [
+        "floor",
+        "indoor",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "snow_floor",
+      "Snow Floor",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "snow",
+        "asphalt"
+      ]
+    ],
+    [
+      "sparse_grass",
+      "Sparse Grass",
+      [
+        "floor",
+        "natural"
+      ]
+    ],
+    [
+      "square_brick_floor",
+      "Square Brick Floor",
+      [
+        "indoor",
+        "brick",
+        "man made"
+      ]
+    ],
+    [
+      "square_brick_paving",
+      "Square Brick Paving",
+      [
+        "floor",
+        "man made",
+        "brick"
+      ]
+    ],
+    [
+      "square_cobblestone",
+      "Square Cobblestone",
+      [
+        "outdoor",
+        "rock",
+        "floor",
+        "man made",
+        "cobblestone"
+      ]
+    ],
+    [
+      "square_concrete_pavers",
+      "Square Concrete Pavers",
+      [
+        "man made",
+        "floor",
+        "outdoor",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "square_floor",
+      "Square Floor",
+      [
+        "floor",
+        "man made",
+        "indoor",
+        "outdoor",
+        "clean",
+        "wall"
+      ]
+    ],
+    [
+      "square_floor_patern_01",
+      "Square Floor Patern 01",
+      [
+        "floor",
+        "man made",
+        "outdoor",
+        "clean",
+        "road"
+      ]
+    ],
+    [
+      "square_pavers",
+      "Square Pavers",
+      [
+        "floor",
+        "man made",
+        "outdoor",
+        "brick"
+      ]
+    ],
+    [
+      "square_tiles",
+      "Square Tiles",
+      [
+        "floor",
+        "man made",
+        "outdoor",
+        "indoor",
+        "dirty"
+      ]
+    ],
+    [
+      "square_tiles_02",
+      "Square Tiles 02",
+      [
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "square_tiles_03",
+      "Square Tiles 03",
+      [
+        "outdoor",
+        "road",
+        "floor"
+      ]
+    ],
+    [
+      "stair_planks",
+      "Stair Planks",
+      [
+        "wood"
+      ]
+    ],
+    [
+      "stenciled_brick_floor",
+      "Stenciled Brick Floor",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "stone_embedded_concrete",
+      "Stone Embedded Concrete",
+      [
+        "outdoor",
+        "wall",
+        "man made",
+        "cobblestone"
+      ]
+    ],
+    [
+      "stone_embedded_tiles",
+      "Stone Embedded Tiles",
+      [
+        "floor",
+        "man made",
+        "tiles"
+      ]
+    ],
+    [
+      "stone_floor",
+      "Stone Floor",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "rock",
+        "cobblestone"
+      ]
+    ],
+    [
+      "stone_pathway",
+      "Stone Pathway",
+      [
+        "outdoor",
+        "man made",
+        "rock"
+      ]
+    ],
+    [
+      "stone_pathway_02",
+      "Stone Pathway 02",
+      [
+        "floor",
+        "outdoor",
+        "cobblestone"
+      ]
+    ],
+    [
+      "stone_pavers",
+      "Stone Pavers",
+      [
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "stone_tiles",
+      "Stone Tiles",
+      [
+        "man made",
+        "wall",
+        "floor",
+        "indoor",
+        "outdoor"
+      ]
+    ],
+    [
+      "stone_tiles_02",
+      "Stone Tiles 02",
+      [
+        "floor",
+        "rock",
+        "outdoor",
+        "wall"
+      ]
+    ],
+    [
+      "stone_tiles_03",
+      "Stone Tiles 03",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "rock"
+      ]
+    ],
+    [
+      "stone_wall_03",
+      "Stone Wall 03",
+      [
+        "outdoor",
+        "man made",
+        "plaster-concrete",
+        "concrete",
+        "rock"
+      ]
+    ],
+    [
+      "stony_dirt_path",
+      "Stony Dirt Path",
+      [
+        "dirty",
+        "floor",
+        "outdoor",
+        "natural"
+      ]
+    ],
+    [
+      "t_brick_floor_002",
+      "Brick Floor 002",
+      [
+        "floor",
+        "outdoor",
+        "man made",
+        "clean",
+        "brick"
+      ]
+    ],
+    [
+      "t_concrete_wall_002",
+      "Concrete Wall 002",
+      [
+        "brick",
+        "wall",
+        "man made",
+        "outdoor"
+      ]
+    ],
+    [
+      "tarred_gravel",
+      "Tarred Gravel",
+      [
+        "asphalt",
+        "gravel"
+      ]
+    ],
+    [
+      "tatami_mat",
+      "Tatami Mat",
+      [
+        "floor",
+        "woven"
+      ]
+    ],
+    [
+      "terracotta_floor_tiles",
+      "Terracotta Floor Tiles",
+      [
+        "man made",
+        "indoor",
+        "tiles"
+      ]
+    ],
+    [
+      "terrazzo_tiles",
+      "Terrazzo Tiles",
+      [
+        "tiles"
+      ]
+    ],
+    [
+      "tiled_floor_001",
+      "Tiled Floor 001",
+      [
+        "floor",
+        "indoor",
+        "man made",
+        "outdoor",
+        "clean",
+        "wall"
+      ]
+    ],
+    [
+      "volcanic_herringbone_01",
+      "Volcanic Herringbone 01",
+      [
+        "outdoor",
+        "man made",
+        "rock"
+      ]
+    ],
+    [
+      "wall_bricks_plaster",
+      "Wall Bricks Plaster",
+      [
+        "plaster-concrete",
+        "brick",
+        "man made",
+        "outdoor",
+        "dirty",
+        "wall"
+      ]
+    ],
+    [
+      "weathered_brown_planks",
+      "Weathered Brown Planks",
+      [
+        "man made",
+        "wood",
+        "dirty",
+        "wall",
+        "outdoor",
+        "floor"
+      ]
+    ],
+    [
+      "weathered_planks",
+      "Weathered Planks",
+      [
+        "outdoor",
+        "wood",
+        "man made",
+        "wall",
+        "floor"
+      ]
+    ],
+    [
+      "white_plaster_02",
+      "White Plaster 02",
+      [
+        "plaster-concrete",
+        "wall",
+        "man made",
+        "outdoor",
+        "indoor",
+        "clean",
+        "floor"
+      ]
+    ],
+    [
+      "white_plaster_rough_01",
+      "White Plaster Rough 01",
+      [
+        "plaster-concrete",
+        "wall",
+        "floor",
+        "man made",
+        "outdoor"
+      ]
+    ],
+    [
+      "white_plaster_rough_02",
+      "White Plaster Rough 02",
+      [
+        "plaster-concrete",
+        "wall",
+        "man made",
+        "outdoor",
+        "dirty"
+      ]
+    ],
+    [
+      "white_rough_plaster",
+      "White Rough Plaster",
+      [
+        "plaster-concrete",
+        "man made",
+        "wall",
+        "outdoor",
+        "indoor",
+        "dirty"
+      ]
+    ],
+    [
+      "white_stucco_02",
+      "White Stucco 02",
+      [
+        "outdoor",
+        "wall",
+        "plaster",
+        "plaster-concrete",
+        "man made"
+      ]
+    ],
+    [
+      "winter_leaves",
+      "Winter Leaves",
+      [
+        "outdoor",
+        "floor",
+        "natural"
+      ]
+    ],
+    [
+      "withered_grass",
+      "Withered Grass",
+      [
+        "natural",
+        "outdoor",
+        "floor"
+      ]
+    ],
+    [
+      "wood_cabinet_worn_long",
+      "Wood Cabinet Worn Long",
+      [
+        "man made",
+        "wood",
+        "indoor",
+        "wall",
+        "floor"
+      ]
+    ],
+    [
+      "wood_floor",
+      "Wood Floor",
+      [
+        "floor",
+        "wood",
+        "man made",
+        "clean"
+      ]
+    ],
+    [
+      "wood_floor_deck",
+      "Wood Floor Deck",
+      [
+        "man made",
+        "wood",
+        "floor",
+        "outdoor"
+      ]
+    ],
+    [
+      "wood_floor_worn",
+      "Wood Floor Worn",
+      [
+        "floor",
+        "wood",
+        "man made"
+      ]
+    ],
+    [
+      "wood_inlaid_concrete_wall",
+      "Wood Inlaid Concrete Wall",
+      [
+        "wall",
+        "concrete",
+        "plaster-concrete",
+        "wood"
+      ]
+    ],
+    [
+      "wood_inlaid_stone_wall",
+      "Wood Inlaid Stone Wall",
+      [
+        "wall",
+        "rock",
+        "outdoor"
+      ]
+    ],
+    [
+      "wood_planks",
+      "Wood Planks",
+      [
+        "floor",
+        "wood",
+        "raw wood",
+        "man made"
+      ]
+    ],
+    [
+      "wood_planks_grey",
+      "Wood Planks Grey",
+      [
+        "floor",
+        "wall",
+        "wood",
+        "outdoor",
+        "man made"
+      ]
+    ],
+    [
+      "wood_textured_concrete",
+      "Wood Textured Concrete",
+      [
+        "outdoor",
+        "wall",
+        "concrete",
+        "plaster-concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "wooden_floor_01",
+      "Wooden Floor 01",
+      [
+        "floor",
+        "wood"
+      ]
+    ],
+    [
+      "wooden_floor_02",
+      "Wooden Floor 02",
+      [
+        "floor",
+        "wood",
+        "raw wood"
+      ]
+    ],
+    [
+      "worn_asphalt",
+      "Worn Asphalt",
+      [
+        "floor",
+        "asphalt"
+      ]
+    ],
+    [
+      "worn_brick_floor",
+      "Worn Brick Floor",
+      [
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "worn_brick_path",
+      "Worn Brick Path",
+      [
+        "outdoor",
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "worn_brick_wall",
+      "Worn Brick Wall",
+      [
+        "wall",
+        "man made",
+        "brick"
+      ]
+    ],
+    [
+      "worn_concrete_floor",
+      "Worn Concrete Floor",
+      [
+        "floor",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "worn_cracked_plaster",
+      "Worn Cracked Plaster",
+      [
+        "wall",
+        "man made",
+        "plaster-concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "worn_mossy_plasterwall",
+      "Worn Mossy Plasterwall",
+      [
+        "wall",
+        "outdoor",
+        "plaster",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "worn_patterned_pavers",
+      "Worn Patterned Pavers",
+      [
+        "man made",
+        "floor"
+      ]
+    ],
+    [
+      "worn_planks",
+      "Worn Planks",
+      [
+        "wood"
+      ]
+    ],
+    [
+      "worn_plaster_wall",
+      "Worn Plaster Wall",
+      [
+        "wall",
+        "concrete",
+        "plaster-concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "worn_tile_floor",
+      "Worn Tile Floor",
+      [
+        "floor",
+        "man made",
+        "tiles"
+      ]
+    ],
+    [
+      "yellow_flower_mulch",
+      "Yellow Flower Mulch",
+      [
+        "floor",
+        "bark"
+      ]
+    ],
+    [
+      "yellow_plaster",
+      "Yellow Plaster",
+      [
+        "wall",
+        "plaster-concrete",
+        "man made",
+        "indoor",
+        "outdoor",
+        "dirty"
+      ]
+    ],
+    [
+      "yellow_plaster_02",
+      "Yellow Plaster 02",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "plaster-concrete",
+        "wood",
+        "concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "yellow_stone_wall",
+      "Yellow Stone Wall",
+      [
+        "outdoor",
+        "rock",
+        "man made"
+      ]
+    ]
+  ],
+  "风化金属/锈": [
+    [
+      "asbestos_sheet",
+      "Asbestos Sheet",
+      [
+        "wall",
+        "man made"
+      ]
+    ],
+    [
+      "asbestos_sheet_02",
+      "Asbestos Sheet 02",
+      [
+        "wall",
+        "man made"
+      ]
+    ],
+    [
+      "bark_bluegum",
+      "Bark Blue gum",
+      [
+        "bark",
+        "natural"
+      ]
+    ],
+    [
+      "blue_metal_plate",
+      "Blue Metal Plate",
+      [
+        "metal",
+        "industrial"
+      ]
+    ],
+    [
+      "box_profile_metal_sheet",
+      "Box Profile Metal Sheet",
+      [
+        "wall",
+        "outdoor",
+        "roofing"
+      ]
+    ],
+    [
+      "container_side",
+      "Container Side",
+      [
+        "man made",
+        "metal"
+      ]
+    ],
+    [
+      "corrugated_iron",
+      "Corrugated Iron",
+      [
+        "man made",
+        "roofing",
+        "wall",
+        "metal"
+      ]
+    ],
+    [
+      "corrugated_iron_02",
+      "Corrugated Iron 02",
+      [
+        "man made",
+        "wall",
+        "metal"
+      ]
+    ],
+    [
+      "corrugated_iron_03",
+      "Corrugated Iron 03",
+      [
+        "wall",
+        "man made",
+        "metal"
+      ]
+    ],
+    [
+      "distressed_painted_planks",
+      "Distressed Painted Planks",
+      [
+        "man made",
+        "wood"
+      ]
+    ],
+    [
+      "factory_wall",
+      "Factory Wall",
+      [
+        "metal",
+        "outdoor",
+        "wall",
+        "clean",
+        "roofing",
+        "man made"
+      ]
+    ],
+    [
+      "green_metal_rust",
+      "Green Metal Rust",
+      [
+        "metal",
+        "outdoor",
+        "indoor",
+        "man made",
+        "dirty"
+      ]
+    ],
+    [
+      "hessian_230",
+      "Hessian 230",
+      [
+        "fabric",
+        "hessian"
+      ]
+    ],
+    [
+      "hessian_380",
+      "Hessian 380",
+      [
+        "fabric",
+        "hessian"
+      ]
+    ],
+    [
+      "japanese_camphor_bark",
+      "Japanese Camphor Bark",
+      [
+        "natural",
+        "bark"
+      ]
+    ],
+    [
+      "japanese_zelkova_bark",
+      "Japanese Zelkova Bark",
+      [
+        "natural",
+        "bark",
+        "wood"
+      ]
+    ],
+    [
+      "knotted_pine_bark",
+      "Knotted Pine Bark",
+      [
+        "bark",
+        "natural"
+      ]
+    ],
+    [
+      "metal_grate_rusty",
+      "Metal Grate Rusty",
+      [
+        "man made",
+        "metal",
+        "outdoor"
+      ]
+    ],
+    [
+      "metal_plate",
+      "Metal Plate",
+      [
+        "metal",
+        "floor",
+        "man made",
+        "indoor",
+        "outdoor",
+        "dirty"
+      ]
+    ],
+    [
+      "metal_plate_02",
+      "Metal Plate 02",
+      [
+        "man made",
+        "metal"
+      ]
+    ],
+    [
+      "painted_brick",
+      "Painted Brick",
+      [
+        "wall",
+        "brick",
+        "plaster",
+        "man made",
+        "outdoor",
+        "indoor"
+      ]
+    ],
+    [
+      "painted_metal_shutter",
+      "Painted Metal Shutter",
+      [
+        "man made",
+        "metal"
+      ]
+    ],
+    [
+      "palm_bark",
+      "Palm Bark",
+      [
+        "natural",
+        "bark"
+      ]
+    ],
+    [
+      "raw_wooden_floor_01",
+      "Raw Wooden Floor 01",
+      [
+        "wood",
+        "floor",
+        "man made",
+        "raw wood",
+        "dirty"
+      ]
+    ],
+    [
+      "roof_07",
+      "Roof 07",
+      [
+        "roofing",
+        "man made",
+        "outdoor",
+        "dirty"
+      ]
+    ],
+    [
+      "rough_pine_door",
+      "Rough Pine Door",
+      [
+        "wood",
+        "outdoor"
+      ]
+    ],
+    [
+      "rust_coarse_01",
+      "Rust Coarse 01",
+      [
+        "metal",
+        "outdoor",
+        "man made",
+        "dirty",
+        "wall"
+      ]
+    ],
+    [
+      "rusted_shutter",
+      "Rusted Shutter",
+      [
+        "outdoor",
+        "metal"
+      ]
+    ],
+    [
+      "rustic_stone_wall",
+      "Rustic Stone Wall",
+      [
+        "outdoor",
+        "wall",
+        "rock",
+        "man made"
+      ]
+    ],
+    [
+      "rustic_stone_wall_02",
+      "Rustic Stone Wall 02",
+      [
+        "man made",
+        "outdoor",
+        "wall",
+        "rock"
+      ]
+    ],
+    [
+      "rusty_corrugated_iron",
+      "Rusty Corrugated Iron",
+      [
+        "metal",
+        "industrial"
+      ]
+    ],
+    [
+      "rusty_metal",
+      "Rusty Metal",
+      [
+        "metal",
+        "man made",
+        "wall",
+        "dirty",
+        "outdoor"
+      ]
+    ],
+    [
+      "rusty_metal_02",
+      "Rusty Metal 02",
+      [
+        "metal",
+        "man made",
+        "dirty",
+        "wall",
+        "indoor",
+        "outdoor"
+      ]
+    ],
+    [
+      "rusty_metal_03",
+      "Rusty Metal 03",
+      [
+        "man made",
+        "metal"
+      ]
+    ],
+    [
+      "rusty_metal_04",
+      "Rusty Metal 04",
+      [
+        "man made",
+        "metal"
+      ]
+    ],
+    [
+      "rusty_metal_05",
+      "Rusty Metal 05",
+      [
+        "metal",
+        "man made"
+      ]
+    ],
+    [
+      "rusty_metal_grid",
+      "Rusty Metal Grid",
+      [
+        "wall",
+        "metal"
+      ]
+    ],
+    [
+      "rusty_metal_sheet",
+      "Rusty Metal Sheet",
+      [
+        "man made",
+        "metal"
+      ]
+    ],
+    [
+      "rusty_metal_shutter",
+      "Rusty Metal Shutter",
+      [
+        "metal",
+        "outdoor"
+      ]
+    ],
+    [
+      "rusty_painted_metal",
+      "Rusty Painted Metal",
+      [
+        "man made",
+        "metal"
+      ]
+    ],
+    [
+      "seaworn_sandstone_brick",
+      "Seaworn Sandstone Brick",
+      [
+        "brick",
+        "sandstone",
+        "outdoor",
+        "wall",
+        "man made"
+      ]
+    ],
+    [
+      "slate_floor_02",
+      "Slate Floor 02",
+      [
+        "floor",
+        "cobblestone",
+        "rock"
+      ]
+    ],
+    [
+      "slate_floor_03",
+      "Slate Floor 03",
+      [
+        "floor",
+        "man made",
+        "indoor"
+      ]
+    ],
+    [
+      "sparse_grass",
+      "Sparse Grass",
+      [
+        "floor",
+        "natural"
+      ]
+    ],
+    [
+      "volcanic_herringbone_01",
+      "Volcanic Herringbone 01",
+      [
+        "outdoor",
+        "man made",
+        "rock"
+      ]
+    ],
+    [
+      "weathered_peeling_timber",
+      "Weathered Peeling Timber",
+      [
+        "outdoor",
+        "wood",
+        "man made"
+      ]
+    ],
+    [
+      "weathered_plank_siding",
+      "Weathered Plank Siding",
+      [
+        "outdoor",
+        "wall",
+        "wood"
+      ]
+    ],
+    [
+      "wood_cabinet_worn_long",
+      "Wood Cabinet Worn Long",
+      [
+        "man made",
+        "wood",
+        "indoor",
+        "wall",
+        "floor"
+      ]
+    ],
+    [
+      "wood_floor_worn",
+      "Wood Floor Worn",
+      [
+        "floor",
+        "wood",
+        "man made"
+      ]
+    ],
+    [
+      "wood_inlaid_concrete_wall",
+      "Wood Inlaid Concrete Wall",
+      [
+        "wall",
+        "concrete",
+        "plaster-concrete",
+        "wood"
+      ]
+    ],
+    [
+      "wood_inlaid_stone_wall",
+      "Wood Inlaid Stone Wall",
+      [
+        "wall",
+        "rock",
+        "outdoor"
+      ]
+    ],
+    [
+      "wood_table_large",
+      "Wood Table Large",
+      [
+        "wood"
+      ]
+    ],
+    [
+      "wooden_barrel",
+      "Wooden Barrel",
+      [
+        "man made",
+        "wood"
+      ]
+    ],
+    [
+      "worn_corrugated_iron",
+      "Worn Corrugated Iron",
+      [
+        "outdoor",
+        "man made",
+        "metal"
+      ]
+    ],
+    [
+      "worn_planks",
+      "Worn Planks",
+      [
+        "wood"
+      ]
+    ],
+    [
+      "worn_shutter",
+      "Worn Shutter",
+      [
+        "man made",
+        "metal"
+      ]
+    ]
+  ],
+  "碎石/瓦砾": [
+    [
+      "aerial_grass_rock",
+      "Aerial Grass Rock",
+      [
+        "terrain",
+        "rock",
+        "outdoor",
+        "natural",
+        "aerial"
+      ]
+    ],
+    [
+      "aerial_ground_rock",
+      "Aerial Ground Rock",
+      [
+        "terrain",
+        "outdoor",
+        "natural",
+        "aerial"
+      ]
+    ],
+    [
+      "aerial_rocks_01",
+      "Aerial Rocks 01",
+      [
+        "terrain",
+        "outdoor",
+        "natural",
+        "rock",
+        "aerial"
+      ]
+    ],
+    [
+      "aerial_rocks_02",
+      "Aerial Rocks 02",
+      [
+        "terrain",
+        "outdoor",
+        "natural",
+        "rock",
+        "aerial"
+      ]
+    ],
+    [
+      "aerial_rocks_04",
+      "Aerial Rocks 04",
+      [
+        "terrain",
+        "outdoor",
+        "natural",
+        "rock",
+        "aerial"
+      ]
+    ],
+    [
+      "aerial_wood_snips",
+      "Aerial Wood Snips",
+      [
+        "terrain",
+        "outdoor",
+        "natural",
+        "aerial"
+      ]
+    ],
+    [
+      "asphalt_floor",
+      "Asphalt Floor",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "clean",
+        "concrete",
+        "road",
+        "asphalt",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "baseball_playground",
+      "Baseball Playground",
+      [
+        "outdoor",
+        "terrain",
+        "sand"
+      ]
+    ],
+    [
+      "bicolour_gravel",
+      "Bicolour Gravel",
+      [
+        "floor",
+        "gravel"
+      ]
+    ],
+    [
+      "brick_gravel",
+      "Brick Gravel",
+      [
+        "outdoor",
+        "gravel",
+        "brick"
+      ]
+    ],
+    [
+      "brick_wall_04",
+      "Brick Wall 04",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "brick",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "broken_wall",
+      "Broken Wall",
+      [
+        "rock",
+        "outdoor",
+        "indoor",
+        "wall",
+        "man made"
+      ]
+    ],
+    [
+      "brown_mud",
+      "Brown Mud",
+      [
+        "terrain",
+        "natural",
+        "outdoor"
+      ]
+    ],
+    [
+      "brown_mud_02",
+      "Brown Mud 02",
+      [
+        "terrain",
+        "natural",
+        "outdoor"
+      ]
+    ],
+    [
+      "brown_mud_03",
+      "Brown Mud 03",
+      [
+        "terrain",
+        "natural",
+        "outdoor"
+      ]
+    ],
+    [
+      "brown_mud_dry",
+      "Brown Mud Dry",
+      [
+        "terrain",
+        "natural",
+        "outdoor",
+        "collection: the_shed"
+      ]
+    ],
+    [
+      "brown_mud_rocks_01",
+      "Brown Mud Rocks 01",
+      [
+        "terrain",
+        "natural",
+        "outdoor"
+      ]
+    ],
+    [
+      "brushed_concrete",
+      "Brushed Concrete ",
+      [
+        "man made",
+        "dirty",
+        "floor",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "brushed_concrete_2",
+      "Brushed Concrete 2",
+      [
+        "man made",
+        "dirty",
+        "concrete",
+        "floor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "burned_ground_01",
+      "Burned Ground 01",
+      [
+        "terrain",
+        "outdoor",
+        "natural"
+      ]
+    ],
+    [
+      "castle_wall_slates",
+      "Castle Wall Slates",
+      [
+        "rock",
+        "outdoor",
+        "wall",
+        "clean",
+        "man made"
+      ]
+    ],
+    [
+      "castle_wall_varriation",
+      "Castle Wall Variation",
+      [
+        "rock",
+        "wall",
+        "outdoor",
+        "clean",
+        "man made"
+      ]
+    ],
+    [
+      "clean_pebbles",
+      "Clean Pebbles",
+      [
+        "rock",
+        "natural",
+        "outdoor"
+      ]
+    ],
+    [
+      "cliff_side",
+      "Cliff Side",
+      [
+        "outdoor",
+        "rock",
+        "natural",
+        "collection: namaqualand"
+      ]
+    ],
+    [
+      "climbing_wall",
+      "Climbing Wall",
+      [
+        "wall",
+        "man made",
+        "indoor"
+      ]
+    ],
+    [
+      "climbing_wall_02",
+      "Climbing Wall 02",
+      [
+        "wall",
+        "man made",
+        "concrete",
+        "indoor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "climbing_wall_base",
+      "Climbing Wall Base",
+      [
+        "wall",
+        "man made",
+        "indoor"
+      ]
+    ],
+    [
+      "coast_land_rocks_01",
+      "Coast Land Rocks 01",
+      [
+        "outdoor",
+        "natural",
+        "terrain",
+        "aerial",
+        "sand",
+        "collection: smugglers_cove"
+      ]
+    ],
+    [
+      "coast_sand_01",
+      "Coast Sand 01",
+      [
+        "outdoor",
+        "terrain",
+        "sand",
+        "natural",
+        "aerial",
+        "collection: smugglers_cove",
+        "collection: verdant_trail"
+      ]
+    ],
+    [
+      "coast_sand_03",
+      "Coast Sand 03",
+      [
+        "sand",
+        "terrain",
+        "rock",
+        "outdoor",
+        "natural",
+        "collection: smugglers_cove"
+      ]
+    ],
+    [
+      "coast_sand_04",
+      "Coast Sand 04",
+      [
+        "outdoor",
+        "terrain",
+        "sand",
+        "natural"
+      ]
+    ],
+    [
+      "coast_sand_05",
+      "Coast Sand 05",
+      [
+        "sand",
+        "natural",
+        "terrain",
+        "dirty",
+        "rock",
+        "outdoor",
+        "aerial"
+      ]
+    ],
+    [
+      "coast_sand_rocks_02",
+      "Coast Sand Rocks 02",
+      [
+        "outdoor",
+        "natural",
+        "terrain",
+        "aerial",
+        "rock",
+        "collection: smugglers_cove"
+      ]
+    ],
+    [
+      "cobblestone_embedded_asphalt",
+      "Cobblestone Embedded Asphalt",
+      [
+        "floor",
+        "man made",
+        "asphalt"
+      ]
+    ],
+    [
+      "cobblestone_pavement",
+      "Cobblestone Pavement",
+      [
+        "floor",
+        "cobblestone"
+      ]
+    ],
+    [
+      "concrete_debris",
+      "Concrete Debris",
+      [
+        "man made",
+        "plaster-concrete",
+        "concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "concrete_floor_01",
+      "Concrete Floor 01",
+      [
+        "concrete",
+        "clean",
+        "plaster-concrete",
+        "man made",
+        "outdoor"
+      ]
+    ],
+    [
+      "concrete_floor_damaged_01",
+      "Concrete Floor Damaged 01",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_floor_worn_02",
+      "Concrete Floor Worn 02",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_rock_path",
+      "Concrete Rock Path",
+      [
+        "outdoor",
+        "man made",
+        "dirty",
+        "floor",
+        "concrete",
+        "rock",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "coral_fort_wall_01",
+      "Coral Fort Wall 01",
+      [
+        "wall",
+        "outdoor",
+        "man made",
+        "rock",
+        "plaster",
+        "plaster-concrete",
+        "dirty"
+      ]
+    ],
+    [
+      "coral_fort_wall_02",
+      "Coral Fort Wall 02",
+      [
+        "wall",
+        "man made",
+        "outdoor",
+        "dirty",
+        "plaster-concrete",
+        "concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "coral_fort_wall_03",
+      "Coral Fort Wall 03",
+      [
+        "outdoor",
+        "wall",
+        "man made",
+        "rock"
+      ]
+    ],
+    [
+      "coral_gravel",
+      "Coral Gravel",
+      [
+        "terrain",
+        "outdoor",
+        "rock",
+        "natural"
+      ]
+    ],
+    [
+      "coral_ground_02",
+      "Coral Ground 02",
+      [
+        "terrain",
+        "outdoor",
+        "rock",
+        "natural"
+      ]
+    ],
+    [
+      "coral_mud_01",
+      "Coral Mud 01",
+      [
+        "terrain",
+        "outdoor",
+        "road",
+        "natural"
+      ]
+    ],
+    [
+      "coral_stone_wall",
+      "Coral Stone Wall",
+      [
+        "wall",
+        "man made"
+      ]
+    ],
+    [
+      "cracked_concrete_02",
+      "Cracked Concrete 02",
+      [
+        "man made",
+        "floor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "cracked_red_ground",
+      "Cracked Red Ground",
+      [
+        "outdoor",
+        "natural",
+        "dirty",
+        "floor",
+        "sand"
+      ]
+    ],
+    [
+      "damp_sand",
+      "Damp Sand",
+      [
+        "outdoor",
+        "sand"
+      ]
+    ],
+    [
+      "dark_rock",
+      "Dark Rock",
+      [
+        "natural",
+        "outdoor",
+        "rock"
+      ]
+    ],
+    [
+      "dark_rock_02",
+      "Dark Rock 02",
+      [
+        "outdoor",
+        "natural",
+        "rock"
+      ]
+    ],
+    [
+      "defense_wall",
+      "Defense Wall",
+      [
+        "wall",
+        "rock",
+        "outdoor",
+        "man made"
+      ]
+    ],
+    [
+      "defense_wall_02",
+      "Defense Wall 02",
+      [
+        "outdoor",
+        "wall",
+        "rock",
+        "man made",
+        "aerial"
+      ]
+    ],
+    [
+      "dirt",
+      "Dirt",
+      [
+        "floor",
+        "dirty",
+        "sand"
+      ]
+    ],
+    [
+      "dirt_aerial_03",
+      "Dirt Aerial 03",
+      [
+        "terrain",
+        "outdoor",
+        "sand",
+        "natural",
+        "aerial"
+      ]
+    ],
+    [
+      "dirt_floor",
+      "Dirt Floor",
+      [
+        "outdoor",
+        "natural",
+        "terrain",
+        "collection: verdant_trail"
+      ]
+    ],
+    [
+      "dry_ground_01",
+      "Dry Ground 01",
+      [
+        "terrain",
+        "outdoor",
+        "natural"
+      ]
+    ],
+    [
+      "dry_ground_rocks",
+      "Dry Ground Rocks",
+      [
+        "terrain",
+        "outdoor",
+        "natural"
+      ]
+    ],
+    [
+      "dry_mud_field_001",
+      "Dry Mud Field 001",
+      [
+        "outdoor",
+        "terrain",
+        "natural"
+      ]
+    ],
+    [
+      "dry_river_pebbles",
+      "Dry River Pebbles",
+      [
+        "outdoor",
+        "natural",
+        "rock"
+      ]
+    ],
+    [
+      "dry_riverbed_rock",
+      "Dry Riverbed Rock",
+      [
+        "floor",
+        "natural",
+        "terrain",
+        "rock",
+        "outdoor"
+      ]
+    ],
+    [
+      "embedded_rock_floor",
+      "Embedded Rock Floor",
+      [
+        "floor",
+        "man made",
+        "plaster-concrete",
+        "rock"
+      ]
+    ],
+    [
+      "farm_soil",
+      "Farm Soil",
+      [
+        "floor",
+        "natural",
+        "dirty"
+      ]
+    ],
+    [
+      "floor_pavement",
+      "Floor Pavement",
+      [
+        "man made",
+        "dirty",
+        "brick",
+        "floor",
+        "outdoor"
+      ]
+    ],
+    [
+      "floor_pebbles_01",
+      "Floor Pebbles 01",
+      [
+        "terrain",
+        "outdoor",
+        "natural"
+      ]
+    ],
+    [
+      "flower_scattered_asphalt",
+      "Flower Scattered Asphalt",
+      [
+        "floor",
+        "asphalt"
+      ]
+    ],
+    [
+      "flower_scattered_dirt",
+      "Flower Scattered Dirt",
+      [
+        "floor",
+        "outdoor",
+        "natural",
+        "sand"
+      ]
+    ],
+    [
+      "flower_scattered_gravel",
+      "Flower Scattered Gravel",
+      [
+        "floor",
+        "gravel"
+      ]
+    ],
+    [
+      "forest_floor",
+      "Forest Floor",
+      [
+        "outdoor",
+        "natural",
+        "terrain"
+      ]
+    ],
+    [
+      "forest_ground_04",
+      "Forest Ground 04",
+      [
+        "outdoor",
+        "natural",
+        "terrain",
+        "rock",
+        "collection: pine_forest",
+        "collection: verdant_trail"
+      ]
+    ],
+    [
+      "forest_ground_05",
+      "Forest Ground 05",
+      [
+        "outdoor",
+        "terrain",
+        "natural",
+        "sand"
+      ]
+    ],
+    [
+      "forest_ground_06",
+      "Forest Ground 06",
+      [
+        "outdoor",
+        "natural",
+        "terrain",
+        "floor"
+      ]
+    ],
+    [
+      "forest_leaves_02",
+      "Forest Leaves 02",
+      [
+        "outdoor",
+        "terrain",
+        "natural"
+      ]
+    ],
+    [
+      "forest_leaves_03",
+      "Forest Leaves 03",
+      [
+        "outdoor",
+        "natural",
+        "terrain"
+      ]
+    ],
+    [
+      "forest_leaves_04",
+      "Forest Leaves 04",
+      [
+        "outdoor",
+        "terrain",
+        "natural",
+        "collection: pine_forest",
+        "collection: verdant_trail"
+      ]
+    ],
+    [
+      "forrest_ground_01",
+      "Forest Ground 01",
+      [
+        "terrain",
+        "outdoor",
+        "natural"
+      ]
+    ],
+    [
+      "forrest_ground_03",
+      "Forest Ground 03",
+      [
+        "terrain",
+        "outdoor",
+        "natural"
+      ]
+    ],
+    [
+      "forrest_sand_01",
+      "Forest Sand 01",
+      [
+        "terrain",
+        "outdoor",
+        "natural",
+        "sand"
+      ]
+    ],
+    [
+      "ganges_river_pebbles",
+      "Ganges River Pebbles",
+      [
+        "natural",
+        "rock",
+        "outdoor",
+        "terrain"
+      ]
+    ],
+    [
+      "granular_concrete",
+      "Granular Concrete",
+      [
+        "concrete",
+        "man made",
+        "floor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "grass_ground",
+      "Grass Ground",
+      [
+        "outdoor",
+        "natural",
+        "terrain",
+        "dirty"
+      ]
+    ],
+    [
+      "grass_path_2",
+      "Grass Path 2",
+      [
+        "terrain",
+        "natural",
+        "outdoor"
+      ]
+    ],
+    [
+      "grass_path_3",
+      "Grass Path 3",
+      [
+        "terrain",
+        "outdoor",
+        "natural"
+      ]
+    ],
+    [
+      "grassy_cobblestone",
+      "Grassy Cobblestone",
+      [
+        "natural",
+        "sand",
+        "outdoor",
+        "floor",
+        "cobblestone"
+      ]
+    ],
+    [
+      "gravel",
+      "Gravel",
+      [
+        "floor",
+        "outdoor"
+      ]
+    ],
+    [
+      "gravel_concrete",
+      "Gravel Concrete",
+      [
+        "floor",
+        "outdoor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "gravel_concrete_02",
+      "Gravel Concrete 02",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "gravel_concrete_03",
+      "Gravel Concrete 03",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "gravel_concrete_04",
+      "Gravel Concrete 04",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "gravel_embedded_concrete",
+      "Gravel Embedded Concrete",
+      [
+        "outdoor",
+        "man made",
+        "plaster-concrete",
+        "concrete",
+        "floor"
+      ]
+    ],
+    [
+      "gravel_embedded_concrete_02",
+      "Gravel Embedded Concrete 02",
+      [
+        "floor",
+        "plaster-concrete",
+        "man made"
+      ]
+    ],
+    [
+      "gravel_floor",
+      "Gravel Floor",
+      [
+        "outdoor",
+        "gravel"
+      ]
+    ],
+    [
+      "gravel_floor_02",
+      "Gravel Floor 02",
+      [
+        "floor",
+        "gravel"
+      ]
+    ],
+    [
+      "gravel_floor_03",
+      "Gravel Floor 03",
+      [
+        "floor",
+        "outdoor"
+      ]
+    ],
+    [
+      "gravel_floor_04",
+      "Gravel Floor 04",
+      [
+        "floor",
+        "gravel"
+      ]
+    ],
+    [
+      "gravel_ground_01",
+      "Gravel Ground 01",
+      [
+        "terrain",
+        "outdoor",
+        "natural"
+      ]
+    ],
+    [
+      "gravel_road",
+      "Gravel Road",
+      [
+        "outdoor",
+        "natural",
+        "terrain",
+        "rock",
+        "road",
+        "asphalt",
+        "dirty",
+        "man made"
+      ]
+    ],
+    [
+      "gravel_stones",
+      "Gravel Stones",
+      [
+        "outdoor",
+        "gravel",
+        "natural"
+      ]
+    ],
+    [
+      "gravelly_sand",
+      "Gravelly Sand",
+      [
+        "outdoor",
+        "natural",
+        "terrain",
+        "sand",
+        "gravel",
+        "collection: namaqualand"
+      ]
+    ],
+    [
+      "gray_rocks",
+      "Gray Rocks",
+      [
+        "outdoor",
+        "terrain",
+        "natural",
+        "rock"
+      ]
+    ],
+    [
+      "grey_cartago_01",
+      "Grey Cartago 01",
+      [
+        "floor",
+        "tiles"
+      ]
+    ],
+    [
+      "grey_cartago_03",
+      "Grey Cartago 03",
+      [
+        "floor",
+        "tiles"
+      ]
+    ],
+    [
+      "grey_stone_path",
+      "Grey Stone Path",
+      [
+        "man made",
+        "outdoor"
+      ]
+    ],
+    [
+      "ground_grey",
+      "Ground Grey",
+      [
+        "terrain",
+        "outdoor",
+        "natural",
+        "road"
+      ]
+    ],
+    [
+      "herringbone_brick",
+      "Herringbone Brick",
+      [
+        "man made",
+        "outdoor",
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "japanese_stone_wall",
+      "Japanese Stone Wall",
+      [
+        "outdoor",
+        "man made",
+        "rock"
+      ]
+    ],
+    [
+      "large_pebbles",
+      "Large Pebbles",
+      [
+        "outdoor",
+        "natural",
+        "man made",
+        "road"
+      ]
+    ],
+    [
+      "leaf_scattered_gravel",
+      "Leaf Scattered Gravel",
+      [
+        "outdoor",
+        "natural",
+        "terrain",
+        "gravel",
+        "rock"
+      ]
+    ],
+    [
+      "leafy_grass",
+      "Leafy Grass",
+      [
+        "outdoor",
+        "floor"
+      ]
+    ],
+    [
+      "leaves_forest_ground",
+      "Leaves Forest Ground",
+      [
+        "outdoor",
+        "natural",
+        "terrain"
+      ]
+    ],
+    [
+      "lichen_rock",
+      "Lichen Rock",
+      [
+        "collection: verdant_trail",
+        "rock",
+        "terrain",
+        "natural"
+      ]
+    ],
+    [
+      "low_tide_rocks",
+      "Low Tide Rocks",
+      [
+        "floor",
+        "outdoor",
+        "natural",
+        "sand"
+      ]
+    ],
+    [
+      "marble_cliff_01",
+      "Marble Cliff 01",
+      [
+        "natural",
+        "rock",
+        "aerial"
+      ]
+    ],
+    [
+      "marble_cliff_02",
+      "Marble Cliff 02",
+      [
+        "natural",
+        "rock",
+        "outdoor",
+        "aerial"
+      ]
+    ],
+    [
+      "marble_cliff_03",
+      "Marble Cliff 03",
+      [
+        "outdoor",
+        "rock",
+        "natural",
+        "aerial"
+      ]
+    ],
+    [
+      "marble_cliff_04",
+      "Marble Cliff 04",
+      [
+        "outdoor",
+        "natural",
+        "rock",
+        "aerial"
+      ]
+    ],
+    [
+      "marble_cliff_05",
+      "Marble Cliff 05",
+      [
+        "aerial",
+        "rock",
+        "natural",
+        "outdoor"
+      ]
+    ],
+    [
+      "marble_cliff_06",
+      "Marble Cliff 06",
+      [
+        "outdoor",
+        "aerial",
+        "natural",
+        "rock"
+      ]
+    ],
+    [
+      "marble_rock_01",
+      "Marble Rock 01",
+      [
+        "outdoor",
+        "rock",
+        "natural"
+      ]
+    ],
+    [
+      "marble_rock_02",
+      "Marble Rock 02",
+      [
+        "outdoor",
+        "natural",
+        "rock"
+      ]
+    ],
+    [
+      "marble_rock_03",
+      "Marble Rock 03",
+      [
+        "rock",
+        "outdoor",
+        "natural"
+      ]
+    ],
+    [
+      "medieval_blocks_02",
+      "Medieval Blocks 02",
+      [
+        "wall",
+        "man made",
+        "dirty",
+        "outdoor",
+        "rock"
+      ]
+    ],
+    [
+      "medieval_blocks_05",
+      "Medieval Blocks 05",
+      [
+        "wall",
+        "rock",
+        "man made",
+        "outdoor",
+        "dirty",
+        "floor"
+      ]
+    ],
+    [
+      "medieval_blocks_06",
+      "Medieval Blocks 06",
+      [
+        "wall",
+        "man made",
+        "rock",
+        "dirty",
+        "outdoor"
+      ]
+    ],
+    [
+      "medieval_wall_02",
+      "Medieval Wall 02",
+      [
+        "wall",
+        "man made",
+        "rock",
+        "outdoor"
+      ]
+    ],
+    [
+      "mixed_rock_tiles",
+      "Mixed Rock Tiles",
+      [
+        "floor",
+        "rock"
+      ]
+    ],
+    [
+      "monastery_stone_floor",
+      "Monastery Stone Floor",
+      [
+        "rock",
+        "outdoor",
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "moon_footprints_02",
+      "Moon Footprints 02",
+      [
+        "outdoor",
+        "sand",
+        "terrain",
+        "collection: moon"
+      ]
+    ],
+    [
+      "moon_meteor_01",
+      "Moon Meteor 01",
+      [
+        "outdoor",
+        "sand",
+        "terrain",
+        "collection: moon"
+      ]
+    ],
+    [
+      "moon_meteor_02",
+      "Moon Meteor 02",
+      [
+        "outdoor",
+        "sand",
+        "terrain",
+        "collection: moon"
+      ]
+    ],
+    [
+      "mossy_rock",
+      "Mossy Rock",
+      [
+        "rock",
+        "natural",
+        "outdoor",
+        "terrain"
+      ]
+    ],
+    [
+      "mossy_sandstone",
+      "Mossy Sandstone",
+      [
+        "wall",
+        "man made",
+        "sandstone"
+      ]
+    ],
+    [
+      "mossy_stone_wall",
+      "Mossy Stone Wall",
+      [
+        "wall",
+        "man made",
+        "rock"
+      ]
+    ],
+    [
+      "mud_cracked_dry_03",
+      "Mud Cracked Dry 03",
+      [
+        "outdoor",
+        "natural",
+        "terrain",
+        "sand"
+      ]
+    ],
+    [
+      "mud_cracked_dry_riverbed_002",
+      "Mud Cracked Dry Riverbed 002",
+      [
+        "outdoor",
+        "natural",
+        "terrain",
+        "sand"
+      ]
+    ],
+    [
+      "mud_forest",
+      "Mud Forest",
+      [
+        "outdoor",
+        "floor",
+        "natural",
+        "dirty"
+      ]
+    ],
+    [
+      "muddy_tracks",
+      "Muddy Tracks",
+      [
+        "floor",
+        "natural",
+        "outdoor",
+        "sand",
+        "dirty"
+      ]
+    ],
+    [
+      "old_stone_wall",
+      "Old Stone Wall",
+      [
+        "wall",
+        "outdoor"
+      ]
+    ],
+    [
+      "old_stone_wall_02",
+      "Old Stone Wall 02",
+      [
+        "wall",
+        "rock"
+      ]
+    ],
+    [
+      "overgrown_concrete_pavers",
+      "Overgrown Concrete Pavers",
+      [
+        "outdoor",
+        "floor"
+      ]
+    ],
+    [
+      "painted_concrete",
+      "Painted Concrete",
+      [
+        "floor",
+        "indoor",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "park_dirt",
+      "Park Dirt",
+      [
+        "outdoor",
+        "natural",
+        "terrain",
+        "sand"
+      ]
+    ],
+    [
+      "park_sand",
+      "Park Sand",
+      [
+        "outdoor",
+        "natural",
+        "sand"
+      ]
+    ],
+    [
+      "patterned_brick_wall_02",
+      "Patterned Brick Wall 02",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "brick",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "patterned_cobblestone",
+      "Patterned Cobblestone",
+      [
+        "man made",
+        "outdoor",
+        "cobblestone",
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "pavement_02",
+      "Pavement 02",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "plaster-concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "pebble_cemented_floor",
+      "Pebble Cemented Floor",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "road"
+      ]
+    ],
+    [
+      "pebble_ground_01",
+      "Pebble Ground 01",
+      [
+        "terrain",
+        "outdoor",
+        "natural",
+        "road"
+      ]
+    ],
+    [
+      "pebbles",
+      "Pebbles",
+      [
+        "outdoor"
+      ]
+    ],
+    [
+      "plaster_stone_wall_01",
+      "Plaster Stone Wall 01",
+      [
+        "wall",
+        "plaster",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "plaster_stone_wall_02",
+      "Plaster Stone Wall 02",
+      [
+        "plaster-concrete",
+        "plaster",
+        "concrete"
+      ]
+    ],
+    [
+      "plastered_stone_wall",
+      "Plastered Stone Wall",
+      [
+        "wall",
+        "man made",
+        "plaster-concrete",
+        "rock"
+      ]
+    ],
+    [
+      "playground_sand",
+      "Playground Sand",
+      [
+        "outdoor",
+        "floor",
+        "sand"
+      ]
+    ],
+    [
+      "quarry_wall",
+      "Quarry Wall",
+      [
+        "outdoor",
+        "natural",
+        "rock"
+      ]
+    ],
+    [
+      "quarry_wall_02",
+      "Quarry Wall 02",
+      [
+        "wall",
+        "outdoor",
+        "rock"
+      ]
+    ],
+    [
+      "rabdentse_ruins_wall",
+      "Rabdentse Ruins Wall",
+      [
+        "outdoor",
+        "man made",
+        "rock"
+      ]
+    ],
+    [
+      "raked_dirt",
+      "Raked Dirt",
+      [
+        "outdoor",
+        "natural",
+        "dirty",
+        "floor"
+      ]
+    ],
+    [
+      "red_dirt_mud_01",
+      "Red Dirt Mud 01",
+      [
+        "terrain",
+        "outdoor",
+        "natural"
+      ]
+    ],
+    [
+      "red_laterite_soil_stones",
+      "Red Laterite Soil Stones",
+      [
+        "outdoor",
+        "natural",
+        "terrain",
+        "rock",
+        "road",
+        "sand"
+      ]
+    ],
+    [
+      "red_mud_stones",
+      "Red Mud Stones",
+      [
+        "terrain",
+        "outdoor",
+        "natural"
+      ]
+    ],
+    [
+      "red_sand",
+      "Red Sand",
+      [
+        "floor",
+        "sand",
+        "outdoor"
+      ]
+    ],
+    [
+      "red_sandstone_pavement",
+      "Red Sandstone Pavement",
+      [
+        "outdoor",
+        "floor",
+        "sandstone",
+        "man made",
+        "rock"
+      ]
+    ],
+    [
+      "river_small_rocks",
+      "River Small Rocks",
+      [
+        "terrain",
+        "rock",
+        "natural",
+        "outdoor"
+      ]
+    ],
+    [
+      "road_damaged_2",
+      "Road Damaged 2",
+      [
+        "road",
+        "asphalt",
+        "man made"
+      ]
+    ],
+    [
+      "rock_01",
+      "Rock 01",
+      [
+        "rock",
+        "outdoor",
+        "terrain",
+        "natural"
+      ]
+    ],
+    [
+      "rock_04",
+      "Rock 04",
+      [
+        "rock",
+        "outdoor",
+        "terrain",
+        "natural"
+      ]
+    ],
+    [
+      "rock_05",
+      "Rock 05",
+      [
+        "rock",
+        "outdoor",
+        "terrain",
+        "natural"
+      ]
+    ],
+    [
+      "rock_06",
+      "Rock 06",
+      [
+        "rock",
+        "outdoor",
+        "terrain",
+        "natural"
+      ]
+    ],
+    [
+      "rock_08",
+      "Rock 08",
+      [
+        "rock",
+        "outdoor",
+        "terrain",
+        "natural"
+      ]
+    ],
+    [
+      "rock_2",
+      "Rock 2",
+      [
+        "rock",
+        "outdoor",
+        "terrain",
+        "natural"
+      ]
+    ],
+    [
+      "rock_3",
+      "Rock 3",
+      [
+        "rock",
+        "outdoor",
+        "terrain",
+        "natural"
+      ]
+    ],
+    [
+      "rock_boulder_cracked",
+      "Rock Boulder Cracked",
+      [
+        "outdoor",
+        "terrain",
+        "rock",
+        "natural"
+      ]
+    ],
+    [
+      "rock_boulder_dry",
+      "Rock Boulder Dry",
+      [
+        "rock",
+        "outdoor",
+        "natural",
+        "terrain"
+      ]
+    ],
+    [
+      "rock_embedded_concrete",
+      "Rock Embedded Concrete",
+      [
+        "floor",
+        "man made",
+        "cobblestone"
+      ]
+    ],
+    [
+      "rock_embedded_concrete_wall",
+      "Rock Embedded Concrete Wall",
+      [
+        "man made",
+        "outdoor",
+        "rock",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "rock_embedded_floor",
+      "Rock Embedded Floor",
+      [
+        "floor",
+        "rock",
+        "cobblestone"
+      ]
+    ],
+    [
+      "rock_embedded_tiles",
+      "Rock Embedded Tiles",
+      [
+        "wall",
+        "rock"
+      ]
+    ],
+    [
+      "rock_face",
+      "Rock Face",
+      [
+        "outdoor",
+        "terrain",
+        "natural",
+        "rock",
+        "collection: namaqualand"
+      ]
+    ],
+    [
+      "rock_face_03",
+      "Rock Face 03",
+      [
+        "natural",
+        "terrain",
+        "rock",
+        "outdoor",
+        "collection: verdant_trail"
+      ]
+    ],
+    [
+      "rock_face_04",
+      "Rock Face 04",
+      [
+        "outdoor",
+        "natural",
+        "rock"
+      ]
+    ],
+    [
+      "rock_ground",
+      "Rock Ground",
+      [
+        "terrain",
+        "natural",
+        "rock",
+        "outdoor"
+      ]
+    ],
+    [
+      "rock_ground_02",
+      "Rock Ground 02",
+      [
+        "terrain",
+        "natural",
+        "rock",
+        "outdoor"
+      ]
+    ],
+    [
+      "rock_path",
+      "Rock Path",
+      [
+        "natural",
+        "outdoor",
+        "floor"
+      ]
+    ],
+    [
+      "rock_pitted_mossy",
+      "Rock Pitted Mossy",
+      [
+        "outdoor",
+        "rock",
+        "terrain",
+        "natural",
+        "sandstone"
+      ]
+    ],
+    [
+      "rock_surface",
+      "Rock Surface",
+      [
+        "natural",
+        "rock"
+      ]
+    ],
+    [
+      "rock_tile_floor",
+      "Rock Tile Floor",
+      [
+        "outdoor",
+        "floor",
+        "rock",
+        "man made"
+      ]
+    ],
+    [
+      "rock_tile_floor_02",
+      "Rock Tile Floor 02",
+      [
+        "floor",
+        "man made",
+        "rock"
+      ]
+    ],
+    [
+      "rock_wall",
+      "Rock Wall",
+      [
+        "wall",
+        "rock",
+        "outdoor"
+      ]
+    ],
+    [
+      "rock_wall_02",
+      "Rock Wall 02",
+      [
+        "rock",
+        "natural",
+        "terrain",
+        "outdoor"
+      ]
+    ],
+    [
+      "rock_wall_03",
+      "Rock Wall 03",
+      [
+        "outdoor",
+        "wall",
+        "rock",
+        "man made"
+      ]
+    ],
+    [
+      "rock_wall_04",
+      "Rock Wall 04",
+      [
+        "outdoor",
+        "wall",
+        "rock",
+        "man made"
+      ]
+    ],
+    [
+      "rock_wall_05",
+      "Rock Wall 05",
+      [
+        "wall",
+        "rock",
+        "outdoor"
+      ]
+    ],
+    [
+      "rock_wall_06",
+      "Rock Wall 06",
+      [
+        "wall",
+        "dirty",
+        "rock",
+        "outdoor"
+      ]
+    ],
+    [
+      "rock_wall_07",
+      "Rock Wall 07",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "rock"
+      ]
+    ],
+    [
+      "rock_wall_08",
+      "Rock Wall 08",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "rock"
+      ]
+    ],
+    [
+      "rock_wall_09",
+      "Rock Wall 09",
+      [
+        "wall",
+        "rock",
+        "man made",
+        "dirty"
+      ]
+    ],
+    [
+      "rock_wall_10",
+      "Rock Wall 10",
+      [
+        "outdoor",
+        "wall",
+        "rock"
+      ]
+    ],
+    [
+      "rock_wall_11",
+      "Rock Wall 11",
+      [
+        "man made",
+        "wall",
+        "rock"
+      ]
+    ],
+    [
+      "rock_wall_12",
+      "Rock Wall 12",
+      [
+        "floor",
+        "man made",
+        "rock"
+      ]
+    ],
+    [
+      "rock_wall_13",
+      "Rock Wall 13",
+      [
+        "wall",
+        "man made",
+        "rock"
+      ]
+    ],
+    [
+      "rock_wall_14",
+      "Rock Wall 14",
+      [
+        "wall",
+        "rock",
+        "man made"
+      ]
+    ],
+    [
+      "rock_wall_15",
+      "Rock Wall 15",
+      [
+        "wall",
+        "rock",
+        "man made"
+      ]
+    ],
+    [
+      "rock_wall_16",
+      "Rock Wall 16",
+      [
+        "wall",
+        "outdoor",
+        "rock"
+      ]
+    ],
+    [
+      "rock_wall_17",
+      "Rock Wall 17",
+      [
+        "wall",
+        "rock",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "rocks_ground_01",
+      "Rocks Ground 01",
+      [
+        "terrain",
+        "natural",
+        "outdoor",
+        "rock",
+        "collection: verdant_trail"
+      ]
+    ],
+    [
+      "rocks_ground_02",
+      "Rocks Ground 02",
+      [
+        "terrain",
+        "natural",
+        "outdoor",
+        "rock"
+      ]
+    ],
+    [
+      "rocks_ground_03",
+      "Rocks Ground 03",
+      [
+        "terrain",
+        "natural",
+        "outdoor",
+        "rock"
+      ]
+    ],
+    [
+      "rocks_ground_04",
+      "Rocks Ground 04",
+      [
+        "terrain",
+        "outdoor",
+        "rock",
+        "natural"
+      ]
+    ],
+    [
+      "rocks_ground_05",
+      "Rocks Ground 05",
+      [
+        "terrain",
+        "outdoor",
+        "rock",
+        "natural"
+      ]
+    ],
+    [
+      "rocks_ground_06",
+      "Rocks Ground 06",
+      [
+        "terrain",
+        "outdoor",
+        "rock",
+        "natural"
+      ]
+    ],
+    [
+      "rocks_ground_08",
+      "Rocks Ground 08",
+      [
+        "terrain",
+        "natural",
+        "outdoor"
+      ]
+    ],
+    [
+      "rocks_ground_09",
+      "Rocks Ground 09",
+      [
+        "terrain",
+        "natural",
+        "outdoor"
+      ]
+    ],
+    [
+      "rocky_gravel",
+      "Rocky Gravel",
+      [
+        "outdoor",
+        "floor",
+        "gravel",
+        "dirty"
+      ]
+    ],
+    [
+      "rocky_terrain",
+      "Rocky Terrain",
+      [
+        "outdoor",
+        "terrain",
+        "natural",
+        "rock",
+        "aerial"
+      ]
+    ],
+    [
+      "rocky_terrain_02",
+      "Rocky Terrain 02",
+      [
+        "outdoor",
+        "terrain",
+        "natural",
+        "aerial"
+      ]
+    ],
+    [
+      "rocky_terrain_03",
+      "Rocky Terrain 03",
+      [
+        "outdoor",
+        "natural",
+        "rock",
+        "aerial",
+        "terrain"
+      ]
+    ],
+    [
+      "rocky_trail",
+      "Rocky Trail",
+      [
+        "outdoor",
+        "natural",
+        "terrain",
+        "rock",
+        "collection: pine_forest"
+      ]
+    ],
+    [
+      "rocky_trail_02",
+      "Rocky Trail 02",
+      [
+        "outdoor",
+        "natural",
+        "dirty",
+        "sand",
+        "floor"
+      ]
+    ],
+    [
+      "roots",
+      "Roots",
+      [
+        "outdoor",
+        "natural",
+        "floor"
+      ]
+    ],
+    [
+      "rough_block_wall",
+      "Rough Block Wall",
+      [
+        "man made",
+        "outdoor",
+        "brick",
+        "wall"
+      ]
+    ],
+    [
+      "rubble",
+      "Rubble",
+      [
+        "floor",
+        "dirty",
+        "indoor"
+      ]
+    ],
+    [
+      "rustic_stone_wall",
+      "Rustic Stone Wall",
+      [
+        "outdoor",
+        "wall",
+        "rock",
+        "man made"
+      ]
+    ],
+    [
+      "rustic_stone_wall_02",
+      "Rustic Stone Wall 02",
+      [
+        "man made",
+        "outdoor",
+        "wall",
+        "rock"
+      ]
+    ],
+    [
+      "sandstone_cracks",
+      "Sandstone Cracks",
+      [
+        "wall",
+        "floor",
+        "natural",
+        "man made",
+        "outdoor",
+        "road",
+        "terrain"
+      ]
+    ],
+    [
+      "sandy_gravel",
+      "Sandy Gravel",
+      [
+        "outdoor",
+        "sand",
+        "gravel"
+      ]
+    ],
+    [
+      "sandy_gravel_02",
+      "Sandy Gravel 02",
+      [
+        "outdoor",
+        "terrain",
+        "natural",
+        "sand",
+        "gravel",
+        "collection: namaqualand"
+      ]
+    ],
+    [
+      "seaside_rock",
+      "Seaside Rock",
+      [
+        "natural",
+        "rock"
+      ]
+    ],
+    [
+      "shell_floor_01",
+      "Shell Floor 01",
+      [
+        "terrain",
+        "natural",
+        "outdoor"
+      ]
+    ],
+    [
+      "slab_tiles",
+      "Slab Tiles",
+      [
+        "floor",
+        "man made",
+        "rock",
+        "indoor"
+      ]
+    ],
+    [
+      "slate_driveway",
+      "Slate Driveway",
+      [
+        "man made",
+        "outdoor",
+        "floor"
+      ]
+    ],
+    [
+      "slate_floor_02",
+      "Slate Floor 02",
+      [
+        "floor",
+        "cobblestone",
+        "rock"
+      ]
+    ],
+    [
+      "sparse_grass",
+      "Sparse Grass",
+      [
+        "floor",
+        "natural"
+      ]
+    ],
+    [
+      "square_cobblestone",
+      "Square Cobblestone",
+      [
+        "outdoor",
+        "rock",
+        "floor",
+        "man made",
+        "cobblestone"
+      ]
+    ],
+    [
+      "stacked_stone_wall",
+      "Stacked Stone Wall",
+      [
+        "wall",
+        "rock"
+      ]
+    ],
+    [
+      "stone_embedded_concrete",
+      "Stone Embedded Concrete",
+      [
+        "outdoor",
+        "wall",
+        "man made",
+        "cobblestone"
+      ]
+    ],
+    [
+      "stone_floor",
+      "Stone Floor",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "rock",
+        "cobblestone"
+      ]
+    ],
+    [
+      "stone_pathway",
+      "Stone Pathway",
+      [
+        "outdoor",
+        "man made",
+        "rock"
+      ]
+    ],
+    [
+      "stone_pathway_02",
+      "Stone Pathway 02",
+      [
+        "floor",
+        "outdoor",
+        "cobblestone"
+      ]
+    ],
+    [
+      "stone_tiles",
+      "Stone Tiles",
+      [
+        "man made",
+        "wall",
+        "floor",
+        "indoor",
+        "outdoor"
+      ]
+    ],
+    [
+      "stone_tiles_02",
+      "Stone Tiles 02",
+      [
+        "floor",
+        "rock",
+        "outdoor",
+        "wall"
+      ]
+    ],
+    [
+      "stone_tiles_03",
+      "Stone Tiles 03",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "rock"
+      ]
+    ],
+    [
+      "stone_wall",
+      "Stone Wall",
+      [
+        "outdoor",
+        "rock",
+        "wall"
+      ]
+    ],
+    [
+      "stone_wall_02",
+      "Stone Wall 02",
+      [
+        "wall",
+        "man made",
+        "rock"
+      ]
+    ],
+    [
+      "stone_wall_03",
+      "Stone Wall 03",
+      [
+        "outdoor",
+        "man made",
+        "plaster-concrete",
+        "concrete",
+        "rock"
+      ]
+    ],
+    [
+      "stone_wall_04",
+      "Stone Wall 04",
+      [
+        "wall",
+        "rock",
+        "man made"
+      ]
+    ],
+    [
+      "stony_dirt_path",
+      "Stony Dirt Path",
+      [
+        "dirty",
+        "floor",
+        "outdoor",
+        "natural"
+      ]
+    ],
+    [
+      "tarred_gravel",
+      "Tarred Gravel",
+      [
+        "asphalt",
+        "gravel"
+      ]
+    ],
+    [
+      "terrain_red_01",
+      "Terrain Red 01",
+      [
+        "terrain",
+        "natural",
+        "outdoor",
+        "road",
+        "rock"
+      ]
+    ],
+    [
+      "tiger_rock",
+      "Tiger Rock",
+      [
+        "collection: namaqualand",
+        "rock",
+        "terrain",
+        "natural",
+        "outdoor"
+      ]
+    ],
+    [
+      "volcanic_herringbone_01",
+      "Volcanic Herringbone 01",
+      [
+        "outdoor",
+        "man made",
+        "rock"
+      ]
+    ],
+    [
+      "volcanic_rock_tiles",
+      "Volcanic Rock Tiles",
+      [
+        "wall",
+        "man made"
+      ]
+    ],
+    [
+      "wood_chip_path",
+      "Wood Chip Path",
+      [
+        "outdoor",
+        "terrain"
+      ]
+    ],
+    [
+      "wood_chips",
+      "Wood Chips",
+      [
+        "outdoor",
+        "natural",
+        "raw wood",
+        "wood"
+      ]
+    ],
+    [
+      "wood_inlaid_stone_wall",
+      "Wood Inlaid Stone Wall",
+      [
+        "wall",
+        "rock",
+        "outdoor"
+      ]
+    ],
+    [
+      "wood_stone_pathway",
+      "Wood Stone Pathway",
+      [
+        "outdoor",
+        "man made",
+        "rock",
+        "raw wood"
+      ]
+    ],
+    [
+      "worn_asphalt",
+      "Worn Asphalt",
+      [
+        "floor",
+        "asphalt"
+      ]
+    ],
+    [
+      "worn_brick_path",
+      "Worn Brick Path",
+      [
+        "outdoor",
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "worn_rock_natural_01",
+      "Worn Rock Natural 01",
+      [
+        "outdoor",
+        "natural",
+        "terrain",
+        "rock",
+        "sandstone"
+      ]
+    ],
+    [
+      "yellow_flower_mulch",
+      "Yellow Flower Mulch",
+      [
+        "floor",
+        "bark"
+      ]
+    ],
+    [
+      "yellow_stone_wall",
+      "Yellow Stone Wall",
+      [
+        "outdoor",
+        "rock",
+        "man made"
+      ]
+    ]
+  ],
+  "工业墙面": [
+    [
+      "anti_slip_concrete",
+      "Anti Slip Concrete",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "asphalt_floor",
+      "Asphalt Floor",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "clean",
+        "concrete",
+        "road",
+        "asphalt",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "bamboo_wall",
+      "Bamboo Wall",
+      [
+        "wall",
+        "wood",
+        "raw wood"
+      ]
+    ],
+    [
+      "bamboo_wall_02",
+      "Bamboo Wall 02",
+      [
+        "wood"
+      ]
+    ],
+    [
+      "bamboo_wall_03",
+      "Bamboo Wall 03",
+      [
+        "wood"
+      ]
+    ],
+    [
+      "beige_wall_001",
+      "Beige Wall 001",
+      [
+        "man made",
+        "wall",
+        "plaster",
+        "outdoor",
+        "indoor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "beige_wall_002",
+      "Beige Wall 002",
+      [
+        "man made",
+        "wall",
+        "plaster",
+        "outdoor",
+        "indoor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "blue_floor_tiles_01",
+      "Blue Floor Tiles 01",
+      [
+        "floor",
+        "man made",
+        "outdoor",
+        "dirty",
+        "brick"
+      ]
+    ],
+    [
+      "blue_metal_plate",
+      "Blue Metal Plate",
+      [
+        "metal",
+        "industrial"
+      ]
+    ],
+    [
+      "blue_plaster_wall",
+      "Blue Plaster Wall",
+      [
+        "outdoor",
+        "wall",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "blue_plaster_weathered",
+      "Blue Plaster Weathered",
+      [
+        "wall",
+        "man made",
+        "plaster",
+        "outdoor"
+      ]
+    ],
+    [
+      "brick_4",
+      "Brick 4",
+      [
+        "wall",
+        "man made",
+        "dirty",
+        "outdoor",
+        "brick"
+      ]
+    ],
+    [
+      "brick_crosswalk",
+      "Brick Crosswalk",
+      [
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "brick_floor",
+      "Brick Floor",
+      [
+        "floor",
+        "man made",
+        "dirty",
+        "outdoor",
+        "brick"
+      ]
+    ],
+    [
+      "brick_floor_003",
+      "Brick Floor 003",
+      [
+        "floor",
+        "brick",
+        "man made",
+        "outdoor",
+        "indoor",
+        "clean",
+        "wall"
+      ]
+    ],
+    [
+      "brick_floor_02",
+      "Brick Floor 02",
+      [
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "brick_floor_04",
+      "Brick Floor 04",
+      [
+        "outdoor",
+        "wall",
+        "brick",
+        "dirty",
+        "man made"
+      ]
+    ],
+    [
+      "brick_gravel",
+      "Brick Gravel",
+      [
+        "outdoor",
+        "gravel",
+        "brick"
+      ]
+    ],
+    [
+      "brick_moss_001",
+      "Brick Moss 001",
+      [
+        "outdoor",
+        "floor",
+        "man made",
+        "brick",
+        "road"
+      ]
+    ],
+    [
+      "brick_pavement",
+      "Brick Pavement",
+      [
+        "brick",
+        "cobblestone",
+        "dirty",
+        "man made",
+        "road"
+      ]
+    ],
+    [
+      "brick_pavement_02",
+      "Brick Pavement 02",
+      [
+        "floor",
+        "man made",
+        "brick"
+      ]
+    ],
+    [
+      "brick_pavement_03",
+      "Brick Pavement 03",
+      [
+        "floor",
+        "brick",
+        "man made"
+      ]
+    ],
+    [
+      "brick_pavement_04",
+      "Brick Pavement 04",
+      [
+        "outdoor",
+        "man made",
+        "floor"
+      ]
+    ],
+    [
+      "brick_villa_floor",
+      "Brick Villa Floor",
+      [
+        "floor",
+        "man made",
+        "outdoor"
+      ]
+    ],
+    [
+      "brick_wall_001",
+      "Brick Wall 001",
+      [
+        "brick",
+        "man made",
+        "outdoor",
+        "indoor",
+        "clean",
+        "wall"
+      ]
+    ],
+    [
+      "brick_wall_003",
+      "Brick Wall 003",
+      [
+        "brick",
+        "wall",
+        "man made",
+        "outdoor",
+        "indoor",
+        "clean"
+      ]
+    ],
+    [
+      "brick_wall_005",
+      "Brick Wall 005",
+      [
+        "man made",
+        "wall",
+        "brick"
+      ]
+    ],
+    [
+      "brick_wall_006",
+      "Brick Wall 006",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "brick"
+      ]
+    ],
+    [
+      "brick_wall_02",
+      "Brick Wall 02",
+      [
+        "wall",
+        "brick",
+        "outdoor",
+        "man made"
+      ]
+    ],
+    [
+      "brick_wall_04",
+      "Brick Wall 04",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "brick",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "brick_wall_07",
+      "Brick Wall 07",
+      [
+        "wall",
+        "brick",
+        "man made"
+      ]
+    ],
+    [
+      "brick_wall_08",
+      "Brick Wall 08",
+      [
+        "brick",
+        "wall",
+        "outdoor",
+        "man made"
+      ]
+    ],
+    [
+      "brick_wall_09",
+      "Brick Wall 09",
+      [
+        "wall",
+        "man made",
+        "brick"
+      ]
+    ],
+    [
+      "brick_wall_10",
+      "Brick Wall 10",
+      [
+        "wall",
+        "brick"
+      ]
+    ],
+    [
+      "brick_wall_11",
+      "Brick Wall 11",
+      [
+        "wall",
+        "brick"
+      ]
+    ],
+    [
+      "brick_wall_12",
+      "Brick Wall 12",
+      [
+        "wall",
+        "brick"
+      ]
+    ],
+    [
+      "brick_wall_13",
+      "Brick Wall 13",
+      [
+        "wall",
+        "brick",
+        "indoor"
+      ]
+    ],
+    [
+      "broken_brick_wall",
+      "Broken Brick Wall",
+      [
+        "wall",
+        "brick"
+      ]
+    ],
+    [
+      "brown_brick_02",
+      "Brown Brick 02",
+      [
+        "brick",
+        "wall",
+        "outdoor",
+        "indoor",
+        "clean",
+        "man made"
+      ]
+    ],
+    [
+      "brushed_concrete",
+      "Brushed Concrete ",
+      [
+        "man made",
+        "dirty",
+        "floor",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "brushed_concrete_03",
+      "Brushed Concrete 03",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "brushed_concrete_04",
+      "Brushed Concrete 04",
+      [
+        "outdoor",
+        "man made",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "brushed_concrete_2",
+      "Brushed Concrete 2",
+      [
+        "man made",
+        "dirty",
+        "concrete",
+        "floor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "castle_brick_01",
+      "Castle Brick 01",
+      [
+        "brick",
+        "outdoor",
+        "man made",
+        "wall",
+        "dirty"
+      ]
+    ],
+    [
+      "castle_brick_02_red",
+      "Castle Brick 02 Red",
+      [
+        "brick",
+        "outdoor",
+        "man made",
+        "wall",
+        "dirty"
+      ]
+    ],
+    [
+      "castle_brick_02_white",
+      "Castle Brick 02 White",
+      [
+        "brick",
+        "outdoor",
+        "indoor",
+        "wall",
+        "dirty",
+        "man made"
+      ]
+    ],
+    [
+      "castle_brick_07",
+      "Castle Brick 07",
+      [
+        "brick",
+        "outdoor",
+        "man made",
+        "indoor",
+        "wall",
+        "dirty"
+      ]
+    ],
+    [
+      "castle_brick_broken_06",
+      "Castle Brick Broken 06",
+      [
+        "brick",
+        "outdoor",
+        "man made",
+        "indoor",
+        "wall"
+      ]
+    ],
+    [
+      "chipped_concrete",
+      "Chipped Concrete",
+      [
+        "floor",
+        "man made",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "church_bricks_02",
+      "Church Bricks 02",
+      [
+        "brick",
+        "man made",
+        "outdoor"
+      ]
+    ],
+    [
+      "church_bricks_03",
+      "Church Bricks 03",
+      [
+        "brick",
+        "man made",
+        "outdoor"
+      ]
+    ],
+    [
+      "clay_floor_001",
+      "Clay Floor 001",
+      [
+        "floor",
+        "man made",
+        "plaster-concrete",
+        "dirty"
+      ]
+    ],
+    [
+      "clay_plaster",
+      "Clay Plaster",
+      [
+        "wall",
+        "man made",
+        "plaster-concrete",
+        "outdoor"
+      ]
+    ],
+    [
+      "climbing_wall_02",
+      "Climbing Wall 02",
+      [
+        "wall",
+        "man made",
+        "concrete",
+        "indoor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "cobblestone_04",
+      "Cobblestone 04",
+      [
+        "floor",
+        "man made",
+        "cobblestone",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "cobblestone_floor_02",
+      "Cobblestone Floor 02",
+      [
+        "floor",
+        "outdoor",
+        "man made",
+        "cobblestone"
+      ]
+    ],
+    [
+      "cobblestone_floor_03",
+      "Cobblestone Floor 03",
+      [
+        "floor",
+        "outdoor",
+        "dirty",
+        "man made",
+        "cobblestone"
+      ]
+    ],
+    [
+      "concrete",
+      "Concrete",
+      [
+        "plaster-concrete",
+        "man made",
+        "dirty",
+        "outdoor",
+        "wall",
+        "concrete"
+      ]
+    ],
+    [
+      "concrete_block_wall",
+      "Concrete Block Wall",
+      [
+        "wall",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_block_wall_02",
+      "Concrete Block Wall 02",
+      [
+        "wall",
+        "man made",
+        "concrete",
+        "plaster-concrete",
+        "dirty"
+      ]
+    ],
+    [
+      "concrete_block_wall_03",
+      "Concrete Block Wall 03",
+      [
+        "outdoor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_brick_wall_001",
+      "Concrete Brick Wall 001",
+      [
+        "sandstone",
+        "wall",
+        "man made",
+        "outdoor",
+        "indoor",
+        "brick"
+      ]
+    ],
+    [
+      "concrete_debris",
+      "Concrete Debris",
+      [
+        "man made",
+        "plaster-concrete",
+        "concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "concrete_floor",
+      "Concrete Floor",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "concrete_floor_01",
+      "Concrete Floor 01",
+      [
+        "concrete",
+        "clean",
+        "plaster-concrete",
+        "man made",
+        "outdoor"
+      ]
+    ],
+    [
+      "concrete_floor_02",
+      "Concrete Floor 02",
+      [
+        "concrete",
+        "plaster-concrete",
+        "dirty",
+        "man made",
+        "outdoor",
+        "indoor",
+        "wall",
+        "floor"
+      ]
+    ],
+    [
+      "concrete_floor_damaged_01",
+      "Concrete Floor Damaged 01",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_floor_painted",
+      "Concrete Floor Painted",
+      [
+        "concrete",
+        "outdoor",
+        "wall",
+        "floor",
+        "plaster-concrete",
+        "dirty",
+        "plaster",
+        "man made"
+      ]
+    ],
+    [
+      "concrete_floor_worn_001",
+      "Concrete Floor Worn 001",
+      [
+        "floor",
+        "man made",
+        "indoor",
+        "dirty",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_floor_worn_02",
+      "Concrete Floor Worn 02",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_layers",
+      "Concrete Layers",
+      [
+        "wall",
+        "plaster-concrete",
+        "outdoor"
+      ]
+    ],
+    [
+      "concrete_layers_02",
+      "Concrete Layers 02",
+      [
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_moss",
+      "Concrete Moss",
+      [
+        "floor",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_panels",
+      "Concrete Panels",
+      [
+        "man made",
+        "outdoor",
+        "wall",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_pavement",
+      "Concrete Pavement",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_pavement_03",
+      "Concrete Pavement 03",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "outdoor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_pavers",
+      "Concrete Pavers",
+      [
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "concrete_pavers_03",
+      "Concrete Pavers 03",
+      [
+        "concrete",
+        "outdoor",
+        "floor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_rock_path",
+      "Concrete Rock Path",
+      [
+        "outdoor",
+        "man made",
+        "dirty",
+        "floor",
+        "concrete",
+        "rock",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_slab_wall",
+      "Concrete Slab Wall",
+      [
+        "wall",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_slab_wall_02",
+      "Concrete Slab Wall 02",
+      [
+        "outdoor",
+        "man made",
+        "plaster-concrete",
+        "concrete",
+        "wall"
+      ]
+    ],
+    [
+      "concrete_tile_facade",
+      "Concrete Tile Facade",
+      [
+        "wall",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_tiles",
+      "Concrete Tiles",
+      [
+        "floor",
+        "man made",
+        "outdoor",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_tiles_02",
+      "Concrete Tiles 02",
+      [
+        "floor",
+        "tiles",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_wall_001",
+      "Concrete Wall 001",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "plaster",
+        "concrete",
+        "plaster-concrete",
+        "collection: the_shed"
+      ]
+    ],
+    [
+      "concrete_wall_003",
+      "Concrete Wall 003",
+      [
+        "man made",
+        "wall",
+        "concrete",
+        "plaster",
+        "outdoor",
+        "dirty",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_wall_004",
+      "Concrete Wall 004",
+      [
+        "man made",
+        "wall",
+        "plaster-concrete",
+        "concrete",
+        "collection: the_shed"
+      ]
+    ],
+    [
+      "concrete_wall_005",
+      "Concrete Wall 005",
+      [
+        "outdoor",
+        "wall",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "concrete_wall_006",
+      "Concrete Wall 006",
+      [
+        "man made",
+        "wall",
+        "dirty",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "concrete_wall_007",
+      "Concrete Wall 007",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "plaster-concrete",
+        "concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "concrete_wall_008",
+      "Concrete Wall 008",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "plaster-concrete",
+        "concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "concrete_wall_009",
+      "Concrete Wall 009",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "coral_fort_wall_01",
+      "Coral Fort Wall 01",
+      [
+        "wall",
+        "outdoor",
+        "man made",
+        "rock",
+        "plaster",
+        "plaster-concrete",
+        "dirty"
+      ]
+    ],
+    [
+      "coral_fort_wall_02",
+      "Coral Fort Wall 02",
+      [
+        "wall",
+        "man made",
+        "outdoor",
+        "dirty",
+        "plaster-concrete",
+        "concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "cracked_concrete",
+      "Cracked Concrete",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "cracked_concrete_02",
+      "Cracked Concrete 02",
+      [
+        "man made",
+        "floor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "cracked_concrete_wall",
+      "Cracked Concrete Wall",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "dirty",
+        "brick",
+        "plaster-concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "damaged_concrete_floor",
+      "Damaged Concrete Floor",
+      [
+        "floor",
+        "concrete",
+        "dirty",
+        "man made",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "damaged_concrete_floor_02",
+      "Damaged Concrete Floor 02",
+      [
+        "concrete",
+        "floor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "damaged_concrete_floor_03",
+      "Damaged Concrete Floor 03",
+      [
+        "floor",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "damaged_plaster",
+      "Damaged Plaster",
+      [
+        "wall",
+        "brick",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "dark_brick_wall",
+      "Dark Brick Wall",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "brick"
+      ]
+    ],
+    [
+      "dark_paneled_wood",
+      "Dark Paneled Wood",
+      [
+        "wood"
+      ]
+    ],
+    [
+      "defense_wall_02",
+      "Defense Wall 02",
+      [
+        "outdoor",
+        "wall",
+        "rock",
+        "man made",
+        "aerial"
+      ]
+    ],
+    [
+      "dirty_concrete",
+      "Dirty Concrete",
+      [
+        "concrete",
+        "outdoor",
+        "floor",
+        "man made",
+        "sand",
+        "dirty",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "double_brick_floor",
+      "Double Brick Floor",
+      [
+        "man made",
+        "plaster-concrete",
+        "brick"
+      ]
+    ],
+    [
+      "embedded_plank_flooring",
+      "Embedded Plank Flooring",
+      [
+        "floor",
+        "man made",
+        "plaster-concrete",
+        "wood"
+      ]
+    ],
+    [
+      "embedded_rock_floor",
+      "Embedded Rock Floor",
+      [
+        "floor",
+        "man made",
+        "plaster-concrete",
+        "rock"
+      ]
+    ],
+    [
+      "exterior_wall_cladding",
+      "Exterior Wall Cladding",
+      [
+        "outdoor",
+        "man made",
+        "brick"
+      ]
+    ],
+    [
+      "exterior_wall_cladding_02",
+      "Exterior Wall Cladding 02",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "brick"
+      ]
+    ],
+    [
+      "exterior_wall_cladding_03",
+      "Exterior Wall Cladding 03",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "factory_brick",
+      "Factory Brick",
+      [
+        "brick",
+        "man made",
+        "clean",
+        "indoor",
+        "outdoor"
+      ]
+    ],
+    [
+      "floor_bricks_02",
+      "Floor Bricks 02",
+      [
+        "floor",
+        "outdoor",
+        "man made",
+        "dirty",
+        "brick"
+      ]
+    ],
+    [
+      "floor_klinkers_01",
+      "Floor Klinkers 01",
+      [
+        "floor",
+        "brick",
+        "outdoor",
+        "dirty",
+        "man made"
+      ]
+    ],
+    [
+      "floor_klinkers_04",
+      "Floor Klinkers 04",
+      [
+        "floor",
+        "brick",
+        "outdoor",
+        "dirty",
+        "man made",
+        "wall"
+      ]
+    ],
+    [
+      "floor_pavement",
+      "Floor Pavement",
+      [
+        "man made",
+        "dirty",
+        "brick",
+        "floor",
+        "outdoor"
+      ]
+    ],
+    [
+      "garage_floor",
+      "Garage Floor",
+      [
+        "man made",
+        "plaster-concrete",
+        "indoor",
+        "floor",
+        "concrete"
+      ]
+    ],
+    [
+      "granular_concrete",
+      "Granular Concrete",
+      [
+        "concrete",
+        "man made",
+        "floor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "gravel_concrete",
+      "Gravel Concrete",
+      [
+        "floor",
+        "outdoor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "gravel_concrete_02",
+      "Gravel Concrete 02",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "gravel_concrete_03",
+      "Gravel Concrete 03",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "gravel_concrete_04",
+      "Gravel Concrete 04",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "gravel_embedded_concrete",
+      "Gravel Embedded Concrete",
+      [
+        "outdoor",
+        "man made",
+        "plaster-concrete",
+        "concrete",
+        "floor"
+      ]
+    ],
+    [
+      "gravel_embedded_concrete_02",
+      "Gravel Embedded Concrete 02",
+      [
+        "floor",
+        "plaster-concrete",
+        "man made"
+      ]
+    ],
+    [
+      "grey_plaster",
+      "Grey Plaster",
+      [
+        "plaster",
+        "outdoor",
+        "indoor",
+        "man made",
+        "wall",
+        "floor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "grey_plaster_02",
+      "Grey Plaster 02",
+      [
+        "plaster",
+        "outdoor",
+        "indoor",
+        "man made",
+        "dirty",
+        "wall",
+        "floor",
+        "plaster-concrete",
+        "collection: the_shed"
+      ]
+    ],
+    [
+      "grey_plaster_03",
+      "Grey Plaster 03",
+      [
+        "plaster",
+        "outdoor",
+        "indoor",
+        "man made",
+        "dirty",
+        "wall",
+        "floor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "grooved_concrete_driveway",
+      "Grooved Concrete Driveway",
+      [
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "hacked_concrete",
+      "Hacked Concrete",
+      [
+        "wall",
+        "plaster-concrete",
+        "man made"
+      ]
+    ],
+    [
+      "hangar_concrete_floor",
+      "Hangar Concrete Floor",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "indoor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "herringbone_brick",
+      "Herringbone Brick",
+      [
+        "man made",
+        "outdoor",
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "herringbone_brick_02",
+      "Herringbone Brick 02",
+      [
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "herringbone_brick_03",
+      "Herringbone Brick 03",
+      [
+        "floor",
+        "man made",
+        "brick"
+      ]
+    ],
+    [
+      "herringbone_concrete_tile",
+      "Herringbone Concrete Tile",
+      [
+        "concrete",
+        "outdoor",
+        "man made",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "herringbone_concrete_tile_02",
+      "Herringbone Concrete Tile 02",
+      [
+        "wall",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "herringbone_concrete_tile_03",
+      "Herringbone Concrete Tile 03",
+      [
+        "man made",
+        "outdoor",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "herringbone_pavement",
+      "Herringbone Pavement",
+      [
+        "floor",
+        "man made",
+        "brick",
+        "outdoor"
+      ]
+    ],
+    [
+      "herringbone_pavement_03",
+      "Herringbone Pavement 03",
+      [
+        "dirty",
+        "brick",
+        "outdoor"
+      ]
+    ],
+    [
+      "hexagonal_concrete_paving",
+      "Hexagonal Concrete Paving",
+      [
+        "outdoor",
+        "floor",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "interlocking_concrete_pavers",
+      "Interlocking Concrete Pavers",
+      [
+        "floor",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "japanese_cedar_planks",
+      "Japanese Cedar Planks",
+      [
+        "wood"
+      ]
+    ],
+    [
+      "large_red_bricks",
+      "Large Red Bricks",
+      [
+        "brick",
+        "wall",
+        "man made",
+        "outdoor",
+        "indoor",
+        "clean"
+      ]
+    ],
+    [
+      "large_sandstone_blocks_01",
+      "Large Sandstone Blocks 01",
+      [
+        "wall",
+        "floor",
+        "man made",
+        "dirty",
+        "brick"
+      ]
+    ],
+    [
+      "medieval_blocks_03",
+      "Medieval Blocks 03",
+      [
+        "wall",
+        "brick",
+        "man made",
+        "outdoor",
+        "indoor",
+        "clean"
+      ]
+    ],
+    [
+      "medieval_red_brick",
+      "Medieval Red Brick",
+      [
+        "wall",
+        "brick",
+        "man made"
+      ]
+    ],
+    [
+      "medieval_wall_01",
+      "Medieval Wall 01",
+      [
+        "plaster-concrete",
+        "wall",
+        "man made",
+        "outdoor",
+        "indoor",
+        "dirty"
+      ]
+    ],
+    [
+      "mixed_brick_wall",
+      "Mixed Brick Wall",
+      [
+        "wall",
+        "brick"
+      ]
+    ],
+    [
+      "mossy_brick",
+      "Mossy Brick",
+      [
+        "brick"
+      ]
+    ],
+    [
+      "mossy_brick_floor",
+      "Mossy Brick Floor",
+      [
+        "floor",
+        "brick",
+        "man made"
+      ]
+    ],
+    [
+      "old_mosaic_floor",
+      "Old Mosaic Floor",
+      [
+        "floor",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "oriented_strand_board",
+      "Oriented Strand Board",
+      [
+        "wood"
+      ]
+    ],
+    [
+      "painted_brick",
+      "Painted Brick",
+      [
+        "wall",
+        "brick",
+        "plaster",
+        "man made",
+        "outdoor",
+        "indoor"
+      ]
+    ],
+    [
+      "painted_concrete",
+      "Painted Concrete",
+      [
+        "floor",
+        "indoor",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "painted_concrete_02",
+      "Painted Concrete 02",
+      [
+        "floor",
+        "man made",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "painted_plaster_wall",
+      "Painted Plaster Wall",
+      [
+        "wall",
+        "plaster-concrete",
+        "outdoor"
+      ]
+    ],
+    [
+      "painted_worn_brick",
+      "Painted Worn Brick",
+      [
+        "wall",
+        "brick",
+        "outdoor",
+        "man made"
+      ]
+    ],
+    [
+      "patterned_brick_floor",
+      "Patterned Brick Floor",
+      [
+        "man made",
+        "outdoor",
+        "floor"
+      ]
+    ],
+    [
+      "patterned_brick_floor_02",
+      "Patterned Brick Floor 02",
+      [
+        "floor",
+        "outdoor",
+        "brick"
+      ]
+    ],
+    [
+      "patterned_brick_floor_03",
+      "Patterned Brick Floor 03",
+      [
+        "floor",
+        "outdoor"
+      ]
+    ],
+    [
+      "patterned_brick_wall",
+      "Patterned Brick Wall",
+      [
+        "man made",
+        "brick",
+        "wall"
+      ]
+    ],
+    [
+      "patterned_brick_wall_02",
+      "Patterned Brick Wall 02",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "brick",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "patterned_brick_wall_03",
+      "Patterned Brick Wall 03",
+      [
+        "wall",
+        "brick"
+      ]
+    ],
+    [
+      "patterned_clay_plaster",
+      "Patterned Clay Plaster",
+      [
+        "wall",
+        "outdoor",
+        "plaster-concrete",
+        "man made"
+      ]
+    ],
+    [
+      "patterned_cobblestone",
+      "Patterned Cobblestone",
+      [
+        "man made",
+        "outdoor",
+        "cobblestone",
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "patterned_concrete_pavers",
+      "Patterned Concrete Pavers",
+      [
+        "man made",
+        "outdoor",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "patterned_concrete_wall",
+      "Patterned Concrete Wall",
+      [
+        "wall",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "patterned_paving",
+      "Patterned Paving",
+      [
+        "floor",
+        "man made",
+        "outdoor"
+      ]
+    ],
+    [
+      "patterned_plaster_wall",
+      "Patterned Plaster Wall",
+      [
+        "wall",
+        "plaster"
+      ]
+    ],
+    [
+      "pavement_02",
+      "Pavement 02",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "plaster-concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "pavement_03",
+      "Pavement 03",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "pavement_04",
+      "Pavement 04",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "pavement_05",
+      "Pavement 05",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "brick",
+        "cobblestone"
+      ]
+    ],
+    [
+      "pavement_06",
+      "Pavement 06",
+      [
+        "dirty",
+        "brick",
+        "floor",
+        "man made"
+      ]
+    ],
+    [
+      "pebble_bricks",
+      "Pebble Bricks",
+      [
+        "floor",
+        "man made",
+        "brick"
+      ]
+    ],
+    [
+      "pebble_embedded_pavement",
+      "Pebble Embedded Pavement",
+      [
+        "floor",
+        "man made",
+        "outdoor",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "plaster_brick_01",
+      "Plaster Brick 01",
+      [
+        "brick",
+        "plaster-concrete",
+        "wall",
+        "man made",
+        "dirty",
+        "outdoor"
+      ]
+    ],
+    [
+      "plaster_brick_pattern",
+      "Plaster Brick Pattern",
+      [
+        "wall",
+        "man made",
+        "plaster",
+        "brick",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "plaster_grey_04",
+      "Plaster Grey 04",
+      [
+        "plaster-concrete",
+        "wall",
+        "man made",
+        "clean",
+        "outdoor",
+        "indoor"
+      ]
+    ],
+    [
+      "plaster_stone_wall_01",
+      "Plaster Stone Wall 01",
+      [
+        "wall",
+        "plaster",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "plaster_stone_wall_02",
+      "Plaster Stone Wall 02",
+      [
+        "plaster-concrete",
+        "plaster",
+        "concrete"
+      ]
+    ],
+    [
+      "plastered_stone_wall",
+      "Plastered Stone Wall",
+      [
+        "wall",
+        "man made",
+        "plaster-concrete",
+        "rock"
+      ]
+    ],
+    [
+      "plastered_wall",
+      "Plastered Wall",
+      [
+        "wall",
+        "plaster"
+      ]
+    ],
+    [
+      "plastered_wall_02",
+      "Plastered Wall 02",
+      [
+        "wall",
+        "man made",
+        "outdoor",
+        "plaster",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "plastered_wall_03",
+      "Plastered Wall 03",
+      [
+        "wall",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "plastered_wall_04",
+      "Plastered Wall 04",
+      [
+        "wall",
+        "plaster-concrete",
+        "indoor"
+      ]
+    ],
+    [
+      "plastered_wall_05",
+      "Plastered Wall 05",
+      [
+        "wall",
+        "man made",
+        "outdoor",
+        "plaster",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "precast_concrete_wall",
+      "Precast Concrete Wall",
+      [
+        "wall",
+        "man made",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "preconcrete_wall_001",
+      "Preconcrete Wall 001",
+      [
+        "concrete",
+        "wall",
+        "outdoor",
+        "man made",
+        "dirty",
+        "plaster",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "preconcrete_wall_001_long",
+      "Preconcrete Wall 001 Long",
+      [
+        "wall",
+        "plaster-concrete",
+        "concrete",
+        "outdoor",
+        "man made",
+        "dirty"
+      ]
+    ],
+    [
+      "random_bricks_thick",
+      "Random Bricks Thick",
+      [
+        "outdoor",
+        "wall",
+        "dirty",
+        "man made",
+        "brick"
+      ]
+    ],
+    [
+      "rebar_reinforced_concrete",
+      "Rebar Reinforced Concrete",
+      [
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "recycled_brick_floor",
+      "Recycled Brick Floor",
+      [
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "red_brick",
+      "Red Brick",
+      [
+        "wall",
+        "brick",
+        "man made"
+      ]
+    ],
+    [
+      "red_brick_03",
+      "Red Brick 03",
+      [
+        "outdoor",
+        "wall",
+        "clean",
+        "man made",
+        "brick"
+      ]
+    ],
+    [
+      "red_brick_pavers",
+      "Red Brick Pavers",
+      [
+        "floor",
+        "man made",
+        "outdoor"
+      ]
+    ],
+    [
+      "red_brick_plaster_patch_02",
+      "Red Brick Plaster Patch 02",
+      [
+        "outdoor",
+        "wall",
+        "dirty",
+        "man made",
+        "brick"
+      ]
+    ],
+    [
+      "red_bricks_02",
+      "Red Bricks 02",
+      [
+        "outdoor",
+        "wall",
+        "dirty",
+        "man made",
+        "brick"
+      ]
+    ],
+    [
+      "red_bricks_04",
+      "Red Bricks 04",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "brick"
+      ]
+    ],
+    [
+      "red_plaster_weathered",
+      "Red Plaster Weathered",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "dirty",
+        "plaster-concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "red_sandstone_pavement",
+      "Red Sandstone Pavement",
+      [
+        "outdoor",
+        "floor",
+        "sandstone",
+        "man made",
+        "rock"
+      ]
+    ],
+    [
+      "ribbed_concrete_wall",
+      "Ribbed Concrete Wall",
+      [
+        "wall",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "rock_embedded_concrete_wall",
+      "Rock Embedded Concrete Wall",
+      [
+        "man made",
+        "outdoor",
+        "rock",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "rock_wall_17",
+      "Rock Wall 17",
+      [
+        "wall",
+        "rock",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "rough_block_wall",
+      "Rough Block Wall",
+      [
+        "man made",
+        "outdoor",
+        "brick",
+        "wall"
+      ]
+    ],
+    [
+      "rough_concrete",
+      "Rough Concrete",
+      [
+        "man made",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "rough_plaster_03",
+      "Rough Plaster 03",
+      [
+        "plaster-concrete",
+        "man made",
+        "outdoor",
+        "brick",
+        "wall"
+      ]
+    ],
+    [
+      "rough_plaster_brick",
+      "Rough Plaster Brick",
+      [
+        "plaster-concrete",
+        "man made",
+        "outdoor",
+        "brick",
+        "wall"
+      ]
+    ],
+    [
+      "rough_plaster_brick_02",
+      "Rough Plaster Brick 02",
+      [
+        "plaster-concrete",
+        "man made",
+        "brick",
+        "wall",
+        "outdoor",
+        "dirty"
+      ]
+    ],
+    [
+      "rough_plaster_brick_04",
+      "Rough Plaster Brick 04",
+      [
+        "plaster-concrete",
+        "man made",
+        "wall",
+        "outdoor",
+        "dirty"
+      ]
+    ],
+    [
+      "rough_plaster_broken",
+      "Rough Plaster Broken",
+      [
+        "plaster-concrete",
+        "man made",
+        "wall",
+        "outdoor",
+        "dirty"
+      ]
+    ],
+    [
+      "rough_plasterbrick_05",
+      "Rough Plasterbrick 05",
+      [
+        "plaster-concrete",
+        "man made",
+        "wall",
+        "outdoor",
+        "floor"
+      ]
+    ],
+    [
+      "rubble",
+      "Rubble",
+      [
+        "floor",
+        "dirty",
+        "indoor"
+      ]
+    ],
+    [
+      "sand_01",
+      "Sand 01",
+      [
+        "terrain",
+        "sand",
+        "outdoor",
+        "natural"
+      ]
+    ],
+    [
+      "sandstone_blocks_04",
+      "Sandstone Blocks 04",
+      [
+        "wall",
+        "man made",
+        "outdoor",
+        "clean",
+        "brick"
+      ]
+    ],
+    [
+      "sandstone_blocks_05",
+      "Sandstone Blocks 05",
+      [
+        "wall",
+        "man made",
+        "outdoor",
+        "brick"
+      ]
+    ],
+    [
+      "sandstone_brick_wall_01",
+      "Sandstone Brick Wall 01",
+      [
+        "wall",
+        "brick",
+        "man made",
+        "outdoor",
+        "sandstone"
+      ]
+    ],
+    [
+      "sandstone_cracks",
+      "Sandstone Cracks",
+      [
+        "wall",
+        "floor",
+        "natural",
+        "man made",
+        "outdoor",
+        "road",
+        "terrain"
+      ]
+    ],
+    [
+      "scuffed_cement",
+      "Scuffed Cement",
+      [
+        "man made",
+        "floor",
+        "indoor",
+        "plaster-concrete",
+        "concrete"
+      ]
+    ],
+    [
+      "seaworn_sandstone_brick",
+      "Seaworn Sandstone Brick",
+      [
+        "brick",
+        "sandstone",
+        "outdoor",
+        "wall",
+        "man made"
+      ]
+    ],
+    [
+      "seaworn_stone_tiles",
+      "Seaworn Stone Tiles",
+      [
+        "sandstone",
+        "brick",
+        "wall",
+        "man made"
+      ]
+    ],
+    [
+      "short_bricks_floor",
+      "Short Bricks Floor",
+      [
+        "man made",
+        "outdoor",
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "slumped_mortar_brick",
+      "Slumped Mortar Brick",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "brick",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "smooth_concrete_floor",
+      "Smooth Concrete Floor",
+      [
+        "floor",
+        "indoor",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "square_brick_floor",
+      "Square Brick Floor",
+      [
+        "indoor",
+        "brick",
+        "man made"
+      ]
+    ],
+    [
+      "square_brick_paving",
+      "Square Brick Paving",
+      [
+        "floor",
+        "man made",
+        "brick"
+      ]
+    ],
+    [
+      "square_concrete_pavers",
+      "Square Concrete Pavers",
+      [
+        "man made",
+        "floor",
+        "outdoor",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "square_pavers",
+      "Square Pavers",
+      [
+        "floor",
+        "man made",
+        "outdoor",
+        "brick"
+      ]
+    ],
+    [
+      "square_tiled_wall",
+      "Square Tiled Wall",
+      [
+        "wall",
+        "man made",
+        "outdoor"
+      ]
+    ],
+    [
+      "stacked_brick_wall",
+      "Stacked Brick Wall",
+      [
+        "outdoor",
+        "wall",
+        "man made",
+        "brick"
+      ]
+    ],
+    [
+      "stenciled_brick_floor",
+      "Stenciled Brick Floor",
+      [
+        "outdoor",
+        "man made",
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "stone_brick_wall_001",
+      "Stone Brick Wall 001",
+      [
+        "outdoor",
+        "wall",
+        "brick"
+      ]
+    ],
+    [
+      "stone_wall_03",
+      "Stone Wall 03",
+      [
+        "outdoor",
+        "man made",
+        "plaster-concrete",
+        "concrete",
+        "rock"
+      ]
+    ],
+    [
+      "t_brick_floor_002",
+      "Brick Floor 002",
+      [
+        "floor",
+        "outdoor",
+        "man made",
+        "clean",
+        "brick"
+      ]
+    ],
+    [
+      "t_concrete_wall_002",
+      "Concrete Wall 002",
+      [
+        "brick",
+        "wall",
+        "man made",
+        "outdoor"
+      ]
+    ],
+    [
+      "wall_bricks_plaster",
+      "Wall Bricks Plaster",
+      [
+        "plaster-concrete",
+        "brick",
+        "man made",
+        "outdoor",
+        "dirty",
+        "wall"
+      ]
+    ],
+    [
+      "white_bricks",
+      "White Bricks",
+      [
+        "brick",
+        "wall",
+        "outdoor",
+        "man made",
+        "dirty"
+      ]
+    ],
+    [
+      "white_planks_clean",
+      "White Planks Clean",
+      [
+        "wall",
+        "wood"
+      ]
+    ],
+    [
+      "white_plaster_02",
+      "White Plaster 02",
+      [
+        "plaster-concrete",
+        "wall",
+        "man made",
+        "outdoor",
+        "indoor",
+        "clean",
+        "floor"
+      ]
+    ],
+    [
+      "white_plaster_rough_01",
+      "White Plaster Rough 01",
+      [
+        "plaster-concrete",
+        "wall",
+        "floor",
+        "man made",
+        "outdoor"
+      ]
+    ],
+    [
+      "white_plaster_rough_02",
+      "White Plaster Rough 02",
+      [
+        "plaster-concrete",
+        "wall",
+        "man made",
+        "outdoor",
+        "dirty"
+      ]
+    ],
+    [
+      "white_rough_plaster",
+      "White Rough Plaster",
+      [
+        "plaster-concrete",
+        "man made",
+        "wall",
+        "outdoor",
+        "indoor",
+        "dirty"
+      ]
+    ],
+    [
+      "white_sandstone_blocks_02",
+      "White Sandstone Blocks 02",
+      [
+        "brick",
+        "man made",
+        "outdoor",
+        "wall",
+        "collection: the_shed"
+      ]
+    ],
+    [
+      "white_sandstone_bricks",
+      "White Sandstone Bricks",
+      [
+        "brick",
+        "man made",
+        "outdoor",
+        "wall"
+      ]
+    ],
+    [
+      "white_sandstone_bricks_03",
+      "White Sandstone Bricks 03",
+      [
+        "brick",
+        "man made",
+        "outdoor",
+        "wall",
+        "clean"
+      ]
+    ],
+    [
+      "white_stucco",
+      "White Stucco",
+      [
+        "wall",
+        "man made",
+        "wall",
+        "man made",
+        "plaster",
+        "indoor"
+      ]
+    ],
+    [
+      "white_stucco_02",
+      "White Stucco 02",
+      [
+        "outdoor",
+        "wall",
+        "plaster",
+        "plaster-concrete",
+        "man made"
+      ]
+    ],
+    [
+      "whitewashed_brick",
+      "Whitewashed Brick",
+      [
+        "wall",
+        "brick",
+        "man made"
+      ]
+    ],
+    [
+      "wood_inlaid_concrete_wall",
+      "Wood Inlaid Concrete Wall",
+      [
+        "wall",
+        "concrete",
+        "plaster-concrete",
+        "wood"
+      ]
+    ],
+    [
+      "wood_inlaid_stone_wall",
+      "Wood Inlaid Stone Wall",
+      [
+        "wall",
+        "rock",
+        "outdoor"
+      ]
+    ],
+    [
+      "wood_textured_concrete",
+      "Wood Textured Concrete",
+      [
+        "outdoor",
+        "wall",
+        "concrete",
+        "plaster-concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "wooden_panels",
+      "Wooden Panels",
+      [
+        "wood",
+        "man made"
+      ]
+    ],
+    [
+      "worn_brick_floor",
+      "Worn Brick Floor",
+      [
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "worn_brick_path",
+      "Worn Brick Path",
+      [
+        "outdoor",
+        "floor",
+        "brick"
+      ]
+    ],
+    [
+      "worn_brick_wall",
+      "Worn Brick Wall",
+      [
+        "wall",
+        "man made",
+        "brick"
+      ]
+    ],
+    [
+      "worn_concrete_floor",
+      "Worn Concrete Floor",
+      [
+        "floor",
+        "concrete",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "worn_cracked_plaster",
+      "Worn Cracked Plaster",
+      [
+        "wall",
+        "man made",
+        "plaster-concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "worn_mossy_plasterwall",
+      "Worn Mossy Plasterwall",
+      [
+        "wall",
+        "outdoor",
+        "plaster",
+        "plaster-concrete"
+      ]
+    ],
+    [
+      "worn_plaster_wall",
+      "Worn Plaster Wall",
+      [
+        "wall",
+        "concrete",
+        "plaster-concrete",
+        "plaster"
+      ]
+    ],
+    [
+      "yellow_brick",
+      "Yellow Brick",
+      [
+        "brick",
+        "wall",
+        "man made",
+        "outdoor",
+        "indoor",
+        "clean"
+      ]
+    ],
+    [
+      "yellow_bricks",
+      "Yellow Bricks",
+      [
+        "brick",
+        "wall",
+        "man made",
+        "outdoor",
+        "dirty"
+      ]
+    ],
+    [
+      "yellow_plaster",
+      "Yellow Plaster",
+      [
+        "wall",
+        "plaster-concrete",
+        "man made",
+        "indoor",
+        "outdoor",
+        "dirty"
+      ]
+    ],
+    [
+      "yellow_plaster_02",
+      "Yellow Plaster 02",
+      [
+        "outdoor",
+        "man made",
+        "wall",
+        "plaster-concrete",
+        "wood",
+        "concrete",
+        "plaster"
+      ]
+    ]
+  ]
+}

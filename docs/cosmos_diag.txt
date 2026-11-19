@@ -1,0 +1,84 @@
+SM bbox = (13.91, 4.14, 5.08) cm   min=(-2.42,-2.07,0.00) max=(11.49,2.07,5.08)
+  slot0 -> /Game/RobotGame/Art/Props/Cosmos/cs1-pipe/MI_CS1_Pipe_01a_4096.MI_CS1_Pipe_01a_4096
+
+目录资产：
+  MI_CS1_Pipe_01a_4096.MI_CS1_Pipe_01a_4096          Material
+  MI_CS1_Pipe_01a_4096_BaseColor.MI_CS1_Pipe_01a_4096_BaseColor Texture2D
+  MI_CS1_Pipe_01a_4096_Normal.MI_CS1_Pipe_01a_4096_Normal Texture2D
+  SM_cs1-pipe.SM_cs1-pipe                            StaticMesh
+  T_CS1_Pipe_01a_4096_ORM.T_CS1_Pipe_01a_4096_ORM    Texture2D
+
+材质 MI_CS1_Pipe_01a_4096 (Material)
+  表达式 5 个：
+    MaterialExpressionMaterialFunctionCall
+    MaterialExpressionTextureObject
+    MaterialExpressionTextureObject
+    MaterialExpressionTextureObject
+    MaterialExpressionTextureObject
+
+== 可用 Interchange 导入设置类 ==
+  InterchangeAudioTranslatorBase
+  InterchangeAudioTranslator_AIF
+  InterchangeAudioTranslator_AIFF
+  InterchangeAudioTranslator_FLAC
+  InterchangeAudioTranslator_MP3
+  InterchangeAudioTranslator_OGG
+  InterchangeAudioTranslator_OPUS
+  InterchangeAudioTranslator_WAV
+  InterchangeBlueprintPipelineBase
+  InterchangeBlueprintPipelineBaseFactory
+  InterchangeCardsPipeline
+  InterchangeCommonPipelineDataFactoryNode
+  InterchangeDDSTranslator
+  InterchangeEditorBlueprintPipelineBase
+  InterchangeEditorBlueprintPipelineBaseFactory
+  InterchangeEditorPipelineBase
+  InterchangeFbxTranslator
+  InterchangeFbxTranslatorSettings
+  InterchangeFilePickerGeneric
+  InterchangeGLTFPipeline
+  InterchangeGLTFTranslator
+  InterchangeGenericAnimationPipeline
+  InterchangeGenericAssetsPipeline
+  InterchangeGenericAudioPipeline
+  InterchangeGenericCommonMeshesProperties
+  InterchangeGenericCommonSkeletalMeshesAndAnimationsProperties
+  InterchangeGenericGroomPipeline
+  InterchangeGenericLevelPipeline
+  InterchangeGenericMaterialPipeline
+  InterchangeGenericMeshPipeline
+  InterchangeGenericTexturePipeline
+  InterchangeGraphInspectorPipeline
+  InterchangeIESTranslator
+  InterchangeImageWrapperTranslator
+  InterchangeJPGTranslator
+  InterchangeMaterialXPipeline
+  InterchangeMaterialXTranslator
+  InterchangeOBJTranslator
+  InterchangePSDTranslator
+  InterchangePerTranslatorDialogOverride
+  InterchangePipelineBase
+  InterchangePipelineBaseFactory
+  InterchangePipelineConfigurationBase
+  InterchangePipelineConfigurationDialogResult
+  InterchangePipelineConfigurationGeneric
+  InterchangePipelineMeshesUtilities
+  InterchangePipelineMeshesUtilitiesContext
+  InterchangePipelinePropertyStatePerContext
+  InterchangePipelinePropertyStates
+  InterchangePipelineStack
+  InterchangePipelineStackOverride
+  InterchangePipelineTask
+  InterchangePythonPipelineAsset
+  InterchangePythonPipelineAssetFactory
+  InterchangePythonPipelineBase
+  InterchangeSparseVolumeTexturePipeline
+  InterchangeTestPlanPipelineSettings
+  InterchangeTranslatorAssetType
+  InterchangeTranslatorBase
+  InterchangeTranslatorPipelines
+  InterchangeTranslatorSettings
+  InterchangeTranslatorType
+  InterchangeUEJPEGTranslator
+  InterchangeVolumeTranslatorSettings
+  MetaHumanInterchangeDnaTranslator

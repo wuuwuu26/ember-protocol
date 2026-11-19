@@ -1,0 +1,122 @@
+﻿void ARobotCharacter::TuneArenaLights()
+{
+	UWorld* World = GetWorld();
+	if (!World)
+	{
+		return;
+	}
+
+	// -NoLightTune：保留关卡原样，用于对比"灯分工到底改了什么"。
+	if (FParse::Param(FCommandLine::Get(), TEXT("NoLightTune")))
+	{
+		UE_LOG(LogTemp, Warning, TEXT("[灯] -NoLightTune：跳过灯光分工"));
+		return;
+	}
+
+	// 分工表（cd = 坎德拉）。这些数字的设计意图：
+	//
+	//   光池（Pool，4 盏，7.5m 高、正对地面）：**暖白主光** —— 地板上那几团
+	//       暖色亮斑是它，机甲侧面的暖侧光也是它。
+	//   投光（Flood，8 盏，场地边缘 11~15m）：**暖色轮廓光** —— 墙面、支架、
+	//       远景的暖色边缘。它离玩家太远，**照不到地面**，别再指望它。
+	//   补光（Fill，4 盏，3.2m 高）：**冷白弱光**，只把暗部抬起来不糊死。
+	//       它绝不能比光池强，否则画面又回到"哪里都一样亮"。
+	//   装饰（Accent，环境灯带）：保留原色（冷蓝/暖橙交替）当氛围色。
+	//
+	// ★ 2026-10-25（第九轮）：**坎德拉必须和"太阳的 lux"直接比**。
+	//
+	//   上一版投光 7000 cd 装在 7m 天桥、离玩家 11~15m，
+	//   地面照度 = 7000 / 12² ≈ **49 lux**，而太阳是 5200 lux ——
+	//   投光只占太阳的 1%，等于没开。这就是"八盏暖色投光 + 地板一片
+	//   均匀冷灰"的原因：灯是亮的，只是量级差了两个数量级。
+	//   （补光 1000 cd / 3.2m = 98 lux，同样等于没有。）
+	//
+	//   标定基准（照度 = cd / 距离²）：
+	//     月光（太阳） 1800 lux 冷白 —— 只负责长阴影和形体
+	//     光池         1600 lux 暖白 —— 地板上的亮斑节奏
+	//     投光          170 lux 暖白 —— 墙面/远景轮廓
+	//     补光          390 lux 冷白 —— 抬暗部
+	//   亮部 : 暗部 从 1.03 拉到约 4，明暗节奏才真正出现。
+	//
+	//   -FloodCd= / -FillCd= / -AccentCd= / -PoolCd=：允许命令行扫参数，
+	//   免得每换一个值就重编译（前几轮的时间全花在这上面）。
+	float PoolCd = 60000.f;
+	float FloodCd = 24000.f;
+	float FillCd = 4000.f;
+	float AccentCd = 6000.f;
+	{
+		FString V;
+		if (FParse::Value(FCommandLine::Get(), TEXT("PoolCd="), V))
+		{
+			PoolCd = FCString::Atof(*V);
+		}
+		if (FParse::Value(FCommandLine::Get(), TEXT("FloodCd="), V))
+		{
+			FloodCd = FCString::Atof(*V);
+		}
+		if (FParse::Value(FCommandLine::Get(), TEXT("FillCd="), V))
+		{
+			FillCd = FCString::Atof(*V);
+		}
+		if (FParse::Value(FCommandLine::Get(), TEXT("AccentCd="), V))
+		{
+			AccentCd = FCString::Atof(*V);
+		}
+	}
+
+	int32 NumFlood = 0, NumFill = 0, NumAccent = 0;
+
+	for (TActorIterator<APointLight> It(World); It; ++It)
+	{
+		UPointLightComponent* C =
+			Cast<UPointLightComponent>(It->GetLightComponent());
+		if (!C)
+		{
+			continue;
+		}
+		const FString Label = It->GetActorNameOrLabel();
+
+		if (Label.StartsWith(TEXT("FillLight")))
+		{
+			C->SetMobility(EComponentMobility::Movable);
+			C->SetIntensity(FillCd);
+			C->SetAttenuationRadius(1800.f);
+			C->SetLightColor(FLinearColor(0.62f, 0.74f, 1.00f));
+			// 补光只抬暗部：开阴影会让四盏补光在机体上互相打架，
+			// 而且阴影贴图本来就不该花在"没有方向感"的灯上。
+			C->SetCastShadows(false);
+			C->SetVolumetricScatteringIntensity(0.f);
+			C->MarkRenderStateDirty();
+			++NumFill;
+		}
+		else if (Label.StartsWith(TEXT("AccentLight")))
+		{
+			C->SetMobility(EComponentMobility::Movable);
+			C->SetIntensity(AccentCd);
+			C->SetAttenuationRadius(2600.f);
+			// 十盏装饰灯全开阴影 = 十张阴影贴图，画面里却看不出任何区别
+			// （它们照的都是墙面，没有可读的投影）。只留两盏，省下来的
+			// 开销给真正需要的投光。
+			C->SetCastShadows(NumAccent < 2);
+			C->SetVolumetricScatteringIntensity(0.35f);
+			C->MarkRenderStateDirty();
+			++NumAccent;
+		}
+	}
+
+	// ── 聚光灯分两类：投光（Flood）与光池（Pool）──
+	//
+	// 光池是**关卡里就有的** 5 盏 PoolLight（由 ue/Scripts/arena_pools.py 生成），
+	// 不是运行时 SpawnActor。为什么放弃运行时生成：
+	//   2026-10-25 实测，SpawnActor / SpawnActorDeferred 出来的灯，
+	//   强度/可见/注册/影响世界 全是 1、位置也对，但画面**一个像素都不亮**
+	//   （开池/关池截图的地板均值都是 0.299，完全一致）。同样的参数
+	//   写进关卡里的 Light actor 就正常。与其继续和运行时生成较劲，
+	//   不如走和 8 盏投光完全相同的路径：编辑器建、C++ 调。
+	//
+	// 光池为什么必须有：8 盏 FloodLight 全装在场地边缘（11~15m），
+	//  按平方反比它们照不到玩家脚下 —— 地面一直是一张均匀的冷灰台面。
+	//  光池挂在 (±1100,±1100) 与 (0,0) 的甲板下方（z=620，甲板在 700），
+	//  60000cd / 6.2m ≈ 1560 lux 的暖色亮斑，才有"亮斑 + 暗区"的节奏。
+	//
+	// -NoPool 关掉用于对比，-PoolCd= 扫强度。

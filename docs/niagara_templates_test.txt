@@ -1,0 +1,11 @@
+NS_T_SimpleExplosion     OK (复制保存)
+NS_T_RadialBurst         OK (复制保存)
+NS_T_DirBurst            OK (复制保存)
+NS_T_Minimal             OK (复制保存)
+NS_T_AttrTrails          OK (复制保存)
+  摆放 NS_T_SimpleExplosion (-800,-1100)
+  摆放 NS_T_RadialBurst (-580,-1100)
+  摆放 NS_T_DirBurst (-360,-1100)
+  摆放 NS_T_Minimal (-140,-1100)
+  摆放 NS_T_AttrTrails (80,-1100)
+已保存

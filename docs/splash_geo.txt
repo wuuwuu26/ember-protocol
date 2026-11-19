@@ -1,0 +1,27 @@
+═══ Splash_FoamRing (StaticMeshActor) (120,300,8.0) ═══
+  mesh = /Engine/BasicShapes/Cylinder.Cylinder
+  override = ['M_Splash_Foam_V2']
+  material[0] = M_Splash_Foam_V2 (Material)
+  UV 查询失败: 'StaticMesh' object has no attribute 'get_mesh_description'
+  scale = (0.52,0.52,0.05) visible=True
+
+═══ Splash_FoamDisc (StaticMeshActor) (120,300,7.7) ═══
+  mesh = /Engine/BasicShapes/Cylinder.Cylinder
+  override = ['M_Splash_Foam_V2']
+  material[0] = M_Splash_Foam_V2 (Material)
+  UV 查询失败: 'StaticMesh' object has no attribute 'get_mesh_description'
+  scale = (0.90,0.90,0.02) visible=True
+
+═══ Splash_SprayCone (StaticMeshActor) (120,300,9.0) ═══
+  mesh = /Engine/BasicShapes/Cone.Cone
+  override = ['M_Splash_Spray']
+  material[0] = M_Splash_Spray (Material)
+  UV 查询失败: 'StaticMesh' object has no attribute 'get_mesh_description'
+  scale = (0.34,0.34,0.22) visible=True
+
+═══ Jet_CoolantSpill_0 (StaticMeshActor) (120,300,25.0) ═══
+  mesh = /Engine/BasicShapes/Cylinder.Cylinder
+  override = ['M_WaterJet_Coolant']
+  material[0] = M_WaterJet_Coolant (Material)
+  UV 查询失败: 'StaticMesh' object has no attribute 'get_mesh_description'
+  scale = (0.07,0.07,0.34) visible=True

@@ -1,0 +1,11 @@
+地面块材质覆盖分布：
+  56 块 -> ['M_Steel', 'M_SteelLight', 'M_Joint', 'M_Copper']
+  48 块 -> []
+
+样例：
+(-1200,-1200) overrides=['M_Steel', 'M_SteelLight', 'M_Joint', 'M_Copper']
+(-1200,-800) overrides=['M_Steel', 'M_SteelLight', 'M_Joint', 'M_Copper']
+(-1200,-400) overrides=['M_Steel', 'M_SteelLight', 'M_Joint', 'M_Copper']
+(-1200,0) overrides=['M_Steel', 'M_SteelLight', 'M_Joint', 'M_Copper']
+(-1200,400) overrides=['M_Steel', 'M_SteelLight', 'M_Joint', 'M_Copper']
+(-1200,800) overrides=['M_Steel', 'M_SteelLight', 'M_Joint', 'M_Copper']

@@ -1,0 +1,253 @@
+﻿	// 修复后把移动能力还回来（部位被毁时可能被限制过）
+	if (UCharacterMovementComponent* Move = GetCharacterMovement())
+	{
+		Move->SetMovementMode(MOVE_Walking);
+	}
+	RefreshFromAssembly();
+}
+
+/**
+ * 调试相机：-SideCam（正侧视）/ -CloseCam（近景）。
+ *
+ * 【为什么另起一个 CameraActor，而不是继续摆相机臂】
+ * 前前后后试了三轮都没把相机臂摆对：
+ *   ① 调 TargetArmLength + SetRelativeRotation → 俯仰被 bInheritPitch=false 吃掉
+ *   ② SetUsingAbsoluteLocation + SetWorldLocation → 被父组件空间二次变换
+ *   ③ DetachFromComponent(KeepWorldTransform) + 每帧手写世界变换
+ *      → 日志里组件坐标完全正确（左右=-560 高=170 俯角=-16），
+ *        但渲染出来的画面里机体不在预测位置
+ * 相机臂的最终落点同时受 父组件变换 / 控制旋转 / bInheritPitch /
+ * 碰撞回缩 四个因素影响，而 ACameraActor 一个都没有 ——
+ * SetViewTarget 之后视角就等于它的世界变换。调试工具不该继续跟相机臂较劲。
+ *
+ * 注意：切到 CameraActor 后，玩家控制器不再用 Pawn 当视角目标，
+ * 相机抖动等基于 Pawn 的效果会失效 —— 这只影响调试模式，正式玩不带这些参数。
+ */
+void ARobotCharacter::SetupReviewStage()
+{
+	UWorld* W = GetWorld();
+	if (!W)
+	{
+		return;
+	}
+
+	// ── 收集敌人并摆成一排 ──
+	//
+	// 敌人是脚本摆进关卡的（5 台，型号由 Actor 名末尾的数字决定）。
+	// 检阅模式不新增敌人，只把它们挪到同一平面上、关掉 AI，
+	// 这样画面里能同时看到全部型号，方便横向比较比例。
+	TArray<ARobotEnemy*> Enemies;
+	for (TActorIterator<ARobotEnemy> It(W); It; ++It)
+	{
+		Enemies.Add(*It);
+	}
+	const int32 N = Enemies.Num();
+	const float Gap = 240.f;
+	for (int32 i = 0; i < N; ++i)
+	{
+		ARobotEnemy* E = Enemies[i];
+		if (!E)
+		{
+			continue;
+		}
+		const float Y = (i - (N - 1) * 0.5f) * Gap;
+		E->SetActorLocation(FVector(250.f, Y, 120.f), false, nullptr,
+			ETeleportType::TeleportPhysics);
+		// 模型正面朝 -X（Blender 里核心在 -Y），相机在 +X 侧 → 转 180° 才露正脸
+		E->SetActorRotation(FRotator(0.f, 180.f, 0.f));
+		// 冻结：停 Tick（AI 全在 Tick 里）+ 停移动，否则它们会走过来挤成一团
+		E->SetActorTickEnabled(false);
+		if (UCharacterMovementComponent* Mv = E->GetCharacterMovement())
+		{
+			Mv->StopMovementImmediately();
+			Mv->DisableMovement();
+		}
+	}
+
+	// ── 玩家挪走并隐藏 ──
+	// 玩家留在原地会挡在相机和敌人之间（相机是固定的，不跟随）。
+	SetActorHiddenInGame(true);
+	SetActorLocation(FVector(-800.f, 0.f, 120.f), false, nullptr,
+		ETeleportType::TeleportPhysics);
+	if (UCharacterMovementComponent* Mv = GetCharacterMovement())
+	{
+		Mv->StopMovementImmediately();
+		Mv->DisableMovement();
+	}
+
+	// ── 检阅灯：自带三点布光 ──
+	//
+	// 场景本身的布光是给"玩家在场地里战斗"调的，侧逆光居多，
+	// 拍检阅图时敌人全成剪影。这里就地补三盏，保证无论关卡怎么调光，
+	// 检阅画面始终可读（这是工具，不该依赖被检查对象的状态）。
+	struct FLightDef { FVector Loc; float Lumens; FLinearColor Color; };
+	// ── 关键：把太阳转到"正面光" ──
+	//
+	// 场景的太阳是给场地调的侧逆光，拍检阅图时敌人全在暗部。
+	// 点光救不回来 —— UE 点光是 lumens，照度按 1/(4πr²) 衰减，
+	// 10m 外要压过 11000 lux 的太阳需要几百万 lumens，那会烤糊近处地面。
+	// 直接把方向光转过来才是正解：它不衰减，一改就是全局正面光。
+	//
+	// DirectionalLight 照的是自己的 Forward。yaw=180 → 光沿 -X 传播，
+	// 正好照亮朝向 +X（也就是朝向相机）的立面。
+	for (TActorIterator<ADirectionalLight> It(W); It; ++It)
+	{
+		It->SetActorRotation(FRotator(-34.f, 180.f, 0.f));
+	}
+
+	// 点光只做近距离补光
+	const FLightDef Lights[] =
+	{
+		{ FVector(560.f,  -600.f, 420.f), 140000.f, FLinearColor(1.00f, 0.96f, 0.90f) },
+		{ FVector(560.f,   600.f, 420.f), 120000.f, FLinearColor(0.74f, 0.84f, 1.00f) },
+		{ FVector(-260.f,    0.f, 520.f), 120000.f, FLinearColor(1.00f, 0.86f, 0.72f) },
+	};
+	for (const FLightDef& D : Lights)
+	{
+		APointLight* Pl = W->SpawnActor<APointLight>(D.Loc, FRotator::ZeroRotator);
+		if (!Pl)
+		{
+			continue;
+		}
+		if (UPointLightComponent* Lc =
+			Cast<UPointLightComponent>(Pl->GetLightComponent()))
+		{
+			Lc->SetMobility(EComponentMobility::Movable);
+			Lc->SetIntensity(D.Lumens);
+			Lc->SetLightColor(D.Color);
+			Lc->SetAttenuationRadius(1400.f);
+			Lc->SetCastShadows(false);
+			Lc->SetVisibility(true);
+			// ⚠️ 不加这一行，运行时 spawn 的灯保持 Static，一帧都不渲染
+			Lc->MarkRenderStateDirty();
+		}
+	}
+
+	UE_LOG(LogTemp, Warning,
+		TEXT("[检阅] 已摆好 %d 台敌人（间距 %.0fcm），玩家已隐藏，补检阅灯"),
+		N, Gap);
+}
+
+void ARobotCharacter::UpdateDebugCamera()
+{
+	if (DebugCamMode == 0)
+	{
+		return;
+	}
+
+	UWorld* W = GetWorld();
+	if (!W)
+	{
+		return;
+	}
+
+	// ── 机体尺度参考（实测）：脚在 Z≈1，头顶 Z≈250，胸口 Z≈130 ──
+	// ⚠️ Origin 是**胶囊中心**（Z≈121），不是脚底。所以 LookAt 的 Z
+	//    必须写成绝对值，不能用 Origin + 偏移 —— 之前写成
+	//    Origin + (0,0,165)，实际视线落在 Z≈286，整个机体都在画面下方。
+	const FVector Origin = GetActorLocation();
+	const FVector Fwd = GetActorForwardVector();
+	const FVector Right = GetActorRightVector();
+	const FVector Chest(Origin.X, Origin.Y, 130.f);
+
+	FVector CamLoc;
+	FVector LookAt;
+	float Fov;
+
+	if (DebugCamMode == 1)
+	{
+		// 正侧视：从角色右手边看过去。前后摆腿在这个视角下完全没有
+		// 透视压缩，是评估步态唯一可靠的视角（也是本轮修轴的验收手段）。
+		//
+		// 距离 600cm / FOV 50（UE 的 FieldOfView 是**水平**视角）：
+		// 垂直半角 = atan(tan(25°) * 9/16) ≈ 14.7°，画面可见高度
+		// = 2 * 600 * tan(14.7°) ≈ 315cm —— 机体高 250cm，正好留一圈边。
+		CamLoc = Origin + Right * 600.f + FVector(0.f, 0.f, 90.f);
+		LookAt = Chest;
+		Fov = 50.f;
+	}
+	else if (DebugCamMode == 4)
+	{
+		// 斜俯视：站在背墙外侧上方，看向场地中心偏远墙
+		CamLoc = FVector(-1650.f, -1500.f, 1350.f);
+		LookAt = FVector(500.f, 150.f, 0.f);
+		Fov = 78.f;
+	}
+	else if (DebugCamMode == 3)
+	{
+		// 检阅机位：固定不动，站在 +X 侧看向摆成一排的敌人。
+		// 场地中心大约 (250, 0)，敌人在 x=250 沿 Y 排开、间距 300cm，
+		// 6 台总宽 1500cm；距离 1300 + FOV 70 → 可见宽度 1820cm，留边。
+		// 距离 900 / FOV 70 → 可见宽度 1260cm，5 台（间距 240）刚好占满
+		CamLoc = FVector(1150.f, 0.f, 205.f);
+		LookAt = FVector(250.f, 0.f, 140.f);
+		Fov = 70.f;
+	}
+	else
+	{
+		// 近景：从右前方 3/4 角看，用来验收表面细节（面板缝 / 铆钉 / 刮痕）。
+		// 距离约 322cm、FOV 55 → 可见高度约 187cm，框住上半身。
+		CamLoc = Origin - Fwd * 215.f + Right * 240.f + FVector(0.f, 0.f, 70.f);
+		LookAt = FVector(Origin.X, Origin.Y, 175.f);
+		Fov = 55.f;
+	}
+
+	const FRotator CamRot = (LookAt - CamLoc).Rotation();
+
+	ACameraActor* Cam = Cast<ACameraActor>(DebugCamera.Get());
+	if (!Cam)
+	{
+		FActorSpawnParameters P;
+		P.SpawnCollisionHandlingOverride =
+			ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+		Cam = W->SpawnActor<ACameraActor>(
+			ACameraActor::StaticClass(), CamLoc, CamRot, P);
+		if (!Cam)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("[调试相机] 创建失败"));
+			DebugCamMode = 0;
+			return;
+		}
+		DebugCamera = Cam;
+		Cam->SetActorLabel(TEXT("DebugCam"));
+		// 相机本身不该被任何东西挡住
+		if (UCameraComponent* CamComp = Cam->GetCameraComponent())
+		{
+			CamComp->SetFieldOfView(Fov);
+			CamComp->bUsePawnControlRotation = false;
+		}
+		if (APlayerController* PC = Cast<APlayerController>(GetController()))
+		{
+			// 关掉"自动管理视角目标"：APlayerController 默认会在 Possess 之后
+			// 把 ViewTarget 抢回 Pawn —— 调试相机建在 Possess 之前，就会被静默夺走，
+			// 表现为"日志说已接管、画面还是第三人称"（本轮实测踩到）。
+			PC->bAutoManageActiveCameraTarget = false;
+			PC->SetViewTarget(Cam);
+			UE_LOG(LogTemp, Warning,
+				TEXT("[调试相机] 模式 %d，已接管视角：位置=%s 朝向=%s FOV=%.0f"),
+				DebugCamMode, *CamLoc.ToCompactString(),
+				*CamRot.ToCompactString(), Fov);
+		}
+	}
+	else
+	{
+		Cam->SetActorLocationAndRotation(CamLoc, CamRot, false, nullptr,
+			ETeleportType::TeleportPhysics);
+		if (UCameraComponent* CamComp = Cam->GetCameraComponent())
+		{
+			CamComp->SetFieldOfView(Fov);
+		}
+		// 每帧重申一次视角目标（成本可忽略）：只要有任何一处代码
+		// 重新 Possess / 重置相机，调试视角就能在同一帧恢复。
+		if (APlayerController* PC = Cast<APlayerController>(GetController()))
+		{
+			if (PC->GetViewTarget() != Cam)
+			{
+				PC->bAutoManageActiveCameraTarget = false;
+				PC->SetViewTarget(Cam);
+			}
+		}
+	}
+}
+
+

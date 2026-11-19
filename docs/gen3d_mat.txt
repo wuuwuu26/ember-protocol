@@ -1,0 +1,3 @@
+airlock.SM_airlock 槽位 1 个 -> 设置 1 个 (['M_Steel'])
+crane_arm.SM_crane_arm 槽位 1 个 -> 设置 1 个 (['M_Steel'])
+pipe_junction.SM_pipe_junction 槽位 1 个 -> 设置 1 个 (['M_Steel'])

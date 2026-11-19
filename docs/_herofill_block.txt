@@ -1,0 +1,47 @@
+﻿	// GameMode 里的日志一行都没打出来。角色的 BeginPlay 确定会跑。
+	FixLevelLighting();
+
+	// ── 玩家英雄补光 ──
+	// 夕阳角度低 + 围墙遮挡时，机体常常只剩剪影。这里挂一盏跟随玩家、
+	// 不投影的冷白点光，只负责把机体从阴影里拉出来；不改变场景整体布光。
+	{
+		UWorld* KeyWorld = GetWorld();
+		if (KeyWorld)
+		{
+			FActorSpawnParameters KP;
+			KP.Owner = this;
+			KP.SpawnCollisionHandlingOverride =
+				ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+			APointLight* KeyLight = KeyWorld->SpawnActor<APointLight>(
+				APointLight::StaticClass(), GetActorLocation(), FRotator::ZeroRotator, KP);
+			if (KeyLight)
+			{
+				if (UPointLightComponent* KC =
+					Cast<UPointLightComponent>(KeyLight->GetLightComponent()))
+				{
+					KC->SetMobility(EComponentMobility::Movable);
+					// ★ 2026-10-24：38000cd 在 3m 处约 4200 lux，已经和太阳
+					//    （9000 lux）同一个量级，而且是**不投阴影**的球形补光 ——
+					//    它把机体的明暗全部抹平，装甲板的倒角、凹槽、螺栓
+					//    全部失去阴影，看起来就是"一块粉色的肥皂"。
+					//    补光的职责只是把暗部抬起来一点，9000cd 足够。
+					KC->SetIntensity(9000.f);
+					KC->SetAttenuationRadius(1900.f);
+					KC->SetLightColor(FLinearColor(0.82f, 0.90f, 1.0f));
+					KC->SetCastShadows(false);
+					KC->SetVisibility(true);
+					KC->MarkRenderStateDirty();
+				}
+				KeyLight->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
+				KeyLight->SetActorRelativeLocation(FVector(-300.f, 0.f, 230.f));
+				UE_LOG(LogTemp, Warning,
+					TEXT("[LIGHT] 玩家英雄补光已挂载：9000cd / 1900cm / 后上方 / 无阴影"));
+			}
+		}
+	}
+
+	// 建立程序化动画用的可见网格（原网格转为不可见，只留给部位系统查询）
+	RefreshAnimMesh();
+}
+
+/**

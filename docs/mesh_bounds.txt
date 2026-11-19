@@ -1,0 +1,7 @@
+SM_Env_Piperun: origin=(0.0,0.0,77.3) extent=(24.4,200.0,72.3) bottom=5.0
+SM_Env_SludgePool: origin=(0.0,0.0,-3.1) extent=(190.0,190.0,3.0) bottom=-6.1
+SM_Prop_PipeSegment: origin=(0.0,0.0,32.0) extent=(36.0,130.0,36.0) bottom=-4.0
+SM_Prop_FuelBarrel: origin=(0.0,0.0,46.5) extent=(27.6,27.6,46.5) bottom=-0.0
+SM_Prop_Container: origin=(-2.5,0.0,55.0) extent=(53.5,120.0,55.0) bottom=-0.0
+SM_Prop_ScrapCrate: origin=(2.1,0.0,27.2) extent=(30.9,36.7,27.3) bottom=-0.0
+BOUNDS_OK

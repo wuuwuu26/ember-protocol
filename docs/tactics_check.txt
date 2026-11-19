@@ -1,0 +1,27 @@
+=== LOS transitions 2 ===
+[战术] BP_Enemy_C_8 视线=被遮挡 距离=1192 遮挡=StaticMeshActor_260/StaticMeshComponent0
+[战术] BP_Enemy_C_8 视线=有 距离=947 遮挡=-
+=== tactics head ===
+[战术] BP_Enemy_C_5 环绕方向=顺时针（玩家背后在我右侧）
+[战术] BP_Enemy_C_6 环绕方向=逆时针（玩家背后在我左侧）
+[战术] BP_Enemy_C_7 环绕方向=顺时针（玩家背后在我右侧）
+[战术] BP_Enemy_C_8 环绕方向=逆时针（玩家背后在我左侧）
+[战术] BP_Enemy_C_9 环绕方向=顺时针（玩家背后在我右侧）
+[战术] BP_Enemy_C_8 视线=被遮挡 距离=1192 遮挡=StaticMeshActor_260/StaticMeshComponent0
+[战术] BP_Enemy_C_8 视线=有 距离=947 遮挡=-
+[战术] BP_Enemy_C_5 环绕方向=逆时针（玩家背后在我右侧）
+=== hits 298 ===
+Verbose: [命中] 目标=BP_Enemy_C_7 组件=CollisionCylinder 骨骼=torso(胶囊兜底) → 部位=Part.Torso 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_7 组件=CollisionCylinder 骨骼=torso(胶囊兜底) → 部位=Part.Torso 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_7 组件=CollisionCylinder 骨骼=torso(胶囊兜底) → 部位=Part.Torso 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_7 组件=CollisionCylinder 骨骼=torso(胶囊兜底) → 部位=Part.Torso 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_7 组件=CollisionCylinder 骨骼=torso(胶囊兜底) → 部位=Part.Torso 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_7 组件=CollisionCylinder 骨骼=torso(胶囊兜底) → 部位=Part.Torso 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_7 组件=CollisionCylinder 骨骼=torso(胶囊兜底) → 部位=Part.Torso 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_7 组件=CollisionCylinder 骨骼=torso(胶囊兜底) → 部位=Part.Torso 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_7 组件=CollisionCylinder 骨骼=torso(胶囊兜底) → 部位=Part.Torso 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_7 组件=CollisionCylinder 骨骼=torso(胶囊兜底) → 部位=Part.Torso 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_7 组件=CollisionCylinder 骨骼=torso(胶囊兜底) → 部位=Part.Torso 倍率=1.00 扣血=0
+Verbose: [命中] 目标=BP_Enemy_C_7 组件=CollisionCylinder 骨骼=torso(胶囊兜底) → 部位=Part.Torso 倍率=1.00 扣血=0
+hist [('1.00', 298)]
+stuck=0

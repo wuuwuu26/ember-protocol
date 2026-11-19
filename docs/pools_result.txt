@@ -1,0 +1,7 @@
+spots=5
+PoolLight_0 loc=(0,0,620)
+PoolLight_1 loc=(-1100,-1100,620)
+PoolLight_2 loc=(1100,-1100,620)
+PoolLight_3 loc=(-1100,1100,620)
+PoolLight_4 loc=(1100,1100,620)
+POOLS_DONE

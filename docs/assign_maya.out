@@ -1,0 +1,14 @@
+[ue_py] 第 1 次没有产出标记 'MAYA_MATS_ASSIGNED_DONE'，重试……
+[ue_py] 第 2 次没有产出标记 'MAYA_MATS_ASSIGNED_DONE'，重试……
+[ue_py] 第 3 次没有产出标记 'MAYA_MATS_ASSIGNED_DONE'，重试……
+[ue_py] ❌ 3 次都没跑起来。最后一次日志：/c/Users/25227/Documents/robot_game/ue/ue_py_3.log
+[2026.10.26-11.02.35:764][  0]LogPython: registering <class 'ControlRigWorkflows.workflow_deformation_rig_preset.provider'>
+[2026.10.26-11.02.35:771][  0]LogPython: Display: 正在运行启动脚本C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Animation/ControlRig/Content/Python/init_unreal.py…… took 22.274 ms (total: 34.570 ms)
+[2026.10.26-11.02.36:267][  2]LogPython: Slot 0 (M_SteelLight) -> /Game/RobotGame/Art/Characters/M_SteelLight
+[2026.10.26-11.02.36:267][  2]LogPython: Slot 1 (M_Visor_medium) -> /Game/RobotGame/Art/Characters/M_Visor_medium
+[2026.10.26-11.02.36:268][  2]LogPython: Slot 2 (M_Joint) -> /Game/RobotGame/Art/Characters/M_Joint
+[2026.10.26-11.02.36:268][  2]LogPython: Slot 3 (M_Steel) -> /Game/RobotGame/Art/Characters/M_Steel
+[2026.10.26-11.02.36:268][  2]LogPython: Slot 4 (M_Core_medium) -> /Game/RobotGame/Art/Characters/M_Core_medium
+[2026.10.26-11.02.36:268][  2]LogPython: Slot 5 (M_Accent_medium) -> /Game/RobotGame/Art/Characters/M_Accent_medium
+[2026.10.26-11.02.36:268][  2]LogPython: Slot 6 (M_Frame) -> /Game/RobotGame/Art/Characters/M_SteelLight
+[2026.10.26-11.02.36:268][  2]LogPython: SK_Pilot_Maya 材质成功关联并保存！

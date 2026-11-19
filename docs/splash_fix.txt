@@ -1,0 +1,3 @@
+T_Toxic_Bub: srgb 已为 True
+BaseColor 当前输入 = MaterialExpressionTextureSample
+BaseColor 已接贴图，跳过（幂等）

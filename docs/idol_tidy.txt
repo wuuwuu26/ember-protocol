@@ -1,0 +1,6 @@
+跳过 /Game/RobotGame/Art/Props/IdolMech/SM_IdolMech（材质正常，可能是正确的那份）
+源资产不存在（可能已经移动过）: /Game/RobotGame/Art/Props/IdolMech/StaticMeshes/SM_IdolMech
+最终资产 /Game/RobotGame/Art/Props/IdolMech/SM_IdolMech
+  包围盒 size=(31.94, 62.66, 103.96)  minZ=-53.87  maxZ=50.09
+  slot0 -> /Game/RobotGame/Art/Props/IdolMech/Materials/M_IdolMech_VC.M_IdolMech_VC
+  已保存

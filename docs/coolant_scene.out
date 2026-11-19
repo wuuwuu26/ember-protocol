@@ -1,0 +1,14 @@
+[ue_py] 第 1 次没有产出标记 'COOLANT_SCENE_OK'，重试……
+[ue_py] 第 2 次没有产出标记 'COOLANT_SCENE_OK'，重试……
+[ue_py] 第 3 次没有产出标记 'COOLANT_SCENE_OK'，重试……
+[ue_py] ❌ 3 次都没跑起来。最后一次日志：/c/Users/25227/Documents/robot_game/ue/ue_py_3.log
+[2026.10.26-14.06.37:885][  0]LogPython: Display: 正在运行启动脚本C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Animation/IKRig/Content/Python/init_unreal.py…… took 7.363 ms
+[2026.10.26-14.06.37:885][  0]LogPython: Display: 正在运行启动脚本C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Animation/ControlRig/Content/Python/init_unreal.py…… started...
+[2026.10.26-14.06.37:895][  0]LogPython: registering <class 'ControlRigWorkflows.workflow_deformation_rig_preset.provider'>
+[2026.10.26-14.06.37:896][  0]LogPython: Display: 正在运行启动脚本C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Animation/ControlRig/Content/Python/init_unreal.py…… took 10.973 ms (total: 18.337 ms)
+[2026.10.26-14.06.38:328][  2]LogPython: Warning: C:/Users/25227/Documents/robot_game/ue/Scripts/spawn_coolant_scene.py:6: DeprecationWarning: EditorLevelLibrary: Function 'load_level' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Level Editor Subsystem
+[2026.10.26-14.06.38:532][  2]LogPython: Warning: C:/Users/25227/Documents/robot_game/ue/Scripts/spawn_coolant_scene.py:10: DeprecationWarning: EditorLevelLibrary: Function 'get_all_level_actors' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Editor Actor Utilities Subsystem
+[2026.10.26-14.06.38:562][  2]LogPython: COOLANT_POOL_SPAWNED
+[2026.10.26-14.06.38:570][  2]LogPython: Warning: C:/Users/25227/Documents/robot_game/ue/Scripts/spawn_coolant_scene.py:49: DeprecationWarning: EditorLevelLibrary: Function 'get_all_level_actors' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Editor Actor Utilities Subsystem
+[2026.10.26-14.06.38:572][  2]LogPython: PROPS_LIFTED 1
+[2026.10.26-14.06.38:572][  2]LogPython: Warning: C:/Users/25227/Documents/robot_game/ue/Scripts/spawn_coolant_scene.py:71: DeprecationWarning: EditorLevelLibrary: Function 'save_current_level' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Level Editor Subsystem

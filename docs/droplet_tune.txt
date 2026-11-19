@@ -1,0 +1,6 @@
+CoolantSpill_0 -> 开水珠（每脉冲2、散开55、重力880、上限48）
+ToxicFluid_0 -> 关水珠（死水）
+ToxicFluid_1 -> 关水珠（死水）
+ToxicFluid_2 -> 关水珠（死水）
+ToxicFluid_3 -> 关水珠（死水）
+已保存

@@ -1,0 +1,14 @@
+[ue_py] 第 1 次没有产出标记 'FLOORHIT_DONE'，重试……
+[ue_py] 第 2 次没有产出标记 'FLOORHIT_DONE'，重试……
+[ue_py] 第 3 次没有产出标记 'FLOORHIT_DONE'，重试……
+[ue_py] ❌ 3 次都没跑起来。最后一次日志：/c/Users/25227/Documents/robot_game/ue/ue_py_3.log
+[2026.10.25-05.21.14:976][  2]LogPython: [地面探针] === 1. 射线检测 ===
+[2026.10.25-05.21.14:976][  2]LogPython: Warning: C:/Users/25227/Documents/robot_game/ue/Scripts/probe_floor_hit2.py:25: DeprecationWarning: TraceTypeQuery: Enum entry 'TraceTypeQuery.TRACE_TYPE_QUERY1' is deprecated: Use 'TraceTypeQuery.ECC_VISIBILITY'
+[2026.10.25-05.21.14:976][  2]LogPython: [地面探针] 坐标 (0,0) 探测异常: 'HitResult' object is not subscriptable
+[2026.10.25-05.21.14:976][  2]LogPython: [地面探针] 坐标 (500,500) 探测异常: 'HitResult' object is not subscriptable
+[2026.10.25-05.21.14:976][  2]LogPython: [地面探针] 坐标 (-500,-500) 探测异常: 'HitResult' object is not subscriptable
+[2026.10.25-05.21.14:976][  2]LogPython: [地面探针] 坐标 (0,1000) 探测异常: 'HitResult' object is not subscriptable
+[2026.10.25-05.21.14:976][  2]LogPython: [地面探针] 
+[2026.10.25-05.21.14:976][  2]LogPython: Warning: C:/Users/25227/Documents/robot_game/ue/Scripts/probe_floor_hit2.py:63: DeprecationWarning: EditorLevelLibrary: Function 'get_all_level_actors' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Editor Actor Utilities Subsystem
+[2026.10.25-05.21.14:977][  2]LogPython: [地面探针] label=SkyDome mesh=/Engine/BasicShapes/Sphere.Sphere loc=(0,0,0) extent=(5000,5000,5000) mats=['/Game/RobotGame/Art/Materials/M_SkyDome.M_SkyDome']
+[2026.10.25-05.21.14:978][  2]LogPython: [地面探针] finished

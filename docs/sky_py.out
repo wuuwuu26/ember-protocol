@@ -1,0 +1,16 @@
+[ue_py] 第 1 次没有产出标记 'SKYDOME_V2_DONE'，重试……
+rm: cannot remove '/c/Users/25227/Documents/robot_game/ue/ue_py_2.log': Device or resource busy
+[ue_py] 第 2 次没有产出标记 'SKYDOME_V2_DONE'，重试……
+rm: cannot remove '/c/Users/25227/Documents/robot_game/ue/ue_py_3.log': Device or resource busy
+[ue_py] 第 3 次没有产出标记 'SKYDOME_V2_DONE'，重试……
+[ue_py] ❌ 3 次都没跑起来。最后一次日志：/c/Users/25227/Documents/robot_game/ue/ue_py_3.log
+[2026.10.25-04.00.06:280][  0]FUdpSocketBuilder: Failed to bind PythonRemoteExecutionBroadcastSocket to 239.0.0.1:6766. Error code 21.
+[2026.10.25-04.00.06:280][  0]LogPythonRemoteExecution: Error: Failed to open remote execution broadcast channel! Check your settings and the output log for more information.
+[2026.10.25-04.00.06:985][  0]LogLinker: Warning: [AssetLog] C:\Users\25227\Documents\robot_game\ue\Content\RobotGame\Art\Materials\M_SkyDome.uasset: Error opening file.
+[2026.10.25-04.00.08:925][  0]LogPython: Display: 正在运行启动脚本C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Animation/IKRig/Content/Python/init_unreal.py…… started...
+[2026.10.25-04.00.08:941][  0]LogPython: Display: 正在运行启动脚本C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Animation/IKRig/Content/Python/init_unreal.py…… took 16.319 ms
+[2026.10.25-04.00.08:941][  0]LogPython: Display: 正在运行启动脚本C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Animation/ControlRig/Content/Python/init_unreal.py…… started...
+[2026.10.25-04.00.08:961][  0]LogPython: registering <class 'ControlRigWorkflows.workflow_deformation_rig_preset.provider'>
+[2026.10.25-04.00.08:968][  0]LogPython: Display: 正在运行启动脚本C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Animation/ControlRig/Content/Python/init_unreal.py…… took 27.643 ms (total: 43.963 ms)
+[2026.10.25-04.00.09:696][  2]LogPython: Warning: C:/Users/25227/Documents/robot_game/ue/Scripts/probe_floating.py:5: DeprecationWarning: EditorLevelLibrary: Function 'load_level' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Level Editor Subsystem
+[2026.10.25-04.00.09:985][  2]LogPython: Warning: C:/Users/25227/Documents/robot_game/ue/Scripts/probe_floating.py:8: DeprecationWarning: EditorLevelLibrary: Function 'get_all_level_actors' on 'EditorLevelLibrary' is deprecated: The Editor Scripting Utilities Plugin is deprecated - Use the function in Editor Actor Utilities Subsystem

@@ -1,0 +1,14 @@
+障碍道具 128 个
+mech_torso_wreck 缩放1.53 落地Z=150.0 半尺寸(137,66) 高300
+severed_mech_arm 缩放0.80 落地Z=75.0 半尺寸(38,30) 高150
+mech_head_wreck 缩放0.69 落地Z=65.0 半尺寸(67,64) 高130
+armor_debris 缩放0.55 落地Z=24.3 半尺寸(55,51) 高49
+mech_torso_wreck     -> (3900,-760)
+mech_head_wreck      -> (4700,680)
+severed_mech_arm     -> (3600,-760)
+armor_debris         -> (4500,680)
+应用 mech_torso_wreck     (3900,-760,Z150)
+应用 severed_mech_arm     (3600,-760,Z75)
+应用 mech_head_wreck      (4700,680,Z65)
+应用 armor_debris         (4500,680,Z24)
+已保存关卡，应用 4 个

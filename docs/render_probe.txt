@@ -1,0 +1,20 @@
+RHI          err type object 'SystemLibrary' has no attribute 'get_rhi_name'
+FeatureLevel err type object 'SystemLibrary' has no attribute 'get_rhi_feature_level'
+r.RayTracing                               err type object 'SystemLibrary' has no attri
+r.RayTracing.Shadows                       err type object 'SystemLibrary' has no attri
+r.RayTracing.AmbientOcclusion              err type object 'SystemLibrary' has no attri
+r.RayTracing.Reflections                   err type object 'SystemLibrary' has no attri
+r.Lumen.Reflections.Allow                  err type object 'SystemLibrary' has no attri
+r.Lumen.Reflections.ScreenTraces           err type object 'SystemLibrary' has no attri
+r.DynamicGlobalIlluminationMethod          err type object 'SystemLibrary' has no attri
+r.ReflectionMethod                         err type object 'SystemLibrary' has no attri
+r.Shadow.Virtual.Enable                    err type object 'SystemLibrary' has no attri
+r.DefaultFeature.AutoExposure              err type object 'SystemLibrary' has no attri
+r.GenerateMeshDistanceFields               err type object 'SystemLibrary' has no attri
+RendererSettings err module 'unreal' has no attribute 'RendererSettings'
+
+关卡光源统计：
+  DirectionalLight         1
+  PointLight               45
+  SkyLight                 1
+  SpotLight                13

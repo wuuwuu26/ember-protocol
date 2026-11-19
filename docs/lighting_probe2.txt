@@ -1,0 +1,74 @@
+═══ DirectionalLight ═══
+  DirectionalLight DirectionalLight at (0,0,1200)
+      intensity                        = 3200.0
+      light_color                      = <Struct 'Color' (0x000001839BD980B8) {b: 150, g: 175, r: 255, a: 255}>
+      cast_shadows                     = True
+      mobility                         = <ComponentMobility.MOVABLE: 2>
+      volumetric_scattering_intensity  = 1.0
+      indirect_lighting_intensity      = 1.0
+      atmosphere_sun_light             = False
+      dynamic_shadow_distance_movable_light = 40000.0
+
+═══ SkyLight ═══
+  SkyLight SkyLight at (0,0,1600)
+      intensity                        = 1.350000023841858
+      light_color                      = <Struct 'Color' (0x00000183AB6BBBB8) {b: 255, g: 240, r: 230, a: 255}>
+      cast_shadows                     = True
+      mobility                         = <ComponentMobility.MOVABLE: 2>
+      volumetric_scattering_intensity  = 1.0
+      indirect_lighting_intensity      = 1.0
+      source_type                      = <SkyLightSourceType.SLS_CAPTURED_SCENE: 0>
+      real_time_capture                = True
+      lower_hemisphere_is_black        = True
+      cubemap                          = None
+
+═══ 按 (类型,tag) 分组：各组首个样本 ═══
+  PointLight AccentLight_0 [(无tag)] at (-900,-1000,340)
+      intensity                        = 2600.0
+      attenuation_radius               = 2600.0
+      light_color                      = <Struct 'Color' (0x00000183DE7EF2B8) {b: 255, g: 208, r: 165, a: 255}>
+      cast_shadows                     = True
+      mobility                         = <ComponentMobility.MOVABLE: 2>
+      source_radius                    = 0.0
+      volumetric_scattering_intensity  = 1.0
+      indirect_lighting_intensity      = 1.0
+      inverse_exposure_blend           = 0.0
+  SpotLight FloodLight_0 [(无tag)] at (-1300,-1150,700)
+      intensity                        = 2600.0
+      attenuation_radius               = 3800.0
+      light_color                      = <Struct 'Color' (0x00000183AB6BB6B8) {b: 255, g: 255, r: 255, a: 255}>
+      cast_shadows                     = True
+      mobility                         = <ComponentMobility.MOVABLE: 2>
+      source_radius                    = 0.0
+      volumetric_scattering_intensity  = 1.0
+      indirect_lighting_intensity      = 1.0
+      inverse_exposure_blend           = 0.0
+      inner_cone_angle                 = 18.0
+      outer_cone_angle                 = 46.0
+  PointLight HeroFill [HeroFill] at (0,0,350)
+      intensity                        = 9000.0
+      attenuation_radius               = 1900.0
+      light_color                      = <Struct 'Color' (0x00000183DE7E7FB8) {b: 255, g: 230, r: 209, a: 255}>
+      cast_shadows                     = False
+      mobility                         = <ComponentMobility.MOVABLE: 2>
+      source_radius                    = 0.0
+      volumetric_scattering_intensity  = 0.0
+      indirect_lighting_intensity      = 1.0
+      inverse_exposure_blend           = 0.0
+  PointLight PointLight [ExtRegion] at (1950,-330,320)
+      intensity                        = 4000.0
+      attenuation_radius               = 2200.0
+      light_color                      = <Struct 'Color' (0x00000183E064BBB8) {b: 255, g: 200, r: 170, a: 255}>
+      cast_shadows                     = False
+      mobility                         = <ComponentMobility.MOVABLE: 2>
+      source_radius                    = 0.0
+      volumetric_scattering_intensity  = 1.0
+      indirect_lighting_intensity      = 1.0
+      inverse_exposure_blend           = 0.0
+
+═══ ExponentialHeightFog ═══
+  fog_density                    = 0.006000000052154064
+  fog_height_falloff             = 0.10000000149011612
+  fog_inscattering_luminance     = <Struct 'LinearColor' (0x000001842FE14AB4) {r: 0.020000, g: 0.026000, b: 0.042000, a: 1.000000}>
+  fog_max_opacity                = 0.8999999761581421
+  start_distance                 = 600.0

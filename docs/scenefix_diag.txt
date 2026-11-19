@@ -1,0 +1,70 @@
+═══ 1. IdolMech 雕像（待移除）═══
+  （没找到 IdolMech actor）
+
+═══ 2. Cosmos 道具（穿模 / 陷地检测）═══
+Cosmos 道具 31 个
+
+-- 陷入地面（minZ < -5cm，会穿地）--
+  （无）
+
+-- 悬空（minZ > 30cm 且非贴墙件）--
+  木箱堆 A-中                minZ=62.3  locZ=63.0  slug=met-wooden-crate01a
+  木箱堆 A-顶                minZ=125.4  locZ=126.0  slug=met-wooden-crate01a
+  木箱堆 B-中                minZ=62.3  locZ=63.0  slug=met-wooden-crate01a
+  木箱堆 B-顶                minZ=125.4  locZ=126.0  slug=met-wooden-crate01a
+  墙面风扇格栅                 minZ=172.1  locZ=230.0  slug=cs1-wallfanhatch
+  壁灯 A                   minZ=189.1  locZ=250.0  slug=cs1-wall-light-6
+  壁灯 B                   minZ=189.1  locZ=250.0  slug=cs1-wall-light-6
+  壁灯 C                   minZ=189.1  locZ=250.0  slug=cs1-wall-light-6
+
+-- 两两包围盒相交（疑似穿模，仅列 XY 重叠>40cm 且 Z 交叠）--
+  （无）
+  合计 0 对
+
+═══ 3. 材质覆盖（找纹理没加载 / 白色回退）═══
+  EXT   empty  : 31 块
+  EXT   ok     : 97 块
+  ORIG  empty  : 1 块
+  ORIG  ok     : 235 块
+
+-- 疑似纹理问题 actor（空覆盖 或 BasicShapeMaterial）--
+  [ORIG] CoolantPipe_0          (178,560,4) mesh=SM_Prop_PipeSegment ov=[]
+  [EXT] 沙袋掩体 A1                (2620,-560,0) mesh=SM_ww2-sandbag-stack-02b-smoked ov=[]
+  [EXT] 沙袋掩体 A2                (3080,-560,0) mesh=SM_ww2-sandbag-stack-02b-smoked ov=[]
+  [EXT] 油桶组 A                  (3400,-640,0) mesh=SM_met-barrel01-set01 ov=[]
+  [EXT] 旧冰柜 A（亮色锚点）            (2680,-300,0) mesh=SM_ww2-fridge ov=[]
+  [EXT] 木箱堆 A-底                (3250,-390,0) mesh=SM_met-wooden-crate01a ov=[]
+  [EXT] 木箱堆 A-中                (3250,-390,63) mesh=SM_met-wooden-crate01a ov=[]
+  [EXT] 木箱堆 A-顶                (3270,-380,126) mesh=SM_met-wooden-crate01a ov=[]
+  [EXT] 抽屉柜 A                  (3700,-600,0) mesh=SM_ww2-drawer-smoked ov=[]
+  [EXT] 野战栅栏 A                 (4050,-560,0) mesh=SM_ww2-field-fences-01a ov=[]
+  [EXT] 沙袋掩体 B1                (2620,560,0) mesh=SM_ww2-sandbag-stack-02b-smoked ov=[]
+  [EXT] 沙袋掩体 B2                (3080,560,0) mesh=SM_ww2-sandbag-stack-02b-smoked ov=[]
+  [EXT] 油桶组 B                  (3400,640,0) mesh=SM_met-barrel01-set01 ov=[]
+  [EXT] 旧冰柜 B（亮色锚点）            (2680,340,0) mesh=SM_ww2-fridge ov=[]
+  [EXT] 木箱堆 B-底                (3500,400,0) mesh=SM_met-wooden-crate01a ov=[]
+  [EXT] 木箱堆 B-中                (3500,400,63) mesh=SM_met-wooden-crate01a ov=[]
+  [EXT] 木箱堆 B-顶                (3520,390,126) mesh=SM_met-wooden-crate01a ov=[]
+  [EXT] 抽屉柜 B                  (3700,600,0) mesh=SM_ww2-drawer-smoked ov=[]
+  [EXT] 野战栅栏 B                 (3850,560,0) mesh=SM_ww2-field-fences-01a ov=[]
+  [EXT] 街灯 A                   (2450,-780,0) mesh=SM_pad-street-lamp-overgrown ov=[]
+  [EXT] 街灯 B                   (4150,780,0) mesh=SM_pad-street-lamp-overgrown ov=[]
+  [EXT] 墙面风扇格栅                 (3100,-790,230) mesh=SM_cs1-wallfanhatch ov=[]
+  [EXT] 壁灯 A                   (3700,-790,250) mesh=SM_cs1-wall-light-6 ov=[]
+  [EXT] 壁灯 B                   (3700,790,250) mesh=SM_cs1-wall-light-6 ov=[]
+  [EXT] 壁灯 C                   (4500,-790,250) mesh=SM_cs1-wall-light-6 ov=[]
+  [EXT] 火炉 A（墙角）               (2650,-760,0) mesh=SM_ww2-heater-smoked ov=[]
+  [EXT] 火炉 B（墙角）               (4300,760,0) mesh=SM_ww2-heater-smoked ov=[]
+  [EXT] 灭火器 A                  (3100,-780,0) mesh=SM_rps-fire-extinguisher-02 ov=[]
+  [EXT] 灭火器 B                  (4500,780,0) mesh=SM_rps-fire-extinguisher-02 ov=[]
+  [EXT] 管道 A                   (3400,-790,20) mesh=SM_cs1-pipe ov=[]
+  [EXT] 管道 B                   (3400,790,20) mesh=SM_cs1-pipe ov=[]
+  [EXT] 管道 C                   (4600,-790,20) mesh=SM_cs1-pipe ov=[]
+
+═══ 4. Poly Haven 材质贴图连线 ═══
+  M_concrete_floor_02                      节点6 贴图采样3(有贴图3)
+  M_concrete_wall_001                      节点6 贴图采样3(有贴图3)
+  M_corrugated_iron                        节点6 贴图采样3(有贴图3)
+  M_factory_wall                           节点6 贴图采样3(有贴图3)
+  M_metal_grate_rusty                      节点6 贴图采样3(有贴图3)
+  M_rusty_metal                            节点6 贴图采样3(有贴图3)

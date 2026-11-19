@@ -1,0 +1,19 @@
+═══ 1. 地面材质分布 ═══
+  场景1(原)      56 块  ->  ['M_Steel', 'M_SteelLight', 'M_Joint', 'M_Copper']
+              样例 (-1200, -1200)
+  场景2(新)      48 块  ->  ['M_Steel', 'M_SteelLight', 'M_Joint', 'M_Copper']
+              样例 (2000, -400)
+
+═══ 2. 水渠 / 水池 相关物件 ═══
+  SpotLight                    PoolLight_0            mesh=                             (0,0,620)
+  SpotLight                    PoolLight_1            mesh=                             (-1100,-1100,620)
+  SpotLight                    PoolLight_2            mesh=                             (1100,-1100,620)
+  SpotLight                    PoolLight_3            mesh=                             (-1100,1100,620)
+  SpotLight                    PoolLight_4            mesh=                             (1100,1100,620)
+  GeometryCacheActor           GeoCacheWater_Coolant  mesh=                             (450,300,2)
+  RobotBasin                   Basin_CoolantSpill_0   mesh=                             (450,300,0)
+  RobotBasin                   Basin_ToxicFluid_0     mesh=                             (-200,350,0)
+  RobotBasin                   Basin_ToxicFluid_1     mesh=                             (800,-150,0)
+  RobotBasin                   Basin_ToxicFluid_2     mesh=                             (-650,-450,0)
+  RobotBasin                   Basin_ToxicFluid_3     mesh=                             (400,750,0)
+  共 11 个相关物件

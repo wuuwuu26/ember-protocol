@@ -1,0 +1,6 @@
+M_concrete_floor_02            贴图3  TC节点=True  总节点=11
+M_concrete_wall_001            贴图3  TC节点=True  总节点=9
+M_corrugated_iron              贴图3  TC节点=True  总节点=9
+M_factory_wall                 贴图3  TC节点=True  总节点=9
+M_metal_grate_rusty            贴图3  TC节点=True  总节点=9
+M_rusty_metal                  贴图3  TC节点=True  总节点=9

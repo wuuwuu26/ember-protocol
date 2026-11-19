@@ -1,0 +1,1 @@
+IdolMech actor 数量 = 0

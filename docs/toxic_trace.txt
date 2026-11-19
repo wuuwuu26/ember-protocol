@@ -1,0 +1,17 @@
+=== 特殊节点 ===
+  [57] Constant3Vector        c=(0.50,0.50,0.00)
+  [59] Constant3Vector        c=(0.00,0.00,1.00)
+  [65] Constant3Vector        c=(0.00,0.00,1.00)
+  [69] Constant3Vector        c=(0.50,0.50,0.00)
+  [71] Constant3Vector        c=(0.00,0.01,0.01)
+  [72] Constant3Vector        c=(0.01,0.03,0.01)
+  [73] Constant3Vector        c=(0.26,0.42,0.28)
+  [81] Constant3Vector        c=(0.00,0.00,0.00)
+  [87] Constant3Vector        c=(0.00,0.03,0.01)
+  [89] Fresnel                
+  [90] ReflectionVectorWS     
+  [95] Constant3Vector        c=(0.05,0.06,0.07)
+  [96] Constant3Vector        c=(0.30,0.38,0.48)
+  [104] Constant3Vector        c=(0.05,0.16,0.06)
+  [111] Constant3Vector        c=(0.01,0.12,0.04)
+=== 连线（A/B/Base 等输入的上游）===

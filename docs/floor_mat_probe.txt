@@ -1,0 +1,16 @@
+材质 M_concrete_floor_02
+节点 6：
+  MaterialExpressionTextureSample          MaterialExpressionTextureSample_0 tex=concrete_floor_02_BaseColor
+  MaterialExpressionTextureSample          MaterialExpressionTextureSample_1 tex=concrete_floor_02_Normal
+  MaterialExpressionTextureSample          MaterialExpressionTextureSample_2 tex=concrete_floor_02_ARM
+  MaterialExpressionComponentMask          MaterialExpressionComponentMask_0 r=True g=False b=False
+  MaterialExpressionComponentMask          MaterialExpressionComponentMask_1 r=False g=True b=False
+  MaterialExpressionComponentMask          MaterialExpressionComponentMask_2 r=False g=False b=True
+  BaseColor    <- MaterialExpressionTextureSample
+  Roughness    <- MaterialExpressionComponentMask
+  Metallic     <- MaterialExpressionComponentMask
+  Normal       <- MaterialExpressionTextureSample
+  AO           <- MaterialExpressionComponentMask
+  shading_model = <MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+  two_sided = False
+  blend_mode = <BlendMode.BLEND_OPAQUE: 0>

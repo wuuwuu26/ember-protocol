@@ -1,0 +1,101 @@
+﻿	}
+	FlashRemaining = FlashDuration;
+}
+
+void ARobotProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
+{
+	ProcessHit(OtherActor, OtherComp, Hit.ImpactPoint, Hit.ImpactNormal, Hit.BoneName);
+}
+
+void ARobotProjectile::OnOverlap(UPrimitiveComponent* OverlappedComp,
+	AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex,
+	bool bFromSweep, const FHitResult& SweepResult)
+{
+	if (!OtherActor || OtherActor == GetOwner())
+	{
+		return;
+	}
+
+	// 扫掠重叠能拿到真实命中点；非扫掠重叠（出生时已重叠）用当前位置兜底。
+	const FVector ImpactPoint = bFromSweep
+		? static_cast<FVector>(SweepResult.ImpactPoint) : GetActorLocation();
+	const FVector ImpactNormal = bFromSweep
+		? static_cast<FVector>(SweepResult.ImpactNormal)
+		: -GetVelocity().GetSafeNormal();
+
+	ProcessHit(OtherActor, OtherComp, ImpactPoint, ImpactNormal,
+		bFromSweep ? SweepResult.BoneName : NAME_None);
+}
+
+void ARobotProjectile::ProcessHit(AActor* OtherActor, UPrimitiveComponent* OtherComp,
+	const FVector& ImpactPoint, const FVector& ImpactNormal, FName BoneName)
+{
+	if (!OtherActor || OtherActor == GetOwner() || bImpactProcessed)
+	{
+		return;
+	}
+	bImpactProcessed = true;
+
+	// 部位伤害路由：骨骼名 → 部位标签 → 扣该部位的血
+	if (UPartDamageComponent* Parts =
+			OtherActor->FindComponentByClass<UPartDamageComponent>())
+	{
+		// ── 骨骼名解析 ──
+		//
+		// 弹丸平时打中的是**胶囊体**（角色最外层的碰撞体），而胶囊不是骨骼
+		// 网格、命中结果里**没有骨骼名** —— 直接拿空骨骼名去匹配部位表，
+		// 结果就是"打哪都不掉血、敌人永远打不死"（实测打空 100+ 发零伤害）。
+		// 兜底：拿命中点在动画网格上找**最近的部位骨骼**（只找能路由的骨骼）。
+		const bool bBoneFromCapsule = BoneName.IsNone();
+		if (bBoneFromCapsule)
+		{
+			BoneName = FindNearestPartBone(OtherActor, ImpactPoint, Parts);
+		}
+		// ── 实际造成多少伤害（由部位系统报告，而不是弹丸自己算）──
+		//
+		// 部位已毁时 ApplyDamageToPart 会静默忽略；如果这里仍按"发射了就弹数字"，
+		// 玩家会以为"打腿还有用"—— 实际上早就没有收益了。
+		// 视觉反馈必须和规则一致，所以让部位系统把"真正扣了多少"报回来。
+		//
+		// 方向取弹丸此刻的飞行方向（射手 → 目标）。部位系统据此判断
+		// 这一发是打在正面装甲、侧翼还是背面散热口上。
+		FVector ShotDir = Movement ? Movement->Velocity : FVector::ZeroVector;
+		if (ShotDir.IsNearlyZero())
+		{
+			ShotDir = GetActorForwardVector();
+		}
+		ShotDir = ShotDir.GetSafeNormal();
+
+		float Dealt = 0.f;
+		bool bBroke = false;
+		bool bCoreDead = false;
+		const FGameplayTag HitPart = Parts->ApplyDamageByBoneEx(
+			BoneName, Damage, Dealt, bBroke, bCoreDead, ShotDir);
+		const float Exposure = HitPart.IsValid()
+			? Parts->GetExposureMultiplier(HitPart, ShotDir)
+			: 1.f;
+
+		// 诊断：部位命中日志（战斗验证用；查看请开 LogCmds=LogTemp Verbose）
+		if (GetInstigator() && GetInstigator()->IsPlayerControlled())
+		{
+			UE_LOG(LogTemp, Verbose,
+				TEXT("[命中] 目标=%s 组件=%s 骨骼=%s(%s) → 部位=%s 倍率=%.2f 扣血=%.0f%s"),
+				*OtherActor->GetName(), *GetNameSafe(OtherComp), *BoneName.ToString(),
+				bBoneFromCapsule ? TEXT("胶囊兜底") : TEXT("直接骨骼"),
+				HitPart.IsValid() ? *HitPart.ToString() : TEXT("无效"),
+				Exposure, Dealt, bBroke ? TEXT("（拆解！）") : TEXT(""));
+		}
+
+		// ── 命中反馈：只有"玩家打中了敌人"才触发准心命中标记 ──
+		//
+		// 判定三件事：① 造成了有效部位伤害（打空气/打地板不闪）；
+		// ② 发射者是玩家控制的（敌人的弹丸打中玩家不走这条路 ——
+		//    玩家的受击反馈由角色自己的 OnPartDamaged 驱动）；
+		// ③ 打完这一发之后核心是否已被摧毁（决定标记颜色）。
+		const APawn* Shooter = GetInstigator();
+		const bool bPlayerShot = Shooter && Shooter->IsPlayerControlled();
+		if (HitPart.IsValid() && bPlayerShot)
+		{
+			if (ARobotPlayerController* PC = Cast<ARobotPlayerController>(
+					UGameplayStatics::GetPlayerController(this, 0)))

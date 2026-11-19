@@ -1,0 +1,5 @@
+破损机甲躯干                   mesh=SM_mech_torso_wreck        loc=(3900,-760,150) sc=1.53 zmin=2.2 tags=MechWreck,mech_torso_wreck
+断裂机械臂                    mesh=SM_severed_mech_arm        loc=(3600,-760,75) sc=0.80 zmin=-3.4 tags=MechWreck,severed_mech_arm
+废弃机甲头盔                   mesh=SM_mech_head_wreck         loc=(4700,680,65) sc=0.69 zmin=-2.8 tags=MechWreck,mech_head_wreck
+装甲碎片堆                    mesh=SM_armor_debris            loc=(4500,680,24) sc=0.55 zmin=-1.4 tags=MechWreck,armor_debris
+碎骸类 actor 总数: 4

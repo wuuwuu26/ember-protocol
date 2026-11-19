@@ -1,0 +1,83 @@
+=== M_concrete_floor_02 ===
+  节点 6 个
+    MaterialExpressionTextureSample                tex=concrete_floor_02_BaseColor
+    MaterialExpressionTextureSample                tex=concrete_floor_02_Normal
+    MaterialExpressionTextureSample                tex=concrete_floor_02_ARM
+    MaterialExpressionComponentMask                r=True g=True b=False a=False
+    MaterialExpressionComponentMask                r=True g=True b=False a=False
+    MaterialExpressionComponentMask                r=True g=True b=True a=False
+  base_color           err Material: Failed to find property 'base_
+  normal               err Material: Property 'Normal' for attribut
+  roughness            err Material: Property 'Roughness' for attri
+  metallic             err Material: Property 'Metallic' for attrib
+  ambient_occlusion    err Material: Failed to find property 'ambie
+
+=== M_concrete_wall_001 ===
+  节点 6 个
+    MaterialExpressionTextureSample                tex=concrete_wall_001_BaseColor
+    MaterialExpressionTextureSample                tex=concrete_wall_001_Normal
+    MaterialExpressionTextureSample                tex=concrete_wall_001_ARM
+    MaterialExpressionComponentMask                r=True g=True b=False a=False
+    MaterialExpressionComponentMask                r=True g=True b=False a=False
+    MaterialExpressionComponentMask                r=True g=True b=True a=False
+  base_color           err Material: Failed to find property 'base_
+  normal               err Material: Property 'Normal' for attribut
+  roughness            err Material: Property 'Roughness' for attri
+  metallic             err Material: Property 'Metallic' for attrib
+  ambient_occlusion    err Material: Failed to find property 'ambie
+
+=== M_factory_wall ===
+  节点 6 个
+    MaterialExpressionTextureSample                tex=factory_wall_BaseColor
+    MaterialExpressionTextureSample                tex=factory_wall_Normal
+    MaterialExpressionTextureSample                tex=factory_wall_ARM
+    MaterialExpressionComponentMask                r=True g=True b=False a=False
+    MaterialExpressionComponentMask                r=True g=True b=False a=False
+    MaterialExpressionComponentMask                r=True g=True b=True a=False
+  base_color           err Material: Failed to find property 'base_
+  normal               err Material: Property 'Normal' for attribut
+  roughness            err Material: Property 'Roughness' for attri
+  metallic             err Material: Property 'Metallic' for attrib
+  ambient_occlusion    err Material: Failed to find property 'ambie
+
+=== M_rusty_metal ===
+  节点 6 个
+    MaterialExpressionTextureSample                tex=rusty_metal_BaseColor
+    MaterialExpressionTextureSample                tex=rusty_metal_Normal
+    MaterialExpressionTextureSample                tex=rusty_metal_ARM
+    MaterialExpressionComponentMask                r=True g=True b=False a=False
+    MaterialExpressionComponentMask                r=True g=True b=False a=False
+    MaterialExpressionComponentMask                r=True g=True b=True a=False
+  base_color           err Material: Failed to find property 'base_
+  normal               err Material: Property 'Normal' for attribut
+  roughness            err Material: Property 'Roughness' for attri
+  metallic             err Material: Property 'Metallic' for attrib
+  ambient_occlusion    err Material: Failed to find property 'ambie
+
+=== M_corrugated_iron ===
+  节点 6 个
+    MaterialExpressionTextureSample                tex=corrugated_iron_BaseColor
+    MaterialExpressionTextureSample                tex=corrugated_iron_Normal
+    MaterialExpressionTextureSample                tex=corrugated_iron_ARM
+    MaterialExpressionComponentMask                r=True g=True b=False a=False
+    MaterialExpressionComponentMask                r=True g=True b=False a=False
+    MaterialExpressionComponentMask                r=True g=True b=True a=False
+  base_color           err Material: Failed to find property 'base_
+  normal               err Material: Property 'Normal' for attribut
+  roughness            err Material: Property 'Roughness' for attri
+  metallic             err Material: Property 'Metallic' for attrib
+  ambient_occlusion    err Material: Failed to find property 'ambie
+
+=== M_metal_grate_rusty ===
+  节点 6 个
+    MaterialExpressionTextureSample                tex=metal_grate_rusty_BaseColor
+    MaterialExpressionTextureSample                tex=metal_grate_rusty_Normal
+    MaterialExpressionTextureSample                tex=metal_grate_rusty_ARM
+    MaterialExpressionComponentMask                r=True g=True b=False a=False
+    MaterialExpressionComponentMask                r=True g=True b=False a=False
+    MaterialExpressionComponentMask                r=True g=True b=True a=False
+  base_color           err Material: Failed to find property 'base_
+  normal               err Material: Property 'Normal' for attribut
+  roughness            err Material: Property 'Roughness' for attri
+  metallic             err Material: Property 'Metallic' for attrib
+  ambient_occlusion    err Material: Failed to find property 'ambie

@@ -1,0 +1,13 @@
+  M_Toxic_Fluid: T_Toxic_Bub  sampler -> SAMPLERTYPE_GRAYSCALE
+  M_Toxic_Fluid: T_Toxic_Bub  sampler -> SAMPLERTYPE_GRAYSCALE
+  M_Toxic_Fluid: T_Toxic_Bub  sampler -> SAMPLERTYPE_GRAYSCALE
+  M_Toxic_Fluid: T_Toxic_Bub  sampler -> SAMPLERTYPE_GRAYSCALE
+M_Toxic_Fluid 修正 4 个节点，recompile+save
+  M_Coolant_Fluid: T_Toxic_Bub  sampler -> SAMPLERTYPE_GRAYSCALE
+  M_Coolant_Fluid: T_Toxic_Bub  sampler -> SAMPLERTYPE_GRAYSCALE
+M_Coolant_Fluid 修正 2 个节点，recompile+save
+  M_Toxic_Bed: T_Toxic_Bub  sampler -> SAMPLERTYPE_GRAYSCALE
+  M_Toxic_Bed: T_Toxic_Bub  sampler -> SAMPLERTYPE_GRAYSCALE
+M_Toxic_Bed 修正 2 个节点，recompile+save
+  M_Basin_Concrete: T_ConcreteDetail  sampler -> SAMPLERTYPE_COLOR
+M_Basin_Concrete 修正 1 个节点，recompile+save

@@ -1,0 +1,24 @@
+[地板探针] StaticMeshActor 数量 = 204
+[地板探针] SkyDome mesh=Sphere mob=<ComponentMobility.STATIC: 0> mat=M_SkyDome shading=<MaterialShadingModel.MSM_UNLIT: 0> twoSided=True bound=(5000,5000,5000) loc=(0,0,0) castShadow=False
+[地板探针] StaticMeshActor111 mesh=SM_Env_Platform mob=<ComponentMobility.MOVABLE: 2> mat=M_SteelLight shading=err:MaterialInstanceConstant: Failed to find twoSided=? bound=(314,314,119) loc=(1250,-1000,130) castShadow=True
+[地板探针] StaticMeshActor112 mesh=SM_Env_Platform mob=<ComponentMobility.MOVABLE: 2> mat=M_SteelLight shading=err:MaterialInstanceConstant: Failed to find twoSided=? bound=(314,314,119) loc=(1250,1000,130) castShadow=True
+[地板探针] StaticMeshActor113 mesh=SM_Env_Gantry mob=<ComponentMobility.MOVABLE: 2> mat=M_Steel shading=err:MaterialInstanceConstant: Failed to find twoSided=? bound=(35,264,247) loc=(-500,-1380,247) castShadow=True
+[地板探针] StaticMeshActor114 mesh=SM_Env_Gantry mob=<ComponentMobility.MOVABLE: 2> mat=M_Steel shading=err:MaterialInstanceConstant: Failed to find twoSided=? bound=(35,264,247) loc=(-500,1380,247) castShadow=True
+[地板探针] StaticMeshActor115 mesh=SM_Env_Gantry mob=<ComponentMobility.MOVABLE: 2> mat=M_Steel shading=err:MaterialInstanceConstant: Failed to find twoSided=? bound=(35,264,247) loc=(700,-1380,247) castShadow=True
+[地板探针] Light actor 数量 = 30
+[地板探针] StaticMeshActor 数量 = 204
+[地板探针] SkyDome mesh=Sphere mob=<ComponentMobility.STATIC: 0> mat=M_SkyDome shading=<MaterialShadingModel.MSM_UNLIT: 0> twoSided=True bound=(5000,5000,5000) loc=(0,0,0) castShadow=False
+[地板探针] StaticMeshActor111 mesh=SM_Env_Platform mob=<ComponentMobility.MOVABLE: 2> mat=M_SteelLight shading=err:MaterialInstanceConstant: Failed to find twoSided=? bound=(314,314,119) loc=(1250,-1000,130) castShadow=True
+[地板探针] StaticMeshActor112 mesh=SM_Env_Platform mob=<ComponentMobility.MOVABLE: 2> mat=M_SteelLight shading=err:MaterialInstanceConstant: Failed to find twoSided=? bound=(314,314,119) loc=(1250,1000,130) castShadow=True
+[地板探针] StaticMeshActor113 mesh=SM_Env_Gantry mob=<ComponentMobility.MOVABLE: 2> mat=M_Steel shading=err:MaterialInstanceConstant: Failed to find twoSided=? bound=(35,264,247) loc=(-500,-1380,247) castShadow=True
+[地板探针] StaticMeshActor114 mesh=SM_Env_Gantry mob=<ComponentMobility.MOVABLE: 2> mat=M_Steel shading=err:MaterialInstanceConstant: Failed to find twoSided=? bound=(35,264,247) loc=(-500,1380,247) castShadow=True
+[地板探针] StaticMeshActor115 mesh=SM_Env_Gantry mob=<ComponentMobility.MOVABLE: 2> mat=M_Steel shading=err:MaterialInstanceConstant: Failed to find twoSided=? bound=(35,264,247) loc=(700,-1380,247) castShadow=True
+[地板探针] Light actor 数量 = 30
+[地板探针] StaticMeshActor 数量 = 204
+[地板探针] SkyDome mesh=Sphere mob=<ComponentMobility.STATIC: 0> mat=M_SkyDome shading=<MaterialShadingModel.MSM_UNLIT: 0> twoSided=True bound=(5000,5000,5000) loc=(0,0,0) castShadow=False
+[地板探针] StaticMeshActor111 mesh=SM_Env_Platform mob=<ComponentMobility.MOVABLE: 2> mat=M_SteelLight shading=err:MaterialInstanceConstant: Failed to find twoSided=? bound=(314,314,119) loc=(1250,-1000,130) castShadow=True
+[地板探针] StaticMeshActor112 mesh=SM_Env_Platform mob=<ComponentMobility.MOVABLE: 2> mat=M_SteelLight shading=err:MaterialInstanceConstant: Failed to find twoSided=? bound=(314,314,119) loc=(1250,1000,130) castShadow=True
+[地板探针] StaticMeshActor113 mesh=SM_Env_Gantry mob=<ComponentMobility.MOVABLE: 2> mat=M_Steel shading=err:MaterialInstanceConstant: Failed to find twoSided=? bound=(35,264,247) loc=(-500,-1380,247) castShadow=True
+[地板探针] StaticMeshActor114 mesh=SM_Env_Gantry mob=<ComponentMobility.MOVABLE: 2> mat=M_Steel shading=err:MaterialInstanceConstant: Failed to find twoSided=? bound=(35,264,247) loc=(-500,1380,247) castShadow=True
+[地板探针] StaticMeshActor115 mesh=SM_Env_Gantry mob=<ComponentMobility.MOVABLE: 2> mat=M_Steel shading=err:MaterialInstanceConstant: Failed to find twoSided=? bound=(35,264,247) loc=(700,-1380,247) castShadow=True
+[地板探针] Light actor 数量 = 30

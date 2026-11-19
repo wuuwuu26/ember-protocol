@@ -1,0 +1,14 @@
+[00] MaterialExpressionAdd                     
+[01] MaterialExpressionConstant                 r=0.4000000059604645
+[02] MaterialExpressionMultiply                
+[03] MaterialExpressionConstant3Vector          (0.32, 0.48, 0.55)
+[04] MaterialExpressionMultiply                
+[05] MaterialExpressionConstant                 r=0.05999999865889549
+[06] MaterialExpressionTextureSample           
+[07] MaterialExpressionConstant3Vector          (0.32, 0.48, 0.55)
+[08] MaterialExpressionConstant                 r=0.4000000059604645
+[09] MaterialExpressionMultiply                
+[10] MaterialExpressionAdd                     
+[11] MaterialExpressionConstant                 r=0.05999999865889549
+[12] MaterialExpressionMultiply                
+[13] MaterialExpressionConstant                 r=0.6000000238418579

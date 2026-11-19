@@ -1,0 +1,7 @@
+name=SM_Env_Floor
+material slots=4
+  slot0 -> /Engine/BasicShapes/BasicShapeMaterial.BasicShapeMaterial
+  slot1 -> /Game/RobotGame/Art/Environment/M_SteelLight.M_SteelLight
+  slot2 -> /Game/RobotGame/Art/Environment/M_Joint.M_Joint
+  slot3 -> /Game/RobotGame/Art/Environment/M_Copper.M_Copper
+bbox size=(400.0,400.0,42.2)

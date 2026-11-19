@@ -1,0 +1,7 @@
+待导入 9 个：['airlock', 'bunker_vent', 'crane_arm', 'generator', 'mech_core', 'mech_hunyuan', 'mech_hunyuan_hi', 'mech_textured', 'pipe_junction']
+airlock        导入 OK  bbox=(163.1, 79.8, 198.7)cm  min=(-81.9,-40.4,-99.6)  带投影贴图
+bunker_vent    导入 OK  bbox=(199.2, 107.9, 199.0)cm  min=(-100.0,-54.6,-99.9)  带投影贴图
+crane_arm      导入 OK  bbox=(200.5, 110.4, 150.0)cm  min=(-101.0,-64.3,-85.8)  带投影贴图
+generator      导入 OK  bbox=(181.6, 90.5, 112.0)cm  min=(-91.6,-45.9,-66.9)  带投影贴图
+mech_core      导入 OK  bbox=(199.7, 111.3, 142.5)cm  min=(-100.4,-55.6,-74.6)  带投影贴图
+pipe_junction  导入 OK  bbox=(199.3, 181.3, 192.9)cm  min=(-100.2,-91.0,-99.7)  带投影贴图

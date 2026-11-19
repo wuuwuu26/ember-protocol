@@ -1,0 +1,100 @@
+tools/blender 脚本共 46 个
+
+_dump_rig.py                                    28 行  watch=-
+      bpy.ops: wm.open_mainfile
+audit_chassis_parts.py                          41 行  watch=bound_box
+      bpy.ops: import_scene.fbx, wm.read_factory_settings
+audit_connect.py                               121 行  watch=-
+audit_gapdist.py                                81 行  watch=-
+audit_gaps.py                                  116 行  watch=-
+audit_inside.py                                122 行  watch=-
+audit_leg_gaps.py                               79 行  watch=-
+audit_legs.py                                  105 行  watch=-
+audit_parts.py                                 109 行  watch=-
+audit_parts_mesh.py                             79 行  watch=-
+audit_scripts.py                                59 行  watch=BLENDER_EEVEE_NEXT,BLENDER_EEVEE,BLENDER_WORKBENCH,CYCLES,use_nodes,import_scene.gltf,export_scene.gltf,bpy.ops.object.bake,smart_project,get_ref_skeleton,get_reference_skeleton,calc_loop_triangles,loop_triangles,to_track_quat,bound_box,material_slot,node_tree,hide_render,shade_smooth,shade_flat,Quaternion,bpy.context.preferences.addons,cycles.preferences,scene.render.engine,view_settings,look
+      bpy.ops: object.bake
+build_all.py                                   118 行  watch=-
+build_backdrop.py                              196 行  watch=-
+build_bolt.py                                  245 行  watch=-
+      bpy.ops: object.modifier_apply, object.transform_apply
+build_chassis.py                               1110 行  watch=bound_box
+build_enemies.py                               1291 行  watch=-
+build_modules.py                               624 行  watch=-
+build_props.py                                 568 行  watch=-
+build_robot.py                                 594 行  watch=BLENDER_EEVEE_NEXT,BLENDER_EEVEE,CYCLES,use_nodes,export_scene.gltf,bound_box,node_tree,scene.render.engine,view_settings,look
+      bpy.ops: export_scene.fbx, export_scene.gltf, mesh.primitive_cube_add, mesh.primitive_cylinder_add, object.delete, object.empty_add, object.modifier_apply, object.select_all
+build_walls.py                                 197 行  watch=-
+check_enemy_fbx.py                              28 行  watch=calc_loop_triangles,loop_triangles,material_slot
+      bpy.ops: import_scene.fbx, wm.read_factory_settings
+check_fbx_uv.py                                 14 行  watch=-
+      bpy.ops: import_scene.fbx, wm.read_factory_settings
+check_knee_dir.py                               55 行  watch=-
+check_uv.py                                     21 行  watch=-
+check_weather_knee.py                           42 行  watch=-
+flip_channel_pipeline.py                       168 行  watch=CYCLES,use_nodes,node_tree,scene.render.engine
+      bpy.ops: flip_fluid_operators.bake_fluid_simulation_cmd, flip_fluid_operators.flip_fluid_add, mesh.primitive_cube_add, mesh.primitive_cylinder_add, object.select_all, object.transform_apply, render.render, wm.alembic_export
+foot_anatomy.py                                 41 行  watch=bound_box
+      bpy.ops: import_scene.fbx, wm.read_factory_settings
+inspect_chassis.py                              88 行  watch=-
+inspect_fbx.py                                  86 行  watch=BLENDER_WORKBENCH,bound_box
+      bpy.ops: import_scene.fbx, render.render, wm.read_factory_settings
+list_enemy_bones.py                             19 行  watch=-
+      bpy.ops: import_scene.fbx, wm.read_factory_settings
+probe_idol.py                                   97 行  watch=import_scene.gltf,calc_loop_triangles,loop_triangles,bound_box
+      bpy.ops: export_scene.fbx, import_scene.gltf, object.select_all, wm.read_factory_settings
+probe_parts.py                                  23 行  watch=-
+render_chassis_multi.py                         56 行  watch=BLENDER_WORKBENCH,bound_box,hide_render,scene.render.engine
+      bpy.ops: import_scene.fbx, render.render, wm.read_factory_settings
+render_chassis_posed.py                         64 行  watch=BLENDER_WORKBENCH,bound_box,hide_render,scene.render.engine
+      bpy.ops: import_scene.fbx, object.mode_set, render.render, wm.read_factory_settings
+render_chassis_views.py                         56 行  watch=BLENDER_WORKBENCH,bound_box,hide_render,scene.render.engine
+      bpy.ops: import_scene.fbx, render.render, wm.read_factory_settings
+render_enemy_audit.py                           89 行  watch=-
+      bpy.ops: render.render
+render_idol_views.py                            93 行  watch=BLENDER_EEVEE_NEXT,BLENDER_EEVEE,BLENDER_WORKBENCH,use_nodes,import_scene.gltf,to_track_quat,bound_box,node_tree,scene.render.engine
+      bpy.ops: import_scene.gltf, render.render, wm.read_factory_settings
+render_patrol_front.py                          38 行  watch=BLENDER_WORKBENCH,hide_render,scene.render.engine
+      bpy.ops: import_scene.fbx, render.render, wm.read_factory_settings
+render_zoom.py                                  39 行  watch=BLENDER_WORKBENCH,to_track_quat,hide_render,scene.render.engine
+      bpy.ops: import_scene.fbx, render.render, wm.read_factory_settings
+robotlib.py                                    1669 行  watch=BLENDER_EEVEE_NEXT,BLENDER_EEVEE,CYCLES,use_nodes,export_scene.gltf,smart_project,calc_loop_triangles,loop_triangles,bound_box,node_tree,scene.render.engine,view_settings,look
+      bpy.ops: export_scene.fbx, export_scene.gltf, mesh.primitive_cone_add, mesh.primitive_cube_add, mesh.primitive_cylinder_add, mesh.primitive_torus_add, mesh.primitive_uv_sphere_add, mesh.select_all
+test_advanced.py                               175 行  watch=-
+verify_cosmos_glb.py                            67 行  watch=use_nodes,import_scene.gltf,calc_loop_triangles,loop_triangles,bound_box,node_tree
+      bpy.ops: import_scene.gltf, wm.read_factory_settings
+verify_cosmos_gltf.py                           49 行  watch=use_nodes,import_scene.gltf,calc_loop_triangles,loop_triangles,bound_box,node_tree
+      bpy.ops: import_scene.gltf, wm.read_factory_settings
+verify_fbx.py                                  131 行  watch=bound_box
+      bpy.ops: import_scene.fbx, object.delete, object.select_all
+verify_flipfluids.py                            14 行  watch=bpy.context.preferences.addons
+verify_hy3d_glb.py                              80 行  watch=BLENDER_EEVEE_NEXT,BLENDER_EEVEE,BLENDER_WORKBENCH,use_nodes,import_scene.gltf,calc_loop_triangles,loop_triangles,to_track_quat,bound_box,node_tree
+      bpy.ops: import_scene.gltf, render.render, wm.read_factory_settings
+
+=== 需重点在 5.3 验证的 API 汇总 ===
+  BLENDER_EEVEE_NEXT               出现在 5 个脚本
+  BLENDER_EEVEE                    出现在 5 个脚本
+  BLENDER_WORKBENCH                出现在 9 个脚本
+  CYCLES                           出现在 4 个脚本
+  use_nodes                        出现在 8 个脚本
+  import_scene.gltf                出现在 6 个脚本
+  export_scene.gltf                出现在 3 个脚本
+  bpy.ops.object.bake              出现在 1 个脚本
+  smart_project                    出现在 2 个脚本
+  get_ref_skeleton                 出现在 1 个脚本
+  get_reference_skeleton           出现在 1 个脚本
+  calc_loop_triangles              出现在 7 个脚本
+  loop_triangles                   出现在 7 个脚本
+  to_track_quat                    出现在 4 个脚本
+  bound_box                        出现在 16 个脚本
+  material_slot                    出现在 2 个脚本
+  node_tree                        出现在 8 个脚本
+  hide_render                      出现在 6 个脚本
+  shade_smooth                     出现在 1 个脚本
+  shade_flat                       出现在 1 个脚本
+  Quaternion                       出现在 1 个脚本
+  bpy.context.preferences.addons   出现在 2 个脚本
+  cycles.preferences               出现在 1 个脚本
+  scene.render.engine              出现在 10 个脚本
+  view_settings                    出现在 3 个脚本
+  look                             出现在 3 个脚本

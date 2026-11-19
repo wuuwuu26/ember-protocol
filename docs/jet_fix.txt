@@ -1,0 +1,9 @@
+使用贴图 T_Jet_Flow  sampler=SAMPLERTYPE_LINEAR_GRAYSCALE
+重建 M_WaterJet_Coolant  sampler=SAMPLERTYPE_LINEAR_GRAYSCALE
+重建 M_WaterJet_Toxic  sampler=SAMPLERTYPE_LINEAR_GRAYSCALE
+  Jet_CoolantSpill_0       -> M_WaterJet_Coolant
+  Jet_ToxicFluid_0         -> M_WaterJet_Toxic
+  Jet_ToxicFluid_1         -> M_WaterJet_Toxic
+  Jet_ToxicFluid_2         -> M_WaterJet_Toxic
+  Jet_ToxicFluid_3         -> M_WaterJet_Toxic
+重挂 5 个水柱，关卡已保存

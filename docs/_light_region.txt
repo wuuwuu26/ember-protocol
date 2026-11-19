@@ -1,0 +1,232 @@
+﻿	FixLevelLighting();
+
+	// ── 玩家英雄补光 ──
+	// 夕阳角度低 + 围墙遮挡时，机体常常只剩剪影。这里挂一盏跟随玩家、
+	// 不投影的冷白点光，只负责把机体从阴影里拉出来；不改变场景整体布光。
+	{
+		UWorld* KeyWorld = GetWorld();
+		if (KeyWorld)
+		{
+			FActorSpawnParameters KP;
+			KP.Owner = this;
+			KP.SpawnCollisionHandlingOverride =
+				ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+			APointLight* KeyLight = KeyWorld->SpawnActor<APointLight>(
+				APointLight::StaticClass(), GetActorLocation(), FRotator::ZeroRotator, KP);
+			if (KeyLight)
+			{
+				if (UPointLightComponent* KC =
+					Cast<UPointLightComponent>(KeyLight->GetLightComponent()))
+				{
+					KC->SetMobility(EComponentMobility::Movable);
+					// ★ 2026-10-24：38000cd 在 3m 处约 4200 lux，已经和太阳
+					//    （9000 lux）同一个量级，而且是**不投阴影**的球形补光 ——
+					//    它把机体的明暗全部抹平，装甲板的倒角、凹槽、螺栓
+					//    全部失去阴影，看起来就是"一块粉色的肥皂"。
+					//    补光的职责只是把暗部抬起来一点，9000cd 足够。
+					KC->SetIntensity(9000.f);
+					KC->SetAttenuationRadius(1900.f);
+					KC->SetLightColor(FLinearColor(0.82f, 0.90f, 1.0f));
+					KC->SetCastShadows(false);
+					KC->SetVisibility(true);
+					KC->MarkRenderStateDirty();
+				}
+				KeyLight->AttachToActor(this, FAttachmentTransformRules::KeepRelativeTransform);
+				KeyLight->SetActorRelativeLocation(FVector(-300.f, 0.f, 230.f));
+				UE_LOG(LogTemp, Warning,
+					TEXT("[LIGHT] 玩家英雄补光已挂载：9000cd / 1900cm / 后上方 / 无阴影"));
+			}
+		}
+	}
+
+	// 建立程序化动画用的可见网格（原网格转为不可见，只留给部位系统查询）
+	RefreshAnimMesh();
+}
+
+/**
+ * 按当前机体重建动画网格。
+ *
+ * 分工：
+ *   GetMesh()  —— 不可见，只负责给部位破坏系统做骨骼查询/隐藏
+ *   AnimMesh   —— 可见，每帧由 MechProceduralAnim 程序化摆姿势
+ * 为什么要两个：USkeletalMeshComponent 没有设置单根骨骼变换的接口，
+ * 能摆姿势的只有 UPoseableMeshComponent，而部位系统写死了去找
+ * USkeletalMeshComponent。两边都保留是最省事且不动现有逻辑的做法。
+ */
+void ARobotCharacter::RefreshAnimMesh()
+{
+	USkeletalMeshComponent* Src = GetMesh();
+	if (!Src || !Src->GetSkeletalMeshAsset())
+	{
+		UE_LOG(LogTemp, Warning, TEXT("[动画] 玩家网格未设置，跳过动画网格"));
+		return;
+	}
+
+	// 建一次就够；换机体时资产会变，下面 SyncVisualMesh 会重新同步
+	if (!AnimMesh)
+	{
+		AnimMesh = MechProceduralAnim::CreateVisualMesh(this, Src);
+	}
+	if (!AnimMesh)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("[动画] 动画网格创建失败，退回整体身体动作"));
+		return;
+	}
+
+	// 同步资产 + 材质。
+	// 材质这一步是必须的：UPoseableMeshComponent 不会自动继承骨骼网格资产
+	// 的材质槽，漏掉就会渲染成 UE 默认的棋盘格材质（一个灰方块）。
+	MechProceduralAnim::SyncVisualMesh(AnimMesh, Src);
+
+	// 资产换了 → 基准姿势失效，重新缓存
+	AnimState.BaseTransforms.Reset();
+	AnimState.bBaseCached = false;
+	MechProceduralAnim::CacheBasePose(AnimMesh, AnimState);
+
+	UE_LOG(LogTemp, Log,
+		TEXT("[动画] 动画网格就绪：资产=%s 骨骼=%d 父=%s 世界位置(%.0f,%.0f,%.0f) "
+			 "相对旋转(P=%.0f Y=%.0f R=%.0f) 可见=%d 包围盒半径=%.0f"),
+		*Src->GetSkeletalMeshAsset()->GetName(),
+		AnimMesh->BoneSpaceTransforms.Num(),
+		AnimMesh->GetAttachParent()
+			? *AnimMesh->GetAttachParent()->GetName() : TEXT("无"),
+		AnimMesh->GetComponentLocation().X,
+		AnimMesh->GetComponentLocation().Y,
+		AnimMesh->GetComponentLocation().Z,
+		AnimMesh->GetRelativeRotation().Pitch,
+		AnimMesh->GetRelativeRotation().Yaw,
+		AnimMesh->GetRelativeRotation().Roll,
+		AnimMesh->IsVisible() ? 1 : 0,
+		AnimMesh->Bounds.SphereRadius);
+}
+
+void ARobotCharacter::ClampToArena()
+{
+	const FVector Loc = GetActorLocation();
+	UCharacterMovementComponent* Mv = GetCharacterMovement();
+
+	// ── ① 掉出地图兜底 ──
+	// 正常情况永远走不到这里（下面有 XY 硬边界）。留着是因为
+	// "掉进几何缝隙" 这类问题在关卡迭代中随时可能出现，
+	// 与其让玩家看着机体无限下坠，不如拉回最后一次站稳的位置。
+	if (Loc.Z < FallKillZ)
+	{
+		FVector Back = LastSafeLocation;
+		Back.Z = FMath::Max(Back.Z, 140.f);
+		SetActorLocation(Back, false, nullptr, ETeleportType::TeleportPhysics);
+		if (Mv)
+		{
+			Mv->StopMovementImmediately();
+		}
+		UE_LOG(LogTemp, Warning,
+			TEXT("[边界] 掉出地图（Z=%.0f），已拉回 (%.0f,%.0f,%.0f)"),
+			Loc.Z, Back.X, Back.Y, Back.Z);
+		return;
+	}
+
+	// ── ② 记录"安全点"：站稳在地面上时每 0.5 秒采一次 ──
+	if (Mv && !Mv->IsFalling())
+	{
+		const float Now = GetWorld() ? GetWorld()->GetTimeSeconds() : 0.f;
+		if (Now - LastSafeSampleTime > 0.5f)
+		{
+			LastSafeSampleTime = Now;
+			LastSafeLocation = Loc;
+		}
+	}
+
+	// ── ③ XY 硬边界 ──
+	// 只钳位置、并把"朝外"的速度分量清零，保留切向速度 ——
+	// 这样贴着墙走仍然是顺滑的滑行，而不是撞上去就卡死。
+	FVector Clamped = Loc;
+	Clamped.X = FMath::Clamp(Loc.X, ArenaMin.X, ArenaMax.X);
+	Clamped.Y = FMath::Clamp(Loc.Y, ArenaMin.Y, ArenaMax.Y);
+	if (!Clamped.Equals(Loc, 0.5f))
+	{
+		SetActorLocation(Clamped, false, nullptr, ETeleportType::TeleportPhysics);
+		if (Mv)
+		{
+			FVector V = Mv->Velocity;
+			if ((Loc.X > ArenaMax.X && V.X > 0.f) ||
+				(Loc.X < ArenaMin.X && V.X < 0.f))
+			{
+				V.X = 0.f;
+			}
+			if ((Loc.Y > ArenaMax.Y && V.Y > 0.f) ||
+				(Loc.Y < ArenaMin.Y && V.Y < 0.f))
+			{
+				V.Y = 0.f;
+			}
+			Mv->Velocity = V;
+		}
+		// 调试：-AutoWalk 下把"撞到边界"打出来，方便验证围栏真的生效
+		if (FParse::Param(FCommandLine::Get(), TEXT("AutoWalk")))
+		{
+			static float LastBoundaryLog = -100.f;
+			const float Now = GetWorld() ? GetWorld()->GetTimeSeconds() : 0.f;
+			if (Now - LastBoundaryLog > 1.f)
+			{
+				LastBoundaryLog = Now;
+				UE_LOG(LogTemp, Warning,
+					TEXT("[边界] 撞到围栏：位置=(%.0f,%.0f,%.0f) 速度=(%.0f,%.0f)"),
+					Loc.X, Loc.Y, Loc.Z, Mv ? Mv->Velocity.X : 0.f,
+					Mv ? Mv->Velocity.Y : 0.f);
+			}
+		}
+	}
+}
+
+void ARobotCharacter::Tick(float DeltaSeconds)
+{
+	Super::Tick(DeltaSeconds);
+
+	// 边界约束放在最前面：所有移动（含冲刺）都已经在 Super::Tick 里算完了，
+	// 这里把越界的位移吃掉，后面读位置的地方（相机、AI、HUD）拿到的都是合法值。
+	ClampToArena();
+
+	// 调试：-AutoWalk 让角色自动前进，用于验证走路动画。
+	// 必须限时 + 限距 —— 一直走会撞到远端围墙，画面变成一整面墙，
+	// 反而看不到动画（而连拍落盘比预期慢，4 秒窗口不够）。
+	if (FParse::Param(FCommandLine::Get(), TEXT("AutoWalk")))
+	{
+		// -AutoWalkAfter=<秒>：把行走窗口推迟到 [T, T+7]，且用原速 232。
+		// 用途：战斗在 ~10 秒内结束后走过去踩过掉落物堆，
+		// 验证"部位摧毁 → 掉落 → 走近 → 拾取 → 废料计数"整条链路。
+		float T0 = -1.f;
+		{
+			FString V;
+			if (FParse::Value(FCommandLine::Get(), TEXT("AutoWalkAfter="), V))
+			{
+				T0 = FCString::Atof(*V);
+			}
+		}
+		const bool bDelayed = T0 >= 0.f;
+
+		// ⚠️ 连拍时帧率会掉到个位数（每张 1.5MB 的 PNG 写盘要几百毫秒），
+		//    而相机是在角色 Tick 里按"当前角色位置"算的 —— 一帧的滞后
+		//    在 230cm/s 下就是几十厘米，帧率再低一点机体就直接被甩出画面。
+		//    验证步态不需要原速，把速度压到 140cm/s。（延时行走除外 ——
+		//    那一档的目的就是"走够远、踩到掉落物"。）
+		if (!bDelayed)
+		{
+			if (UCharacterMovementComponent* Mv = GetCharacterMovement())
+			{
+				Mv->MaxWalkSpeed = 140.f;
+			}
+		}
+
+		// -InPlace：**原地走**。角色位置完全不动，只把"合成速度"喂给动画系统，
+		// 步态照常播。这是给连拍用的 —— 只要角色在动，帧率抖动就会让
+		// 相机与机体错开（截图里机体忽左忽右），根本没法逐帧比对姿态。
+		// 原地走时相机与机体相对静止，14 张连拍就是干净的步态序列。
+		const bool bInPlace = FParse::Param(FCommandLine::Get(), TEXT("InPlace"));
+
+		const UWorld* W = GetWorld();
+		const float NowS = W ? W->GetTimeSeconds() : 0.f;
+		// -WalkForever：一直走（验证围栏 / 长距离行走用）
+		const bool bForever = FParse::Param(FCommandLine::Get(), TEXT("WalkForever"));
+		const bool bInWindow = bForever || (W && (bDelayed
+			? (NowS >= T0 && NowS < T0 + 7.f)
+			: (NowS < 7.f)));
+		const bool bInArena = FVector::Dist2D(GetActorLocation(), SpawnLocation) < 1400.f;
+		if (!bInPlace && bInWindow && bInArena)

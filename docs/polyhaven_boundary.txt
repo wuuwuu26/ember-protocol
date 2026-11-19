@@ -1,0 +1,8 @@
+地面/墙 actor 材质覆盖分布：
+  EXT   floor   48 块 -> ['M_Steel', 'M_SteelLight', 'M_Joint', 'M_Copper']
+  EXT   wall    29 块 -> ['M_Steel', 'M_Joint', 'M_Copper', 'M_SteelLight', 'M_Accent_wall']
+  EXT   wall     4 块 -> []
+  EXT   wall     2 块 -> ['M_Steel', 'M_SteelLight', 'M_Joint', 'M_Core_wall', 'M_Accent_wall']
+  ORIG  floor   56 块 -> ['M_Steel', 'M_SteelLight', 'M_Joint', 'M_Copper']
+  ORIG  wall    23 块 -> ['M_Steel', 'M_Joint', 'M_Copper', 'M_SteelLight', 'M_Accent_wall']
+  ORIG  wall     2 块 -> ['M_Steel', 'M_SteelLight', 'M_Joint', 'M_Core_wall', 'M_Accent_wall']

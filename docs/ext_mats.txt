@@ -1,0 +1,6 @@
+catwalk        at (-900,-1000)  overrides=['M_SteelLight', 'M_Joint', 'M_Accent_prop', 'M_Steel', 'M_Copper']
+doorframe      at (-1250,0)  overrides=['M_Steel', 'M_Accent_prop', 'M_Core_prop', 'M_Joint']
+gantry         at (-500,-1380)  overrides=['M_Steel', 'M_Joint', 'M_Accent_prop', 'M_SteelLight', 'M_Copper']
+pillar         at (-900,-1000)  overrides=['M_Steel', 'M_Accent_prop', 'M_Copper', 'M_Joint', 'M_SteelLight']
+wall_corner    at (-1300,-1380)  overrides=['M_Steel', 'M_SteelLight', 'M_Joint', 'M_Core_wall', 'M_Accent_wall']
+wall_segment   at (-1300,-1200)  overrides=['M_Steel', 'M_Joint', 'M_Copper', 'M_SteelLight', 'M_Accent_wall']

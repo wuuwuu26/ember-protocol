@@ -1,0 +1,72 @@
+﻿void ARobotProjectile::InitProjectile(float InDamage, float InSpeed,
+                                      AActor* InInstigatorActor)
+{
+	Damage = InDamage;
+	if (Movement)
+	{
+		Movement->InitialSpeed = InSpeed;
+		Movement->MaxSpeed = InSpeed;
+		Movement->Velocity = GetActorForwardVector() * InSpeed;
+	}
+	if (InInstigatorActor)
+	{
+		SetInstigator(Cast<APawn>(InInstigatorActor));
+		SetOwner(InInstigatorActor);
+		// 不与自己碰撞，否则会在枪口处立刻自爆
+		Collision->IgnoreActorWhenMoving(InInstigatorActor, true);
+	}
+
+	// 枪口闪光：颜色按阵营区分，一眼能看出这发是谁打的
+	if (MuzzleLight)
+	{
+		const APawn* InstigatorPawn = Cast<APawn>(InInstigatorActor);
+		const bool bFromPlayer = InstigatorPawn && InstigatorPawn->IsPlayerControlled();
+		MuzzleLight->SetLightColor(bFromPlayer
+			? FLinearColor(0.35f, 0.85f, 1.00f)     // 玩家：青蓝
+			: FLinearColor(1.00f, 0.45f, 0.15f));   // 敌人：橙红
+		MuzzleLight->SetIntensity(FlashIntensity);
+
+		// ── 弹体材质也按阵营分 ──
+		// 以前所有弹丸都用 M_Core_medium（机体核心紫），敌方玩家的弹道长得
+		// 一模一样，混战里根本判断不了"这一发从哪来"。这里换成**已经存在**
+		// 的核心材质：玩家用 M_Core_light（青绿自发光，和枪口青蓝光同色系），
+		// 敌人用 M_Core_enemy_guard（橙金自发光，和枪口橙红光同色系）。
+		// 两者都是 Unlit-ish 的高自发光数值，在夜景里会被 TSR/泛光拖成
+		// 一条亮线，正好当曳光弹用。
+		if (Mesh)
+		{
+			static TWeakObjectPtr<UMaterialInterface> CachedPlayerBolt;
+			static TWeakObjectPtr<UMaterialInterface> CachedEnemyBolt;
+			TWeakObjectPtr<UMaterialInterface>& Slot =
+				bFromPlayer ? CachedPlayerBolt : CachedEnemyBolt;
+			if (!Slot.IsValid())
+			{
+				Slot = LoadObject<UMaterialInterface>(nullptr, bFromPlayer
+					? TEXT("/Game/RobotGame/Art/Characters/M_Core_light.M_Core_light")
+					: TEXT("/Game/RobotGame/Art/Characters/M_Core_enemy_guard.M_Core_enemy_guard"));
+			}
+			if (Slot.IsValid())
+			{
+				Mesh->SetMaterial(0, Slot.Get());
+			}
+		}
+	}
+	FlashRemaining = FlashDuration;
+}
+
+void ARobotProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor,
+	UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
+{
+	ProcessHit(OtherActor, OtherComp, Hit.ImpactPoint, Hit.ImpactNormal, Hit.BoneName);
+}
+
+void ARobotProjectile::OnOverlap(UPrimitiveComponent* OverlappedComp,
+	AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex,
+	bool bFromSweep, const FHitResult& SweepResult)
+{
+	if (!OtherActor || OtherActor == GetOwner())
+	{
+		return;
+	}
+
+	// 扫掠重叠能拿到真实命中点；非扫掠重叠（出生时已重叠）用当前位置兜底。

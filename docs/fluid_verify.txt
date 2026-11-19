@@ -1,0 +1,11 @@
+CoolantSpill_0:
+  bInflow          = True
+  InflowStrength   = 3.200000047683716
+  InflowInterval   = 0.05999999865889549
+  InflowRadius     = 45.0
+  MaxHeight        = 9.0
+  GridCells        = 96
+  InflowLocal      = <Struct 'Vector2D' (0x000001BC3C7D64A8) {x: -330.000000, y: 0.000000}>
+Splash_FoamRing: visible=False hidden_in_game=True
+Splash_FoamDisc: visible=False hidden_in_game=True
+Splash_SprayCone: visible=False hidden_in_game=True

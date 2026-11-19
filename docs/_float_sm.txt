@@ -1,0 +1,7 @@
+StaticMeshActor119           StaticMeshActor        z=330 (-1240,-1200,330)
+StaticMeshActor120           StaticMeshActor        z=330 (-1240,-800,330)
+StaticMeshActor121           StaticMeshActor        z=330 (-1240,-400,330)
+StaticMeshActor122           StaticMeshActor        z=330 (-1240,0,330)
+StaticMeshActor123           StaticMeshActor        z=330 (-1240,400,330)
+StaticMeshActor124           StaticMeshActor        z=330 (-1240,800,330)
+StaticMeshActor125           StaticMeshActor        z=330 (-1240,1200,330)

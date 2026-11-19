@@ -1,0 +1,4 @@
+[ue_py] 第 1 次执行成功（标记 'ChassisDiag' 已出现）
+[ChassisDiag] apis: get_bounds, get_imported_bounds, get_min_lod_for_quality_levels, lod_settings, negative_bounds_extension, positive_bounds_extension, regenerate_lod, set_min_lod_for_quality_levels
+[ChassisDiag] lod_info err: SkeletalMesh: Failed to find property 'lod_info' for attribute 'lod_info' on 'SkeletalMesh'
+[ChassisDiag] skeleton=SK_Chassis_Light_Skeleton

@@ -1,0 +1,24 @@
+  导入 concrete_floor_02_ARM
+  导入 concrete_floor_02_BaseColor
+  导入 concrete_floor_02_Normal
+  导入 concrete_wall_001_ARM
+  导入 concrete_wall_001_BaseColor
+  导入 concrete_wall_001_Normal
+  导入 corrugated_iron_ARM
+  导入 corrugated_iron_BaseColor
+  导入 corrugated_iron_Normal
+  导入 factory_wall_ARM
+  导入 factory_wall_BaseColor
+  导入 factory_wall_Normal
+  导入 metal_grate_rusty_ARM
+  导入 metal_grate_rusty_BaseColor
+  导入 metal_grate_rusty_Normal
+  导入 rusty_metal_ARM
+  导入 rusty_metal_BaseColor
+  导入 rusty_metal_Normal
+材质 M_concrete_floor_02 (工业混凝土地面) 已建
+材质 M_concrete_wall_001 (风化混凝土墙) 已建
+材质 M_factory_wall (工厂金属墙) 已建
+材质 M_rusty_metal (锈铁) 已建
+材质 M_corrugated_iron (波纹铁皮) 已建
+材质 M_metal_grate_rusty (锈金属格栅) 已建

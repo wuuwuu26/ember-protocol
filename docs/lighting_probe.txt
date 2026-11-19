@@ -1,0 +1,36 @@
+═══ 1. PostProcessVolume ═══
+  PostProcessVolume at (0,0,0) unbound=True
+    auto_exposure_method                     = <AutoExposureMethod.AEM_MANUAL: 2>
+    auto_exposure_bias                       = 5.599999904632568
+    auto_exposure_min_brightness             = 13.600000381469727
+    auto_exposure_max_brightness             = 13.600000381469727
+    bloom_intensity                          = 0.41999998688697815
+    vignette_intensity                       = 0.2800000011920929
+    ambient_occlusion_intensity              = 1.0
+    ambient_occlusion_radius                 = 120.0
+    motion_blur_amount                       = 0.0
+    film_grain_intensity                     = 0.1599999964237213
+    color_saturation                         = <Struct 'Vector4' (0x000001C7C57FF310) {x: 0.900000, y: 0.900000, z: 0.900000, w: 1.000000}>
+    color_contrast                           = <Struct 'Vector4' (0x000001C7C57FF330) {x: 1.140000, y: 1.140000, z: 1.160000, w: 1.000000}>
+    color_gain                               = <Struct 'Vector4' (0x000001C7C57FF370) {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}>
+    color_gamma                              = <Struct 'Vector4' (0x000001C7C57FF350) {x: 0.970000, y: 0.980000, z: 1.000000, w: 1.000000}>
+
+═══ 2. 光源（按类型/标签分组）═══
+  DirectionalLight (无tag)                 x1   例:(0,0,1200)
+      err 'DirectionalLight' object has no attribute 'get_light_component'
+  PointLight   (无tag)                 x17  例:(-900,-1000,340)
+      err 'PointLight' object has no attribute 'get_light_component'
+  PointLight   ExtRegion              x27  例:(1950,-330,320)
+      err 'PointLight' object has no attribute 'get_light_component'
+  PointLight   HeroFill               x1   例:(0,0,350)
+      err 'PointLight' object has no attribute 'get_light_component'
+  SpotLight    (无tag)                 x13  例:(-1300,-1150,700)
+      err 'SpotLight' object has no attribute 'get_light_component'
+
+═══ 3. SkyLight / DirectionalLight ═══
+  DirectionalLight err 'DirectionalLight' object has no attribute 'get_light_component'
+  SkyLight err 'SkyLight' object has no attribute 'get_light_component'
+
+═══ 4. 雾/大气 ═══
+  SkyLight (SkyLight)
+  ExponentialHeightFog (ExponentialHeightFog)

@@ -1,0 +1,8 @@
+材质里有 TextureCoordinate 节点: True
+节点数: 11
+  贴图 concrete_floor_02_BaseColor
+  贴图 concrete_floor_02_Normal
+  贴图 concrete_floor_02_ARM
+
+SM_Env_Floor:
+  bbox = 400 x 400 x 42 cm

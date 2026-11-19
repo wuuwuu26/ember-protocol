@@ -1,0 +1,6 @@
+concrete_floor_02	OK	3 张 4.7MB  6s
+concrete_wall_001	OK	3 张 1.6MB  8s
+corrugated_iron	OK	3 张 7.6MB  8s
+factory_wall	OK	3 张 2.4MB  7s
+metal_grate_rusty	OK	3 张 10.7MB  9s
+rusty_metal	OK	3 张 4.3MB  8s

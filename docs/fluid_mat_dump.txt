@@ -1,0 +1,287 @@
+===== M_Toxic_Fluid  blend=<BlendMode.BLEND_TRANSLUCENT: 2> =====
+  MaterialExpressionWorldPosition           
+  MaterialExpressionObjectPositionWS        
+  MaterialExpressionDistance                
+  MaterialExpressionConstant                 r=137.0
+  MaterialExpressionDivide                  
+  MaterialExpressionConstant                 r=1.0
+  MaterialExpressionSubtract                
+  MaterialExpressionSaturate                
+  MaterialExpressionConstant                 r=1.0
+  MaterialExpressionSubtract                
+  MaterialExpressionSaturate                
+  MaterialExpressionTextureCoordinate       
+  MaterialExpressionPanner                  
+  MaterialExpressionTextureSampleParameter2D tex=T_Coolant_F sampler=<MaterialSamplerType.SAMPLERTYPE_LINEAR_GRAYSCALE: 7> param=ToxicFoam parameter_name=ToxicFoam
+  MaterialExpressionConstant                 r=0.8600000143051147
+  MaterialExpressionSubtract                
+  MaterialExpressionConstant                 r=0.14000000059604645
+  MaterialExpressionDivide                  
+  MaterialExpressionSaturate                
+  MaterialExpressionTextureCoordinate       
+  MaterialExpressionPanner                  
+  MaterialExpressionTextureSampleParameter2D tex=T_Toxic_Bub sampler=<MaterialSamplerType.SAMPLERTYPE_LINEAR_GRAYSCALE: 7> param=ToxicScum parameter_name=ToxicScum
+  MaterialExpressionConstant                 r=0.8999999761581421
+  MaterialExpressionMultiply                
+  MaterialExpressionConstant                 r=0.30000001192092896
+  MaterialExpressionAdd                     
+  MaterialExpressionSaturate                
+  MaterialExpressionPower                   
+  MaterialExpressionConstant                 r=1.5
+  MaterialExpressionMultiply                
+  MaterialExpressionConstant                 r=0.75
+  MaterialExpressionMultiply                
+  MaterialExpressionSaturate                
+  MaterialExpressionTextureCoordinate       
+  MaterialExpressionPanner                  
+  MaterialExpressionTextureSampleParameter2D tex=T_Toxic_Bub sampler=<MaterialSamplerType.SAMPLERTYPE_LINEAR_GRAYSCALE: 7> param=ToxicFilm parameter_name=ToxicFilm
+  MaterialExpressionConstant                 r=0.11999999731779099
+  MaterialExpressionMultiply                
+  MaterialExpressionAdd                     
+  MaterialExpressionSaturate                
+  MaterialExpressionVertexColor             
+  MaterialExpressionComponentMask            r=False
+  MaterialExpressionTextureCoordinate       
+  MaterialExpressionPanner                  
+  MaterialExpressionTextureSampleParameter2D tex=T_Toxic_Bub sampler=<MaterialSamplerType.SAMPLERTYPE_LINEAR_GRAYSCALE: 7> param=ToxicChurn parameter_name=ToxicChurn
+  MaterialExpressionMultiply                
+  MaterialExpressionConstant                 r=2.200000047683716
+  MaterialExpressionMultiply                
+  MaterialExpressionAdd                     
+  MaterialExpressionSaturate                
+  MaterialExpressionTextureCoordinate       
+  MaterialExpressionPanner                  
+  MaterialExpressionTextureSampleParameter2D tex=T_WaterRipple_N sampler=<MaterialSamplerType.SAMPLERTYPE_NORMAL: 3> param=ToxicNormalA parameter_name=ToxicNormalA
+  MaterialExpressionTextureCoordinate       
+  MaterialExpressionPanner                  
+  MaterialExpressionTextureSampleParameter2D tex=T_WaterRipple_N sampler=<MaterialSamplerType.SAMPLERTYPE_NORMAL: 3> param=ToxicNormalB parameter_name=ToxicNormalB
+  MaterialExpressionAdd                     
+  MaterialExpressionConstant3Vector          c=(0.50,0.50,0.00)
+  MaterialExpressionSubtract                
+  MaterialExpressionConstant3Vector          c=(0.00,0.00,1.00)
+  MaterialExpressionConstant                 r=0.1599999964237213
+  MaterialExpressionLinearInterpolate       
+  MaterialExpressionTextureCoordinate       
+  MaterialExpressionPanner                  
+  MaterialExpressionTextureSampleParameter2D tex=T_WaterRipple_N sampler=<MaterialSamplerType.SAMPLERTYPE_NORMAL: 3> param=ToxicNormalMicro parameter_name=ToxicNormalMicro
+  MaterialExpressionConstant3Vector          c=(0.00,0.00,1.00)
+  MaterialExpressionConstant                 r=0.05999999865889549
+  MaterialExpressionLinearInterpolate       
+  MaterialExpressionAdd                     
+  MaterialExpressionConstant3Vector          c=(0.50,0.50,0.00)
+  MaterialExpressionSubtract                
+  MaterialExpressionConstant3Vector          c=(0.00,0.01,0.01)
+  MaterialExpressionConstant3Vector          c=(0.01,0.03,0.01)
+  MaterialExpressionConstant3Vector          c=(0.26,0.42,0.28)
+  MaterialExpressionLinearInterpolate       
+  MaterialExpressionLinearInterpolate       
+  MaterialExpressionConstant                 r=0.8799999952316284
+  MaterialExpressionSubtract                
+  MaterialExpressionConstant                 r=0.11999999731779099
+  MaterialExpressionDivide                  
+  MaterialExpressionSaturate                
+  MaterialExpressionConstant3Vector          c=(0.00,0.00,0.00)
+  MaterialExpressionConstant                 r=0.8500000238418579
+  MaterialExpressionMultiply                
+  MaterialExpressionLinearInterpolate       
+  MaterialExpressionPower                   
+  MaterialExpressionConstant                 r=3.0
+  MaterialExpressionConstant3Vector          c=(0.00,0.03,0.01)
+  MaterialExpressionMultiply                
+  MaterialExpressionFresnel                 
+  MaterialExpressionReflectionVectorWS      
+  MaterialExpressionComponentMask            r=False
+  MaterialExpressionSaturate                
+  MaterialExpressionPower                   
+  MaterialExpressionConstant                 r=0.6499999761581421
+  MaterialExpressionConstant3Vector          c=(0.05,0.06,0.07)
+  MaterialExpressionConstant3Vector          c=(0.30,0.38,0.48)
+  MaterialExpressionLinearInterpolate       
+  MaterialExpressionConstant                 r=1.0
+  MaterialExpressionSubtract                
+  MaterialExpressionMultiply                
+  MaterialExpressionConstant                 r=1.100000023841858
+  MaterialExpressionMultiply                
+  MaterialExpressionMultiply                
+  MaterialExpressionConstant3Vector          c=(0.05,0.16,0.06)
+  MaterialExpressionMultiply                
+  MaterialExpressionTextureCoordinate       
+  MaterialExpressionPanner                  
+  MaterialExpressionTextureSampleParameter2D tex=T_Toxic_Bub sampler=<MaterialSamplerType.SAMPLERTYPE_LINEAR_GRAYSCALE: 7> param=ToxicBubble parameter_name=ToxicBubble
+  MaterialExpressionConstant                 r=0.3499999940395355
+  MaterialExpressionMultiply                
+  MaterialExpressionConstant3Vector          c=(0.01,0.12,0.04)
+  MaterialExpressionMultiply                
+  MaterialExpressionAdd                     
+  MaterialExpressionAdd                     
+  MaterialExpressionAdd                     
+  MaterialExpressionConstant                 r=0.9980000257492065
+  MaterialExpressionSubtract                
+  MaterialExpressionConstant                 r=0.004999999888241291
+  MaterialExpressionDivide                  
+  MaterialExpressionSaturate                
+  MaterialExpressionConstant                 r=0.7799999713897705
+  MaterialExpressionMultiply                
+  MaterialExpressionConstant                 r=0.3499999940395355
+  MaterialExpressionMultiply                
+  MaterialExpressionMultiply                
+  MaterialExpressionAdd                     
+  MaterialExpressionSaturate                
+  MaterialExpressionConstant                 r=0.0
+  MaterialExpressionConstant                 r=0.4000000059604645
+  MaterialExpressionConstant                 r=0.30000001192092896
+  MaterialExpressionConstant                 r=0.44999998807907104
+  MaterialExpressionLinearInterpolate       
+  MaterialExpressionConstant                 r=1.3300000429153442
+===== M_Coolant_Fluid  blend=<BlendMode.BLEND_TRANSLUCENT: 2> =====
+  MaterialExpressionVertexColor             
+  MaterialExpressionComponentMask            r=True
+  MaterialExpressionConstant                 r=0.6200000047683716
+  MaterialExpressionSubtract                
+  MaterialExpressionConstant                 r=2.200000047683716
+  MaterialExpressionMultiply                
+  MaterialExpressionSaturate                
+  MaterialExpressionTextureCoordinate       
+  MaterialExpressionPanner                  
+  MaterialExpressionTextureSampleParameter2D tex=T_Toxic_Bub sampler=<MaterialSamplerType.SAMPLERTYPE_LINEAR_GRAYSCALE: 7> param=CoolantFoam parameter_name=CoolantFoam
+  MaterialExpressionConstant                 r=0.8999999761581421
+  MaterialExpressionMultiply                
+  MaterialExpressionConstant                 r=0.20000000298023224
+  MaterialExpressionAdd                     
+  MaterialExpressionSaturate                
+  MaterialExpressionMultiply                
+  MaterialExpressionConstant                 r=0.44999998807907104
+  MaterialExpressionMultiply                
+  MaterialExpressionSaturate                
+  MaterialExpressionVertexColor             
+  MaterialExpressionComponentMask            r=False
+  MaterialExpressionTextureCoordinate       
+  MaterialExpressionPanner                  
+  MaterialExpressionTextureSampleParameter2D tex=T_Toxic_Bub sampler=<MaterialSamplerType.SAMPLERTYPE_LINEAR_GRAYSCALE: 7> param=CoolantChurn parameter_name=CoolantChurn
+  MaterialExpressionMultiply                
+  MaterialExpressionConstant                 r=1.7999999523162842
+  MaterialExpressionMultiply                
+  MaterialExpressionAdd                     
+  MaterialExpressionSaturate                
+  MaterialExpressionTextureCoordinate       
+  MaterialExpressionPanner                  
+  MaterialExpressionTextureSampleParameter2D tex=T_WaterRipple_N sampler=<MaterialSamplerType.SAMPLERTYPE_NORMAL: 3> param=CoolantNormalA parameter_name=CoolantNormalA
+  MaterialExpressionTextureCoordinate       
+  MaterialExpressionPanner                  
+  MaterialExpressionTextureSampleParameter2D tex=T_WaterRipple_N sampler=<MaterialSamplerType.SAMPLERTYPE_NORMAL: 3> param=CoolantNormalB parameter_name=CoolantNormalB
+  MaterialExpressionAdd                     
+  MaterialExpressionConstant3Vector          c=(0.50,0.50,0.00)
+  MaterialExpressionSubtract                
+  MaterialExpressionConstant3Vector          c=(0.00,0.00,1.00)
+  MaterialExpressionConstant                 r=0.5799999833106995
+  MaterialExpressionLinearInterpolate       
+  MaterialExpressionTextureCoordinate       
+  MaterialExpressionPanner                  
+  MaterialExpressionTextureSampleParameter2D tex=T_WaterRipple_N sampler=<MaterialSamplerType.SAMPLERTYPE_NORMAL: 3> param=CoolantNormalStreak parameter_name=CoolantNormalStreak
+  MaterialExpressionConstant3Vector          c=(0.00,0.00,1.00)
+  MaterialExpressionConstant                 r=0.44999998807907104
+  MaterialExpressionLinearInterpolate       
+  MaterialExpressionAdd                     
+  MaterialExpressionConstant3Vector          c=(0.50,0.50,0.00)
+  MaterialExpressionSubtract                
+  MaterialExpressionTextureCoordinate       
+  MaterialExpressionPanner                  
+  MaterialExpressionTextureSampleParameter2D tex=T_WaterRipple_N sampler=<MaterialSamplerType.SAMPLERTYPE_NORMAL: 3> param=CoolantNormalMicro parameter_name=CoolantNormalMicro
+  MaterialExpressionConstant3Vector          c=(0.00,0.00,1.00)
+  MaterialExpressionConstant                 r=0.30000001192092896
+  MaterialExpressionLinearInterpolate       
+  MaterialExpressionAdd                     
+  MaterialExpressionConstant3Vector          c=(0.50,0.50,0.00)
+  MaterialExpressionSubtract                
+  MaterialExpressionConstant3Vector          c=(0.01,0.02,0.03)
+  MaterialExpressionConstant3Vector          c=(0.20,0.42,0.50)
+  MaterialExpressionLinearInterpolate       
+  MaterialExpressionFresnel                 
+  MaterialExpressionReflectionVectorWS      
+  MaterialExpressionComponentMask            r=False
+  MaterialExpressionSaturate                
+  MaterialExpressionPower                   
+  MaterialExpressionConstant                 r=0.6499999761581421
+  MaterialExpressionConstant3Vector          c=(0.05,0.06,0.07)
+  MaterialExpressionConstant3Vector          c=(0.30,0.38,0.48)
+  MaterialExpressionLinearInterpolate       
+  MaterialExpressionConstant                 r=1.0
+  MaterialExpressionSubtract                
+  MaterialExpressionMultiply                
+  MaterialExpressionConstant                 r=1.0499999523162842
+  MaterialExpressionMultiply                
+  MaterialExpressionMultiply                
+  MaterialExpressionPower                   
+  MaterialExpressionConstant                 r=1.600000023841858
+  MaterialExpressionConstant3Vector          c=(0.04,0.20,0.26)
+  MaterialExpressionMultiply                
+  MaterialExpressionAdd                     
+  MaterialExpressionConstant3Vector          c=(0.01,0.03,0.04)
+  MaterialExpressionAdd                     
+  MaterialExpressionTextureCoordinate       
+  MaterialExpressionComponentMask            r=True
+  MaterialExpressionComponentMask            r=False
+  MaterialExpressionConstant                 r=0.02500000037252903
+  MaterialExpressionSubtract                
+  MaterialExpressionConstant                 r=0.004000000189989805
+  MaterialExpressionDivide                  
+  MaterialExpressionSaturate                
+  MaterialExpressionConstant                 r=1.0
+  MaterialExpressionConstant                 r=0.9710000157356262
+  MaterialExpressionSubtract                
+  MaterialExpressionConstant                 r=0.004000000189989805
+  MaterialExpressionDivide                  
+  MaterialExpressionSaturate                
+  MaterialExpressionSubtract                
+  MaterialExpressionMultiply                
+  MaterialExpressionConstant                 r=0.375
+  MaterialExpressionSubtract                
+  MaterialExpressionConstant                 r=0.004000000189989805
+  MaterialExpressionDivide                  
+  MaterialExpressionSaturate                
+  MaterialExpressionConstant                 r=1.0
+  MaterialExpressionConstant                 r=0.6209999918937683
+  MaterialExpressionSubtract                
+  MaterialExpressionConstant                 r=0.004000000189989805
+  MaterialExpressionDivide                  
+  MaterialExpressionSaturate                
+  MaterialExpressionSubtract                
+  MaterialExpressionMultiply                
+  MaterialExpressionMultiply                
+  MaterialExpressionConstant                 r=0.8799999952316284
+  MaterialExpressionMultiply                
+  MaterialExpressionConstant                 r=0.5
+  MaterialExpressionMultiply                
+  MaterialExpressionMultiply                
+  MaterialExpressionAdd                     
+  MaterialExpressionSaturate                
+  MaterialExpressionConstant                 r=0.0
+  MaterialExpressionConstant                 r=0.4000000059604645
+  MaterialExpressionConstant                 r=0.10000000149011612
+  MaterialExpressionConstant                 r=0.3799999952316284
+  MaterialExpressionLinearInterpolate       
+  MaterialExpressionConstant                 r=1.3300000429153442
+===== M_Toxic_Bed  blend=<BlendMode.BLEND_OPAQUE: 0> =====
+  MaterialExpressionTextureCoordinate       
+  MaterialExpressionTextureSampleParameter2D tex=T_Coolant_F sampler=<MaterialSamplerType.SAMPLERTYPE_LINEAR_GRAYSCALE: 7> param=Bed_T_Coolant_F parameter_name=Bed_T_Coolant_F
+  MaterialExpressionTextureCoordinate       
+  MaterialExpressionTextureSampleParameter2D tex=T_Toxic_Bub sampler=<MaterialSamplerType.SAMPLERTYPE_LINEAR_GRAYSCALE: 7> param=Bed_T_Toxic_Bub parameter_name=Bed_T_Toxic_Bub
+  MaterialExpressionTextureCoordinate       
+  MaterialExpressionTextureSampleParameter2D tex=T_Toxic_Bub sampler=<MaterialSamplerType.SAMPLERTYPE_LINEAR_GRAYSCALE: 7> param=Bed_T_Toxic_Bub parameter_name=Bed_T_Toxic_Bub
+  MaterialExpressionConstant                 r=0.18000000715255737
+  MaterialExpressionMultiply                
+  MaterialExpressionConstant                 r=0.550000011920929
+  MaterialExpressionMultiply                
+  MaterialExpressionAdd                     
+  MaterialExpressionConstant                 r=0.3499999940395355
+  MaterialExpressionMultiply                
+  MaterialExpressionAdd                     
+  MaterialExpressionSaturate                
+  MaterialExpressionConstant3Vector          c=(0.01,0.02,0.01)
+  MaterialExpressionConstant3Vector          c=(0.00,0.00,0.00)
+  MaterialExpressionLinearInterpolate       
+  MaterialExpressionConstant                 r=0.9200000166893005
+  MaterialExpressionConstant                 r=0.10000000149011612
+  MaterialExpressionConstant3Vector          c=(0.00,0.01,0.00)
+  MaterialExpressionConstant                 r=0.10000000149011612
+  MaterialExpressionMultiply                

@@ -1,0 +1,19 @@
+===== 圆形水池相关 actor（池心约 -200,350）=====
+StaticMeshActor19              loc=(-400,400,-12) sc=(1.00,1.00,1.00) mats=['M_Steel', 'M_SteelLight', 'M_Joint', 'M_Copper']
+StaticMeshActor26              loc=(0,400,-12) sc=(1.00,1.00,1.00) mats=['M_Steel', 'M_SteelLight', 'M_Joint', 'M_Copper']
+HazardSludge_0                 loc=(-200,350,0) sc=(0.72,0.72,0.72) mats=['WorldGridMaterial']
+ToxicBed_0                     loc=(-200,350,-1) sc=(3.00,3.00,0.08) mats=['M_Toxic_Bed']
+ToxicFluid_0                   loc=(-200,350,0) sc=(1.00,1.00,1.00) mats=['DefaultMaterial']
+    pool_radius = 137.0
+Basin_ToxicFluid_0             loc=(-200,350,0) sc=(1.00,1.00,1.00) mats=[]
+Pipe_Riser_ToxicFluid_0        loc=(-30,350,78) sc=(0.18,0.18,1.55) mats=['M_Bolt_Trim']
+Pipe_Arm_ToxicFluid_0          loc=(-55,350,156) sc=(0.49,0.18,0.18) mats=['M_Bolt_Trim']
+Pipe_Spout_ToxicFluid_0        loc=(-79,350,98) sc=(0.18,0.18,1.15) mats=['M_Bolt_Trim']
+Jet_ToxicFluid_0               loc=(-79,350,24) sc=(0.07,0.07,0.34) mats=['M_WaterJet_Toxic']
+===== 液体/池材质清单 =====
+  M_Toxic_Bed            [Material]
+  M_Coolant_Fluid        [Material]
+  M_Basin_Concrete       [Material]
+  M_GeoCache_Water       [Material]
+  M_Sludge               不存在
+  MI_Basin_Coolant       [MaterialInstanceConstant]

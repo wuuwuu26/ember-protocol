@@ -1,0 +1,8 @@
+unreal.Rotator(10, 20, 30) 读回：
+  pitch=20.0  yaw=30.0  roll=10.0
+  → 三个位置参数依次对应上面的顺序（自己看哪个是 10/20/30）
+
+雕像实例 SM_IdolMech
+  loc=(4750.0, 0.0, 484.9)  scale=(9.00, 9.00, 9.00)
+  pitch=0.0  yaw=180.0  roll=-0.0
+  world bounds: centerZ=467.8 extentZ=467.8  → 脚底 0.0 头顶 935.7

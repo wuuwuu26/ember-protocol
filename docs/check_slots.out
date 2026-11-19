@@ -1,0 +1,14 @@
+[ue_py] 第 1 次没有产出标记 'SLOTS_DONE'，重试……
+[ue_py] 第 2 次没有产出标记 'SLOTS_DONE'，重试……
+[ue_py] 第 3 次没有产出标记 'SLOTS_DONE'，重试……
+[ue_py] ❌ 3 次都没跑起来。最后一次日志：/c/Users/25227/Documents/robot_game/ue/ue_py_3.log
+[2026.10.26-13.21.05:498][  0]LogPython: Display: 正在运行启动脚本C:/Program Files/Epic Games/UE_5.8/Engine/Plugins/Animation/ControlRig/Content/Python/init_unreal.py…… took 19.225 ms (total: 29.049 ms)
+[2026.10.26-13.21.06:006][  2]LogPython: SK_Chassis_Light Slot 0: M_Frame -> M_Frame
+[2026.10.26-13.21.06:006][  2]LogPython: SK_Chassis_Light Slot 1: M_Joint -> M_Joint
+[2026.10.26-13.21.06:006][  2]LogPython: SK_Chassis_Light Slot 2: M_Copper -> M_Copper
+[2026.10.26-13.21.06:006][  2]LogPython: SK_Chassis_Light Slot 3: M_SteelLight -> M_SteelLight
+[2026.10.26-13.21.06:006][  2]LogPython: SK_Chassis_Light Slot 4: M_Steel -> M_Steel
+[2026.10.26-13.21.06:006][  2]LogPython: SK_Chassis_Light Slot 5: M_Core_light -> M_Core_light
+[2026.10.26-13.21.06:006][  2]LogPython: SK_Chassis_Light Slot 6: M_Visor_light -> M_Visor_light
+[2026.10.26-13.21.06:006][  2]LogPython: SK_Chassis_Light Slot 7: M_Accent_light -> M_Accent_light
+[2026.10.26-13.21.06:006][  2]LogPython: SK_Chassis_Light Slot 8: M_AccentDark_light -> M_AccentDark_light

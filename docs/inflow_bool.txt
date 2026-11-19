@@ -1,0 +1,30 @@
+=== CoolantSpill_0 ===
+  bInflow        = True
+  b_inflow       err
+  binflow        = True
+  bStagnant      = False
+  b_stagnant     err
+=== ToxicFluid_0 ===
+  bInflow        = True
+  b_inflow       err
+  binflow        = True
+  bStagnant      = True
+  b_stagnant     err
+=== ToxicFluid_1 ===
+  bInflow        = True
+  b_inflow       err
+  binflow        = True
+  bStagnant      = True
+  b_stagnant     err
+=== ToxicFluid_2 ===
+  bInflow        = True
+  b_inflow       err
+  binflow        = True
+  bStagnant      = True
+  b_stagnant     err
+=== ToxicFluid_3 ===
+  bInflow        = True
+  b_inflow       err
+  binflow        = True
+  bStagnant      = True
+  b_stagnant     err

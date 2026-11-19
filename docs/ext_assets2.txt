@@ -1,0 +1,30 @@
+== /Game/RobotGame/Art/Environment ==
+SM_Env_Catwalk.SM_Env_Catwalk size=(126, 400, 130) minZ=-27  class=StaticMesh
+SM_Env_Doorframe.SM_Env_Doorframe size=(58, 246, 329) minZ=-0  class=StaticMesh
+SM_Env_Floor.SM_Env_Floor  size=(400, 400, 42) minZ=-30  class=StaticMesh
+SM_Env_Gantry.SM_Env_Gantry size=(70, 528, 494) minZ=0  class=StaticMesh
+SM_Env_Pillar.SM_Env_Pillar size=(110, 110, 400) minZ=-0  class=StaticMesh
+SM_Env_Piperun.SM_Env_Piperun size=(49, 400, 145) minZ=5  class=StaticMesh
+SM_Env_Platform.SM_Env_Platform size=(627, 627, 239) minZ=-229  class=StaticMesh
+SM_Env_SludgePool.SM_Env_SludgePool size=(380, 380, 6) minZ=-6  class=StaticMesh
+SM_Env_Stairs.SM_Env_Stairs size=(170, 311, 213) minZ=-4  class=StaticMesh
+SM_Env_Wall.SM_Env_Wall    size=(46, 416, 320) minZ=-0  class=StaticMesh
+SM_Landmark_Lighthouse.SM_Landmark_Lighthouse size=(2080, 1654, 2100) minZ=-0  class=StaticMesh
+sm_bg_gantry.sm_bg_gantry  size=(1050, 1050, 3246) minZ=-0  class=StaticMesh
+sm_bg_silo.sm_bg_silo      size=(1626, 2071, 1719) minZ=0  class=StaticMesh
+sm_bg_stack.sm_bg_stack    size=(640, 640, 3400) minZ=-0  class=StaticMesh
+sm_wall_corner.sm_wall_corner size=(101, 101, 419) minZ=-0  class=StaticMesh
+sm_wall_segment.sm_wall_segment size=(90, 412, 396) minZ=-0  class=StaticMesh
+
+== /Game/RobotGame/Art/Props ==
+SM_Bolt_Round.SM_Bolt_Round size=(30, 8, 8) minZ=-4  class=StaticMesh
+SM_Prop_Beacon.SM_Prop_Beacon size=(56, 56, 207) minZ=-0  class=StaticMesh
+SM_Prop_Container.SM_Prop_Container size=(107, 240, 110) minZ=-0  class=StaticMesh
+SM_Prop_Debris.SM_Prop_Debris size=(149, 150, 72) minZ=-0  class=StaticMesh
+SM_Prop_FuelBarrel.SM_Prop_FuelBarrel size=(55, 55, 93) minZ=-0  class=StaticMesh
+SM_Prop_PipeSegment.SM_Prop_PipeSegment size=(72, 260, 72) minZ=-4  class=StaticMesh
+SM_Prop_SalvagePod.SM_Prop_SalvagePod size=(44, 50, 22) minZ=-0  class=StaticMesh
+SM_Prop_ScrapCrate.SM_Prop_ScrapCrate size=(62, 73, 55) minZ=-0  class=StaticMesh
+SM_Prop_Shelf.SM_Prop_Shelf size=(60, 160, 201) minZ=-0  class=StaticMesh
+SM_Prop_SupplyBox.SM_Prop_SupplyBox size=(42, 56, 40) minZ=-0  class=StaticMesh
+SM_Prop_Terminal.SM_Prop_Terminal size=(36, 50, 94) minZ=-0  class=StaticMesh

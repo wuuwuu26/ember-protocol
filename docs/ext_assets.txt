@@ -1,0 +1,57 @@
+SM_Env_Floor           size=(400.0, 400.0, 42.2)  min=(-200.0,-200.0,-30.0)
+SM_Wall_Segment        size=(89.8, 412.0, 396.4)  min=(-29.8,-206.0,-0.0)
+SM_Wall_Corner         size=(101.5, 101.5, 419.5)  min=(-47.5,-47.5,-0.0)
+SM_Env_Pillar          size=(110.0, 110.0, 400.0)  min=(-55.0,-55.0,-0.0)
+SM_Env_Catwalk         size=(126.0, 400.0, 130.0)  min=(-63.0,-200.0,-27.0)
+SM_Prop_Crate          MISSING
+
+== Environment assets ==
+  M_Accent_landmark.M_Accent_landmark
+  M_Accent_prop.M_Accent_prop
+  M_Accent_wall.M_Accent_wall
+  M_AccentDark_landmark.M_AccentDark_landmark
+  M_AccentDark_prop.M_AccentDark_prop
+  M_Copper.M_Copper
+  M_Core_bg.M_Core_bg
+  M_Core_landmark.M_Core_landmark
+  M_Core_prop.M_Core_prop
+  M_Core_wall.M_Core_wall
+  M_Joint.M_Joint
+  M_Steel.M_Steel
+  M_SteelLight.M_SteelLight
+  sm_bg_gantry.sm_bg_gantry
+  sm_bg_silo.sm_bg_silo
+  sm_bg_stack.sm_bg_stack
+  SM_Env_Catwalk.SM_Env_Catwalk
+  SM_Env_Catwalk_LOD1.SM_Env_Catwalk_LOD1
+  SM_Env_Catwalk_LOD2.SM_Env_Catwalk_LOD2
+  SM_Env_Doorframe.SM_Env_Doorframe
+  SM_Env_Doorframe_LOD1.SM_Env_Doorframe_LOD1
+  SM_Env_Doorframe_LOD2.SM_Env_Doorframe_LOD2
+  SM_Env_Floor.SM_Env_Floor
+  SM_Env_Floor_LOD1.SM_Env_Floor_LOD1
+  SM_Env_Floor_LOD2.SM_Env_Floor_LOD2
+  SM_Env_Gantry.SM_Env_Gantry
+  SM_Env_Gantry_LOD1.SM_Env_Gantry_LOD1
+  SM_Env_Gantry_LOD2.SM_Env_Gantry_LOD2
+  SM_Env_Pillar.SM_Env_Pillar
+  SM_Env_Pillar_LOD1.SM_Env_Pillar_LOD1
+  SM_Env_Pillar_LOD2.SM_Env_Pillar_LOD2
+  SM_Env_Piperun.SM_Env_Piperun
+  SM_Env_Piperun_LOD1.SM_Env_Piperun_LOD1
+  SM_Env_Piperun_LOD2.SM_Env_Piperun_LOD2
+  SM_Env_Platform.SM_Env_Platform
+  SM_Env_Platform_LOD1.SM_Env_Platform_LOD1
+  SM_Env_Platform_LOD2.SM_Env_Platform_LOD2
+  SM_Env_SludgePool.SM_Env_SludgePool
+  SM_Env_Stairs.SM_Env_Stairs
+  SM_Env_Stairs_LOD1.SM_Env_Stairs_LOD1
+  SM_Env_Stairs_LOD2.SM_Env_Stairs_LOD2
+  SM_Env_Wall.SM_Env_Wall
+  SM_Env_Wall_LOD1.SM_Env_Wall_LOD1
+  SM_Env_Wall_LOD2.SM_Env_Wall_LOD2
+  SM_Landmark_Lighthouse.SM_Landmark_Lighthouse
+  SM_Landmark_Lighthouse_LOD1.SM_Landmark_Lighthouse_LOD1
+  SM_Landmark_Lighthouse_LOD2.SM_Landmark_Lighthouse_LOD2
+  sm_wall_corner.sm_wall_corner
+  sm_wall_segment.sm_wall_segment

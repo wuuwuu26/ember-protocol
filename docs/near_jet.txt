@@ -1,0 +1,15 @@
+附近 actor 共 14 个
+StaticMeshActor          StaticMeshActor26            (0,400,-12.0) visible=True
+StaticMeshActor          CoolantPipe_0                (178,560,4.0) visible=True
+PointLight               CoolantGlow_0                (178,436,70.0) visible=False
+StaticMeshActor          Splash_FoamRing              (120,300,8.0) visible=True
+StaticMeshActor          Splash_FoamDisc              (120,300,7.7) visible=True
+StaticMeshActor          Splash_SprayCone             (120,300,9.0) visible=True
+StaticMeshActor          Pipe_Riser_CoolantSpill_0    (120,146,78.5) visible=True
+StaticMeshActor          Pipe_Arm_CoolantSpill_0      (120,223,157.0) visible=True
+StaticMeshActor          Pipe_Spout_CoolantSpill_0    (120,300,99.5) visible=True
+StaticMeshActor          Jet_CoolantSpill_0           (120,300,25.0) visible=True
+StaticMeshActor          Pipe_Riser_ToxicFluid_0      (-30,350,77.8) visible=True
+StaticMeshActor          Pipe_Arm_ToxicFluid_0        (-55,350,155.5) visible=True
+StaticMeshActor          Pipe_Spout_ToxicFluid_0      (-79,350,98.0) visible=True
+StaticMeshActor          Jet_ToxicFluid_0             (-79,350,23.5) visible=True

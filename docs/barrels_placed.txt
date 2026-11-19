@@ -1,0 +1,2 @@
+Placed 0 explosive barrels
+BARRELS_DONE

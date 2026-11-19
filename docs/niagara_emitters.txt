@@ -1,0 +1,48 @@
+=== NS_TestA ===
+  class=NiagaraSystem
+  依赖 6 个：
+    /Script/DataHierarchyEditor
+    /Script/Niagara
+    /Script/NiagaraEditor
+    /Niagara/Enums/ENiagaraSystemInactiveMode
+    /Niagara/Enums/ENiagara_EmitterStateOptions
+    /Niagara/Modules/System/SystemState
+  get_num_emitters: False
+  get_emitter_handles: False
+=== NS_TestB ===
+  class=NiagaraSystem
+  依赖 8 个：
+    /Script/DataHierarchyEditor
+    /Script/Niagara
+    /Script/NiagaraEditor
+    /Niagara/ParameterDefinitions/CoreParameters
+    /Niagara/DefaultAssets/DefaultSpriteMaterial
+    /Niagara/Enums/ENiagaraSystemInactiveMode
+    /Niagara/Enums/ENiagara_EmitterStateOptions
+    /Niagara/Modules/System/SystemState
+  get_num_emitters: False
+  get_emitter_handles: False
+=== NS_TestC ===
+  class=NiagaraSystem
+  依赖 8 个：
+    /Script/DataHierarchyEditor
+    /Script/Niagara
+    /Script/NiagaraEditor
+    /Niagara/ParameterDefinitions/CoreParameters
+    /Niagara/DefaultAssets/DefaultSpriteMaterial
+    /Niagara/Enums/ENiagaraSystemInactiveMode
+    /Niagara/Enums/ENiagara_EmitterStateOptions
+    /Niagara/Modules/System/SystemState
+  get_num_emitters: False
+  get_emitter_handles: False
+
+=== NiagaraEditor 子系统 / 脚本库 ===
+  NiagaraBakerFunctionLibrary
+  NiagaraClipboardEditorScriptingUtilities
+  NiagaraDIRigidMeshCollisionFunctionLibrary
+  NiagaraDataChannelLibrary
+  NiagaraDataInterfaceArrayFunctionLibrary
+  NiagaraFunctionLibrary
+  NiagaraScriptLibraryVisibility
+  NiagaraSimCacheFunctionLibrary
+  NiagaraWaterFunctionLibrary

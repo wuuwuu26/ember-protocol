@@ -1,0 +1,105 @@
+﻿	Collision->OnComponentBeginOverlap.AddDynamic(this, &ARobotProjectile::OnOverlap);
+
+	// 蓝图 CDO 会覆盖构造函数里设过的碰撞响应（本项目踩过多次），
+	// 所以在 BeginPlay 再设一遍 —— 这里才是真正决定运行时行为的时刻。
+	Collision->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
+	Collision->SetCollisionResponseToChannel(ECC_Visibility, ECR_Ignore);
+	Collision->SetGenerateOverlapEvents(true);
+
+	// 弹体材质：换掉引擎默认的棋盘格，用本体的"核心"材质（自发光感）。
+	//
+	// ★ 2026-10-25：这里只是**兜底**（万一有代码路径没调 InitProjectile）。
+	//   真正的阵营配色在 InitProjectile 里：玩家 M_Core_light 青白、
+	//   敌人 M_Core_enemy_guard 橙金。SpawnActor 会先跑 BeginPlay，
+	//   再调用 InitProjectile，所以那边的 SetMaterial 一定覆盖这里。
+	//
+	// 这里用 SetMaterial 是安全的：UE5 的 UMeshComponent::SetMaterial 在
+	// 索引越界时会**自动扩容** OverrideMaterials 数组（见 MeshComponent.cpp
+	// 里 "Grow the array if the new index is too large" 那段），
+	// 所以不需要事先存在材质槽。
+	// （程序化动画那边当初失败，是因为上界写成了 Min(源槽数, 本组件槽数)，
+	//   而本组件槽数是 0，循环一次都没进 —— 不是 SetMaterial 的问题。）
+	if (Mesh)
+	{
+		if (UMaterialInterface* CoreMat = LoadObject<UMaterialInterface>(nullptr,
+				TEXT("/Game/RobotGame/Art/Materials/M_Bolt_Player.M_Bolt_Player")))
+		{
+			Mesh->SetMaterial(0, CoreMat);
+		}
+
+		// ★ 蓝本 BP_Projectile_C 的 CDO 会把构造函里设的缩放原样存下来，
+		//   构造函数里改成 0.50/0.045 对**已经存在的蓝图**不生效 ——
+		//   实测弹丸在画面里还是 62cm 长的紫色药丸（贴着镜头飞过去时
+		//   能占掉 1/4 屏幕）。缩放必须在运行时再设一次。
+		Mesh->SetRelativeScale3D(FVector(0.50f, 0.055f, 0.055f));
+	}
+}
+
+void ARobotProjectile::Tick(float DeltaSeconds)
+{
+	Super::Tick(DeltaSeconds);
+
+	if (FlashRemaining > 0.f && MuzzleLight)
+	{
+		FlashRemaining -= DeltaSeconds;
+		const float T = FMath::Clamp(
+			FlashRemaining / FMath::Max(FlashDuration, 0.001f), 0.f, 1.f);
+		// 平方衰减：前段亮、后段收得干脆，更像"一闪"
+		MuzzleLight->SetIntensity(FlashIntensity * T * T);
+	}
+}
+
+void ARobotProjectile::InitProjectile(float InDamage, float InSpeed,
+                                      AActor* InInstigatorActor)
+{
+	Damage = InDamage;
+	if (Movement)
+	{
+		Movement->InitialSpeed = InSpeed;
+		Movement->MaxSpeed = InSpeed;
+		Movement->Velocity = GetActorForwardVector() * InSpeed;
+	}
+	if (InInstigatorActor)
+	{
+		SetInstigator(Cast<APawn>(InInstigatorActor));
+		SetOwner(InInstigatorActor);
+		// 不与自己碰撞，否则会在枪口处立刻自爆
+		Collision->IgnoreActorWhenMoving(InInstigatorActor, true);
+	}
+
+	// 枪口闪光：颜色按阵营区分，一眼能看出这发是谁打的
+	if (MuzzleLight)
+	{
+		const APawn* InstigatorPawn = Cast<APawn>(InInstigatorActor);
+		const bool bFromPlayer = InstigatorPawn && InstigatorPawn->IsPlayerControlled();
+		MuzzleLight->SetLightColor(bFromPlayer
+			? FLinearColor(0.35f, 0.85f, 1.00f)     // 玩家：青蓝
+			: FLinearColor(1.00f, 0.45f, 0.15f));   // 敌人：橙红
+		MuzzleLight->SetIntensity(FlashIntensity);
+
+		// ── 弹体材质也按阵营分 ──
+		// 以前所有弹丸都用 M_Core_medium（机体核心紫），敌我弹道长得一模一样，
+		// 混战里根本判断不了"这一发从哪来"。换成**已经存在**的核心材质：
+		// 玩家 M_Core_light（自发光青白）/ 敌人 M_Core_enemy_guard（橙金），
+		// 与枪口闪光同色系；高自发光在夜景里会被泛光拖成一条曳光线。
+		if (Mesh)
+		{
+			ApplyFactionBoltMaterial(Mesh, bFromPlayer);
+
+			// ★ 蓝图 BP_Projectile_C 的 CDO 把构造函里设的缩放原样存下来了，
+			//   改构造函数对**已存在的蓝图**不生效。实测改完还是 62cm 的
+			//   紫色药丸（贴着镜头飞过时占掉近 1/4 屏幕），所以运行时再设一次。
+			Mesh->SetRelativeScale3D(FVector(0.50f, 0.055f, 0.055f));
+
+			// 只记录前 6 发，确认阵营材质/尺寸真的落到了运行时对象上。
+			static int32 BoltLogCount = 0;
+			if (BoltLogCount < 6)
+			{
+				++BoltLogCount;
+				UE_LOG(LogTemp, Warning, TEXT("[弹丸] 玩家=%d 材质=%s 缩放=%s"),
+					bFromPlayer ? 1 : 0,
+					Mesh->GetMaterial(0) ? *Mesh->GetMaterial(0)->GetName() : TEXT("无"),
+					*Mesh->GetRelativeScale3D().ToString());
+			}
+		}
+	}

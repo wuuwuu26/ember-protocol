@@ -1,0 +1,8 @@
+TextureCoordinate 节点 2 个
+  MaterialExpressionTextureCoordinate_0  u=0.50 v=0.50
+    已是目标值，跳过
+  MaterialExpressionTextureCoordinate_1  u=0.50 v=0.50
+    已是目标值，跳过
+修改 0 个节点，材质已重编译保存
+复核 MaterialExpressionTextureCoordinate_0 u=0.50 v=0.50
+复核 MaterialExpressionTextureCoordinate_1 u=0.50 v=0.50

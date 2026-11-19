@@ -1,0 +1,16 @@
+调优 /Game/RobotGame/Art/Environment/M_SteelLight
+  scalar Roughness = 0.46
+  scalar Shininess = 24.0
+  scalar Metallic = 0.12
+  vector DiffuseColor = (0.065, 0.072, 0.082, 1.0)
+  vector BaseTint = (0.075, 0.08, 0.09, 1.0)
+  vector WearTint = (0.13, 0.138, 0.15, 1.0)
+  vector SpecularColor = (0.02, 0.022, 0.025, 1.0)
+调优 /Game/RobotGame/Art/Environment/M_Steel
+  scalar Roughness = 0.58
+  scalar Shininess = 20.0
+  vector DiffuseColor = (0.04, 0.045, 0.052, 1.0)
+  vector BaseTint = (0.048, 0.052, 0.06, 1.0)
+  vector WearTint = (0.085, 0.092, 0.105, 1.0)
+  vector SpecularColor = (0.012, 0.014, 0.016, 1.0)
+FLOOR_TUNE_DONE

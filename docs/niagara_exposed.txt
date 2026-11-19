@@ -1,0 +1,28 @@
+== NS_TestB ==
+class=NiagaraSystem
+属性/方法 31 个（含参数相关）：
+
+== 参数读取尝试 ==
+  get_exposed_parameters: False
+  exposed_parameters: False
+  get_editor_property: True
+  get_user_exposed_parameters: False
+
+== get_editor_property 试探 ==
+  exposed_parameters           err
+  emitter_handles              err
+  emitters                     err
+  system_spawn_script          err
+  user_exposed_parameters      err
+  effect_type                  = None
+  b_fixed_bounds               err
+  fixed_bounds                 = <Struct 'Box' (0x000002250538BB90) {min: {x: -100.000000, y: -100.0000
+
+== NiagaraFunctionLibrary 方法 ==
+  override_system_user_variable_skeletal_mesh_component
+  override_system_user_variable_static_mesh
+  override_system_user_variable_static_mesh_component
+  spawn_system_at_location
+  spawn_system_at_location_with_params
+  spawn_system_attached
+  spawn_system_attached_with_params

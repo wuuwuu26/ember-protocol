@@ -1,0 +1,55 @@
+ComponentMask 属性：
+  r -> False
+  g -> False
+  b -> False
+  a -> False
+
+MaterialEditingLibrary 方法：
+  connect_material_expressions
+  connect_material_property
+  create_material_expression
+  create_material_expression_in_function
+  delete_all_material_expressions
+  delete_all_material_expressions_in_function
+  delete_material_expression
+  delete_material_expression_in_function
+  delete_unused_expressions
+  disconnect_material_expressions
+  disconnect_material_property
+  duplicate_material_expression
+  get_input_node_output_name_for_material_expression
+  get_inputs_for_material_expression
+  get_inputs_for_material_function_expression
+  get_material_expression_input_names
+  get_material_expression_input_types
+  get_material_expression_node_position
+  get_material_expression_output_names
+  get_material_expressions
+  get_material_function_expressions
+  get_num_material_expressions
+  get_num_material_expressions_in_function
+  layout_material_expressions
+  layout_material_function_expressions
+  recompile_material
+
+MaterialProperty 枚举：
+  <MaterialProperty.MP_EMISSIVE_COLOR: 0>
+  <MaterialProperty.MP_OPACITY: 1>
+  <MaterialProperty.MP_OPACITY_MASK: 2>
+  <MaterialProperty.MP_BASE_COLOR: 5>
+  <MaterialProperty.MP_METALLIC: 6>
+  <MaterialProperty.MP_SPECULAR: 7>
+  <MaterialProperty.MP_ROUGHNESS: 8>
+  <MaterialProperty.MP_ANISOTROPY: 9>
+  <MaterialProperty.MP_NORMAL: 10>
+  <MaterialProperty.MP_TANGENT: 11>
+  <MaterialProperty.MP_WORLD_POSITION_OFFSET: 12>
+  <MaterialProperty.MP_SUBSURFACE_COLOR: 15>
+  <MaterialProperty.MP_AMBIENT_OCCLUSION: 18>
+  <MaterialProperty.MP_REFRACTION: 19>
+  <MaterialProperty.MP_FRONT_MATERIAL: 30>
+  <MaterialProperty.MP_MATERIAL_ATTRIBUTES: 33>
+  <MaterialProperty.MP_MAX: 35>
+  <MaterialProperty.MP_LAST_CUSTOMIZED_U_VS: 27>
+
+TextureSample 引脚相关属性：

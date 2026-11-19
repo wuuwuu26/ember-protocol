@@ -1,0 +1,90 @@
+=== SK_Enemy_Guard (slots=9) ===
+  [0] slot=M_Steel mat=/Game/RobotGame/Art/Characters/M_Steel.M_Steel
+       diffuse=<Struct 'LinearColor' (0x00000232395761A0) {r: 0.082000, g: 0.092000, b: 0.108000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x000002323957C4E0) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [1] slot=M_Accent_enemy_guard mat=/Game/RobotGame/Art/Characters/M_Accent_enemy_guard.M_Accent_enemy_guard
+       diffuse=<Struct 'LinearColor' (0x000002323957C0E0) {r: 0.780000, g: 0.440000, b: 0.300000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239576560) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [2] slot=M_Joint mat=/Game/RobotGame/Art/Characters/M_Joint.M_Joint
+       diffuse=<Struct 'LinearColor' (0x0000023239576320) {r: 0.030000, g: 0.033000, b: 0.040000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x000002323957CA20) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [3] slot=M_Core_enemy_guard mat=/Game/RobotGame/Art/Characters/M_Core_enemy_guard.M_Core_enemy_guard
+       diffuse=<Struct 'LinearColor' (0x00000232395769A0) {r: 0.050000, g: 0.050000, b: 0.080000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x000002323957C8A0) {r: 1.700000, g: 0.952000, b: 0.544000, a: 1.000000}>
+  [4] slot=M_Copper mat=/Game/RobotGame/Art/Characters/M_Copper.M_Copper
+       diffuse=<Struct 'LinearColor' (0x0000023239576D20) {r: 0.340000, g: 0.200000, b: 0.100000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239576A20) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [5] slot=M_Visor_enemy_guard mat=/Game/RobotGame/Art/Characters/M_Visor_enemy_guard.M_Visor_enemy_guard
+       diffuse=<Struct 'LinearColor' (0x0000023239579C20) {r: 0.040000, g: 0.050000, b: 0.070000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239577520) {r: 1.300000, g: 0.728000, b: 0.416000, a: 1.000000}>
+  [6] slot=M_SteelLight mat=/Game/RobotGame/Art/Characters/M_SteelLight.M_SteelLight
+       diffuse=<Struct 'LinearColor' (0x00000232395763A0) {r: 0.145000, g: 0.158000, b: 0.176000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239575E20) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [7] slot=M_AccentDark_enemy_guard mat=/Game/RobotGame/Art/Characters/M_AccentDark_enemy_guard.M_AccentDark_enemy_guard
+       diffuse=<Struct 'LinearColor' (0x0000023239570BA0) {r: 0.327600, g: 0.184800, b: 0.126000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239570E20) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [8] slot=M_Frame mat=/Game/RobotGame/Art/Characters/M_Frame.M_Frame
+       diffuse=<Struct 'LinearColor' (0x00000232395709A0) {r: 0.038000, g: 0.040000, b: 0.046000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239570260) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+=== SK_Enemy_Patrol (slots=8) ===
+  [0] slot=M_Steel mat=/Game/RobotGame/Art/Characters/M_Steel.M_Steel
+       diffuse=<Struct 'LinearColor' (0x00000232395724E0) {r: 0.082000, g: 0.092000, b: 0.108000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x00000232395715A0) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [1] slot=M_SteelLight mat=/Game/RobotGame/Art/Characters/M_SteelLight.M_SteelLight
+       diffuse=<Struct 'LinearColor' (0x0000023239570C20) {r: 0.145000, g: 0.158000, b: 0.176000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239572F60) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [2] slot=M_Accent_enemy_patrol mat=/Game/RobotGame/Art/Characters/M_Accent_enemy_patrol.M_Accent_enemy_patrol
+       diffuse=<Struct 'LinearColor' (0x0000023239574560) {r: 0.320000, g: 0.760000, b: 0.860000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x00000232395744E0) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [3] slot=M_Copper mat=/Game/RobotGame/Art/Characters/M_Copper.M_Copper
+       diffuse=<Struct 'LinearColor' (0x0000023239574D20) {r: 0.340000, g: 0.200000, b: 0.100000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x000002323957C120) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [4] slot=M_Visor_enemy_patrol mat=/Game/RobotGame/Art/Characters/M_Visor_enemy_patrol.M_Visor_enemy_patrol
+       diffuse=<Struct 'LinearColor' (0x00000232395727E0) {r: 0.040000, g: 0.050000, b: 0.070000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x00000232395727E0) {r: 0.455000, g: 1.235000, b: 1.235000, a: 1.000000}>
+  [5] slot=M_Core_enemy_patrol mat=/Game/RobotGame/Art/Characters/M_Core_enemy_patrol.M_Core_enemy_patrol
+       diffuse=<Struct 'LinearColor' (0x000002323957C120) {r: 0.050000, g: 0.050000, b: 0.080000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239572F60) {r: 0.595000, g: 1.615000, b: 1.615000, a: 1.000000}>
+  [6] slot=M_Joint mat=/Game/RobotGame/Art/Characters/M_Joint.M_Joint
+       diffuse=<Struct 'LinearColor' (0x00000232395744E0) {r: 0.030000, g: 0.033000, b: 0.040000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239575020) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [7] slot=M_Frame mat=/Game/RobotGame/Art/Characters/M_Frame.M_Frame
+       diffuse=<Struct 'LinearColor' (0x0000023239572D60) {r: 0.038000, g: 0.040000, b: 0.046000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x00000232395757E0) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+=== SK_Enemy_Hauler (slots=9) ===
+  [0] slot=M_Steel mat=/Game/RobotGame/Art/Characters/M_Steel.M_Steel
+       diffuse=<Struct 'LinearColor' (0x0000023239572D60) {r: 0.082000, g: 0.092000, b: 0.108000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239574560) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [1] slot=M_SteelLight mat=/Game/RobotGame/Art/Characters/M_SteelLight.M_SteelLight
+       diffuse=<Struct 'LinearColor' (0x00000232395744E0) {r: 0.145000, g: 0.158000, b: 0.176000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239575020) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [2] slot=M_Visor_enemy_hauler mat=/Game/RobotGame/Art/Characters/M_Visor_enemy_hauler.M_Visor_enemy_hauler
+       diffuse=<Struct 'LinearColor' (0x0000023239573560) {r: 0.040000, g: 0.050000, b: 0.070000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239574560) {r: 1.300000, g: 0.936000, b: 0.390000, a: 1.000000}>
+  [3] slot=M_Joint mat=/Game/RobotGame/Art/Characters/M_Joint.M_Joint
+       diffuse=<Struct 'LinearColor' (0x0000023239576220) {r: 0.030000, g: 0.033000, b: 0.040000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239575460) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [4] slot=M_Accent_enemy_hauler mat=/Game/RobotGame/Art/Characters/M_Accent_enemy_hauler.M_Accent_enemy_hauler
+       diffuse=<Struct 'LinearColor' (0x0000023239575D60) {r: 0.720000, g: 0.520000, b: 0.240000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239575E20) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [5] slot=M_Copper mat=/Game/RobotGame/Art/Characters/M_Copper.M_Copper
+       diffuse=<Struct 'LinearColor' (0x000002323957C9E0) {r: 0.340000, g: 0.200000, b: 0.100000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x00000232395769A0) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [6] slot=M_Core_enemy_hauler mat=/Game/RobotGame/Art/Characters/M_Core_enemy_hauler.M_Core_enemy_hauler
+       diffuse=<Struct 'LinearColor' (0x000002323957CA20) {r: 0.050000, g: 0.050000, b: 0.080000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x00000232395762A0) {r: 1.700000, g: 1.224000, b: 0.510000, a: 1.000000}>
+  [7] slot=M_Frame mat=/Game/RobotGame/Art/Characters/M_Frame.M_Frame
+       diffuse=<Struct 'LinearColor' (0x00000232395761E0) {r: 0.038000, g: 0.040000, b: 0.046000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x000002323957C6A0) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [8] slot=M_Rubber mat=/Game/RobotGame/Art/Characters/M_Rubber.M_Rubber
+       diffuse=<Struct 'LinearColor' (0x0000023239576AA0) {r: 0.020000, g: 0.021000, b: 0.024000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x00000232395765E0) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+=== SK_Enemy_Gardener (slots=8) ===
+  [0] slot=M_Steel mat=/Game/RobotGame/Art/Characters/M_Steel.M_Steel
+       diffuse=<Struct 'LinearColor' (0x00000232395757E0) {r: 0.082000, g: 0.092000, b: 0.108000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239572D60) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [1] slot=M_Accent_enemy_gardener mat=/Game/RobotGame/Art/Characters/M_Accent_enemy_gardener.M_Accent_enemy_gardener
+       diffuse=<Struct 'LinearColor' (0x00000232395734E0) {r: 0.420000, g: 0.720000, b: 0.380000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239574D20) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [2] slot=M_SteelLight mat=/Game/RobotGame/Art/Characters/M_SteelLight.M_SteelLight
+       diffuse=<Struct 'LinearColor' (0x0000023239572BE0) {r: 0.145000, g: 0.158000, b: 0.176000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x00000232395734E0) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [3] slot=M_Core_enemy_gardener mat=/Game/RobotGame/Art/Characters/M_Core_enemy_gardener.M_Core_enemy_gardener
+       diffuse=<Struct 'LinearColor' (0x0000023239572D60) {r: 0.050000, g: 0.050000, b: 0.080000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239576DE0) {r: 0.935000, g: 1.615000, b: 0.850000, a: 1.000000}>
+  [4] slot=M_Joint mat=/Game/RobotGame/Art/Characters/M_Joint.M_Joint
+       diffuse=<Struct 'LinearColor' (0x00000232395715A0) {r: 0.030000, g: 0.033000, b: 0.040000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239575D60) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [5] slot=M_Visor_enemy_gardener mat=/Game/RobotGame/Art/Characters/M_Visor_enemy_gardener.M_Visor_enemy_gardener
+       diffuse=<Struct 'LinearColor' (0x000002323957C9E0) {r: 0.040000, g: 0.050000, b: 0.070000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239577260) {r: 0.715000, g: 1.235000, b: 0.650000, a: 1.000000}>
+  [6] slot=M_Copper mat=/Game/RobotGame/Art/Characters/M_Copper.M_Copper
+       diffuse=<Struct 'LinearColor' (0x000002323957CBA0) {r: 0.340000, g: 0.200000, b: 0.100000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239577DE0) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [7] slot=M_Frame mat=/Game/RobotGame/Art/Characters/M_Frame.M_Frame
+       diffuse=<Struct 'LinearColor' (0x0000023239577CE0) {r: 0.038000, g: 0.040000, b: 0.046000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239577520) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+=== SK_Enemy_Colossus (slots=8) ===
+  [0] slot=M_Steel mat=/Game/RobotGame/Art/Characters/M_Steel.M_Steel
+       diffuse=<Struct 'LinearColor' (0x0000023239576EA0) {r: 0.082000, g: 0.092000, b: 0.108000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239574720) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [1] slot=M_SteelLight mat=/Game/RobotGame/Art/Characters/M_SteelLight.M_SteelLight
+       diffuse=<Struct 'LinearColor' (0x000002323957CAE0) {r: 0.145000, g: 0.158000, b: 0.176000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x000002323957CBA0) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [2] slot=M_Joint mat=/Game/RobotGame/Art/Characters/M_Joint.M_Joint
+       diffuse=<Struct 'LinearColor' (0x0000023239577CE0) {r: 0.030000, g: 0.033000, b: 0.040000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x00000232395769A0) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [3] slot=M_Core_enemy_colossus mat=/Game/RobotGame/Art/Characters/M_Core_enemy_colossus.M_Core_enemy_colossus
+       diffuse=<Struct 'LinearColor' (0x000002323957CA20) {r: 0.050000, g: 0.050000, b: 0.080000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x00000232395762A0) {r: 1.700000, g: 0.714000, b: 0.544000, a: 1.000000}>
+  [4] slot=M_Copper mat=/Game/RobotGame/Art/Characters/M_Copper.M_Copper
+       diffuse=<Struct 'LinearColor' (0x00000232395760A0) {r: 0.340000, g: 0.200000, b: 0.100000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x00000232395762E0) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [5] slot=M_Visor_enemy_colossus mat=/Game/RobotGame/Art/Characters/M_Visor_enemy_colossus.M_Visor_enemy_colossus
+       diffuse=<Struct 'LinearColor' (0x00000232395765E0) {r: 0.040000, g: 0.050000, b: 0.070000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239576260) {r: 1.300000, g: 0.546000, b: 0.416000, a: 1.000000}>
+  [6] slot=M_Frame mat=/Game/RobotGame/Art/Characters/M_Frame.M_Frame
+       diffuse=<Struct 'LinearColor' (0x0000023239571060) {r: 0.038000, g: 0.040000, b: 0.046000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239576460) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+  [7] slot=M_Accent_enemy_colossus mat=/Game/RobotGame/Art/Characters/M_Accent_enemy_colossus.M_Accent_enemy_colossus
+       diffuse=<Struct 'LinearColor' (0x000002323957C160) {r: 0.620000, g: 0.340000, b: 0.300000, a: 1.000000}> emissive=<Struct 'LinearColor' (0x0000023239576A60) {r: 0.000000, g: 0.000000, b: 0.000000, a: 1.000000}>
+ENEMY_MATS_DONE

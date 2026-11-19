@@ -1,0 +1,5 @@
+mesh=SM_mech_torso_wreck
+slot0 mat=mech_torso_wreck_texgen_fixed_material_0
+  mech_torso_wreck_texgen_fixed_material_0.mech_torso_wreck_texgen_fixed_material_0  [Material]
+  mech_torso_wreck_texgen_fixed_texture_0.mech_torso_wreck_texgen_fixed_texture_0  [Texture2D] 1024x1024
+  SM_mech_torso_wreck.SM_mech_torso_wreck  [StaticMesh]
