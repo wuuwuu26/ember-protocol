@@ -1,4 +1,4 @@
-# Ember Protocol · 余火协议
+# Ember Protocol
 
 > [简体中文](./README_CN.md) · **English**
 
