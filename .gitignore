@@ -22,6 +22,14 @@ tools/w64devkit/
 tools/flipfluids_src/
 tools/cosmos_src/
 
+# ---- 第三方商业资产（禁止再分发，许可证整改已移除，禁止重新加入）----
+art_src/cosmos/
+art_src/cosmos_probe/
+ue/Content/RobotGame/Art/Props/Cosmos/
+tools/cosmos_*.py
+docs/cosmos_*.txt
+docs/cosmos_shots/
+
 # ---- Python 缓存 ----
 __pycache__/
 *.py[cod]

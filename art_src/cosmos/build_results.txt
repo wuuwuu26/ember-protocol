@@ -1,1 +1,0 @@
-met-barrel01-set01	OK	13.6MB  tex=3->(1024, 1024)  58s

@@ -8,7 +8,7 @@
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![Blender](https://img.shields.io/badge/Blender-5.3-E87D1F?style=flat-square&logo=blender&logoColor=white)](https://www.blender.org/)
 [![Hunyuan3D](https://img.shields.io/badge/Hunyuan3D-2.x-6C5CE7?style=flat-square)](https://github.com/Tencent/Hunyuan3D-2)
-[![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)](./LICENSE)
+[![License: source code MIT](https://img.shields.io/badge/license-source%20MIT-lightgrey?style=flat-square)](./LICENSE) · [![Third-party notices](https://img.shields.io/badge/assets-third--party%20notices-orange?style=flat-square)](./THIRD_PARTY_NOTICES.md)
 
 ---
 
@@ -142,4 +142,6 @@ robot_game/
 
 This is a personal learning and prototype project demonstrating an AI automated asset workflow in indie game development. The UE content (`.uasset`) are binary assets requiring UE 5.8 to open; a browser prototype is provided in `prototype/` as an alternative experience.
 
-Third-party assets (PolyHaven / Quixel / Cosmos / Hunyuan3D / ComfyUI / Unreal Engine, etc.) remain the property of their respective owners — see the relevant lists in `docs/`.
+### Licensing
+
+The [MIT License](./LICENSE) covers only the original source code and works authored by this project. Third-party assets are governed by their own terms — see [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md) for a per-category breakdown (CC0 textures, Hunyuan3D outputs with use restrictions, Unreal Engine EULA, etc.). Commercial third-party models whose redistribution is not permitted (e.g. Cosmos/Leartes) have been removed from this repository.

@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 余火协议项目作者
+Copyright (c) 2026 Ember Protocol project author
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,5 +22,19 @@ SOFTWARE.
 
 ---
 
-注意：本仓库中的第三方资产（PolyHaven / Quixel / Cosmos / Hunyuan3D /
-ComfyUI / Unreal Engine 等）版权归各自所有者所有，不受本 MIT 许可证覆盖。
+SCOPE / 适用范围
+================
+
+This MIT License applies ONLY to the original source code, build scripts,
+design documents and other works authored by this project ("the Software").
+
+本 MIT 许可证仅适用于本项目作者原创的源代码、构建脚本、设计文档等作品。
+
+It does NOT apply to third-party assets and dependencies (textures, 3D models,
+engine content, AI model weights, generated outputs subject to their own
+terms, etc.). Those are governed by their respective licenses — see
+THIRD_PARTY_NOTICES.md for a per-category breakdown.
+
+本许可证不适用于第三方资产与依赖（贴图、3D 模型、引擎内容、AI 模型权重、
+受各自条款约束的生成物等），它们受各自许可证约束，分类说明见
+THIRD_PARTY_NOTICES.md。

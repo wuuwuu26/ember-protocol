@@ -8,7 +8,7 @@
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![Blender](https://img.shields.io/badge/Blender-5.3-E87D1F?style=flat-square&logo=blender&logoColor=white)](https://www.blender.org/)
 [![Hunyuan3D](https://img.shields.io/badge/Hunyuan3D-2.x-6C5CE7?style=flat-square)](https://github.com/Tencent/Hunyuan3D-2)
-[![License](https://img.shields.io/badge/license-个人项目-lightgrey?style=flat-square)](./LICENSE)
+[![License: 源码 MIT](https://img.shields.io/badge/license-源码%20MIT-lightgrey?style=flat-square)](./LICENSE) · [![第三方资产说明](https://img.shields.io/badge/assets-第三方资产说明-orange?style=flat-square)](./THIRD_PARTY_NOTICES.md)
 
 ---
 
@@ -142,4 +142,6 @@ robot_game/
 
 本项目是个人学习与原型验证项目，用于展示 AI 自动化资产工作流在独立游戏开发中的实践。UE 工程内容（`.uasset`）为二进制资产，需要用 UE 5.8 打开；无法在浏览器直接运行的部分已提供 `prototype/` 原型作为替代体验。
 
-第三方资产（PolyHaven / Quixel / Cosmos 等）的版权归各自所有者所有，见 `docs/` 内相关清单。
+### 许可证说明
+
+[MIT 许可证](./LICENSE) 仅覆盖本项目作者原创的源代码与作品。第三方资产受各自条款约束，分类说明见 [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md)（CC0 贴图、带使用限制的 Hunyuan3D 生成物、Unreal Engine EULA 等）。不允许再分发的第三方商业模型（如 Cosmos/Leartes）已从本仓库移除。
