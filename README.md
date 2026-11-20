@@ -140,6 +140,38 @@ robot_game/
 
 ---
 
+## Documentation / 文档索引
+
+Every Chinese document has a complete English counterpart. Each file links to the other language in its header. All written documents (design docs, iteration reports, asset lists, UE guides and the browser prototype) are bilingual.
+
+每份中文文档都有完整英文版，各文件顶部均有语言互链。所有书面文档（设计文档、迭代报告、资产清单、UE 指南、浏览器原型）均为双语。
+
+| 中文 / Chinese | English |
+|---|---|
+| [制作计划](./docs/余火协议_UE5制作计划.md) | [Production Plan](./docs/production_plan.md) |
+| [制作计划（可视化）](./docs/余火协议_UE5制作计划.html) | [Production Plan (visual)](./docs/production_plan.html) |
+| [AI自动化资产工作流](./docs/AI自动化资产工作流.md) | [AI Asset Pipeline](./docs/ai_asset_pipeline.md) |
+| [资产清单](./assets/资产清单.md) | [Asset List](./assets/asset_list.md) |
+| [迭代报告 10-19](./docs/迭代报告_2026-10-19.md) | [Iteration Report 10-19](./docs/iteration_report_2026-10-19.md) |
+| [迭代报告 10-23](./docs/迭代报告_2026-10-23.md) | [Iteration Report 10-23](./docs/iteration_report_2026-10-23.md) |
+| [迭代报告 10-23b 高级建模](./docs/迭代报告_2026-10-23b_高级建模.md) | [Iteration Report 10-23b](./docs/iteration_report_2026-10-23b.md) |
+| [迭代报告 10-23c 缺陷修复](./docs/迭代报告_2026-10-23c_缺陷修复.md) | [Iteration Report 10-23c](./docs/iteration_report_2026-10-23c.md) |
+| [迭代报告 10-23d 更换4K](./docs/迭代报告_2026-10-23d_纹理4K.md) | [Iteration Report 10-23d](./docs/iteration_report_2026-10-23d.md) |
+| [迭代报告 10-23e 全局换4K](./docs/迭代报告_2026-10-23e_全场景4K.md) | [Iteration Report 10-23e](./docs/iteration_report_2026-10-23e.md) |
+| [迭代报告 10-23f UV修复](./docs/迭代报告_2026-10-23f_UV修复.md) | [Iteration Report 10-23f](./docs/iteration_report_2026-10-23f.md) |
+| [迭代报告 10-25](./docs/迭代报告_2026-10-25.md) | [Iteration Report 10-25](./docs/iteration_report_2026-10-25.md) |
+| [迭代报告 60-119](./docs/迭代报告_2026-10-31_第六十至一百一十九轮.md) | [Iteration Report 60-119](./docs/iteration_report_60-119.md) |
+| [Quixel 领取清单](./docs/Quixel_领取清单.md) | [Quixel Claim List](./docs/quixel_claim_list.md) |
+| [UE 工程说明](./ue/README.md) | [UE Project README](./ue/README_en.md) |
+| [环境搭建](./ue/环境搭建.md) | [Environment Setup](./ue/environment_setup.md) |
+| [编译与运行](./ue/编译与运行.md) | [Build and Run](./ue/build_and_run.md) |
+| [开发进度报告](./ue/开发进度报告.md) | [Development Progress Report](./ue/development_progress_report.md) |
+| [首次导入步骤](./ue/首次导入步骤.md) | [First Import Steps](./ue/first_import_steps.md) |
+| [Blender 管线说明](./tools/blender/README.md) | [Blender Pipeline](./tools/blender/README_en.md) |
+| [核心循环原型](./prototype/core_loop_prototype.html) | [Core Loop Prototype](./prototype/core_loop_prototype_en.html) |
+
+---
+
 ## 📌 Notes
 
 This is a personal learning and prototype project demonstrating an AI automated asset workflow in indie game development. The UE content (`.uasset`) are binary assets requiring UE 5.8 to open; a browser prototype is provided in `prototype/` as an alternative experience.

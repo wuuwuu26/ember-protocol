@@ -1,3 +1,4 @@
+> 语言: **简体中文** | [English](./README_en.md)
 # Blender 程序化建模管线
 
 用 Blender 的 Python API 无头生成机体模型，输出 UE5 可直接导入的资产。

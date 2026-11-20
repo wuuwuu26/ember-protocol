@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- Language: English | 简体中文: core_loop_prototype.html -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Ember Protocol · Core Loop Prototype v0.1</title>
+<style>
+  html,body{margin:0;padding:0;overflow:hidden;background:#0f1115;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    color:#e6e9ef;-webkit-font-smoothing:antialiased;user-select:none}
+  canvas{display:block;position:fixed;inset:0;cursor:crosshair}
+
+  .panel{position:fixed;background:rgba(23,26,33,.88);border:1px solid #272c37;
+    border-radius:10px;padding:13px 15px;backdrop-filter:blur(8px);font-size:12.5px;line-height:1.5}
+
+  #hudL{top:16px;left:16px;width:236px}
+  #hudR{top:16px;right:16px;width:190px}
+
+  .loName{font-size:14.5px;font-weight:600;color:#e8a33d;margin-bottom:10px;letter-spacing:.02em}
+  .loName small{color:#6b7383;font-weight:400;font-size:11.5px;letter-spacing:0}
+
+  .bar{margin-bottom:8px}
+  .bar .lbl{display:flex;justify-content:space-between;font-size:11px;color:#9aa3b2;margin-bottom:3px}
+  .bar .track{height:6px;background:#1d2129;border-radius:3px;overflow:hidden;position:relative}
+  .bar .fill{height:100%;border-radius:3px;transition:width .1s linear}
+  .f-hp{background:#4ec9b0}
+  .f-heat{background:#e8a33d}
+  .f-power{background:#5b9bd5}
+
+  .overheat{color:#e06c6c;font-weight:600;font-size:11px}
+
+  .stats{margin-top:11px;padding-top:10px;border-top:1px solid #272c37;display:grid;
+    grid-template-columns:1fr 1fr 1fr;gap:7px}
+  .stat{text-align:center}
+  .stat .v{font-size:14px;font-weight:600;color:#e6e9ef;font-variant-numeric:tabular-nums}
+  .stat .k{font-size:10px;color:#6b7383;margin-top:1px}
+
+  .row{display:flex;justify-content:space-between;margin-bottom:5px;color:#9aa3b2}
+  .row b{color:#e6e9ef;font-weight:600;font-variant-numeric:tabular-nums}
+
+  .logTitle{font-size:10.5px;color:#6b7383;letter-spacing:.08em;margin:11px 0 7px;
+    padding-top:10px;border-top:1px solid #272c37}
+  .logRow{display:flex;justify-content:space-between;font-size:12px;color:#9aa3b2;margin-bottom:4px}
+  .logRow b{color:#e8a33d;font-weight:600;font-variant-numeric:tabular-nums}
+
+  #hint{position:fixed;bottom:14px;left:16px;font-size:11.5px;color:#6b7383;line-height:1.7}
+  #hint kbd{background:#1d2129;border:1px solid #272c37;border-radius:4px;
+    padding:1px 6px;color:#9aa3b2;font-family:inherit;font-size:11px;margin-right:2px}
+
+  #overlay{position:fixed;inset:0;background:rgba(15,17,21,.94);display:flex;
+    align-items:center;justify-content:center;z-index:10;backdrop-filter:blur(4px)}
+  #overlay.hide{display:none}
+  .ov{max-width:620px;padding:40px 44px;text-align:center}
+  .ov .kick{color:#e8a33d;font-size:12px;letter-spacing:.14em;margin-bottom:12px}
+  .ov h1{font-size:27px;font-weight:650;margin:0 0 8px;letter-spacing:-.01em}
+  .ov .sub{color:#9aa3b2;font-size:14px;margin-bottom:26px;line-height:1.7}
+  .qbox{text-align:left;background:#171a21;border:1px solid #272c37;border-left:3px solid #e8a33d;
+    border-radius:10px;padding:16px 20px;margin-bottom:24px}
+  .qbox .h{font-size:11.5px;color:#e8a33d;letter-spacing:.08em;margin-bottom:10px}
+  .qbox ol{margin:0;padding-left:20px;color:#9aa3b2;font-size:13px;line-height:1.9}
+  .keys{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:28px;font-size:12.5px;color:#9aa3b2}
+  .keys span b{color:#e6e9ef;font-weight:600}
+  .btn{display:inline-block;background:#e8a33d;color:#1a1206;font-weight:600;font-size:14px;
+    padding:11px 34px;border-radius:8px;cursor:pointer;border:none;letter-spacing:.02em}
+  .btn:hover{background:#f0b355}
+  .foot{margin-top:20px;font-size:11.5px;color:#6b7383}
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+
+<div class="panel" id="hudL">
+  <div class="loName" id="loName">Medium General <small id="loIdx">2/3</small></div>
+  <div class="bar"><div class="lbl"><span>Mech Integrity</span><span id="hpTxt">100</span></div>
+    <div class="track"><div class="fill f-hp" id="hpBar" style="width:100%"></div></div></div>
+  <div class="bar"><div class="lbl"><span>Heat <span id="ohFlag" class="overheat"></span></span><span id="heatTxt">0</span></div>
+    <div class="track"><div class="fill f-heat" id="heatBar" style="width:0%"></div></div></div>
+  <div class="bar"><div class="lbl"><span>Power</span><span id="powTxt">100</span></div>
+    <div class="track"><div class="fill f-power" id="powBar" style="width:100%"></div></div></div>
+  <div class="stats">
+    <div class="stat"><div class="v" id="sMass">1.5</div><div class="k">Mass</div></div>
+    <div class="stat"><div class="v" id="sPow">100</div><div class="k">Power Cap</div></div>
+    <div class="stat"><div class="v" id="sHeat">22</div><div class="k">Cooling</div></div>
+  </div>
+</div>
+
+<div class="panel" id="hudR">
+  <div class="row"><span>Scrap</span><b id="scrap">0</b></div>
+  <div class="row"><span>Wave</span><b id="wave">1</b></div>
+  <div class="row"><span>Enemies Left</span><b id="left">0</b></div>
+  <div class="logTitle">Dismantle Stats</div>
+  <div class="logRow"><span>Cores Destroyed</span><b id="cCore">0</b></div>
+  <div class="logRow"><span>Weapon Arms Destroyed</span><b id="cArm">0</b></div>
+  <div class="logRow"><span>Thrusters Destroyed</span><b id="cLeg">0</b></div>
+  <div class="logRow"><span>Torso Damage</span><b id="cTorso">0</b></div>
+</div>
+
+<div id="hint">
+  <kbd>WASD</kbd> Move &nbsp; <kbd>Mouse</kbd> Aim &nbsp; <kbd>LMB</kbd> Fire &nbsp; <kbd>Space</kbd> Dash<br>
+  <kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> Switch mech loadout (switching during combat is allowed in the prototype)
+</div>
+
+<div id="overlay">
+  <div class="ov">
+    <div class="kick">Core Loop Prototype v0.1</div>
+    <h1>Ember Protocol</h1>
+    <div class="sub">This is not a game; it's an experiment to answer three questions. <br>Play for 5 minutes first, then come back and read the questions below.</div>
+    <div class="qbox">
+      <div class="h">What This Prototype Tests</div>
+      <ol>
+        <li>Aim at <b>specific parts</b> versus just shooting the torso — can you feel the strategic difference?</li>
+        <li>Does the heat mechanic create a "burst–pause" rhythm, or is it just annoying?</li>
+        <li>Are the trade-offs among the three mech loadouts a genuine dilemma, or is there one clearly optimal solution?</li>
+      </ol>
+    </div>
+    <div class="keys">
+      <span><b>WASD</b> Move</span><span><b>LMB</b> Fire</span>
+      <span><b>Space</b> Dash</span><span><b>1/2/3</b> Swap Mech</span>
+    </div>
+    <button class="btn" id="startBtn">Start Experiment</button>
+    <div class="foot">Tip: try destroying the enemy's thrusters and weapon arms first, then the core — compare the payoff to attacking the core directly.</div>
+  </div>
+</div>
+
+<script>
+(function(){
+'use strict';
+
+var canvas=document.getElementById('game'), ctx=canvas.getContext('2d');
+var W=0,H=0;
+
+function resize(){
+  var dpr=Math.min(window.devicePixelRatio||1,2);
+  W=window.innerWidth; H=window.innerHeight;
+  canvas.width=W*dpr; canvas.height=H*dpr;
+  canvas.style.width=W+'px'; canvas.style.height=H+'px';
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+}
+window.addEventListener('resize',resize); resize();
+
+var ARENA={w:2200,h:1500};
+
+// ── Mech loadouts: where the three constraints land ──────────
+var LOADOUTS=[
+  { name:'Light Scout', mass:1.0, powerCap:60,  powerRegen:9,  heatDiss:34,
+    dmg:8,  fireCd:0.115, heatPerShot:6.5, maxHp:70,  color:'#4ec9b0' },
+  { name:'Medium General', mass:1.5, powerCap:100, powerRegen:13, heatDiss:22,
+    dmg:15, fireCd:0.19,  heatPerShot:11.5, maxHp:100, color:'#5b9bd5' },
+  { name:'Heavy Assault', mass:2.4, powerCap:140, powerRegen:17, heatDiss:13,
+    dmg:27, fireCd:0.30,  heatPerShot:18,  maxHp:145, color:'#e8a33d' }
+];
+var HEAT_CAP=100, OVERHEAT_LOCK=2.0, BASE_SPEED=232, DASH_COST=22;
+
+// ── Enemy part definitions (local coords, facing +X) ──────────
+function makePartTpl(){
+  return [
+    { key:'core',  label:'Core',   x: 17, y:  0, r:11, hp:26,  val:9, hits:0 },
+    { key:'armL',  label:'Weapon Arm', x:  3, y:-21, r:10, hp:20,  val:5, hits:0 },
+    { key:'armR',  label:'Weapon Arm', x:  3, y: 21, r:10, hp:20,  val:5, hits:0 },
+    { key:'legL',  label:'Thruster', x:-15, y:-15, r:10, hp:18,  val:6, hits:0 },
+    { key:'legR',  label:'Thruster', x:-15, y: 15, r:10, hp:18,  val:6, hits:0 },
+    { key:'torso', label:'Torso',   x: -3, y:  0, r:20, hp:70,  val:0, hits:0 }
+  ];
+}
+
+var player, enemies, shots, eShots, drops, parts, cam, keys, mouse;
+var scrap, wave, running, lastT, fireTimer, dashTimer, eTimer;
+var log;
+
+function reset(){
+  var L=LOADOUTS[1];
+  player={ x:ARENA.w/2, y:ARENA.h/2, vx:0, vy:0, hp:L.maxHp, maxHp:L.maxHp,
+           ang:0, heat:0, power:L.powerCap, maxPower:L.powerCap,
+           overheat:false, lock:0, inv:0, idx:1, dashVx:0, dashVy:0 };
+  enemies=[]; shots=[]; eShots=[]; drops=[]; parts=[];
+  cam={x:player.x,y:player.y};
+  scrap=0; wave=1; fireTimer=0; dashTimer=0; eTimer=0;
+  log={core:0,arm:0,leg:0,torso:0};
+  spawnWave();
+}
+
+function spawnWave(){
+  var n=2+wave;
+  for(var i=0;i<n;i++){
+    var side=Math.floor(Math.random()*4), x,y, m=180;
+    if(side===0){ x=Math.random()*ARENA.w; y=m; }
+    else if(side===1){ x=ARENA.w-m; y=Math.random()*ARENA.h; }
+    else if(side===2){ x=Math.random()*ARENA.w; y=ARENA.h-m; }
+    else { x=m; y=Math.random()*ARENA.h; }
+    var elite = (i===0 && wave>=2);
+    var tpl=makePartTpl();
+    var mult = elite?1.7:1;
+    for(var k=0;k<tpl.length;k++){ tpl[k].maxHp=tpl[k].hp*mult; tpl[k].hp*=mult; }
+    enemies.push({
+      x:x,y:y,ang:Math.random()*6.28,hp:0,parts:tpl,elite:elite,
+      speed:elite?58:74, atkCd:0, hitFlash:0, dead:false
+    });
+  }
+}
+
+// ── Input ──────────────────────────────────────────────────
+keys={};
+mouse={x:0,y:0};
+window.addEventListener('keydown',function(e){
+  keys[e.code]=true;
+  if(e.code==='Space') e.preventDefault();
+  if(!running) return;
+  if(e.code==='Digit1') setLoadout(0);
+  if(e.code==='Digit2') setLoadout(1);
+  if(e.code==='Digit3') setLoadout(2);
+});
+window.addEventListener('keyup',function(e){ keys[e.code]=false; });
+window.addEventListener('mousemove',function(e){ mouse.x=e.clientX; mouse.y=e.clientY; });
+window.addEventListener('mousedown',function(e){ if(e.button===0) keys.fire=true; });
+window.addEventListener('mouseup',function(e){ if(e.button===0) keys.fire=false; });
+
+function setLoadout(i){
+  if(i===player.idx) return;
+  var L=LOADOUTS[i];
+  var ratio=player.hp/player.maxHp;
+  player.idx=i;
+  player.maxHp=L.maxHp; player.hp=Math.max(12,Math.round(L.maxHp*ratio));
+  player.maxPower=L.powerCap; player.power=L.powerCap;
+  player.overheat=false; player.lock=0;
+  for(var k=0;k<26;k++) parts.push({x:player.x,y:player.y,vx:(Math.random()-.5)*300,
+    vy:(Math.random()-.5)*300,life:.5,max:.5,c:L.color});
+}
+
+// ── Utilities ─────────────────────────────────────────────
+function clamp(v,a,b){ return v<a?a:(v>b?b:v); }
+function dist(ax,ay,bx,by){ var dx=ax-bx,dy=ay-by; return Math.sqrt(dx*dx+dy*dy); }
+
+// ── Main loop ──────────────────────────────────────────────
+function loop(t){
+  if(!running) return;
+  var dt=Math.min((t-lastT)/1000,0.05); lastT=t;
+  update(dt); draw();
+  requestAnimationFrame(loop);
+}
+
+function update(dt){
+  var L=LOADOUTS[player.idx];
+  var speed=BASE_SPEED/L.mass;
+
+  // Movement
+  var mx=0,my=0;
+  if(keys.KeyW||keys.ArrowUp) my-=1;
+  if(keys.KeyS||keys.ArrowDown) my+=1;
+  if(keys.KeyA||keys.ArrowLeft) mx-=1;
+  if(keys.KeyD||keys.ArrowRight) mx+=1;
+  var ml=Math.sqrt(mx*mx+my*my);
+  if(ml>0){ mx/=ml; my/=ml; }
+  player.vx=mx*speed; player.vy=my*speed;
+
+  // Dash
+  dashTimer-=dt;
+  if(keys.Space && dashTimer<=0 && player.power>=DASH_COST && ml>0){
+    player.dashVx=mx*640; player.dashVy=my*640;
+    player.power-=DASH_COST; dashTimer=0.42; player.inv=0.22;
+  }
+  player.dashVx*=Math.pow(0.02,dt); player.dashVy*=Math.pow(0.02,dt);
+
+  player.x=clamp(player.x+(player.vx+player.dashVx)*dt,18,ARENA.w-18);
+  player.y=clamp(player.y+(player.vy+player.dashVy)*dt,18,ARENA.h-18);
+
+  // Power recovery
+  player.power=Math.min(player.maxPower,player.power+L.powerRegen*dt);
+
+  // Heat
+  if(player.overheat){
+    player.lock-=dt;
+    player.heat=Math.max(0,player.heat-HEAT_CAP/OVERHEAT_LOCK*1.6*dt);
+    if(player.lock<=0){ player.overheat=false; player.heat=0; }
+  } else {
+    player.heat=Math.max(0,player.heat-L.heatDiss*dt);
+    if(player.heat>=HEAT_CAP){ player.overheat=true; player.lock=OVERHEAT_LOCK; }
+  }
+
+  // Aim at 
+  var wmx=mouse.x-W/2+cam.x, wmy=mouse.y-H/2+cam.y;
+  player.ang=Math.atan2(wmy-player.y,wmx-player.x);
+
+  // Firing
+  fireTimer-=dt;
+  if(keys.fire && fireTimer<=0 && !player.overheat){
+    fireTimer=L.fireCd;
+    var sp=920;
+    shots.push({ x:player.x+Math.cos(player.ang)*24, y:player.y+Math.sin(player.ang)*24,
+      vx:Math.cos(player.ang)*sp, vy:Math.sin(player.ang)*sp, dmg:L.dmg, life:1.3 });
+    player.heat=Math.min(HEAT_CAP,player.heat+L.heatPerShot);
+    if(player.heat>=HEAT_CAP){ player.overheat=true; player.lock=OVERHEAT_LOCK; }
+  }
+
+  // Player projectiles
+  for(var i=shots.length-1;i>=0;i--){
+    var s=shots[i];
+    s.x+=s.vx*dt; s.y+=s.vy*dt; s.life-=dt;
+    if(s.life<=0||s.x<0||s.y<0||s.x>ARENA.w||s.y>ARENA.h){ shots.splice(i,1); continue; }
+    for(var e=0;e<enemies.length;e++){
+      var en=enemies[e]; if(en.dead) continue;
+      var hit=partHit(en,s.x,s.y);
+      if(hit){
+        hit.hp-=s.dmg;
+        if(hit.key==='torso') log.torso+=s.dmg;
+        en.hitFlash=0.12;
+        for(var p=0;p<4;p++) parts.push({x:s.x,y:s.y,vx:(Math.random()-.5)*260,
+          vy:(Math.random()-.5)*260,life:.22,max:.22,c:'#e8a33d'});
+        if(hit.hp<=0) destroyPart(en,hit);
+        shots.splice(i,1); break;
+      }
+    }
+  }
+
+  // Enemies
+  eTimer-=dt;
+  for(var j=enemies.length-1;j>=0;j--){
+    var en2=enemies[j]; if(en2.dead){ enemies.splice(j,1); continue; }
+    if(en2.hitFlash>0) en2.hitFlash-=dt;
+
+    var core=findPart(en2,'core'), legs=aliveLegs(en2), arms=aliveArms(en2);
+    if(!core) { enemies.splice(j,1); continue; }
+
+    // Movement depends on how many thrusters survive
+    var moveMul = legs===0?0 : (legs===1?0.45:1);
+    var d=dist(en2.x,en2.y,player.x,player.y);
+    var ta=Math.atan2(player.y-en2.y,player.x-en2.x);
+    en2.ang += Math.atan2(Math.sin(ta-en2.ang),Math.cos(ta-en2.ang))*Math.min(1,3.4*dt);
+    if(d>115 && moveMul>0){
+      en2.x+=Math.cos(en2.ang)*en2.speed*moveMul*dt;
+      en2.y+=Math.sin(en2.ang)*en2.speed*moveMul*dt;
+    }
+    en2.x=clamp(en2.x,18,ARENA.w-18); en2.y=clamp(en2.y,18,ARENA.h-18);
+
+    // Attack depends on how many weapon arms survive
+    en2.atkCd-=dt;
+    if(arms>0 && d<520 && en2.atkCd<=0 && eTimer<=0){
+      en2.atkCd=(en2.elite?0.95:1.35)/arms;
+      var spread=(Math.random()-.5)*0.16;
+      eShots.push({ x:en2.x+Math.cos(en2.ang)*20, y:en2.y+Math.sin(en2.ang)*20,
+        vx:Math.cos(en2.ang+spread)*430, vy:Math.sin(en2.ang+spread)*430,
+        dmg:en2.elite?11:7, life:1.6 });
+    }
+  }
+  if(eTimer<=0) eTimer=0.1;
+
+  // Enemy projectiles
+  for(var m=eShots.length-1;m>=0;m--){
+    var es=eShots[m];
+    es.x+=es.vx*dt; es.y+=es.vy*dt; es.life-=dt;
+    if(es.life<=0){ eShots.splice(m,1); continue; }
+    if(player.inv>0) continue;
+    if(dist(es.x,es.y,player.x,player.y)<16){
+      player.hp-=es.dmg; player.inv=0.16;
+      eShots.splice(m,1);
+      for(var q=0;q<6;q++) parts.push({x:player.x,y:player.y,vx:(Math.random()-.5)*300,
+        vy:(Math.random()-.5)*300,life:.3,max:.3,c:'#e06c6c'});
+      if(player.hp<=0){ gameOver(); return; }
+    }
+  }
+  if(player.inv>0) player.inv-=dt;
+
+  // Pickups
+  for(var k2=drops.length-1;k2>=0;k2--){
+    var dr=drops[k2];
+    var dd=dist(dr.x,dr.y,player.x,player.y);
+    if(dd<130){ var pull=520/Math.max(dd,30); dr.x+=(player.x-dr.x)*pull*dt; dr.y+=(player.y-dr.y)*pull*dt; }
+    if(dd<22){ scrap+=dr.val; drops.splice(k2,1); }
+  }
+
+  // Particles
+  for(var pi=parts.length-1;pi>=0;pi--){
+    var pt=parts[pi];
+    pt.x+=pt.vx*dt; pt.y+=pt.vy*dt; pt.vx*=Math.pow(0.08,dt); pt.vy*=Math.pow(0.08,dt);
+    pt.life-=dt; if(pt.life<=0) parts.splice(pi,1);
+  }
+
+  // Waves
+  if(enemies.length===0){ wave++; spawnWave(); }
+
+  // Camera
+  var hw=W/2, hh=H/2;
+  cam.x = ARENA.w<=W ? ARENA.w/2 : clamp(player.x,hw,ARENA.w-hw);
+  cam.y = ARENA.h<=H ? ARENA.h/2 : clamp(player.y,hh,ARENA.h-hh);
+
+  syncHud();
+}
+
+function findPart(en,key){
+  for(var i=0;i<en.parts.length;i++) if(en.parts[i].key===key && en.parts[i].hp>0) return en.parts[i];
+  return null;
+}
+function aliveLegs(en){ return (findPart(en,'legL')?1:0)+(findPart(en,'legR')?1:0); }
+function aliveArms(en){ return (findPart(en,'armL')?1:0)+(findPart(en,'armR')?1:0); }
+
+// World coords → enemy local coords, determine which part is hit
+function partHit(en,wx,wy){
+  var dx=wx-en.x, dy=wy-en.y;
+  var c=Math.cos(-en.ang), s=Math.sin(-en.ang);
+  var lx=dx*c-dy*s, ly=dx*s+dy*c;
+  // Check core and limbs first, torso last (avoid the big circle swallowing small parts)
+  var order=['core','armL','armR','legL','legR','torso'];
+  for(var i=0;i<order.length;i++){
+    var p=null;
+    for(var k=0;k<en.parts.length;k++) if(en.parts[k].key===order[i]) p=en.parts[k];
+    if(!p||p.hp<=0) continue;
+    var ddx=lx-p.x, ddy=ly-p.y;
+    if(ddx*ddx+ddy*ddy <= p.r*p.r) return p;
+  }
+  return null;
+}
+
+function destroyPart(en,part){
+  part.hp=0;
+  // Drop salvage
+  var c=Math.cos(en.ang), s=Math.sin(en.ang);
+  drops.push({ x:en.x+part.x*c-part.y*s, y:en.y+part.x*s+part.y*c, val:part.val, key:part.key });
+
+  if(part.key==='core'){ log.core++; en.dead=true; }
+  else if(part.key.indexOf('arm')===0) log.arm++;
+  else if(part.key.indexOf('leg')===0) log.leg++;
+
+  for(var i=0;i<12;i++) parts.push({x:en.x,y:en.y,vx:(Math.random()-.5)*380,
+    vy:(Math.random()-.5)*380,life:.45,max:.45,c:'#e8a33d'});
+}
+
+function gameOver(){
+  running=false;
+  var ov=document.getElementById('overlay');
+  ov.classList.remove('hide');
+  ov.innerHTML='<div class="ov">'+
+    '<div class="kick">Experiment Over</div>'+
+    '<h1>Mech Destroyed</h1>'+
+    '<div class="sub">Wave Reached <b style="color:#e8a33d">'+wave+'</b> | Scrap Recovered <b style="color:#e8a33d">'+scrap+'</b></div>'+
+    '<div class="qbox"><div class="h">Compare your dismantle stats and answer three questions</div><ol>'+
+      '<li>Did you consciously aim at parts, or mostly shoot the torso?</li>'+
+      '<li>During those 2 seconds of overheat lock, did you feel "I should plan my output" or "this is annoying"?</li>'+
+      '<li>How many times did you swap mechs, and why?</li>'+
+    '</ol></div>'+
+    '<button class="btn" id="againBtn">Play Again</button>'+
+    '<div class="foot">Cores Destroyed '+log.core+' | Weapon Arms '+log.arm+' | Thrusters '+log.leg+' | Torso Damage '+Math.round(log.torso)+'</div>'+
+  '</div>';
+  document.getElementById('againBtn').addEventListener('click',function(){
+    ov.classList.add('hide'); reset(); running=true; lastT=performance.now();
+    requestAnimationFrame(loop);
+  });
+}
+
+// ── HUD ──────────────────────────────────────────────────
+var el={};
+['loName','loIdx','hpTxt','hpBar','heatTxt','heatBar','ohFlag','powTxt','powBar',
+ 'sMass','sPow','sHeat','scrap','wave','left','cCore','cArm','cLeg','cTorso']
+ .forEach(function(id){ el[id]=document.getElementById(id); });
+
+function syncHud(){
+  var L=LOADOUTS[player.idx];
+  el.loName.childNodes[0].nodeValue=L.name+' ';
+  el.loIdx.textContent=(player.idx+1)+'/3';
+  el.hpTxt.textContent=Math.max(0,Math.round(player.hp));
+  el.hpBar.style.width=clamp(player.hp/player.maxHp*100,0,100)+'%';
+  el.heatTxt.textContent=Math.round(player.heat);
+  el.heatBar.style.width=clamp(player.heat/HEAT_CAP*100,0,100)+'%';
+  el.heatBar.style.background = player.overheat?'#e06c6c':(player.heat>HEAT_CAP*0.75?'#e06c6c':'#e8a33d');
+  el.ohFlag.textContent = player.overheat?('Overheat Lock '+player.lock.toFixed(1)+'s'):'';
+  el.powTxt.textContent=Math.round(player.power);
+  el.powBar.style.width=clamp(player.power/player.maxPower*100,0,100)+'%';
+  el.sMass.textContent=L.mass.toFixed(1);
+  el.sPow.textContent=L.powerCap;
+  el.sHeat.textContent=L.heatDiss;
+  el.scrap.textContent=scrap;
+  el.wave.textContent=wave;
+  el.left.textContent=enemies.length;
+  el.cCore.textContent=log.core;
+  el.cArm.textContent=log.arm;
+  el.cLeg.textContent=log.leg;
+  el.cTorso.textContent=Math.round(log.torso);
+}
+
+// ── Drawing ───────────────────────────────────────────────
+function draw(){
+  ctx.fillStyle='#0f1115'; ctx.fillRect(0,0,W,H);
+  ctx.save();
+  ctx.translate(W/2-cam.x, H/2-cam.y);
+
+  drawGrid();
+  drawArenaEdge();
+
+  // Drops
+  for(var i=0;i<drops.length;i++){
+    var d=drops[i];
+    ctx.fillStyle='#e8a33d'; ctx.globalAlpha=0.22;
+    ctx.beginPath(); ctx.arc(d.x,d.y,13,0,6.2832); ctx.fill();
+    ctx.globalAlpha=1;
+    ctx.fillStyle='#f0b355';
+    ctx.beginPath(); ctx.arc(d.x,d.y,5,0,6.2832); ctx.fill();
+  }
+
+  // Enemies
+  for(var e=0;e<enemies.length;e++) drawEnemy(enemies[e]);
+
+  // Projectiles
+  for(var s=0;s<shots.length;s++){
+    ctx.strokeStyle='#9fe1cb'; ctx.lineWidth=2.5; ctx.lineCap='round';
+    ctx.beginPath();
+    ctx.moveTo(shots[s].x,shots[s].y);
+    ctx.lineTo(shots[s].x-shots[s].vx*0.016,shots[s].y-shots[s].vy*0.016);
+    ctx.stroke();
+  }
+  for(var es=0;es<eShots.length;es++){
+    ctx.strokeStyle='#e06c6c'; ctx.lineWidth=2.5; ctx.lineCap='round';
+    ctx.beginPath();
+    ctx.moveTo(eShots[es].x,eShots[es].y);
+    ctx.lineTo(eShots[es].x-eShots[es].vx*0.014,eShots[es].y-eShots[es].vy*0.014);
+    ctx.stroke();
+  }
+
+  // Particles
+  for(var p=0;p<parts.length;p++){
+    var pt=parts[p];
+    ctx.globalAlpha=clamp(pt.life/pt.max,0,1);
+    ctx.fillStyle=pt.c;
+    ctx.fillRect(pt.x-1.5,pt.y-1.5,3,3);
+  }
+  ctx.globalAlpha=1;
+
+  drawPlayer();
+  ctx.restore();
+
+  // Crosshair
+  ctx.strokeStyle='rgba(232,163,61,.75)'; ctx.lineWidth=1.4;
+  ctx.beginPath(); ctx.arc(mouse.x,mouse.y,9,0,6.2832); ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(mouse.x-15,mouse.y); ctx.lineTo(mouse.x-5,mouse.y);
+  ctx.moveTo(mouse.x+5,mouse.y);  ctx.lineTo(mouse.x+15,mouse.y);
+  ctx.moveTo(mouse.x,mouse.y-15); ctx.lineTo(mouse.x,mouse.y-5);
+  ctx.moveTo(mouse.x,mouse.y+5);  ctx.lineTo(mouse.x,mouse.y+15);
+  ctx.stroke();
+}
+
+function drawGrid(){
+  ctx.strokeStyle='#161a21'; ctx.lineWidth=1;
+  var step=80, x0=Math.floor((cam.x-W/2)/step)*step, y0=Math.floor((cam.y-H/2)/step)*step;
+  for(var x=x0;x<cam.x+W/2+step;x+=step){
+    ctx.beginPath(); ctx.moveTo(x,cam.y-H/2); ctx.lineTo(x,cam.y+H/2); ctx.stroke();
+  }
+  for(var y=y0;y<cam.y+H/2+step;y+=step){
+    ctx.beginPath(); ctx.moveTo(cam.x-W/2,y); ctx.lineTo(cam.x+W/2,y); ctx.stroke();
+  }
+}
+
+function drawArenaEdge(){
+  ctx.strokeStyle='#2c3442'; ctx.lineWidth=2;
+  ctx.strokeRect(0,0,ARENA.w,ARENA.h);
+}
+
+function drawEnemy(en){
+  var L=LOADOUTS[player.idx];
+  ctx.save();
+  ctx.translate(en.x,en.y);
+  ctx.rotate(en.ang);
+
+  // Torso
+  var torso=findPart(en,'torso');
+  var tc = en.hitFlash>0 ? '#ffffff' : (torso?'#3a4150':'#241f1f');
+  ctx.fillStyle=tc;
+  ctx.beginPath(); ctx.arc(-3,0,20,0,6.2832); ctx.fill();
+  ctx.strokeStyle='#4a5261'; ctx.lineWidth=1.5; ctx.stroke();
+
+  // Parts
+  for(var i=0;i<en.parts.length;i++){
+    var p=en.parts[i];
+    if(p.key==='torso') continue;
+    var alive=p.hp>0;
+    var col;
+    if(!alive) col='#20242c';
+    else {
+      var r=p.hp/p.maxHp;
+      col = r>0.6 ? '#4a5261' : (r>0.28 ? '#8a6224' : '#8a3030');
+    }
+    if(p.key==='core' && alive) col = (p.hp/p.maxHp>0.5?'#7f77dd':'#8a3030');
+
+    ctx.fillStyle=col;
+    ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,6.2832); ctx.fill();
+    ctx.strokeStyle= alive?'#5a6474':'#1a1d24'; ctx.lineWidth=1.2; ctx.stroke();
+
+    if(!alive){
+      ctx.strokeStyle='#e06c6c'; ctx.lineWidth=1.4;
+      ctx.beginPath();
+      ctx.moveTo(p.x-p.r*0.5,p.y-p.r*0.5); ctx.lineTo(p.x+p.r*0.5,p.y+p.r*0.5);
+      ctx.moveTo(p.x+p.r*0.5,p.y-p.r*0.5); ctx.lineTo(p.x-p.r*0.5,p.y+p.r*0.5);
+      ctx.stroke();
+    }
+  }
+
+  if(en.elite){
+    ctx.strokeStyle='rgba(232,163,61,.5)'; ctx.lineWidth=1.5;
+    ctx.beginPath(); ctx.arc(0,0,34,0,6.2832); ctx.stroke();
+  }
+  ctx.restore();
+}
+
+function drawPlayer(){
+  var L=LOADOUTS[player.idx];
+  ctx.save();
+  ctx.translate(player.x,player.y);
+  ctx.rotate(player.ang);
+
+  if(player.inv>0){ ctx.globalAlpha=0.55; }
+
+  // Mech body
+  ctx.fillStyle=L.color;
+  ctx.beginPath(); ctx.arc(0,0,17,0,6.2832); ctx.fill();
+  ctx.fillStyle='#0f1115';
+  ctx.beginPath(); ctx.arc(0,0,10,0,6.2832); ctx.fill();
+
+  // Facing indicator
+  ctx.fillStyle=L.color;
+  ctx.fillRect(15,-3.5,14,7);
+
+  // Weapon arm
+  ctx.fillStyle='#3a4150';
+  ctx.fillRect(2,-20,16,7);
+  ctx.fillRect(2,13,16,7);
+
+  // Overheat indicator
+  if(player.overheat){
+    ctx.strokeStyle='#e06c6c'; ctx.lineWidth=2.5;
+    ctx.beginPath(); ctx.arc(0,0,25,0,6.2832); ctx.stroke();
+  }
+  ctx.globalAlpha=1;
+  ctx.restore();
+}
+
+// ── Start ─────────────────────────────────────────────────
+document.getElementById('startBtn').addEventListener('click',function(){
+  document.getElementById('overlay').classList.add('hide');
+  reset(); running=true; lastT=performance.now();
+  requestAnimationFrame(loop);
+});
+
+reset(); running=false;
+
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- Language: English | 简体中文: Ember Protocol_UE5制作计划.html -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>"Ember Protocol" UE5 Production Plan</title>
+<style>
+:root{
+  --bg:#0f1115; --surface:#171a21; --surface-2:#1d2129; --border:#272c37;
+  --text:#e6e9ef; --text-2:#9aa3b2; --text-3:#6b7383;
+  --ember:#e8a33d; --ember-dim:#8a6224; --ember-bg:#2a1f0e;
+  --teal:#4ec9b0; --teal-dim:#2a6b60; --teal-bg:#0f2a26;
+  --red:#e06c6c; --red-bg:#2a1414;
+  --amber-bg:#2a2410;
+  --radius:10px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg); color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:15px; line-height:1.75; -webkit-font-smoothing:antialiased;
+}
+.wrap{display:flex; max-width:1400px; margin:0 auto; gap:0}
+
+/* sidebar */
+nav{
+  width:230px; flex:0 0 230px; position:sticky; top:0; align-self:flex-start;
+  height:100vh; overflow-y:auto; padding:32px 20px 32px 28px;
+  border-right:1px solid var(--border);
+}
+nav .brand{font-size:13px; color:var(--text-3); letter-spacing:.08em; text-transform:uppercase; margin-bottom:6px}
+nav .title{font-size:16px; font-weight:600; color:var(--text); margin-bottom:24px; line-height:1.4}
+nav a{
+  display:block; color:var(--text-2); text-decoration:none; font-size:13.5px;
+  padding:6px 10px; border-radius:6px; margin-bottom:2px; transition:.15s;
+  border-left:2px solid transparent;
+}
+nav a:hover{background:var(--surface-2); color:var(--text)}
+nav a.sub{padding-left:22px; font-size:13px; color:var(--text-3)}
+nav a.sub:hover{color:var(--text-2)}
+nav .group{margin-top:18px; margin-bottom:6px; font-size:11.5px; color:var(--text-3); letter-spacing:.06em; padding-left:10px}
+
+main{flex:1; min-width:0; padding:48px 56px 120px 56px; max-width:1000px}
+
+/* header */
+header{border-bottom:1px solid var(--border); padding-bottom:28px; margin-bottom:40px}
+header .kicker{color:var(--ember); font-size:13px; letter-spacing:.1em; font-weight:600; margin-bottom:10px}
+header h1{font-size:32px; font-weight:700; letter-spacing:-.01em; line-height:1.25; margin-bottom:14px}
+header .sub{color:var(--text-2); font-size:14.5px}
+header .meta{display:flex; flex-wrap:wrap; gap:10px; margin-top:22px}
+.chip{
+  font-size:12.5px; padding:4px 12px; border-radius:100px;
+  background:var(--surface-2); border:1px solid var(--border); color:var(--text-2);
+}
+.chip.hot{background:var(--ember-bg); border-color:var(--ember-dim); color:var(--ember)}
+
+/* sections */
+section{margin-bottom:56px; scroll-margin-top:24px}
+h2{
+  font-size:21px; font-weight:650; margin-bottom:20px; padding-bottom:10px;
+  border-bottom:1px solid var(--border); letter-spacing:-.005em;
+}
+h2 .num{color:var(--ember); font-weight:600; margin-right:10px; font-variant-numeric:tabular-nums}
+h3{font-size:16.5px; font-weight:600; margin:28px 0 12px; color:var(--text)}
+h4{font-size:14.5px; font-weight:600; margin:20px 0 10px; color:var(--text-2)}
+p{margin-bottom:14px; color:var(--text-2)}
+p strong,li strong{color:var(--text); font-weight:600}
+ul,ol{margin:0 0 16px 20px; color:var(--text-2)}
+li{margin-bottom:7px}
+
+/* callout */
+.callout{
+  background:var(--surface); border:1px solid var(--border); border-left:3px solid var(--ember);
+  border-radius:var(--radius); padding:18px 22px; margin:22px 0;
+}
+.callout.teal{border-left-color:var(--teal)}
+.callout.red{border-left-color:var(--red)}
+.callout .label{font-size:11.5px; letter-spacing:.08em; color:var(--ember); font-weight:600; margin-bottom:8px}
+.callout.teal .label{color:var(--teal)}
+.callout.red .label{color:var(--red)}
+.callout p:last-child{margin-bottom:0}
+.callout .quote{font-size:16px; color:var(--text); line-height:1.7}
+
+/* table */
+.tw{overflow-x:auto; margin:18px 0; border:1px solid var(--border); border-radius:var(--radius)}
+table{width:100%; border-collapse:collapse; font-size:13.5px}
+th{
+  background:var(--surface-2); text-align:left; padding:11px 14px; font-weight:600;
+  color:var(--text); white-space:nowrap; border-bottom:1px solid var(--border);
+}
+td{padding:10px 14px; border-bottom:1px solid var(--border); color:var(--text-2); vertical-align:top}
+tr:last-child td{border-bottom:none}
+tbody tr:hover{background:rgba(255,255,255,.015)}
+td strong{color:var(--text)}
+.tag{font-size:11.5px; padding:2px 8px; border-radius:5px; white-space:nowrap; font-weight:500}
+.tag.ok{background:var(--teal-bg); color:var(--teal)}
+.tag.warn{background:var(--amber-bg); color:var(--ember)}
+.tag.bad{background:var(--red-bg); color:var(--red)}
+.tag.na{background:var(--surface-2); color:var(--text-3)}
+
+/* timeline */
+.tl{margin:24px 0}
+.tl-row{
+  display:grid; grid-template-columns:132px 1fr; gap:20px;
+  padding:18px 0; border-bottom:1px solid var(--border);
+}
+.tl-row:last-child{border-bottom:none}
+.tl-phase{font-size:14px; font-weight:600; color:var(--text)}
+.tl-phase .per{display:block; font-size:12px; color:var(--text-3); font-weight:400; margin-top:3px}
+.tl-bar{
+  height:5px; border-radius:3px; background:var(--surface-2); margin-bottom:10px; position:relative; overflow:hidden;
+}
+.tl-bar i{position:absolute; top:0; bottom:0; left:0; border-radius:3px; display:block}
+.tl-body{font-size:13.5px; color:var(--text-2)}
+.tl-body .goal{color:var(--text); margin-bottom:6px}
+.tl-body .team{font-size:12.5px; color:var(--text-3); margin-top:6px}
+
+/* risk cards */
+.risks{display:grid; gap:12px; margin:20px 0}
+.risk{
+  background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+  padding:15px 18px; display:grid; grid-template-columns:1fr auto; gap:14px; align-items:start;
+}
+.risk .rid{font-size:11.5px; color:var(--text-3); font-family:ui-monospace,monospace; margin-bottom:4px}
+.risk .rname{font-size:14.5px; color:var(--text); font-weight:550; margin-bottom:6px}
+.risk .rmit{font-size:13px; color:var(--text-2)}
+.risk .badges{display:flex; flex-direction:column; gap:6px; align-items:flex-end; flex-shrink:0}
+
+/* steps */
+.steps{counter-reset:s; margin:20px 0}
+.step{
+  display:grid; grid-template-columns:52px 1fr; gap:16px; padding:14px 0;
+  border-bottom:1px solid var(--border);
+}
+.step:last-child{border-bottom:none}
+.step .d{
+  font-size:12.5px; font-weight:600; color:var(--ember); font-family:ui-monospace,monospace;
+  padding-top:2px;
+}
+.step .t{font-size:14px; color:var(--text); margin-bottom:4px}
+.step .o{font-size:13px; color:var(--text-3)}
+
+.grid2{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:18px 0}
+.card{
+  background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:16px 18px;
+}
+.card h4{margin:0 0 8px; font-size:14px; color:var(--text)}
+.card p{font-size:13.5px; margin:0; color:var(--text-2)}
+
+code{
+  font-family:ui-monospace,"SF Mono",Consolas,monospace; font-size:12.5px;
+  background:var(--surface-2); padding:2px 6px; border-radius:4px; color:var(--ember);
+}
+pre{
+  background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+  padding:18px; overflow-x:auto; font-size:12.5px; line-height:1.7; margin:16px 0;
+  font-family:ui-monospace,"SF Mono",Consolas,monospace; color:var(--text-2);
+}
+pre b{color:var(--ember); font-weight:500}
+pre i{color:var(--text-3); font-style:normal}
+
+footer{
+  border-top:1px solid var(--border); padding-top:24px; margin-top:60px;
+  font-size:13px; color:var(--text-3);
+}
+@media(max-width:1000px){
+  nav{display:none}
+  main{padding:32px 24px 80px}
+  .grid2{grid-template-columns:1fr}
+  .tl-row{grid-template-columns:1fr; gap:8px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav>
+  <div class="brand">Production Plan</div>
+  <div class="title">Ember Protocol<br><span style="color:var(--text-3);font-size:13px;font-weight:400">UE5 Production Plan</span></div>
+  <a href="#s0">0 · One-Page Overview</a>
+  <a href="#s1">1 · Engine & Plugin Selection</a>
+  <a href="#s2">2 · Project Architecture</a>
+  <a href="#s3">3 · Core System Implementation</a>
+  <a href="#s3-1" class="sub">3.1 Mech Assembly</a>
+  <a href="#s3-2" class="sub">3.2 Part Dismantling</a>
+  <a href="#s3-3" class="sub">3.3 Power & Heat</a>
+  <a href="#s3-6" class="sub">3.6 Salvage & Economy</a>
+  <a href="#s3-7" class="sub">3.7 Base & Streaming</a>
+  <a href="#s3-8" class="sub">3.8 Save System</a>
+  <a href="#s4">4 · System Interaction Matrix</a>
+  <a href="#s5">5 · Art & Animation Pipeline</a>
+  <a href="#s6">6 · Performance Budget & Gates</a>
+  <a href="#s7">7 · Milestone Plan</a>
+  <a href="#s8">8 · Team & Budget</a>
+  <a href="#s9">9 · Risk Register</a>
+  <a href="#s10">10 · First 14 Days Checklist</a>
+</nav>
+
+<main>
+
+<header>
+  <div class="kicker">UNREAL ENGINE 5.8 · PC SINGLE-PLAYER</div>
+  <h1>"Ember Protocol" UE5 Production Plan</h1>
+  <div class="sub">Third-person action-adventure + modular mech customization | Target player: action-exploration players | 20–40 min per run</div>
+  <div class="meta">
+    <span class="chip hot">Baseline UE 5.8</span>
+    <span class="chip">42 months</span>
+    <span class="chip">~100 people at peak</span>
+    <span class="chip">R&D budget ~¥230M</span>
+    <span class="chip">Buyout · Offline single-player</span>
+  </div>
+</header>
+
+<section id="s0">
+  <h2><span class="num">0</span>One-Page Overview</h2>
+
+  <div class="callout">
+    <div class="label">FUN HYPOTHESIS · The Foundation of the Design</div>
+    <div class="quote">Every time you strip an enemy's body, you are rewriting your own body — and the path you can walk next.</div>
+    <p style="margin-top:12px">This sentence welds "combat," "customization" and "exploration" into one causal chain, not three parallel systems. If you can't state it clearly, don't move forward.</p>
+  </div>
+
+  <h3>Three Design Pillars (The Approval Standard for Technical Decisions)</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th style="width:38px">#</th><th>Pillar</th><th>Decision question — cut it if it fails</th></tr></thead>
+    <tbody>
+      <tr><td><strong>P1</strong></td><td><strong>Customization changes gameplay, not just numbers</strong></td><td>Does this new mech/module bring a new way to move or a new combat solution? Any module that just adds 5% attack power is cut.</td></tr>
+      <tr><td><strong>P2</strong></td><td><strong>Dismantling is a costly choice</strong></td><td>Does this salvageable part carry an opportunity cost? (Rescue an ally / keep resources / change route) Salvage without a trade-off is just trash picking.</td></tr>
+      <tr><td><strong>P3</strong></td><td><strong>One full arc in 20–40 minutes</strong></td><td>Does this mission contain the four beats of preparation, tension, salvage, and customization feedback? If a beat is missing, rework it.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>Project Baseline</h3>
+  <div class="tw">
+  <table>
+    <tbody>
+      <tr><td style="width:130px"><strong>Genre</strong></td><td>Third-person action-adventure + modular mech customization</td></tr>
+      <tr><td><strong>Platform</strong></td><td>PC (Windows) single-player, keyboard & mouse first, gamepad also supported</td></tr>
+      <tr><td><strong>Target player</strong></td><td>Action-exploration players: enjoy customization, exploration and story, accept medium difficulty, not seeking extreme execution</td></tr>
+      <tr><td><strong>Run length</strong></td><td>20–40 minutes to complete the full "prepare → fight → salvage → customize" arc</td></tr>
+      <tr><td><strong>Engine</strong></td><td>Unreal Engine 5.8</td></tr>
+      <tr><td><strong>Business model</strong></td><td>Buyout, offline single-player, no microtransactions</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="s1">
+  <h2><span class="num">1</span>Engine & Plugin Selection</h2>
+
+  <h3>1.1 Why UE 5.8</h3>
+  <p>UE 5.8 was released in June 2026 and is the <strong>last version planned within UE5</strong>, after which Epic moves to UE6. For a 42-month project, this is the most stable choice right now:</p>
+  <ul>
+    <li><strong>5.8 is the end of long-term maintenance</strong> —— no gap where "the engine stops being supported halfway through the project."</li>
+    <li><strong>Key capabilities are production-ready</strong> —— MegaLights (multiple dynamic lights), Mutable (runtime character assembly), Iris, Chaos Cloth, Audio Insights.</li>
+    <li><strong>A UE6 migration window can be reserved</strong> —— Schedule a 2-month evaluation period in P4. Don't bet on UE6 now.</li>
+  </ul>
+  <div class="callout red">
+    <div class="label">Decisions explicitly NOT made</div>
+    <p>Do not upgrade the engine major version mid-development. Engine upgrades happen only in the <strong>P0</strong> and <strong>P4</strong> windows.</p>
+  </div>
+
+  <h3>1.2 Core Plugin Selection</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Requirement</th><th>Selection</th><th>Status</th><th>Risk / Cost</th></tr></thead>
+    <tbody>
+      <tr><td>Locomotion foundation</td><td><strong>Character Movement Component</strong></td><td><span class="tag ok">Stable</span></td><td>Climbing needs a custom MovementMode; workload moved earlier</td></tr>
+      <tr><td>Locomotion (future)</td><td>Mover plugin</td><td><span class="tag warn">Not ready</span></td><td><strong>Not used now</strong>, re-evaluate at P4; locomotion logic goes through an interface abstraction to reserve migration</td></tr>
+      <tr><td>Mech module assembly</td><td><strong>Mutable</strong></td><td><span class="tag ok">Production-ready</span></td><td>Learning curve; need to write a GameplayTag → parameter bridge layer</td></tr>
+      <tr><td>Abilities & attributes</td><td><strong>Gameplay Ability System</strong></td><td><span class="tag ok">Stable</span></td><td>Steep learning curve; networking part unused (single-player) can be cut</td></tr>
+      <tr><td>Enemy AI</td><td><strong>StateTree ＋ Perception ＋ EQS</strong></td><td><span class="tag ok">Stable</span></td><td>Less community material than Behavior Trees; need internal documentation</td></tr>
+      <tr><td>Scene destruction</td><td>Chaos Destruction</td><td><span class="tag ok">Stable</span></td><td>Expensive, <strong>no full-scene destruction</strong>, used only for colossus set-piece segments</td></tr>
+      <tr><td>Environment lighting</td><td><strong>Lumen + Lumen Lite</strong></td><td><span class="tag warn">Lite beta</span></td><td>Two quality presets need separate validation</td></tr>
+      <tr><td>Multiple dynamic lights</td><td><strong>MegaLights</strong></td><td><span class="tag ok">Production-ready</span></td><td>Need per-scene light limits</td></tr>
+      <tr><td>Static geometry</td><td><strong>Nanite</strong></td><td><span class="tag ok">Stable</span></td><td><strong>Skeletal meshes do not rely on Nanite</strong>, use the standard LOD pipeline</td></tr>
+      <tr><td>Open areas</td><td><strong>World Partition + HLOD</strong></td><td><span class="tag ok">Stable</span></td><td>Linear levels don't use it (see 3.7)</td></tr>
+      <tr><td>Environment population</td><td>PCG</td><td><span class="tag warn">Partly experimental</span></td><td>Experimental nodes don't enter the production pipeline</td></tr>
+      <tr><td>UI</td><td><strong>Common UI + MVVM</strong></td><td><span class="tag ok">Stable</span></td><td>Need ViewModel conventions defined early</td></tr>
+      <tr><td>Audio</td><td><strong>MetaSounds + Quartz</strong></td><td><span class="tag ok">Stable</span></td><td>—</td></tr>
+      <tr><td>Secondary animation motion</td><td>Control Rig Physics</td><td><span class="tag warn">Beta</span></td><td><strong>Need a fallback</strong>(fall back to hand-keyed animation)</td></tr>
+      <tr><td>Cutscenes</td><td><strong>Sequencer + MRQ</strong></td><td><span class="tag ok">Stable</span></td><td>Cutscene count must be tightly controlled (see 3.11)</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>1.3 Three Explicit Technical Trade-offs</h3>
+  <div class="grid2">
+    <div class="card">
+      <h4>Trade-off 1: Don't use Mover, but keep the interface</h4>
+      <p>Mover is still officially described in 5.8 as"evolving from experimental toward a stable architecture," not marked production-ready. Approach: define the <code>IRobotLocomotion</code> interface, with CMC as the implementation; climbing, magnetic grip and dashing all go through the interface. Future migration only swaps the implementation layer.</p>
+    </div>
+    <div class="card">
+      <h4>Trade-off 2: Part dismantling uses "fake dismantling"</h4>
+      <p>Chaos per-piece shattering has unpredictable performance with dozens of enemies on screen, and fragments can't reliably serve as pickups. Approach: hide the bone + replace with a pre-made part model. Chaos is reserved for scripted set-pieces in the colossus level.</p>
+    </div>
+    <div class="card">
+      <h4>Trade-off 3: Independent mechs, modules on sockets</h4>
+      <p>Do not pursue "free assembly of any parts" — that is an abyss of content cost. Make one complete character for each of the 3 mech classes; 40 modules attach via bone sockets. Only introduce Mutable when the skeleton proportions need to change.</p>
+    </div>
+    <div class="card" style="border-color:var(--ember-dim); background:var(--ember-bg)">
+      <h4 style="color:var(--ember)">Why These Three Matter</h4>
+      <p style="color:var(--text-2)">They all point to the same thing: <strong style="color:var(--text)">spend the cost where players can feel it</strong>. A new engine feature doesn't mean it should be used; stability and controllability matter more than being cutting-edge.</p>
+    </div>
+  </div>
+</section>
+
+<section id="s2">
+  <h2><span class="num">2</span>Project Architecture</h2>
+
+  <h3>2.1 Directory Structure</h3>
+<pre>robot_game/
+├─ <b>Config/</b>                 <i>Engine & project config, quality presets</i>
+├─ <b>Content/RobotGame/</b>
+│  ├─ Art/  Characters · Environment · Props · VFX · Materials
+│  ├─ Audio/  Blueprints/  Data/  Maps/  UI/  Cinematics/
+├─ <b>Source/</b>
+│  ├─ RobotGame/        <i>Main module (Target, GameMode)</i>
+│  ├─ RobotCore/        <i>Base types, GameplayTag, data asset definitions</i>
+│  ├─ RobotAssembly/    <i>Mech & module assembly</i>
+│  ├─ RobotCombat/      <i>GAS abilities, damage routing, part system</i>
+│  ├─ RobotAI/          <i>StateTree tasks, perception, EQS</i>
+│  ├─ RobotWorld/       <i>Areas, streaming, mobile base</i>
+│  ├─ RobotUI/          <i>ViewModel & C++ base classes</i>
+│  ├─ RobotSave/        <i>Saves & version migration</i>
+│  └─ RobotEditor/      <i>Editor-only: data validation, content tools</i>
+├─ <b>Plugins/RobotGameplay/</b>
+├─ <b>Tools/</b>                 <i>Build scripts, data validation, automated tests</i>
+└─ <b>Docs/</b></pre>
+
+  <h3>2.2 Module Dependency Rules</h3>
+  <p><strong>Hard rule: dependencies only go one way. </strong> <code>RobotUI</code> is not allowed to <code>#include</code> <code>RobotCombat</code> headers — UI gets data through interfaces or events. This rule prevents UI and gameplay from becoming hopelessly tangled and unrefactorable later.</p>
+<pre>RobotCore  <i>(depends on no game module)</i>
+   ↑
+RobotAssembly → RobotCombat → RobotAI
+   ↑              ↑
+RobotWorld    RobotUI  <i>(reads data via interfaces, does not directly depend on Combat)</i>
+   ↑
+RobotSave</pre>
+
+  <h3>2.3 Blueprint / C++ Boundary</h3>
+  <p>This is the easiest place to lose control; rules must be set in stone in week 1:</p>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Content</th><th>C++</th><th>Blueprint</th></tr></thead>
+    <tbody>
+      <tr><td>Core system logic (assembly, damage, saves, AI decisions)</td><td><span class="tag ok">Must</span></td><td><span class="tag bad">Forbidden</span></td></tr>
+      <tr><td>Data asset definition & validation</td><td><span class="tag ok">Must</span></td><td><span class="tag bad">Forbidden</span></td></tr>
+      <tr><td>Number tuning, curves, drop tables</td><td><span class="tag bad">Forbidden</span></td><td><span class="tag ok">Must</span></td></tr>
+      <tr><td>Level scripts, triggers, one-off set-pieces</td><td><span class="tag bad">Forbidden</span></td><td><span class="tag ok">Must</span></td></tr>
+      <tr><td>UI layout & styling</td><td><span class="tag bad">Forbidden</span></td><td><span class="tag ok">Must</span></td></tr>
+      <tr><td>Prototype validation (P0–P1)</td><td><span class="tag bad">Forbidden</span></td><td><span class="tag warn">Trial & error allowed</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="callout red">
+    <div class="label">Prohibition</div>
+    <p>Do not implement core gameplay logic in Blueprint and then "move it to C++ when there's time." Prototype Blueprints must be rewritten before <strong>P2</strong>, otherwise performance and maintainability will blow up in P3.</p>
+  </div>
+
+  <h3>2.4 Version Control & CI</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Item</th><th>Solution</th><th>Reason</th></tr></thead>
+    <tbody>
+      <tr><td>Version control</td><td><strong>Perforce Helix Core</strong> or Epic's built-in <strong>Unreal Revision Control</strong></td><td>UE assets are binary; Git struggles with large files. Teams > 15 use P4, small teams can use URC</td></tr>
+      <tr><td>Asset locking</td><td>Mandatory Checkout / Lock</td><td>Prevent two people editing the same uasset at once</td></tr>
+      <tr><td>Build acceleration</td><td><strong>Unreal Build Accelerator</strong> + distributed build</td><td>Build time of a large C++ project directly determines iteration speed</td></tr>
+      <tr><td>CI</td><td><strong>Unreal Horde + BuildGraph</strong></td><td>Automatic daily builds</td></tr>
+      <tr><td>Automated testing</td><td><strong>Gauntlet + Automation Spec</strong></td><td>Smoke tests: launch, load, save read/write, key levels passable</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p><strong>Daily build acceptance line</strong>: can launch → can enter the main base → can enter an area → can fight → can customize → can save and load. Fix any broken link the same day.</p>
+</section>
+
+<section id="s3">
+  <h2><span class="num">3</span>Core System Implementation</h2>
+
+  <h3 id="s3-1">3.1 Mech & Module Assembly</h3>
+  <p><strong>Target experience</strong>: the player drags a part in the customization UI, immediately sees the mech's form change in the preview, and reads live feedback on the three constraints of weight/power/cooling.</p>
+
+  <div class="tw">
+  <table>
+    <thead><tr><th>Layer</th><th>Content</th><th>Implementation</th></tr></thead>
+    <tbody>
+      <tr><td><strong>mech</strong></td><td>Light biped / medium general / heavy quadruped, 3 classes</td><td>Separate <code>ARobotCharacter</code> subclass + separate SkeletalMesh + separate AnimBP</td></tr>
+      <tr><td><strong>module</strong></td><td>Head, core, arms, chassis, auxiliary, about 40</td><td>Bone socket mounting, <code>UStaticMeshComponent</code> / <code>USkeletalMeshComponent</code> subcomponents</td></tr>
+      <tr><td><strong>Tools</strong></td><td>Battlefield quick-swap tools, a few</td><td>Hand sockets, swapped at runtime</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h4>Three Constraints — Where Pillar P1 Lands</h4>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Constraint</th><th>Effect</th><th>Design intent</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Mass</strong></td><td>Affects movement speed, jump height, hit displacement</td><td>make "heavy build" genuinely cumbersome, not pure benefit</td></tr>
+      <tr><td><strong>Power</strong></td><td>All active modules share a cap</td><td>Forces trade-offs: can't fill up on high-drain modules at once</td></tr>
+      <tr><td><strong>Cooling (Heat)</strong></td><td>Determines sustained output duration</td><td>create a "burst–pause" combat rhythm</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="callout">
+    <div class="label">Key judgment</div>
+    <p>The three constraints check each other — the core mechanism preventing "one best build wins all." <strong>Without these three, 40 modules are just 40 number stickers.</strong></p>
+  </div>
+
+  <h3 id="s3-2">3.2 Part Dismantling & Damage Routing</h3>
+  <p><strong>Target experience</strong>: the player aims at an enemy's legs rather than the torso, and after shooting them off the enemy genuinely limps instead of just losing more HP.</p>
+<pre>Hit detection
+  └─ Hit bone name (FName BoneName)
+       └─ UPartMapData <i>(DataAsset)</i>: BoneName → FGameplayTag
+            └─ UPartDamageComponent: TMap&lt;FGameplayTag, FPartHealth&gt;
+                 └─ Part HP reaches zero
+                      └─ Presentation layer: HideBoneByName() + spawn a drop Actor</pre>
+
+  <p><strong>Why part HP is not put into the GAS AttributeSet</strong>: part counts are dynamic (different enemies have different part counts), while AttributeSets suit fixed attributes. A standalone component manages them; GAS only delivers damage via GameplayEffects.</p>
+
+  <h4>How "Fake Dismantling" Works</h4>
+  <ol>
+    <li>One body per part in the Physics Asset, naming convention <code>part_upperarm_R</code>.</li>
+    <li>When a part is destroyed, <code>HideBoneByName</code> hides that part's bone.</li>
+    <li>Simultaneously spawn a <strong>pre-made part model</strong>(physics-simulated), which becomes pickable after landing.</li>
+    <li><strong>Don't use Chaos per-piece shattering</strong> — fragments are uncontrollable and can't reliably serve as pickups.</li>
+  </ol>
+
+  <div class="callout teal">
+    <div class="label">Where Pillar P2 Lands</div>
+    <p>Named enemies additionally get a <code>UCompanionCandidateComponent</code>. When part HP hits zero but the core survives, they enter a "repairable" state, and the player chooses <strong>repair (consume resources, gain a companion)</strong> or <strong>dismantle (gain a rare core)</strong>.</p>
+  </div>
+
+  <h4>Edge Cases That Must Be Handled</h4>
+  <ul>
+    <li>All parts destroyed but core alive → enemy enters a "disabled" state rather than dead, still interactable.</li>
+    <li>Player's own part destroyed → temporarily lose the corresponding ability (if an arm is destroyed, that arm's weapon can't be used), auto-repaired at mission end.</li>
+    <li>Multiple hits on the same part → damage doesn't spill to other parts, preventing "shooting the leg equals shooting the whole body."</li>
+  </ul>
+
+  <h3 id="s3-3">3.3 Power & Heat (GAS Implementation)</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Attribute</th><th>Effect</th><th>Initial value</th></tr></thead>
+    <tbody>
+      <tr><td><code>Power</code></td><td>Current power, consumed by abilities</td><td><span class="tag na">PLACEHOLDER</span></td></tr>
+      <tr><td><code>PowerRegen</code></td><td>Power recovery rate, determined by core module</td><td><span class="tag na">PLACEHOLDER</span></td></tr>
+      <tr><td><code>Heat</code></td><td>Current heat, <strong>only rises, never falls on its own</strong></td><td>0</td></tr>
+      <tr><td><code>HeatDissipation</code></td><td>Cooling rate, determined by chassis/auxiliary modules</td><td><span class="tag na">PLACEHOLDER</span></td></tr>
+      <tr><td><code>OverheatThreshold</code></td><td>Overheat threshold, triggers weapon lock</td><td><span class="tag na">PLACEHOLDER</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p><strong>Heat is a "reverse resource"</strong> — the core lever of combat rhythm: attacks, dashes and overloads all add Heat; Heat only drops through cooling actions; reaching the threshold triggers <code>GameplayTag.State.Overheated</code>, locking weapons for 2 seconds <span class="tag na">PLACEHOLDER</span>.</p>
+  <div class="callout">
+    <div class="label">Validation path</div>
+    <p>Paper simulation (Excel computes the "sustained output time" for 3 module combos) → first playable prototype records 10 real matches → observe whether players actively manage heat. <strong>If players never look at the heat bar, the lever has failed and needs redrawing.</strong></p>
+  </div>
+
+  <h3 id="s3-6">3.6 Salvage & Economy System</h3>
+  <div class="grid2">
+    <div class="card">
+      <h4 style="color:var(--teal)">Sources · Where materials come from</h4>
+      <p>Dismantling enemies (main) / area wreckage & chests / mission rewards / base recycling station (passive output)</p>
+    </div>
+    <div class="card">
+      <h4 style="color:var(--ember)">Sinks · Where materials go</h4>
+      <p>Craft modules / craft mech frames / repair mechs & parts / upgrade module tiers / base construction (companion facilities)</p>
+    </div>
+  </div>
+
+  <div class="callout red">
+    <div class="label">Inflation risk</div>
+    <p>Dismantling is an unlimited source; players can farm the same area for infinite materials, and module prices quickly lose meaning.</p>
+  </div>
+  <h4>Countermeasures (all three at once)</h4>
+  <ol>
+    <li><strong>Modules are unlocked with "a blueprint + a rare core"; materials are only a consumable. </strong> Rare cores come only from named enemies and key missions, limited in number and not farmable.</li>
+    <li><strong>Area material decay</strong>: repeatedly clearing the same area yields diminishing materials <span class="tag na">PLACEHOLDER</span>.</li>
+    <li><strong>Base construction consumes large amounts of materials</strong>, acting as a long-term sink that absorbs inflation.</li>
+  </ol>
+  <p><strong>Validation path</strong>：Use Monte Carlo to simulate the material-stock curves of 3 player types (speedrunner / collector / grinder) over 30 hours. If the grinder's stock tends to infinity after 10 hours, the sinks are insufficient.</p>
+
+  <h3 id="s3-7">3.7 Mobile Base & Level Streaming</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Level type</th><th>Solution</th><th>Reason</th></tr></thead>
+    <tbody>
+      <tr><td>5 large areas</td><td><strong>World Partition + HLOD</strong></td><td>Need wide-range streaming and HLOD simplification</td></tr>
+      <tr><td>Main base (inside the mobile city)</td><td><strong>Traditional sub-level streaming</strong></td><td>Compact space, complex logic; World Partition is harder to control</td></tr>
+      <tr><td>Colossus level</td><td><strong>Single level + segmented loading</strong></td><td>The colossus is a controlled-moving whole, not suitable for spatial splitting</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <ul>
+    <li>The base is an <code>ALevelInstance</code> Actor in the Persistent Level.</li>
+    <li>Base movement is <strong>controlled and scripted</strong>, no real physics simulation of the whole city.</li>
+    <li>Players see companion facilities change with progress inside the base — this is the visualization of "choices having consequences."</li>
+    <li><strong>Use the new 5.8 tools</strong>: World Partition Insights can analyze streaming performance per cell and replay sessions.</li>
+  </ul>
+
+  <h3 id="s3-8">3.8 Save System</h3>
+  <div class="callout red">
+    <div class="label">A Real Design Tension</div>
+    <p>PC single-player players expect "save anytime" by default. But in this game, saving anytime means serializing: mech assembly state, ownership of 40 modules, drop positions, enemy part HP, companion relationships, base construction progress — a huge state space, and bug-prone.</p>
+  </div>
+  <p><strong>Decision</strong>：<strong>checkpoint-style autosave + manual save slots</strong>, no save-anytime quicksave. Each mission has 2–3 checkpoints, matching the 20–40 minute run pace; players can manually save to multiple slots at the main base; save points align with mission beats (after preparation, during tension, before salvage).</p>
+  <p><strong>Version migration</strong>：<code>USaveGame</code> subclass carries a <code>SaveVersion</code> field; write a migration function every time the save structure changes. <strong>From P2 on, every iteration must test reading old-version saves. </strong> Without this, corrupted player saves after launch would be the most fatal source of bad reviews.</p>
+</section>
+
+<section id="s4">
+  <h2><span class="num">4</span>System Interaction Matrix</h2>
+  <p>Expose the risk of systems fighting each other early. Revisit at every milestone review; every new system must add a row.</p>
+  <div class="tw">
+  <table>
+    <thead><tr><th>System A</th><th>System B</th><th>Relation</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td>partdismantling</td><td>Locomotion system</td><td><span class="tag ok">Intended</span></td><td>Leg part destroyed → movement limited, core experience</td></tr>
+      <tr><td>partdismantling</td><td>Animation system</td><td><span class="tag ok">Intended</span></td><td>Animation must adapt after parts are hidden (firing without an arm)</td></tr>
+      <tr><td>partdismantling</td><td>Drop physics</td><td><span class="tag bad">Bug risk</span></td><td>Many drops simulated at once → performance spikes. Need a count cap + switch to static immediately on landing</td></tr>
+      <tr><td>Customization</td><td>Saves</td><td><span class="tag bad">Bug risk</span></td><td>Save and reload after customizing; module ownership must be consistent, needs dedicated testing</td></tr>
+      <tr><td>Customization</td><td>Economy</td><td><span class="tag ok">Intended</span></td><td>Rare cores limit customization pace</td></tr>
+      <tr><td>Heat system</td><td>Enemy AI</td><td><span class="tag ok">Intended</span></td><td>Enemies should attack during the player's overheat window</td></tr>
+      <tr><td>Climbing</td><td>Streaming</td><td><span class="tag bad">Bug risk</span></td><td>Crossing streaming cells while climbing → loading hitches cause falls, need path preloading</td></tr>
+      <tr><td>Companion system</td><td>Mission flow</td><td><span class="tag bad">Bug risk</span></td><td>Different recruit orders → dialogue branch combinations explode, need to limit joining timing</td></tr>
+      <tr><td>MegaLights</td><td>Performance</td><td><span class="tag warn">Acceptable</span></td><td>Need per-scene light limits; industrial scenes easily exceed budget</td></tr>
+      <tr><td>Control Rig Physics</td><td>Stability</td><td><span class="tag bad">Bug risk</span></td><td>Beta feature, needs a fallback (fall back to hand-keyed animation)</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="s5">
+  <h2><span class="num">5</span>Art & Animation Pipeline</h2>
+
+  <h3>5.1 Robot Modeling Standards (Outsourcing Deliverables Must Comply)</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Item</th><th>Standard</th></tr></thead>
+    <tbody>
+      <tr><td>Units & scale</td><td>Centimeter system, 1 unit = 1 cm</td></tr>
+      <tr><td>Orientation</td><td>Unified +X forward, +Z up</td></tr>
+      <tr><td>Pivot</td><td>Module pivots unified at socket centers, <strong>not allowed at bounding-box centers</strong></td></tr>
+      <tr><td>Socket naming</td><td><code>socket_head</code> / <code>socket_arm_L</code> / <code>socket_arm_R</code> / <code>socket_back</code> / <code>socket_aux_01…</code></td></tr>
+      <tr><td>Skeleton</td><td>Each of the 3 mech classes has its own skeleton, but shares the IK Rig definition to reuse animation</td></tr>
+      <tr><td>Triangle budget</td><td>Player mech 150k–250k; named enemies 60k–100k; regular enemies 30k–60k; modules 2k–8k</td></tr>
+      <tr><td>Textures</td><td>Parts 1024, mech body 2048, unified sRGB and normal formats</td></tr>
+      <tr><td>Material slots</td><td>Max 2 material slots per module (limit draw calls)</td></tr>
+      <tr><td>LOD</td><td>4 levels auto-generated + manual fixes, ≥50% reduction from LOD1</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>5.2 Animation Pipeline</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Stage</th><th>Solution</th></tr></thead>
+    <tbody>
+      <tr><td>Animation shared across 3 mech classes</td><td>IK Retargeter + shared IK Rig definition</td></tr>
+      <tr><td>Attack alignment</td><td>Motion Warping (auto-align to target when attacking)</td></tr>
+      <tr><td>Secondary motion</td><td>Control Rig Physics (antennas, cables, hydraulic hoses) — <span class="tag warn">beta, must have a fallback</span></td></tr>
+      <tr><td>Procedural footsteps</td><td>Foot IK + terrain adaptation (heavy quadrupeds must plant firmly on uneven ground)</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="callout">
+    <div class="label">Outsourcing discipline</div>
+    <p>Delivery package must include: UE project template, naming-standard doc, pivot/orientation acceptance checklist, LOD and material-slot checking tools. <strong>Don't accept assets without acceptance tools</strong> — otherwise rework costs eat the money saved by outsourcing.</p>
+  </div>
+</section>
+
+<section id="s6">
+  <h2><span class="num">6</span>Performance Budget & Gates</h2>
+
+  <h3>6.1 Target Configurations</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Tier</th><th>Hardware reference</th><th>Resolution / frame rate</th><th>Quality preset</th></tr></thead>
+    <tbody>
+      <tr><td>Minimum</td><td>GTX 1660 / Ryzen 5 3600</td><td>1080p / 30fps</td><td>Low (baked lighting)</td></tr>
+      <tr><td><strong>Baseline</strong></td><td>RTX 3060 / Ryzen 5 5600</td><td><strong>1080p / 60fps</strong></td><td>Medium (Lumen Lite + MegaLights throttled)</td></tr>
+      <tr><td>Recommended</td><td>RTX 4070 / Ryzen 7 5800X</td><td>1440p / 60fps</td><td>High (full Lumen)</td></tr>
+      <tr><td>High-end</td><td>RTX 4080+</td><td>4K / 60fps</td><td>Very high</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>6.2 Frame Budget (Baseline Tier, 16.6 ms total)</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Item</th><th>Budget</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td>Game thread</td><td>6.0 ms</td><td>Includes AI, animation, physics</td></tr>
+      <tr><td>Render thread</td><td>8.0 ms</td><td>Includes Lumen, MegaLights</td></tr>
+      <tr><td>GPU</td><td>14.0 ms</td><td>—</td></tr>
+      <tr><td>Reserve</td><td>2.6 ms</td><td>Fluctuation margin</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p><strong>Hard limits</strong>: Draw call &lt; 5000  |  ≤12 regular or ≤4 named enemies on screen  |  ≤20 drops on screen  |  ≤32 MegaLights on screen  |  VRAM &lt; 8 GB @1080p medium quality <span class="tag na">all PLACEHOLDER</span></p>
+
+  <div class="callout red">
+    <div class="label">Performance gates</div>
+    <p><strong>Set a performance gate at every milestone; don't advance if it fails. </strong> This is the only mechanism that prevents "discovering it can't run right before launch." Must reach baseline 60fps by end of P2, otherwise optimize before expanding content.</p>
+  </div>
+</section>
+
+<section id="s7">
+  <h2><span class="num">7</span>Milestone Plan · 42 Months</h2>
+
+  <div class="tl">
+    <div class="tl-row">
+      <div class="tl-phase">P0 Pipeline & Pre-research<span class="per">Month 1–2 · 6–8 people</span></div>
+      <div>
+        <div class="tl-bar"><i style="width:5%;background:var(--ember-dim)"></i></div>
+        <div class="tl-body">
+          <div class="goal">Engine pipeline working, four major technical risks validated</div>
+          Validation items: Mutable runtime assembly performance / part dismantling + salvage loop / World Partition large-area streaming / GAS carrying power & heat
+          <div class="team" style="color:var(--red)">Failure signal: validation items closed with "should be fine" — validation without measured data equals no validation</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-row">
+      <div class="tl-phase">P1 Core Prototype<span class="per">Month 3–6 · 12–15 people</span></div>
+      <div>
+        <div class="tl-bar"><i style="width:9%;background:var(--ember-dim)"></i></div>
+        <div class="tl-body">
+          <div class="goal">Prove in gray-box that "changing gear really changes the fighting"</div>
+          Deliverables: 1 mech frame + 3 swappable modules + 1 battle + dismantle/salvage/customize loop + minimal customization UI<br>
+          <strong>Acceptance</strong>: 10 external players in blind tests, ≥7 independently discover and try customizing, ≥6 can describe the gameplay difference before/after customizing
+          <div class="team" style="color:var(--red)">Failure signal: players never open the customization UI / can't describe the difference after customizing / only care about "which number is higher"</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-row">
+      <div class="tl-phase">P2 Vertical Slice<span class="per">Month 7–14 · 20–30 people</span></div>
+      <div>
+        <div class="tl-bar"><i style="width:19%;background:var(--ember)"></i></div>
+        <div class="tl-body">
+          <div class="goal">Build a 20–40 minute full-quality sample</div>
+          Deliverables: one complete mission (incl. colossus level segment) / art style established / performance baseline met / save system / final customization UI<br>
+          <strong>Acceptance</strong>: blind-test completion ≥80% with no soft-locks / baseline 1080p/60fps met / 20 minutes continuous play without crashes / old saves read correctly
+          <div class="team" style="color:var(--ember)">Key decision point: the colossus level is the project's biggest cost risk. This phase must first produce a playable colossus sample; if not achievable, downgrade to a static giant scene and adjust all marketing accordingly</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-row">
+      <div class="tl-phase">P3 Mass Production<span class="per">Month 15–30 · 60–100 people</span></div>
+      <div>
+        <div class="tl-bar"><i style="width:38%;background:var(--teal)"></i></div>
+        <div class="tl-body">
+          <div class="goal">Deliver content by area in bulk</div>
+          Deliverables: 5 areas / 3 mech classes / ~40 modules / 20 enemy types / 6 boss fights / companion system / base construction<br>
+          <strong>Cadence</strong>: bi-weekly iterations, one playable build per iteration; monthly internal playtest; quarterly external playtest
+          <div class="team" style="color:var(--ember)">Key discipline: systems freeze at end of P2. No new systems during P3. Any "add a new system" proposal must first include a conflict-risk doc against existing systems</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-row">
+      <div class="tl-phase">P4 Content Lock<span class="per">Month 31–36 · 80–100 people</span></div>
+      <div>
+        <div class="tl-bar"><i style="width:14%;background:var(--teal)"></i></div>
+        <div class="tl-body">
+          <div class="goal">Full flow playable, systems frozen</div>
+          Deliverables: complete main story passable / all endings reachable / UE6 migration assessment report<br>
+          <strong>Acceptance</strong>: 3 full playthroughs with no blocking bugs / all save migration paths verified / performance met
+          <div class="team">Key decision: if migrating to UE6, reserve 2 months for migration only, no content; if not, lock to 5.8 until release</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-row">
+      <div class="tl-phase">P5 Polish & Release<span class="per">Month 37–42 · 60–80 people</span></div>
+      <div>
+        <div class="tl-bar"><i style="width:14%;background:var(--teal)"></i></div>
+        <div class="tl-body">
+          <div class="goal">Performance, compatibility, certification, launch</div>
+          Deliverables: release candidate / localization / accessibility features / store page & marketing assets<br>
+          <strong>Acceptance</strong>: all target configs met / accessibility passes review / platform certification passes / 4-hour continuous stress test without crashes
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="s8">
+  <h2><span class="num">8</span>Team & Budget</h2>
+
+  <h3>8.1 Staffing by Phase</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Function</th><th>P0—P1</th><th>P2</th><th>P3</th><th>P4—P5</th></tr></thead>
+    <tbody>
+      <tr><td>Producer / Director</td><td>1</td><td>2</td><td>3</td><td>3</td></tr>
+      <tr><td>Gameplay / Systems Designer</td><td>2</td><td>3</td><td>5</td><td>4</td></tr>
+      <tr><td>Level / Narrative Designer</td><td>1</td><td>3</td><td>6</td><td>5</td></tr>
+      <tr><td>Gameplay Programmer</td><td>2</td><td>4</td><td>8</td><td>7</td></tr>
+      <tr><td>Engine / Tools Programmer</td><td>1</td><td>2</td><td>5</td><td>5</td></tr>
+      <tr><td>AI Programmer</td><td>1</td><td>2</td><td>3</td><td>3</td></tr>
+      <tr><td>Technical Artist</td><td>1</td><td>3</td><td>6</td><td>6</td></tr>
+      <tr><td>Character Artist</td><td>1</td><td>4</td><td>10</td><td>8</td></tr>
+      <tr><td>Environment Artist</td><td>—</td><td>4</td><td>16</td><td>12</td></tr>
+      <tr><td>Animator</td><td>1</td><td>3</td><td>8</td><td>6</td></tr>
+      <tr><td>VFX / Effects</td><td>—</td><td>1</td><td>4</td><td>4</td></tr>
+      <tr><td>Audio</td><td>—</td><td>2</td><td>3</td><td>3</td></tr>
+      <tr><td>UI / UX</td><td>1</td><td>2</td><td>4</td><td>4</td></tr>
+      <tr><td>QA</td><td>1</td><td>4</td><td>12</td><td>15</td></tr>
+      <tr><td><strong>Total (approx.)</strong></td><td><strong>13</strong></td><td><strong>39</strong></td><td><strong>93</strong></td><td><strong>85</strong></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>8.2 Budget Model (Example, Not a Market Quote)</h3>
+  <div class="tw">
+  <table>
+    <thead><tr><th>Item</th><th>Calculation</th><th>Amount</th></tr></thead>
+    <tbody>
+      <tr><td>Internal staff</td><td>Average 70 people × 42 months × ¥45k fully-loaded monthly cost per person</td><td>¥132M</td></tr>
+      <tr><td>Outsourcing (art / animation / audio)</td><td>—</td><td>¥50M</td></tr>
+      <tr><td>Engine & tool licensing</td><td>—</td><td>¥3M</td></tr>
+      <tr><td>Hardware, software & office</td><td>—</td><td>¥5M</td></tr>
+      <tr><td>Testing & certification</td><td>—</td><td>¥3M</td></tr>
+      <tr><td>Contingency 20%</td><td>—</td><td>¥38.6M</td></tr>
+      <tr><td><strong>Total R&D budget</strong></td><td>—</td><td><strong>~¥232M</strong></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="callout">
+    <div class="label">How to Use This Model</div>
+    <p>Per-person cost and average headcount are the most sensitive variables — dropping average headcount from 70 to 50 lowers the budget to ~<strong>¥170M</strong>; raising it to 100 pushes it to ~<strong>¥320M</strong>. Its value is showing what every 10 extra people means, not giving a precise figure.</p>
+  </div>
+</section>
+
+<section id="s9">
+  <h2><span class="num">9</span>Risk Register</h2>
+  <div class="risks">
+    <div class="risk">
+      <div><div class="rid">R11 · Fatal risk</div><div class="rname">Core experience fails (customization is imperceptible)</div><div class="rmit">P1 blind test; if it fails, redraw the customization system, no entry to P2. This is the only risk that invalidates the project's entire premise.</div></div>
+      <div class="badges"><span class="tag warn">Probability Medium</span><span class="tag bad">Impact Fatal</span></div>
+    </div>
+    <div class="risk">
+      <div><div class="rid">R1</div><div class="rname">Module combination explosion causes balance loss</div><div class="rmit">Fixed slots + hard caps on the weight/power/cooling constraints; module count capped at 40. Trigger: appearance of a "dominant all-purpose build".</div></div>
+      <div class="badges"><span class="tag bad">Probability High</span><span class="tag bad">Impact High</span></div>
+    </div>
+    <div class="risk">
+      <div><div class="rid">R2</div><div class="rname">Colossus level cost overrun</div><div class="rmit">Build a sample in P2 first; controlled motion + localized physics; if not achievable, downgrade to a static giant scene. Trigger: P2 sample 2 months late.</div></div>
+      <div class="badges"><span class="tag bad">Probability High</span><span class="tag bad">Impact High</span></div>
+    </div>
+    <div class="risk">
+      <div><div class="rid">R3</div><div class="rname">Mover not production-ready causes rework</div><div class="rmit">Locomotion via interface abstraction, CMC primary, re-evaluate at P4. Trigger: official announcement that Mover is production-ready.</div></div>
+      <div class="badges"><span class="tag warn">Probability Medium</span><span class="tag warn">Impact Medium</span></div>
+    </div>
+    <div class="risk">
+      <div><div class="rid">R4</div><div class="rname">UE6 migration risk</div><div class="rmit">Lock to 5.8 until P4; reserve a 2-month evaluation window. Trigger: Epic announces stable UE6.</div></div>
+      <div class="badges"><span class="tag warn">Probability Medium</span><span class="tag warn">Impact Medium</span></div>
+    </div>
+    <div class="risk">
+      <div><div class="rid">R5</div><div class="rname">Blueprint / C++ boundary confusion</div><div class="rmit">Set rules in week 1; rewrite prototype Blueprints before P2. Trigger: P3 performance issues traced to Blueprints.</div></div>
+      <div class="badges"><span class="tag bad">Probability High</span><span class="tag warn">Impact Medium</span></div>
+    </div>
+    <div class="risk">
+      <div><div class="rid">R6</div><div class="rname">Performance miss</div><div class="rmit">Performance gate at each milestone; don't advance if it fails. Trigger: 60fps not reached by end of P2.</div></div>
+      <div class="badges"><span class="tag warn">Probability Medium</span><span class="tag bad">Impact High</span></div>
+    </div>
+    <div class="risk">
+      <div><div class="rid">R7</div><div class="rname">Save compatibility broken</div><div class="rmit">Save version number + migration functions; test old saves every iteration from P2. Trigger: an unreadable save appears.</div></div>
+      <div class="badges"><span class="tag warn">Probability Medium</span><span class="tag warn">Impact Medium</span></div>
+    </div>
+    <div class="risk">
+      <div><div class="rid">R8</div><div class="rname">Outsourced asset quality miss</div><div class="rmit">Delivery includes template + acceptance tools; reject if below standard. Trigger: rework rate > 20%.</div></div>
+      <div class="badges"><span class="tag bad">Probability High</span><span class="tag warn">Impact Medium</span></div>
+    </div>
+    <div class="risk">
+      <div><div class="rid">R9</div><div class="rname">Area gameplay repetition</div><div class="rmit">Each area must have a distinct exploration mechanic; quarterly external playtests. Trigger: players can't describe area differences.</div></div>
+      <div class="badges"><span class="tag warn">Probability Medium</span><span class="tag bad">Impact High</span></div>
+    </div>
+    <div class="risk">
+      <div><div class="rid">R10</div><div class="rname">Control Rig Physics (beta) unstable</div><div class="rmit">Fallback: hand-keyed secondary motion animation. Trigger: non-reproducible jitter or clipping appears.</div></div>
+      <div class="badges"><span class="tag warn">Probability Medium</span><span class="tag ok">Impact Low</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="s10">
+  <h2><span class="num">10</span>First 14 Days Execution Checklist</h2>
+  <p>The goal isn't to make a game, but to <strong>get the first signal within two weeks on "whether this core loop holds up"</strong>.</p>
+  <div class="steps">
+    <div class="step"><div class="d">D1—D2</div><div><div class="t">Install UE 5.8; set up a Perforce or Unreal Revision Control repo; establish project directories and naming-convention docs</div><div class="o">Output: a committable empty project</div></div></div>
+    <div class="step"><div class="d">D3—D4</div><div><div class="t">Set up C++ module skeleton (RobotCore / RobotCombat / RobotAssembly); integrate Enhanced Input; build a capsule that can run and jump</div><div class="o">Output: a controllable gray-box character</div></div></div>
+    <div class="step"><div class="d">D5—D6</div><div><div class="t">Integrate GAS; implement Power / Heat attributes; make a dash ability that consumes power and generates heat; overheat lock</div><div class="o">Output: movement where the "burst–pause" rhythm can be felt</div></div></div>
+    <div class="step"><div class="d">D7—D8</div><div><div class="t">Implement UPartDamageComponent; make a bone-name → part-tag mapping DataAsset; make a dummy enemy that limps when shot in the leg</div><div class="o">Output: part damage is verifiable</div></div></div>
+    <div class="step"><div class="d">D9—D10</div><div><div class="t">Part destruction → hide bone + spawn a part drop → pickup → material count</div><div class="o">Output: salvage loop working end-to-end</div></div></div>
+    <div class="step"><div class="d">D11—D12</div><div><div class="t">Build the ugliest but usable customization UI: 3 slots, changing gear genuinely changes move speed and attack style</div><div class="o">Output: customization affects gameplay</div></div></div>
+    <div class="step"><div class="d">D13—D14</div><div><div class="t">Self-test 10 runs, record three data points: do players customize proactively? Do they perceive a difference after customizing? Do players watch the heat bar?</div><div class="o">Output: a self-test report + next-step decision</div></div></div>
+  </div>
+
+  <div class="callout">
+    <div class="label">D14 Decision Rules</div>
+    <ul style="margin-bottom:0">
+      <li>All three data points positive → enter P1, expand module count and levels.</li>
+      <li>Customization imperceptible → <strong>stop and redraw the customization system</strong>, don't keep adding content.</li>
+      <li>Players don't watch the heat bar → heat lever failed, simplify or replace the mechanic.</li>
+    </ul>
+  </div>
+
+  <div class="callout teal">
+    <div class="label">The Real Value of This Checklist</div>
+    <p>Not output, but turning the vague question "is this game fun?" into <strong>a concrete experiment with an answer obtainable within two weeks</strong>.</p>
+  </div>
+</section>
+
+<footer>
+  "Ember Protocol" UE5 Production Plan · v1.0 | Engine baseline Unreal Engine 5.8 | All schedules, headcounts and budgets are planning models and must be re-estimated after milestone acceptance<br>
+  Values marked <span class="tag na">PLACEHOLDER</span> are unverified by playtest, with assumptions and validation paths attached
+</footer>
+
+</main>
+</div>
+</body>
+</html>

@@ -1,3 +1,4 @@
+> 语言: **简体中文** | [English](./production_plan.md)
 # 《余火协议》UE5 制作计划
 
 > 文档版本 v1.0 ｜ 引擎基线 **Unreal Engine 5.8** ｜ 目标平台 **PC（Windows）单机**

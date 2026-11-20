@@ -1,0 +1,38 @@
+{
+  "_note": "Bilingual doc mapping. Each Chinese doc gets an English version. Add a 2-line cross-link header to BOTH files (see _conventions).",
+  "_conventions": {
+    "header_zh": "> 语言: **简体中文** | [English](./<EN_FILE>)",
+    "header_en": "> Language: **English** | [简体中文](./<ZH_FILE>)",
+    "rules": [
+      "Translate faithfully and completely — do not summarize or omit sections.",
+      "Preserve ALL Markdown/HTML structure: headings, tables, code blocks, inline code, paths, URLs, file names, variable names, terminal output, numeric data.",
+      "Do NOT translate: code, command names, file paths, URLs, proper nouns like ComfyUI/Hunyuan3D/Blender/Unreal, technical identifiers, log lines.",
+      "Keep Chinese technical terms translated but you may keep the original in parentheses on first use, e.g. 'heat lock (过热锁定)'.",
+      "Add the cross-link header as the very first line of each output file (before the H1 title).",
+      "Write output as UTF-8."
+    ]
+  },
+  "files": [
+    {"zh": "docs/余火协议_UE5制作计划.md", "en": "docs/production_plan.md"},
+    {"zh": "docs/余火协议_UE5制作计划.html", "en": "docs/production_plan.html"},
+    {"zh": "docs/迭代报告_2026-10-19.md", "en": "docs/iteration_report_2026-10-19.md"},
+    {"zh": "docs/迭代报告_2026-10-23.md", "en": "docs/iteration_report_2026-10-23.md"},
+    {"zh": "docs/迭代报告_2026-10-23b_高级建模.md", "en": "docs/iteration_report_2026-10-23b.md"},
+    {"zh": "docs/迭代报告_2026-10-23c_缺陷修复.md", "en": "docs/iteration_report_2026-10-23c.md"},
+    {"zh": "docs/迭代报告_2026-10-23d_更换4K.md", "en": "docs/iteration_report_2026-10-23d.md"},
+    {"zh": "docs/迭代报告_2026-10-23e_全局换4K.md", "en": "docs/iteration_report_2026-10-23e.md"},
+    {"zh": "docs/迭代报告_2026-10-23f_UV修复.md", "en": "docs/iteration_report_2026-10-23f.md"},
+    {"zh": "docs/迭代报告_2026-10-25.md", "en": "docs/iteration_report_2026-10-25.md"},
+    {"zh": "docs/AI自动化资产工作流.md", "en": "docs/ai_asset_pipeline.md"},
+    {"zh": "docs/Quixel_领取清单.md", "en": "docs/quixel_claim_list.md"},
+    {"zh": "assets/资产清单.md", "en": "assets/asset_list.md"},
+    {"zh": "ue/README.md", "en": "ue/README_en.md"},
+    {"zh": "ue/环境搭建.md", "en": "ue/environment_setup.md"},
+    {"zh": "ue/操作流程.md", "en": "ue/operation_guide.md"},
+    {"zh": "ue/测试报告缺陷.md", "en": "ue/test_report_defects.md"},
+    {"zh": "ue/第一次进入步骤.md", "en": "ue/first_run_steps.md"},
+    {"zh": "tools/blender/README.md", "en": "tools/blender/README_en.md"},
+    {"zh": "prototype/core_loop_prototype.html", "en": "prototype/core_loop_prototype_en.html"},
+    {"zh": "docs/迭代报告_2026-10-31_第六十至一百一十九轮.md", "en": "docs/iteration_report_60-119.md", "kind": "big_report"}
+  ]
+}

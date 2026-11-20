@@ -1,3 +1,4 @@
+> 语言: **简体中文** | [English](./quixel_claim_list.md)
 # Quixel Megascans 领取清单（第一百零五轮 / 2026-11-09）
 
 目标：用 Fab 上的免费 Quixel Megascans 资产，继续深化「余火协议」的
