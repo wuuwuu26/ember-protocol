@@ -20,7 +20,7 @@ The answer is to chain three AI / procedural capabilities into a reproducible pi
 
 ```mermaid
 flowchart LR
-    A[Text idea / concept] --> B[① Image model<br/>ComfyUI · z_image_turbo]
+    A[Text idea / concept] --> B[① Image model<br/>comfyui-image-studio · ComfyUI]
     B -->|concept / reference| C[② AI-assisted Blender modeling<br/>procedural scripts]
     C -->|base mesh / white model| D[③ Hunyuan3D<br/>image-to-3D]
     D -->|white GLB| E[Hunyuan3D texgen<br/>multi-view diffusion PBR]
@@ -29,9 +29,10 @@ flowchart LR
 ```
 
 ### ① Image Models for Textures / Concept Art
-**ComfyUI** (`z_image_turbo` / `flux` / `krea2_turbo`) batch-generates concept art and texture materials from text prompts. The 4 concept images for the mech-wreck batch (`gen_<name>.png`) came from this step and fed into Hunyuan3D.
-- Scripts: `tools/comfy_gen_asset.py`, `tools/comfy_gen_batch.py`, `tools/comfy_gen_mechwreck.py`, `tools/generate_flux.py`
-- Texture generation: `tools/gen_textures.py`, `tools/gen_coolant_tex.py`, `tools/gen_plasma_tex.py`, `tools/make_*_texture.py`
+Image generation runs through **[comfyui-image-studio](https://github.com/wuuwuu26/comfyui-image-studio)** — a local-first web UI for ComfyUI (Krea 2 / Z-Image / MOSS, tuned for 8 GB GPUs). This project calls it via `tools/easyai.py` (`http://127.0.0.1:7860/api/generate`) to batch-generate concept art and texture materials from text prompts. The 4 mech-wreck concept images (`gen_<name>.png`), posters and seamless textures all came from this step.
+- Calling wrapper: `tools/easyai.py` → [comfyui-image-studio](https://github.com/wuuwuu26/comfyui-image-studio)
+- Scripts: `tools/gen_posters.py`, `tools/gen_posters2.py`, `tools/gen_textures.py`, `tools/comfy_gen_asset.py`, `tools/comfy_gen_batch.py`, `tools/comfy_gen_mechwreck.py`, `tools/generate_flux.py`
+- Texture generation: `tools/gen_coolant_tex.py`, `tools/gen_plasma_tex.py`, `tools/make_*_texture.py`
 
 ### ② AI-Assisted Blender Modeling
 **Parametric scripts** instead of hand-modeling: change one number to get a new mech variant, with naming, sockets, units, UVs and LODs kept automatically consistent. 51 assets were produced this way — player chassis, 22 modules, 6 enemies, props and environment pieces.
@@ -110,6 +111,7 @@ robot_game/
 │  ├─ mechwreck_pipeline.py        ★ One-command AI pipeline
 │  ├─ hy3d_batch.py / hy3d_texture_batch.py            Hunyuan3D batch
 │  ├─ texgen_batch2.py / fix_texgen_black.py           PBR texture gen/fix
+│  ├─ easyai.py                       caller for comfyui-image-studio (image gen)
 │  ├─ comfy_gen_*.py / generate_flux.py                image generation
 │  └─ ...
 ├─ assets/
@@ -131,7 +133,7 @@ robot_game/
 |---|---|
 | Engine | Unreal Engine 5.8 (C++ / GAS / ISM fluid replacing Niagara) |
 | 3D generation | Hunyuan3D (image-to-3D + texgen multi-view diffusion PBR) |
-| Image generation | ComfyUI (z_image_turbo / flux / krea2_turbo) |
+| Image generation | [comfyui-image-studio](https://github.com/wuuwuu26/comfyui-image-studio) (ComfyUI web UI: Krea 2 / Z-Image / MOSS) |
 | Modeling | Blender 5.3 (Python procedural), trimesh |
 | Scripting | Python 3.12 (numpy / cv2 / trimesh / PIL) |
 | Textures | texgen native PBR (1024), procedural texture generation |

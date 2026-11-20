@@ -62,11 +62,17 @@ this repo; only generated outputs are).
 
 - Assets: `art_src/posters/`, `art_src/textures/`, `art_src/textures_raw/`, and
   the AI-generated concept images referenced by the workflow docs.
-- Generated with ComfyUI using `moss-image`, `krea2`, `z_image_turbo` and/or
-  `flux` models (see `tools/gen_posters.py`, `tools/gen_textures.py`, etc.).
+- Generated via **[comfyui-image-studio](https://github.com/wuuwuu26/comfyui-image-studio)**
+  (a local ComfyUI web UI for Krea 2 / Z-Image / MOSS) through `tools/easyai.py`,
+  and partly via direct ComfyUI (`tools/comfy_gen_*.py` / `generate_flux.py`)
+  using `moss-image`, `krea2`, `z_image_turbo` and/or `flux` models.
+- The image-generation **tool** lives in its own repository,
+  [wuuwuu26/comfyui-image-studio](https://github.com/wuuwuu26/comfyui-image-studio);
+  its source and license are governed there. This repo contains only the thin
+  calling wrapper (`tools/easyai.py`), not the tool's source code.
 - **Action needed**: the redistribution rights of AI-generated images depend on
   the specific base model's license. Flux.1 [dev] is non-commercial; Flux.1
-  [schnell] is Apache-2.0; z_image / krea2 / moss-image have their own terms.
+  [schnell] is Apache-2.0; Krea 2 / Z-Image / MOSS have their own terms.
   Confirm which model produced each image and its license before any commercial
   redistribution. These images are included for demonstration only.
 

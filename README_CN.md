@@ -20,7 +20,7 @@
 
 ```mermaid
 flowchart LR
-    A[文字创意 / 概念] --> B[① 生图模型<br/>ComfyUI · z_image_turbo]
+    A[文字创意 / 概念] --> B[① 生图模型<br/>comfyui-image-studio · ComfyUI]
     B -->|概念图 / 参考图| C[② AI 辅助 Blender 建模<br/>程序化建模脚本]
     C -->|基础网格 / 白模| D[③ Hunyuan3D<br/>图生 3D]
     D -->|白模 GLB| E[Hunyuan3D texgen<br/>多视图扩散 PBR 贴图]
@@ -29,9 +29,10 @@ flowchart LR
 ```
 
 ### ① 生图模型生成贴图 / 概念图
-用 **ComfyUI**（`z_image_turbo` / `flux` / `krea2_turbo`）按文本提示批量生成概念图与贴图素材。例如机甲碎骸批次的 4 张概念图（`gen_<name>.png`）就是这一步产出，再作为 Hunyuan3D 的输入。
-- 脚本：`tools/comfy_gen_asset.py`、`tools/comfy_gen_batch.py`、`tools/comfy_gen_mechwreck.py`、`tools/generate_flux.py`
-- 贴图素材生成：`tools/gen_textures.py`、`tools/gen_coolant_tex.py`、`tools/gen_plasma_tex.py`、`tools/make_*_texture.py` 系列
+生图通过 **[comfyui-image-studio](https://github.com/wuuwuu26/comfyui-image-studio)** 完成——这是一个本地优先的 ComfyUI 网页界面（Krea 2 / Z-Image / MOSS，针对 8GB 显存优化）。本项目用 `tools/easyai.py` 调用它（`http://127.0.0.1:7860/api/generate`），按文本提示批量生成概念图与贴图素材。机甲碎骸的 4 张概念图（`gen_<name>.png`）、海报、无缝贴图都出自这一步。
+- 调用封装：`tools/easyai.py` → [comfyui-image-studio](https://github.com/wuuwuu26/comfyui-image-studio)
+- 脚本：`tools/gen_posters.py`、`tools/gen_posters2.py`、`tools/gen_textures.py`、`tools/comfy_gen_asset.py`、`tools/comfy_gen_batch.py`、`tools/comfy_gen_mechwreck.py`、`tools/generate_flux.py`
+- 贴图素材生成：`tools/gen_coolant_tex.py`、`tools/gen_plasma_tex.py`、`tools/make_*_texture.py` 系列
 
 ### ② AI 辅助 Blender 建模
 用**参数化脚本**而不是手搓来产出模型：改一个数字就能出新机型，命名、挂点、单位、UV、LOD 全部自动一致。主角机体、22 个模块、6 类敌人、道具与环境构件共 51 个资产由此生成。
@@ -110,6 +111,7 @@ robot_game/
 │  ├─ mechwreck_pipeline.py        ★ AI 一键流水线（生图→3D→贴图→展示）
 │  ├─ hy3d_batch.py / hy3d_texture_batch.py            Hunyuan3D 批处理
 │  ├─ texgen_batch2.py / fix_texgen_black.py           PBR 贴图生成/修复
+│  ├─ easyai.py                       comfyui-image-studio 调用封装（生图）
 │  ├─ comfy_gen_*.py / generate_flux.py                生图脚本
 │  └─ ...
 ├─ assets/
@@ -131,7 +133,7 @@ robot_game/
 |---|---|
 | 游戏引擎 | Unreal Engine 5.8（C++ / GAS / Niagara 替代的 ISM 流体） |
 | 3D 生成 | Hunyuan3D（图生 3D + texgen 多视图扩散 PBR 贴图） |
-| 生图 | ComfyUI（z_image_turbo / flux / krea2_turbo） |
+| 生图 | [comfyui-image-studio](https://github.com/wuuwuu26/comfyui-image-studio)（ComfyUI 网页界面：Krea 2 / Z-Image / MOSS） |
 | 建模 | Blender 5.3（Python 程序化建模）、trimesh |
 | 脚本 | Python 3.12（numpy / cv2 / trimesh / PIL） |
 | 贴图 | texgen 原生 PBR（1024）、程序化纹理生成 |

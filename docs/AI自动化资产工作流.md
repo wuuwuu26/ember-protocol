@@ -29,7 +29,7 @@
    │
    ▼
 ┌─────────────────────────────────────┐
-│ ① 生图模型（ComfyUI）               │  z_image_turbo / flux / krea2_turbo
+│ ① 生图模型（comfyui-image-studio）  │  ComfyUI · Krea 2 / Z-Image / MOSS
 │    概念图 gen_<name>.png             │  ~30 秒/张，1024²
 └─────────────────────────────────────┘
    │  （抠 alpha：gen_alpha_for_texgen.py）
@@ -65,23 +65,31 @@
 ## 2. 阶段① 生图模型生成概念图 / 贴图
 
 ### 工具
-- **ComfyUI**（本地部署，`http://127.0.0.1:8188`）
-- 模型：`z_image_turbo`（本项目主用）、`flux`、`krea2_turbo`、`moss_image`
+本项目有两条生图路径，都由 **ComfyUI** 驱动：
+
+1. **[comfyui-image-studio](https://github.com/wuuwuu26/comfyui-image-studio)**（主力）
+   - 一个本地优先的中文 ComfyUI 网页界面，针对 8GB 显存优化，内置 Krea 2 / Z-Image / MOSS 引擎。
+   - 本项目用 `tools/easyai.py` 调用它的 `http://127.0.0.1:7860/api/generate` 接口，`generate(prompt, out, engine, ratio, ...)` 一步出图。
+   - 海报（`gen_posters*.py`）、无缝贴图（`gen_textures.py`）、概念图大多走这条路。**生图工具链本身的代码与许可见 [comfyui-image-studio 仓库](https://github.com/wuuwuu26/comfyui-image-studio)**，本仓库只包含调用脚本，不包含其源码。
+2. **直连 ComfyUI**（`http://127.0.0.1:8188`）：`tools/comfy_gen_*.py` / `generate_flux.py`，用于机甲碎骸批次的图生图与 Flux 生图。
 
 ### 相关脚本
 | 脚本 | 用途 |
 |---|---|
-| `tools/comfy_gen_asset.py` | 单资产概念图生成 |
-| `tools/comfy_gen_batch.py` | 批量生成 |
+| `tools/easyai.py` | [comfyui-image-studio](https://github.com/wuuwuu26/comfyui-image-studio) 调用封装（主力） |
+| `tools/gen_posters.py` / `gen_posters2.py` | 海报（MOSS / Krea 引擎） |
+| `tools/gen_textures.py` | 无缝贴图（Krea 引擎） |
+| `tools/comfy_gen_asset.py` | 单资产概念图生成（直连 ComfyUI） |
+| `tools/comfy_gen_batch.py` | 批量生成（直连 ComfyUI） |
 | `tools/comfy_gen_mechwreck.py` | 机甲碎骸批次（本流水线的代表案例） |
 | `tools/generate_flux.py` | Flux 模型生图 |
-| `tools/gen_textures.py` / `gen_coolant_tex.py` / `gen_plasma_tex.py` | 程序化 / AI 贴图素材 |
+| `tools/gen_coolant_tex.py` / `gen_plasma_tex.py` | 程序化贴图素材 |
 
 ### 案例：机甲碎骸的 4 张概念图
 主题是"被击毁的机甲散落在新区域"：破损机甲躯干 / 断裂机械臂 / 废弃头盔 / 装甲碎片堆。
 每张 `gen_<name>.png` 生成约 30 秒。其中 `mech_head_wreck` 首次生成像人类骷髅，重新生成一次改为机甲头盔——这体现了"提示词迭代"在管线里的作用。
 
-> ⚠️ ComfyUI 出的 `gen_*.png` 是 RGB 浅灰背景，没有 alpha。而 texgen 的 `recenter_image` / `delight_model` 依赖 alpha 判断主体，因此需要一个抠图步骤（见阶段④）。
+> ⚠️ 两条生图路径出的 `gen_*.png` 都是 RGB 浅灰背景，没有 alpha。而 texgen 的 `recenter_image` / `delight_model` 依赖 alpha 判断主体，因此需要一个抠图步骤（见阶段④）。
 
 ---
 
