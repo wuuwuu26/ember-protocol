@@ -1,0 +1,12 @@
+concrete_wall_001 mask 连接 ok=True
+concrete_wall_001 mask 连接 ok=True
+concrete_wall_001 mask 连接 ok=True
+concrete_wall_001 重编译+保存
+factory_wall mask 连接 ok=True
+factory_wall mask 连接 ok=True
+factory_wall mask 连接 ok=True
+factory_wall 重编译+保存
+rusty_metal mask 连接 ok=True
+rusty_metal mask 连接 ok=True
+rusty_metal mask 连接 ok=True
+rusty_metal 重编译+保存

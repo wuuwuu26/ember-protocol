@@ -87,7 +87,11 @@ for aid, desc in MAT_DESC:
             mask.set_editor_property("g", target == "g")
             mask.set_editor_property("b", target == "b")
             mask.set_editor_property("a", False)
-            MEL.connect_material_expressions(arm, "RGB", mask, "Input")
+            # ⚠️ ComponentMask 的输入引脚名必须是 ""（不是 "Input"）。
+            # UE5.8 下 mask 的 input name 实际为 None，用 "Input" 会连接失败，
+            # 导致 SM5 编译报 "(Node ComponentMask) Missing ComponentMask input"，
+            # 材质回退默认灰。第一百二十一 轮踩坑并修复。
+            MEL.connect_material_expressions(arm, "RGB", mask, "")
             MEL.connect_material_property(mask, "", prop)
 
     MEL.recompile_material(mat)

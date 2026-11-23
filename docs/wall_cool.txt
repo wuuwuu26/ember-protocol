@@ -1,0 +1,3 @@
+M_concrete_wall_001 冷灰化完成 (Lerp alpha=0.72)
+M_factory_wall 冷灰化完成 (Lerp alpha=0.72)
+M_rusty_metal 冷灰化完成 (Lerp alpha=0.72)
